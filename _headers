@@ -1,0 +1,12 @@
+# All paths
+/*
+    # Block site from being framed with X-Frame-Options and CSP
+    Content-Security-Policy: frame-ancestors 'none'
+    X-Frame-Options: SAMEORIGIN
+	# Prevent browsers from incorrectly detecting non-scripts as scripts
+    X-Content-Type-Options: nosniff
+	# Don't load any resource type not explicitly enabled
+    # Disable plugins like Flash or Silverlight
+    # Load images, scripts, stylesheets and fonts from self
+    Content-Security-Policy: block-all-mixed-content; upgrade-insecure-requests
+	X-XSS-Protection: 1; mode=block
