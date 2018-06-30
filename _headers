@@ -9,3 +9,4 @@
     # Disable plugins like Flash or Silverlight
     # Load images, scripts, stylesheets and fonts from self
     Content-Security-Policy: block-all-mixed-content; upgrade-insecure-requests
+	X-XSS-Protection: 1; mode=block
