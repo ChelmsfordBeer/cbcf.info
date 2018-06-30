@@ -1,0 +1,31 @@
+<autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
+	<response xmlns="http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a">
+		<user>
+			<displayname>CBCF Mail</displayname>
+		</user>
+		<account>
+			<accounttype>email</accounttype>
+			<action>settings</action>
+			<image>https://cbcf.info/img/icon.jpg</image>
+			<ServiceHome>https://mail.cbcf.info</ServiceHome>
+			<protocol>
+				<type>IMAP</type>
+				<server>mx1.hostinger.co.uk</server>
+				<port>993</port>
+				<domainrequired>off</domainrequired>
+				<spa>off</spa>
+				<ssl>on</ssl>
+				<authrequired>on</authrequired>
+			</protocol>
+			<protocol>
+				<type>SMTP</type>
+				<server>mx1.hostinger.co.uk</server>
+				<port>587</port>
+				<domainrequired>off</domainrequired>
+				<spa>off</spa>
+				<ssl>on</ssl>
+				<authrequired>on</authrequired>
+			</protocol>
+		</account>
+	</response>
+</autodiscover>
