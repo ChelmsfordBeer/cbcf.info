@@ -1,0 +1,44 @@
+Header set Content-Security-Policy "block-all-mixed-content; upgrade-insecure-requests; default-src 'self'; connect-src 'self' https://securetoken.googleapis.com https://sv2.brandflow.net:8443 https://fcm.googleapis.com https://www.googleapis.com https://freegeoip.net https://ajax.googleapis.com; script-src 'self' 'unsafe-inline' https://printjs-4de6.kxcdn.com https://cdn.datatables.net https://cdnjs.cloudflare.com https://www.googletagmanager.com https://ajax.googleapis.com https://connect.facebook.net https://maps.google.com https://maps.googleapis.com https://brandflow.net; style-src 'self' data: https://printjs-4de6.kxcdn.com https://cdn.datatables.net https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; form-action 'self' https://formspree.io; frame-src blob: https://staticxx.facebook.com https://www.facebook.com; object-src blob:"
+Header set Access-Control-Allow-Origin "*"
+Header set Referrer-Policy: strict-origin
+
+# Extra Security Headers
+Header always set X-Content-Type-Options "nosniff"
+Header set Access-Control-Allow-Credentials "true" env=CORS
+Header set Access-Control-Allow-Methods "GET, POST, OPTIONS" env=CORS
+Header set Access-Control-Allow-Headers "Origin" env=CORS
+Header unset X-Powered-By
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-Download-Options "noopen"
+Header set X-DNS-Prefetch-Control "on"
+Header set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+Header set X-UA-Compatible "IE=edge,chrome=1"
+Header set P3P 'CP="CAO PSA OUR"'
+
+php_flag session.cookie_secure on
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+
+#Redirect for Site Upgrades (comment when live)
+#Redirect 302 / https://holding.cbcf.info/
+
+#Normal rules for page (uncomment when live)
+ErrorDocument 404 https://cbcf.info/404
+DirectoryIndex home.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
