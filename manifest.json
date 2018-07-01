@@ -1,41 +1,40 @@
 {
-    "short_name": "CBCF 2018",
-    "name": "Chelmsford Summer Beer & Cider Festival 2018",
-    "icons": [
-        {
-            "src": "./img/launcher-icon-1x.png",
-            "type": "image/png",
-            "sizes": "48x48"
+  "short_name": "CBCF 2018",
+  "name": "Chelmsford Summer Beer & Cider Festival 2018",
+  "icons": [{
+      "src": "./img/launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
     },
-        {
-            "src": "./img/launcher-icon-2x.png",
-            "type": "image/png",
-            "sizes": "96x96"
+    {
+      "src": "./img/launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
     },
-        {
-            "src": "./img/launcher-icon-4x.png",
-            "type": "image/png",
-            "sizes": "192x192"
+    {
+      "src": "./img/launcher-icon-4x.png",
+      "type": "image/png",
+      "sizes": "192x192"
     },
-        {
-            "src": "./img/icon-256x256.png",
-            "sizes": "256x256",
-            "type": "image/png"
+    {
+      "src": "./img/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
     },
-        {
-            "src": "./img/icon-384x384.png",
-            "sizes": "384x384",
-            "type": "image/png"
+    {
+      "src": "./img/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
     },
-        {
-            "src": "./img/icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
+    {
+      "src": "./img/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
-    "start_url": "home.html",
-    "display": "standalone",
-    "background_color": "#006393",
-    "theme_color": "#006393",
-    "orientation": "portrait"
+  "start_url": "home.html",
+  "display": "standalone",
+  "background_color": "#006393",
+  "theme_color": "#006393",
+  "orientation": "portrait"
 }
