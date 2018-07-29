@@ -1,6 +1,6 @@
 'use strict';
 
-var cacheVersion = 2;
+var cacheVersion = 3;
 var currentCache = {
   offline: 'offline-cache' + cacheVersion
 };
@@ -12,6 +12,16 @@ this.addEventListener('install', event => {
       return cache.addAll([
         './img/landing.webp',
         './img/landing.png',
+        './css/fontawesome-all.css',
+        './css/bootstrap.css',
+        './css/mdb.css',
+        './css/style.css',
+        './js/jquery.min.js',
+        './js/popper.min.js',
+        './js/bootstrap.js',
+        './js/mdb.min.js',
+        './js/zenscroll-min.js',
+        './js/webp.js',
         offlineUrl
       ]);
     })
