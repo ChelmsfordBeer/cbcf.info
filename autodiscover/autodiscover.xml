@@ -10,7 +10,7 @@
 			<ServiceHome>https://mail.cbcf.info</ServiceHome>
 			<protocol>
 				<type>IMAP</type>
-				<server>mx1.hostinger.co.uk</server>
+				<server>ssdrsserver1.hosting.co.uk</server>
 				<port>993</port>
 				<domainrequired>off</domainrequired>
 				<spa>off</spa>
@@ -19,8 +19,8 @@
 			</protocol>
 			<protocol>
 				<type>SMTP</type>
-				<server>mx1.hostinger.co.uk</server>
-				<port>587</port>
+				<server>ssdrsserver1.hosting.co.uk</server>
+				<port>465</port>
 				<domainrequired>off</domainrequired>
 				<spa>off</spa>
 				<ssl>on</ssl>
