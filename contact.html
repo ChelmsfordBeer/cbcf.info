@@ -216,29 +216,23 @@
 
                   <div id="form-messages"></div>
 
-                  <form method="post" action="https://formspree.io/hi@cbcf.info" id="ajax-contact">
-
-                    <div class="md-form">
-                      <i class="fa fa-tag prefix grey-text"></i>
-                      <input type="text" id="subject" class="form-control required" name="Question" required>
-                      <label for="subject">Your question/query</label>
-                    </div>
+                  <form method="POST" action="https://formaholic.com/f/a7a1eb1cffab0794" accept-charset="UTF-8">
 
                     <div class="md-form">
                       <i class="fa fa-user prefix grey-text"></i>
-                      <input type="text" id="name" class="form-control required" name="Name" required>
+                      <input type="text" id="name" class="form-control required" name="name" required>
                       <label for="name">Your name</label>
                     </div>
 
                     <div class="md-form">
                       <i class="fa fa-envelope prefix grey-text"></i>
-                      <input type="email" id="email" class="form-control required" name="Email" required>
+                      <input type="email" id="email" class="form-control required" name="email" required>
                       <label for="email">Your email</label>
                     </div>
 
                     <div class="md-form">
                       <i class="fa fa-pencil prefix grey-text"></i>
-                      <textarea type="text" id="message" name="Message" class="md-textarea form-control required" style="height: 100px" required></textarea>
+                      <textarea type="text" id="message" name="message" class="md-textarea form-control required" style="height: 100px" required></textarea>
                       <label for="message">Your message</label>
                     </div>
                     <div class="text-center">
@@ -256,13 +250,12 @@
                   </div>
                   <div class="card-body contact text-center">
                     <p><b>General Enquiries</b><br><i class="fas fa-envelope-square"></i> <a href="mailto:hi@cbcf.info">hi@cbcf.info</a></p>
-                    <p><b>Digital Strategy</b><br><i class="fas fa-envelope-square"></i> <a href="mailto:network@cbcf.info">network@cbcf.info</a></p>
+                    <p><b>Website/Digital Services Queries</b><br><i class="fas fa-envelope-square"></i> <a href="mailto:network@cbcf.info">network@cbcf.info</a></p>
                     <p><b>Press Releases</b><br><i class="fas fa-envelope-square"></i> <a href="mailto:marketing@cbcf.info">marketing@cbcf.info</a></p>
                     <p><b>Volunteering Information</b><br><i class="fas fa-envelope-square"></i> <a href="mailto:volunteer@cbcf.info">volunteer@cbcf.info</a></p>
                   </div>
                 </div>
               </div>
-              <div class="fb-customerchat" page_id="181973398514531" theme_color="#006393"></div>
             </div>
           </div>
           <!--/Form with header-->
@@ -344,28 +337,6 @@
 
   <!-- WebP Support Module -->
   <script src="./js/webp.js"></script>
-
-  <!-- Messenger Plugin -->
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId: '1878909362140721',
-        autoLogAppEvents: true,
-        xfbml: true,
-        version: 'v2.12'
-      });
-    };
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {
-        return;
-      }
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://connect.facebook.net/en_GB/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
 
 </body>
 
