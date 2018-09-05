@@ -1,0 +1,3 @@
+# Redirects WWW to HTTPS and then redirects back to naked domain (to resolve HSTS issues for WWW)
+http://www.cbcf.info/* https://www.cbcf.info/:splat 301!
+https://www.cbcf.info/* https://cbcf.info/:splat 301!
