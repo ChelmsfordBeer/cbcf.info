@@ -7,10 +7,8 @@ This repo hosts the summer and winter festival websites as well as the holding w
 ## Structure
 
 -   Master - Live website for general public - pushed to <https://cbcf.info>
--   Staging - Staging website for changes to be approved - pushed to <https://staging.cbcf.info>
--   Dev - Development website for upcoming festivals - pushed to <https://dev.cbcf.info>
+-   Staging - Staging website for upcoming changes to content and site code - pushed to <https://staging.cbcf.info>
 
 ## Todos
 
--   Begin work on Development website (holding site between Summer 2018/Winter 2019)
--   Tidy up of code (update MDBootstrap base CSS/JS)
+-  Start work on Winter Festival 2019 websites
