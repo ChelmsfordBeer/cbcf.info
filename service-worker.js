@@ -1,6 +1,6 @@
 'use strict';
 
-var cacheVersion = 4;
+var cacheVersion = 5;
 var currentCache = {
   offline: 'offline-cache' + cacheVersion
 };
@@ -10,18 +10,20 @@ this.addEventListener('install', event => {
   event.waitUntil(
     caches.open(currentCache.offline).then(function(cache) {
       return cache.addAll([
-        './img/landing.webp',
-        './img/landing.png',
-        './css/fontawesome-all.css',
-        './css/bootstrap.css',
-        './css/mdb.css',
-        './css/style.css',
-        './js/jquery.min.js',
-        './js/popper.min.js',
-        './js/bootstrap.js',
-        './js/mdb.min.js',
-        './js/zenscroll-min.js',
-        './js/webp.js',
+        'https://cbcf.info/img/landing.webp',
+        'https://cbcf.info/img/landing.png',
+        'https://cbcf.info/img/camra.webp',
+        'https://cbcf.info/img/camra.png',
+		'https://cbcf.info/css/fontawesome-all.css',
+        'https://cbcf.info/css/bootstrap.css',
+        'https://cbcf.info/css/mdb.css',
+        'https://cbcf.infocss/style.css',
+        'https://cbcf.info/js/jquery.min.js',
+        'https://cbcf.info/js/popper.min.js',
+        'https://cbcf.info/js/bootstrap.js',
+        'https://cbcf.info/js/mdb.min.js',
+        'https://cbcf.info/js/zenscroll-min.js',
+        'https://cbcf.info/js/webp.js',
         offlineUrl
       ]);
     })
