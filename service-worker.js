@@ -1,6 +1,6 @@
 'use strict';
 
-var cacheVersion = 5;
+var cacheVersion = 6;
 var currentCache = {
   offline: 'offline-cache' + cacheVersion
 };
@@ -17,7 +17,7 @@ this.addEventListener('install', event => {
 		'https://cbcf.info/css/fontawesome-all.css',
         'https://cbcf.info/css/bootstrap.css',
         'https://cbcf.info/css/mdb.css',
-        'https://cbcf.infocss/style.css',
+        'https://cbcf.info/css/style.css',
         'https://cbcf.info/js/jquery.min.js',
         'https://cbcf.info/js/popper.min.js',
         'https://cbcf.info/js/bootstrap.js',
