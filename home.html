@@ -19,7 +19,7 @@
   <meta name="apple-mobile-web-app-title" content="Chelmsford Beer">
 
   <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#006393">
+  <meta name="theme-color" content="#242E54">
 
   <title>Chelmsford Beer &amp; Cider Festivals</title>
   <meta name="description" content="The Official Chelmsford Beer & Cider Festivals website - run by the Chelmsford and Mid-Essex Campaign For Real Ale" />
@@ -51,9 +51,13 @@
       background: transparent !important;
     }
 
+	.navbar {
+	  box-shadow: none !important;
+	}
+	
     @media (max-width: 991.98px) {
       .navbar:not(.top-nav-collapse) {
-        background: #006393 !important;
+        background: #242E54 !important;
       }
     }
 
@@ -61,16 +65,8 @@
       color: #fff;
     }
 
-    .webp .intro-1 {
-      background: url("./img/landing.webp")no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
-    .no-webp .intro-1 {
-      background: url("./img/landing.png")no-repeat center center fixed;
+	.intro-1 {
+      background: #242E54;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -101,7 +97,7 @@
 
     @media only screen and (max-width: 767px) {
       .navbar {
-        background-color: #006393;
+        background-color: #242E54;
       }
       .display-3 {
         font-size: 2rem;
@@ -118,6 +114,36 @@
       color: #1d1e1f;
       background-color: #1DADE2;
     }
+	
+	@media only screen and (max-width: 334px) {
+	  .navbar-brand {
+		display: none;
+	  }
+	  .cbcf-normal {
+	    display: none;
+      }
+	}
+	
+	@media only screen and (min-width: 335px) {
+	  .navbar-brand-sm {
+		display: none;
+	  }
+	  .cbcf-sm {
+	    display: none;
+      }
+	}
+	
+	.cbcf-purple {
+	  background-color: #232D53;
+	}
+	
+	.cbcf-purple-light {
+	  background-color: #1F284B;
+	}
+	
+	.cbcf-gold {
+	  background-color: #FCCB18;
+	}
   </style>
 
 </head>
@@ -130,6 +156,9 @@
         <a class="navbar-brand" href="./home">
                     <strong class="d-block d-sm-none">Chelmsford Beer Festivals</strong><strong class="d-none d-sm-block">Chelmsford Beer &amp; Cider Festivals</strong>
                 </a>
+		<a class="navbar-brand-sm" href="./home">
+                    <strong>CBCF</strong>
+                </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="animated-icon4"><span></span><span></span><span></span></div>
                 </button>
@@ -139,18 +168,27 @@
             <li class="nav-item">
               <a class="nav-link hoverable" href="./home" rel="nofollow">Home</a>
             </li>
+			<!-- Drink Lists -->
             <li class="nav-item">
-              <a class="nav-link hoverable" href="./gallery/" rel="nofollow">Gallery</a>
+              <a class="nav-link hoverable" href="./" rel="nofollow">Drink &amp; Food</a>
+            </li>
+			<!-- Drink Lists -->
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="./" rel="nofollow">Tickets</a>
+            </li>
+			<!-- Visitor Info Dropdown -->
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="./" rel="nofollow">Travel Info</a>
             </li>
             <!-- Volunteer -->
             <li class="nav-item">
               <a class="nav-link hoverable" href="./volunteer" rel="nofollow">Volunteer</a>
             </li>
-            <!-- About the Festival Dropdown -->
+            <!-- About CBCF Dropdown -->
             <li class="nav-item dropdown">
               <a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
               <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item hoverable" href="./history">Our History</a>
+                <a class="dropdown-item hoverable" href="./archive">Previous Festivals</a>
                 <a class="dropdown-item hoverable" href="./contact">Contact Us</a>
                 <a class="dropdown-item hoverable" href="//www.chelmsford.camra.org.uk/">Chelmsford &amp; Mid Essex CAMRA</a>
               </div>
@@ -190,20 +228,25 @@
         <div class="container">
           <ul>
             <li>
-              <center class="wow bounceIn" data-wow-delay="0.47s">
+              <center>
                 <picture>
-                  <source srcset="./img/home/camra.webp" type="image/webp">
-                  <source srcset="./img/home/camra.png" type="image/png">
-                  <img class="img-fluid" src="./img/home/camra.png" alt="Chelmsford & Mid-Essex CAMRA" width="40%">
+                  <source srcset="./img/home/winter.webp" type="image/webp">
+                  <source srcset="./img/home/winter.png" type="image/png">
+                  <img class="img-fluid" src="./img/home/winter.png" alt="Chelmsford Winter Beer & Cider Festival 2019 logo" width="30%">
                 </picture>
               </center>
             </li>
-            <li>
-              <h2 class="mt-4 mb-5 wow fadeInDown font-bold" data-wow-delay="0.2s">Chelmsford Beer &amp; Cider Festivals</h2>
+            <li class="cbcf-normal">
+              <h2 class="mt-4 mb-5 wow bounceIn font-bold" data-wow-delay="0.3s">Chelmsford Winter Beer &amp; Cider Festival 2019</h2>
+			  <h4 class="mt-4 mb-5 wow fadeInUp" data-wow-delay="0.5s">20th to 23rd Feburary 2019</h4>
+            </li>
+			<li class="cbcf-sm">
+              <h4 class="mt-4 mb-5 wow fadeInDown font-bold" data-wow-delay="0.3s">Chelmsford Winter Beer &amp; Cider Festival 2019</h4>
+			  <h6 class="mt-4 mb-5 wow fadeInUp" data-wow-delay="0.5s">20th to 23rd Feburary 2019</h6>
             </li>
             <li>
-              <a href="./gallery/" class="btn btn-success btn-lg wow fadeInLeft hoverable" data-wow-delay="0.2s" rel="nofollow"><i class="far fa-images"></i>&nbsp; View previous festivals</a>
-              <a href="./volunteer" class="btn btn-primary btn-lg wow fadeInRight smooth-scroll hoverable" data-wow-delay="0.2s" rel="nofollow"><i class="far fa-users"></i>&nbsp; Get Involved</a>
+              <a href="./gallery/" class="btn btn-indigo btn-lg wow fadeInLeft hoverable" data-wow-delay="0.7s" rel="nofollow"><i class="far fa-arrow-circle-down"></i>&nbsp; More details</a>
+              <a href="./volunteer" class="btn btn-deep-purple btn-lg wow fadeInRight smooth-scroll hoverable" data-wow-delay="0.7s" rel="nofollow"><i class="far fa-users"></i>&nbsp; Get involved</a>
             </li>
           </ul>
         </div>
@@ -252,7 +295,7 @@
   </div>
 
   <!--Footer-->
-  <footer class="page-footer blue center-on-small-only">
+  <footer class="page-footer cbcf-purple-light center-on-small-only">
 
     <!--Copyright Notice-->
     <div class="col-md-12" style="text-align: center;">
@@ -266,7 +309,7 @@
     <!--/.Copyright Notice-->
 
     <!--Privacy/GitHub-->
-    <div class="footer-copyright">
+    <div class="footer-copyright cbcf-purple">
       <div class="container-fluid">
         <a href="./privacy">Privacy Policy</a> | Site Design: <a href="https://github.com/tmaguire/cbcf.info">Thomas Maguire</a>
       </div>

@@ -976,7 +976,7 @@
   background-color: #3F729B !important; }
 
 .unique-color-dark {
-  background-color: #006393 !important; }
+  background-color: #242E54 !important; }
 
 .mdb-color {
   background-color: #45526E !important; }
@@ -6337,6 +6337,11 @@ button:focus {
     margin: 0 5px 1px 8px;
     height: 1rem; }
   .navbar .navbar-brand {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    overflow: visible; }
+	.navbar .navbar-brand-sm {
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
     align-self: flex-start;
