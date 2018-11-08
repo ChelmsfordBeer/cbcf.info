@@ -32,9 +32,9 @@
       "type": "image/png"
     }
   ],
-  "start_url": "home.html",
+  "start_url": "app/home.html",
   "display": "standalone",
-  "background_color": "#006393",
-  "theme_color": "#006393",
+  "background_color": "#232D53",
+  "theme_color": "#181F3B",
   "orientation": "portrait"
 }

@@ -128,14 +128,14 @@
     <nav class="navbar navbar-expand-lg navbar-dark unique-color-dark fixed-top scrolling-navbar">
       <div class="container">
         <a class="navbar-brand" href="./home">
-                    <strong class="d-block d-sm-none">Chelmsford Beer Festivals</strong><strong class="d-none d-sm-block">Chelmsford Beer &amp; Cider Festivals</strong>
-                </a>
+          <strong class="d-block d-sm-none">Chelmsford Beer Festivals</strong><strong class="d-none d-sm-block">Chelmsford Beer &amp; Cider Festivals</strong>
+        </a>
         <a class="navbar-brand-sm" href="./home">
-                    <strong>CBCF</strong>
-                </a>
+          <strong>CBCF</strong>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="animated-icon3"><span></span><span></span><span></span><span></span></div>
-                </button>
+          <div class="animated-icon3"><span></span><span></span><span></span><span></span></div>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <!-- Desktop Navlinks -->
@@ -144,7 +144,7 @@
             </li>
             <!-- Drink Lists -->
             <li class="nav-item">
-              <a class="nav-link hoverable" href="./festival" rel="nofollow">Drink &amp; Food</a>
+              <a class="nav-link hoverable" href="./drinks" rel="nofollow">Drink Lists</a>
             </li>
             <!-- Travel Info -->
             <li class="nav-item">
@@ -171,8 +171,8 @@
           <ul class="navbar-nav ml-auto nav-flex-icons">
             <!-- Social Links -->
             <span class="navbar-text white-text d-block d-lg-none" style="padding-left: 6px;">
-							<strong>Follow us on social media!</strong>
-						</span>
+              <strong>Follow us on social media!</strong>
+            </span>
             <hr>
             <li class="nav-item">
               <a class="nav-link hoverable d-none d-lg-block" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square"></i></a>
@@ -206,7 +206,7 @@
         <div class="container">
           <ul>
             <li>
-              <center>
+              <center class="wow fadeIn">
                 <picture>
                   <source srcset="./img/home/winter.webp" type="image/webp">
                   <source srcset="./img/home/winter.png" type="image/png">
@@ -215,16 +215,16 @@
               </center>
             </li>
             <li class="cbcf-normal">
-              <h2 class="mt-4 mb-5 wow bounceIn font-bold" data-wow-delay="0.3s">Chelmsford Winter Beer &amp; Cider Festival 2019</h2>
-              <h4 class="mt-4 mb-5 wow fadeInUp" data-wow-delay="0.5s">20th to 23rd Feburary 2019</h4>
+              <h2 class="mt-4 mb-5 wow bounceIn font-bold" data-wow-delay="0.5s">Chelmsford Winter Beer &amp; Cider Festival 2019</h2>
+              <h4 class="mt-4 mb-5 wow fadeInUp" data-wow-delay="0.8s">20th to 23rd Feburary 2019</h4>
             </li>
             <li class="cbcf-sm">
-              <h4 class="mt-4 mb-5 wow fadeInDown font-bold" data-wow-delay="0.3s">Chelmsford Winter Beer &amp; Cider Festival 2019</h4>
-              <h6 class="mt-4 mb-5 wow fadeInUp" data-wow-delay="0.5s">20th to 23rd Feburary 2019</h6>
+              <h4 class="mt-4 mb-5 wow fadeInDown font-bold" data-wow-delay="0.5s">Chelmsford Winter Beer &amp; Cider Festival 2019</h4>
+              <h6 class="mt-4 mb-5 wow fadeInUp" data-wow-delay="0.8s">20th to 23rd Feburary 2019</h6>
             </li>
             <li>
-              <a href="./gallery/" class="btn btn-indigo btn-lg wow fadeInLeft hoverable" data-wow-delay="0.7s" rel="nofollow"><i class="far fa-arrow-circle-down"></i>&nbsp; More details</a>
-              <a href="./volunteer" class="btn btn-deep-purple btn-lg wow fadeInRight smooth-scroll hoverable" data-wow-delay="0.7s" rel="nofollow"><i class="far fa-users"></i>&nbsp; Get involved</a>
+              <a href="#details" class="btn btn-indigo btn-lg wow fadeInLeft hoverable" data-wow-delay="1.2s" rel="nofollow"><i class="far fa-arrow-circle-down"></i>&nbsp; More details</a>
+              <a href="./volunteer" class="btn btn-deep-purple btn-lg wow fadeInRight hoverable" data-wow-delay="1.2s" rel="nofollow"><i class="far fa-users"></i>&nbsp; Get involved</a>
             </li>
           </ul>
         </div>
@@ -239,12 +239,21 @@
       <section class="mt-5 wow fadeIn">
 
         <!--Grid row-->
-        <div class="row">
+        <div class="row" id="details">
 
           <!--Grid column-->
           <div class="col-md-6 mb-4">
 
-            <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="">
+            <!--Header picture-->
+            <center>
+              <picture>
+                <source srcset="./img/home/1.webp" type="image/webp">
+                <source srcset="./img/home/1.png" type="image/png">
+                <img class="img-fluid z-depth-1-half" src="./img/home/1.png" alt="Winter Festival glasses from 2018">
+              </picture>
+            </center>
+            <!--Header picture-->
+
 
           </div>
           <!--Grid column-->
@@ -252,29 +261,47 @@
           <!--Grid column-->
           <div class="col-md-6 mb-4">
 
-            <!-- Main heading -->
-            <h3 class="h3 mb-3">Material Design for Bootstrap</h3>
-            <p>This template is created with Material Design for Bootstrap (
-              <strong>MDB</strong> ) framework.</p>
-            <p>Read details below to learn more about MDB.</p>
-            <!-- Main heading -->
+            <!--Main heading (desktop)-->
+            <div class="d-none d-lg-block">
+              <h3 class="h3 mb-3">Chelmsford Winter Beer &amp; Cider Festival 2019</h3>
+              <h4>Wednesday 20th Feburary to Saturday 23rd Feburary</h4>
+              <h5>12 noon - 11pm each day</h5>
+              <p>King Edward VI Grammar School (KEGS), Broomfield Road, CM1 3SX</p>
+            </div>
+            <!--Main heading (desktop)-->
+
+            <!--Main heading (mobile)-->
+            <div class="d-block d-lg-none" style="text-align: center;">
+              <h3 class="h3 mb-3">Chelmsford Winter Beer &amp; Cider Festival 2019</h3>
+              <h4>Wednesday 20th Feburary to Saturday 23rd Feburary</h4>
+              <h5>12 noon - 11pm each day</h5>
+              <p>King Edward VI Grammar School (KEGS), Broomfield Road, CM1 3SX</p>
+            </div>
+            <!--Main heading (mobile)-->
 
             <hr>
 
             <p>
-              <strong>400+</strong> material UI elements,
-              <strong>600+</strong> material icons,
-              <strong>74</strong> CSS animations, SASS files, templates, tutorials and many more.
-              <strong>Free for personal and commercial use.</strong>
+              <strong>170+</strong> Real Ales<br>
+              <strong>50+</strong> Real Ciders, Perries &amp; Pyders<br>
+              <strong>Hot &amp; cold food</strong> and soft drinks available at all times
             </p>
 
             <!-- CTA -->
-            <a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-grey btn-md">Download
-              <i class="fa fa-download ml-1"></i>
-            </a>
-            <a target="_blank" href="https://mdbootstrap.com/components/" class="btn btn-grey btn-md">Live demo
-              <i class="fa fa-image ml-1"></i>
-            </a>
+            <center>
+              <a href="./drinks" class="btn btn-cbcf-purple">Drinks List
+                <i class="far fa-beer ml-1"></i>
+              </a>
+              <a href="#food" class="btn btn-cbcf-purple">Food &amp; Snacks
+                <i class="far fa-utensils ml-1"></i>
+              </a>
+              <a href="./travel" class="btn btn-cbcf-purple">Travel Info
+                <i class="far fa-map ml-1"></i>
+              </a>
+              <a href="./faqs" class="btn btn-cbcf-purple">FAQs
+                <i class="far fa-question ml-1"></i>
+              </a>
+            </center>
 
           </div>
           <!--Grid column-->
@@ -287,10 +314,10 @@
 
       <hr class="my-5">
 
-      <!--Section: Main features & Quick Start-->
-      <section>
+      <!--Section: Food & Snacks-->
+      <section id="food">
 
-        <h3 class="h3 text-center mb-5">About MDB</h3>
+        <h3 class="h3 text-center mb-5">Food &amp; Snacks</h3>
 
         <!--Grid row-->
         <div class="row wow fadeIn">
@@ -301,11 +328,11 @@
             <!--First row-->
             <div class="row">
               <div class="col-1 mr-3">
-                <i class="fa fa-code fa-2x indigo-text"></i>
+                <i class="far fa-utensils fa-3x indigo-text"></i>
               </div>
               <div class="col-10">
-                <h5 class="feature-title">Bootstrap 4</h5>
-                <p class="grey-text">Thanks to MDB you can take advantage of all feature of newest Bootstrap 4.</p>
+                <h5 class="feature-title">Hopleaf</h5>
+                <p class="grey-text">Hot & cold food will be available from Hopleaf who do a range of food.</p>
               </div>
             </div>
             <!--/First row-->
@@ -315,12 +342,11 @@
             <!--Second row-->
             <div class="row">
               <div class="col-1 mr-3">
-                <i class="fa fa-book fa-2x blue-text"></i>
+                <i class="far fa-cookie fa-3x blue-text"></i>
               </div>
               <div class="col-10">
-                <h5 class="feature-title">Detailed documentation</h5>
-                <p class="grey-text">We give you detailed user-friendly documentation at your disposal. It will help you to implement your ideas easily.
-                </p>
+                <h5 class="feature-title">Oddfellows Chocolate</h5>
+                <p class="grey-text">Oddfellows (formally Merry Berry) <a href="http://oddfellowschocolate.co.uk" rel="nofollow">oddfellowschocolate.co.uk</a> will have a range of truffles and chocolates.</p>
               </div>
             </div>
             <!--/Second row-->
@@ -330,11 +356,11 @@
             <!--Third row-->
             <div class="row">
               <div class="col-1 mr-3">
-                <i class="fa fa-graduation-cap fa-2x cyan-text"></i>
+                <i class="far fa-shopping-bag fa-3x cyan-text"></i>
               </div>
               <div class="col-10">
-                <h5 class="feature-title">Lots of tutorials</h5>
-                <p class="grey-text">We care about the development of our users. We have prepared numerous tutorials, which allow you to learn how to use MDB as well as other technologies.</p>
+                <h5 class="feature-title">Pipers Crisps</h5>
+                <p class="grey-text">Pipers <a href="//www.piperscrisps.com" rel="nofollow">www.piperscrisps.com</a> will have a range of crisps.</p>
               </div>
             </div>
             <!--/Third row-->
@@ -345,10 +371,15 @@
           <!--Grid column-->
           <div class="col-lg-6 col-md-12">
 
-            <p class="h5 text-center mb-4">Watch our "5 min Quick Start" tutorial</p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cXTThxoywNQ" allowfullscreen></iframe>
-            </div>
+
+            <center>
+              <picture>
+                <source srcset="./img/home/2.webp" type="image/webp">
+                <source srcset="./img/home/2.png" type="image/png">
+                <img class="img-fluid z-depth-1-half" src="./img/home/2.png" alt="Hopleaf Catering at Winter Festival 2018">
+              </picture>
+            </center>
+
           </div>
           <!--/Grid column-->
 
@@ -356,149 +387,11 @@
         <!--/Grid row-->
 
       </section>
-      <!--Section: Main features & Quick Start-->
-
-      <hr class="my-5">
-
-      <!--Section: Not enough-->
-      <section>
-
-        <h2 class="my-5 h3 text-center">Not enough?</h2>
-
-        <!--First row-->
-        <div class="row features-small mb-5 mt-3 wow fadeIn">
-
-          <!--First column-->
-          <div class="col-md-4">
-            <!--First row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Free for personal and commercial use</h6>
-                <p class="grey-text">Our license is user-friendly. Feel free to use MDB for both private as well as commercial projects.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/First row-->
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">400+ UI elements</h6>
-                <p class="grey-text">An impressive collection of flexible components allows you to develop any project.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">600+ icons</h6>
-                <p class="grey-text">Hundreds of useful, scalable, vector icons at your disposal.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Third row-->
-
-            <!--Fourth row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Fully responsive</h6>
-                <p class="grey-text">It doesn't matter whether your project will be displayed on desktop, laptop, tablet or mobile phone. MDB looks great on each screen.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Fourth row-->
-          </div>
-          <!--/First column-->
-
-          <!--Second column-->
-          <div class="col-md-4 flex-center">
-            <img src="https://mdbootstrap.com/img/Others/screens.png" alt="MDB Magazine Template displayed on iPhone" class="z-depth-0 img-fluid">
-          </div>
-          <!--/Second column-->
-
-          <!--Third column-->
-          <div class="col-md-4 mt-2">
-            <!--First row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">70+ CSS animations</h6>
-                <p class="grey-text">Neat and easy to use animations, which will increase the interactivity of your project and delight your visitors.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/First row-->
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Plenty of useful templates</h6>
-                <p class="grey-text">Need inspiration? Use one of our predefined templates for free.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Easy installation</h6>
-                <p class="grey-text">5 minutes, a few clicks and... done. You will be surprised at how easy it is.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Third row-->
-
-            <!--Fourth row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Easy to use and customize</h6>
-                <p class="grey-text">Using MDB is straightforward and pleasant. Components flexibility allows you deep customization. You will easily adjust each component to suit your needs.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Fourth row-->
-          </div>
-          <!--/Third column-->
-
-        </div>
-        <!--/First row-->
-
-      </section>
-      <!--Section: Not enough-->
+      <!--Section: Food & Snacks-->
 
       <hr class="mb-5">
 
-      <!--Section: More-->
+      <!--Section: Sponsers & Supporters-->
       <section>
 
         <h2 class="my-5 h3 text-center">Our Sponsers &amp; Supporters</h2>
@@ -636,7 +529,26 @@
         <!--/Second row-->
 
       </section>
-      <!--Section: More-->
+      <!--Section: Sponsers & Supporters-->
+
+      <hr class="mb-5">
+
+      <!--Section: Something Missing-->
+      <section class="wow fadeIn">
+
+        <h4 class="mt-4 mb-5 text-center">Think there's something missing from this page?</h4>
+
+        <center>
+          <a href="./faqs" class="btn btn-cbcf-purple btn-lg hoverable" rel="nofollow"><i class="far fa-arrow-circle-right"></i>&nbsp; Check our FAQs</a>
+          <a href="./contact" class="btn btn-cbcf-purple btn-lg hoverable" rel="nofollow"><i class="far fa-envelope"></i>&nbsp; Contact Us</a>
+        </center>
+
+        <br>
+
+        <p style="text-align: center;"><i>This website, social media pages and the festival are run by volunteers, <a href="./volunteer">why not join us</a>?</i></p>
+
+      </section>
+      <!--Section: Something Missing-->
 
     </div>
   </main>
@@ -653,16 +565,26 @@
       <small>The trademarks, logos and artwork displayed are the registered and unregistered trademarks and copyright of Campaign for Real Ale, except where third party ownership is indicated.</small>
       <br>
       <small>Whilst every effort is made to ensure that the information on this site is accurate and up to date, no responsibility for errors and omissions can be accepted.</small>
+      <p></p>
     </div>
     <!--/.Copyright Notice-->
 
     <!--Privacy/GitHub-->
-    <div class="footer-copyright cbcf-purple">
+    <div class="footer-copyright" style="background-color: #1B2343;">
       <div class="container-fluid">
         <a href="./privacy">Privacy Policy</a> | Site Design: <a href="https://github.com/tmaguire/cbcf.info">Thomas Maguire</a>
+        <p>This site is licensed under the <a href="https://github.com/tmaguire/cbcf.info/blob/master/LICENSE" rel="nofollow">Mozilla Public License 2.0</a></p>
       </div>
     </div>
     <!--/.Privacy/GitHub-->
+
+    <!--License-->
+    <div class="footer-copyright cbcf-purple">
+      <div class="container-fluid">
+        <p>This site is licensed under the <a href="https://github.com/tmaguire/cbcf.info/blob/master/LICENSE" rel="nofollow">Mozilla Public License 2.0</a></p>
+      </div>
+    </div>
+    <!--/License-->
 
   </footer>
   <!--/.Footer-->
@@ -697,6 +619,9 @@
 
   <!-- Smooth Scrolling -->
   <script src="./js/zenscroll-min.js"></script>
+  <script>
+    zenscroll.setup(null, 85)
+  </script>
 
   <!-- WebP Support Module -->
   <script src="./js/webp.js"></script>
