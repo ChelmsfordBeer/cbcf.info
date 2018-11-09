@@ -8,7 +8,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
 	<!-- Properties to update per page -->
-	<title>Previous Festivals Archive | Chelmsford Beer &amp; Cider Festivals</title>
+	<title>Previous Festivals | Chelmsford Beer &amp; Cider Festivals</title>
 	<meta property="og:title" content="Previous Festivals Archive | Chelmsford Beer & Cider Festivals">
 	<link rel="canonical" href="https://cbcf.info/home" />
 	<meta property="og:url" content="https://cbcf.info/home">
@@ -24,8 +24,22 @@
 	<link href="./css/style.css" rel="stylesheet">
 
 	<!-- Template styles -->
-	<style>
-		.flex-center {
+  <style>
+    .navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+  }
+
+    .navbar {
+      box-shadow: none !important;
+    }
+
+    @media (max-width: 991.98px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #242E54 !important;
+      }
+    }
+
+    .flex-center {
       color: #fff;
     }
 
@@ -122,89 +136,90 @@
 </head>
 
 <body>
-	<header>
-		<!--Navbar-->
-		<nav class="navbar navbar-expand-lg navbar-dark unique-color-dark fixed-top">
-			<div class="container">
-				<a class="navbar-brand" href="./home">
-					<strong class="d-block d-sm-none">Chelmsford Beer Festivals</strong><strong class="d-none d-sm-block">Chelmsford Beer &amp; Cider Festivals</strong>
-				</a>
-				<a class="navbar-brand-sm" href="./home">
-					<strong>CBCF</strong>
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<div class="animated-icon3"><span></span><span></span><span></span><span></span></div>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<!-- Desktop Navlinks -->
-						<li class="nav-item">
-							<a class="nav-link hoverable" href="./home">Home</a>
-						</li>
-						<!-- Drink Lists -->
-						<li class="nav-item">
-							<a class="nav-link hoverable" href="./drinks">Drink Lists</a>
-						</li>
-						<!-- Travel Info -->
-						<li class="nav-item">
-							<a class="nav-link hoverable" href="./travel">Travel Info</a>
-						</li>
-						<!-- FAQs -->
-						<li class="nav-item">
-							<a class="nav-link hoverable" href="./faqs">FAQs</a>
-						</li>
-						<!-- Volunteer -->
-						<li class="nav-item">
-							<a class="nav-link hoverable" href="./volunteer">Volunteer</a>
-						</li>
-						<!-- About CBCF Dropdown -->
-						<li class="nav-item dropdown">
-							<a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-							<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="./archive">Previous Festivals</a>
-								<a class="dropdown-item" href="./contact">Contact Us</a>
-								<a class="dropdown-item" href="//www.chelmsford.camra.org.uk/" rel="nofollow">Chelmsford &amp; Mid Essex CAMRA</a>
-							</div>
-						</li>
-					</ul>
-					<ul class="navbar-nav ml-auto nav-flex-icons">
-						<!-- Social Links -->
-						<span class="navbar-text white-text d-block d-lg-none" style="padding-left: 6px;">
-							<strong>Follow us on social media!</strong>
-						</span>
-						<hr>
-						<li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square" aria-hidden></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square fa-2x" aria-hidden></i></a>
+  <header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark unique-color-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="./home">
+          <strong class="d-block d-sm-none">Chelmsford Beer Festivals</strong><strong class="d-none d-sm-block">Chelmsford Beer &amp; Cider Festivals</strong>
+        </a>
+        <a class="navbar-brand-sm" href="./home">
+          <strong>CBCF</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="animated-icon3"><span></span><span></span><span></span><span></span></div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <!-- Desktop Navlinks -->
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="./home">Home</a>
+            </li>
+            <!-- Drink Lists -->
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="./drinks">Drink Lists</a>
+            </li>
+            <!-- Travel Info -->
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="./travel">Travel Info</a>
+            </li>
+            <!-- FAQs -->
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="./faqs">FAQs</a>
+            </li>
+            <!-- Volunteer -->
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="./volunteer">Volunteer</a>
+            </li>
+            <!-- About CBCF Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./archive">Previous Festivals</a>
+                <a class="dropdown-item" href="./history">Our History</a>
+                <a class="dropdown-item" href="./contact">Contact Us</a>
+                <a class="dropdown-item" href="//www.chelmsford.camra.org.uk/" rel="nofollow">Chelmsford &amp; Mid Essex CAMRA</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <!-- Social Links -->
+            <span class="navbar-text white-text d-block d-lg-none" style="padding-left: 6px;">
+              <strong>Follow us on social media!</strong>
+            </span>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter" aria-hidden></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter fa-2x" aria-hidden></i></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram" aria-hidden></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram fa-2x" aria-hidden></i></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost" aria-hidden></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost fa-2x" aria-hidden></i></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost" aria-hidden="true"></i></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost fa-2x" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube" aria-hidden></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube fa-2x" aria-hidden></i></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a>
             </li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!--/.Navbar-->
-	</header>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/.Navbar-->
+  </header>
 
 	<!--Intro Section-->
 	<section class="header-page">
 		<div class="flex-center">
-			<h1 class="mt-4 mb-5 wow fadeInUp font-bold d-none d-lg-block" data-wow-delay="0.2s"><i class="far fa-images" aria-hidden></i>&nbsp;Previous Festivals Archive</h1>
-			<h2 class="mt-4 mb-5 wow fadeInUp font-bold d-block d-lg-none" data-wow-delay="0.2s"><i class="far fa-images" aria-hidden></i>&nbsp;Previous Festivals Archive</h2>
+			<h1 class="mt-4 mb-5 wow fadeInUp font-bold d-none d-lg-block" data-wow-delay="0.2s"><i class="far fa-images" aria-hidden="true"></i>&nbsp;Previous Festivals</h1>
+			<h2 class="mt-4 mb-5 wow fadeInUp font-bold d-block d-lg-none" data-wow-delay="0.2s"><i class="far fa-images" aria-hidden="true"></i>&nbsp;Previous Festivals</h2>
 		</div>
 	</section>
 

@@ -26,8 +26,8 @@
   <!-- Template styles -->
   <style>
     .navbar:not(.top-nav-collapse) {
-      background: transparent !important;
-    }
+    background: transparent !important;
+  }
 
     .navbar {
       box-shadow: none !important;
@@ -41,6 +41,19 @@
 
     .flex-center {
       color: #fff;
+    }
+
+    body,
+    html {
+      height: 100%;
+    }
+
+   .header-page {
+      background: #242E54;
+      height: 40%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     .intro-1 {
@@ -163,6 +176,7 @@
               <a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
               <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="./archive">Previous Festivals</a>
+                <a class="dropdown-item" href="./history">Our History</a>
                 <a class="dropdown-item" href="./contact">Contact Us</a>
                 <a class="dropdown-item" href="//www.chelmsford.camra.org.uk/" rel="nofollow">Chelmsford &amp; Mid Essex CAMRA</a>
               </div>
@@ -174,31 +188,32 @@
               <strong>Follow us on social media!</strong>
             </span>
             <hr>
-						<li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square" aria-hidden></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square fa-2x" aria-hidden></i></a>
+            <li class="nav-item">
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter" aria-hidden></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter fa-2x" aria-hidden></i></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram" aria-hidden></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram fa-2x" aria-hidden></i></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost" aria-hidden></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost fa-2x" aria-hidden></i></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost" aria-hidden="true"></i></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost fa-2x" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube" aria-hidden></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube fa-2x" aria-hidden></i></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!--/.Navbar-->
+  </header>
 
 		<!--Intro Section-->
 		<section class="view intro-1">
@@ -207,8 +222,8 @@
 					<ul>
 						<li>
 							<center>
-								<i class="d-none d-lg-block far fa-exclamation-triangle fa-10x" aria-hidden></i>
-								<i class="d-block d-lg-none far fa-exclamation-triangle fa-4x" aria-hidden></i>
+								<i class="d-none d-lg-block far fa-exclamation-triangle fa-10x" aria-hidden="true"></i>
+								<i class="d-block d-lg-none far fa-exclamation-triangle fa-4x" aria-hidden="true"></i>
 							</center>
 						</li>
 						<li>
@@ -216,7 +231,7 @@
 							<h3 class="mt-4 mb-5 font-bold">Check that your device is connected to the internet and try again</h3>
 						</li>
 						<li>
-							<a href="//cbcf.info/home" class="btn btn-indigo btn-lg wow fadeInUp" rel="nofollow"><i class="far fa-sync-alt" aria-hidden></i>&nbsp; Try again</a>
+							<a href="//cbcf.info/home" class="btn btn-indigo btn-lg wow fadeInUp" rel="nofollow"><i class="far fa-sync-alt" aria-hidden="true"></i>&nbsp; Try again</a>
 						</li>
 					</ul>
 				</div>
