@@ -1,6 +1,6 @@
 'use strict';
 
-var cacheVersion = 7;
+var cacheVersion = 8;
 var currentCache = {
   offline: 'offline-cache' + cacheVersion
 };
@@ -10,7 +10,6 @@ this.addEventListener('install', event => {
   event.waitUntil(
     caches.open(currentCache.offline).then(function(cache) {
       return cache.addAll([
-        'https://cbcf.info/css/fontawesome-all.css',
         'https://cbcf.info/css/bootstrap.css',
         'https://cbcf.info/css/mdb.css',
         'https://cbcf.info/css/style.css',
