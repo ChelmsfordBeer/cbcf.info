@@ -3,19 +3,6 @@ html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, 
   padding: 0;
 }
 
-body {
-  background: #EEE;
-  font-family: "myriad-pro","Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  color: #282B30;
-
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga", "kern";
-}
-
 figure {
   display: block;
   max-width: 100%;
@@ -33,41 +20,6 @@ img {
   max-width: 100%;
   height: auto;
   border: 0;
-}
-
-p {
-  margin: 0 0 12px;
-}
-ul {
-  list-style: disc;
-}
-ul, ol {
-  padding: 0;
-  margin: 0 0 12px 25px;
-}
-li {
-  margin: 0 0 12px 0;
-}
-h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-weight: normal;
-}
-
-h1 {
-  font-size: 48px;
-  line-height: 1;
-  margin: 1em;
-  font-weight: 600;
-  text-align: center;
-}
-
-h1 a {
-  text-decoration: none;
-  color: #282B30;
-}
-
-strong {
-  font-weight: 600;
 }
 
 figcaption {
@@ -206,9 +158,6 @@ footer p {
 }
 
 @media screen and (max-width: 700px) {
-  h1 {
-    font-size: 40px;
-  }
   .menu-img,
   .gallery__img--secondary {
     width: 33%;
