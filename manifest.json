@@ -32,7 +32,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "app/home.html",
+  "start_url": "home.html",
   "display": "standalone",
   "background_color": "#232D53",
   "theme_color": "#181F3B",
