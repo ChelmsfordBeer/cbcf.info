@@ -3,3 +3,15 @@ Disallow: /autodiscover/
 Disallow: /img/
 Disallow: /signature/
 Disallow: /app/
+Disallow: /2013/*.jpg$/
+Disallow: /2014/*.jpg$/
+Disallow: /2015/*.jpg$/
+Disallow: /2016/*.jpg$/
+Disallow: /2017/*.jpg$/
+Disallow: /2018/*.jpg$/
+Disallow: /2013/thumbnails/
+Disallow: /2014/thumbnails/
+Disallow: /2015/thumbnails/
+Disallow: /2016/thumbnails/
+Disallow: /2017/thumbnails/
+Disallow: /2018/thumbnails/
