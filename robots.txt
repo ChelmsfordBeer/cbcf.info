@@ -1,8 +1,4 @@
 User-agent: *
-Disallow: /autodiscover/
-Disallow: /img/
-Disallow: /signature/
-Disallow: /app/
 Disallow: /2013/*.jpg$/
 Disallow: /2014/*.jpg$/
 Disallow: /2015/*.jpg$/
@@ -15,3 +11,11 @@ Disallow: /2015/thumbnails/
 Disallow: /2016/thumbnails/
 Disallow: /2017/thumbnails/
 Disallow: /2018/thumbnails/
+Disallow: /app/
+Disallow: /autodiscover/
+Disallow: /css/
+Disallow: /font/
+Disallow: /img/
+Disallow: /js/
+Disallow: /signature/
+Disallow: /webfonts/

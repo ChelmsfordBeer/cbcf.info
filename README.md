@@ -11,12 +11,12 @@ This repo hosts the summer and winter festival websites as well as the holding w
 
 ## Update lifecycle
 
-Due to the way our festivals are scheduled, each year we change the website content between our Winter and Summer festivals:
+Due to the way our festivals are scheduled, each year we change the website content between our Winter and Summer festivals - work for this happens between the following times:
 
 - November to February - Winter Festival.
 - April to August - Summer Festival.
 
-Outside of these times the website will be put in "holding".
+Outside of these times the website will be put in "holding" and main development work on the site tends to stop.
 
 Please note that the timescales above are a rough guide.
 
@@ -31,4 +31,4 @@ Should you find something wrong with either our source code or website content, 
 
 -  <network@cbcf.info> or <webmaster@cbcf.info>.
 
--  During festival week, a contact number will be displayed here...
+-  During festival week, a contact number will be displayed here for emergency content change requests...
