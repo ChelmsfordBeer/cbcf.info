@@ -320,7 +320,19 @@
         keys: true,
         responsive: true,
         stateSave: true,
-        "ajax": './list.json'
+        "ajax": {
+            "url": "./list.json",
+            "dataSrc": ""
+        },
+        "columns": [
+            { "data": "Drink Name" },
+            { "data": "Brewery" },
+            { "data": "Location" },
+            { "data": "ABV (%)" },
+            { "data": "Gluten Free?" },
+            { "data": "Vegan?" },
+            { "data": "Available at" }
+        ]
       });
 
       $('#table tbody').on('click', 'tr', function() {
