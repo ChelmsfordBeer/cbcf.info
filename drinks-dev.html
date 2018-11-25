@@ -242,28 +242,65 @@
         <a class="nav-link" id="cider-list-button" data-toggle="pill" href="#cider-list" role="tab" aria-controls="cider-list" aria-selected="false">Cider</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" id="brewery-list-button" data-toggle="pill" href="#brewery-list" role="tab" aria-controls="brewery-list" aria-selected="false">Brewery Bars</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" id="keykeg-list-button" data-toggle="pill" href="#keykeg-list" role="tab" aria-controls="keykeg-list" aria-selected="false">Keykeg</a>
       </li>
     </ul>
     <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="beer-list" role="tabpanel" aria-labelledby="beer-list-button">Beer list here</div>
-      <div class="tab-pane fade" id="cider-list" role="tabpanel" aria-labelledby="cider-list-button">
-        <table id="table" class="display" style="width:100%">
+      <div class="tab-pane fade show active" id="beer-list" role="tabpanel" aria-labelledby="beer-list-button">
+        <table id="table-beer" class="display" style="width:100%">
           <thead>
             <tr>
               <td><b>Drink Name</b></td>
-              <td><b>Brewery/Producer</b></td>
+              <td><b>Style</b></td>
+              <td><b>Brewery</b></td>
               <td><b>Location</b></td>
               <td><b>ABV (%)</b></td>
-              <td><b>Style</b></td>
-              <td><b>Gluten Free?</b></td>
-              <td><b>Vegan?</b></td>
-              <td><b>Available at</b></td>
             </tr>
           </thead>
         </table>
       </div>
-      <div class="tab-pane fade" id="keykeg-list" role="tabpanel" aria-labelledby="keykeg-list-button">...</div>
+      <div class="tab-pane fade" id="cider-list" role="tabpanel" aria-labelledby="cider-list-button">
+        <table id="table-cider" class="display" style="width:100%">
+          <thead>
+            <tr>
+              <td><b>Drink Name</b></td>
+              <td><b>Style</b></td>
+              <td><b>Producer</b></td>
+              <td><b>Location</b></td>
+              <td><b>ABV (%)</b></td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tab-pane fade" id="keykeg-list" role="tabpanel" aria-labelledby="keykeg-list-button">
+        <table id="table-keykeg" class="display" style="width:100%">
+          <thead>
+            <tr>
+              <td><b>Drink Name</b></td>
+              <td><b>Style</b></td>
+              <td><b>Brewery</b></td>
+              <td><b>Location</b></td>
+              <td><b>ABV (%)</b></td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tab-pane fade" id="brewery-list" role="tabpanel" aria-labelledby="brewery-list-button">
+        <table id="table-brewery" class="display" style="width:100%">
+          <thead>
+            <tr>
+              <td><b>Drink Name</b></td>
+              <td><b>Style</b></td>
+              <td><b>Brewery</b></td>
+              <td><b>Location</b></td>
+              <td><b>ABV (%)</b></td>
+            </tr>
+          </thead>
+        </table>
+      </div>
     </div>
 
   </div>
@@ -327,8 +364,8 @@
   <!-- Datatables Config -->
   <script nonce="fUoyKEcubmAsaFdqLVFIZQ==">
     $(document).ready(function() {
-      $('#table').DataTable({
-        order: ([8, 'asc'], [2, 'asc'], [1, 'asc']),
+      $('#table-beer').DataTable({
+        order: ([3, 'asc'], [1, 'asc']),
         dom: 'Bfrtip',
         buttons: [
           'excel',
@@ -337,11 +374,14 @@
         responsive: true,
         stateSave: false,
         "ajax": {
-          "url": "./list.json",
+          "url": "./listings/beer.json",
           "dataSrc": ""
         },
         "columns": [{
             "data": "Drink Name"
+          },
+          {
+            "data": "Style"
           },
           {
             "data": "Brewery"
@@ -351,24 +391,98 @@
           },
           {
             "data": "ABV (%)"
+          }
+        ]
+      });
+      $('#table-cider').DataTable({
+        order: ([3, 'asc'], [1, 'asc']),
+        dom: 'Bfrtip',
+        buttons: [
+          'excel',
+          'print'
+        ],
+        responsive: true,
+        stateSave: false,
+        "ajax": {
+          "url": "./listings/cider.json",
+          "dataSrc": ""
+        },
+        "columns": [{
+            "data": "Drink Name"
           },
           {
             "data": "Style"
           },
           {
-            "data": "Gluten Free?"
+            "data": "Producer"
           },
           {
-            "data": "Vegan?"
+            "data": "Location"
           },
           {
-            "data": "Available at"
+            "data": "ABV (%)"
           }
         ]
       });
-
-      $('#table tbody').on('click', 'tr', function() {
-        $(this).toggleClass('selected');
+      $('#table-brewery').DataTable({
+        order: ([3, 'asc'], [1, 'asc']),
+        dom: 'Bfrtip',
+        buttons: [
+          'excel',
+          'print'
+        ],
+        responsive: true,
+        stateSave: false,
+        "ajax": {
+          "url": "./listings/brewery.json",
+          "dataSrc": ""
+        },
+        "columns": [{
+            "data": "Drink Name"
+          },
+          {
+            "data": "Style"
+          },
+          {
+            "data": "Brewery"
+          },
+          {
+            "data": "Location"
+          },
+          {
+            "data": "ABV (%)"
+          }
+        ]
+      });
+      $('#table-keykeg').DataTable({
+        order: ([3, 'asc'], [1, 'asc']),
+        dom: 'Bfrtip',
+        buttons: [
+          'excel',
+          'print'
+        ],
+        responsive: true,
+        stateSave: false,
+        "ajax": {
+          "url": "./listings/keykeg.json",
+          "dataSrc": ""
+        },
+        "columns": [{
+            "data": "Drink Name"
+          },
+          {
+            "data": "Style"
+          },
+          {
+            "data": "Brewery"
+          },
+          {
+            "data": "Location"
+          },
+          {
+            "data": "ABV (%)"
+          }
+        ]
       });
     });
   </script>

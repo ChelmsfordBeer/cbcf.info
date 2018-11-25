@@ -17,5 +17,6 @@ Disallow: /css/
 Disallow: /font/
 Disallow: /img/
 Disallow: /js/
+Disallow: /listings/
 Disallow: /signature/
 Disallow: /webfonts/
