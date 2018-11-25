@@ -311,13 +311,12 @@
   <script nonce="fUoyKEcubmAsaFdqLVFIZQ==">
     $(document).ready(function() {
       $('#table').DataTable({
-        order: ([2, 'asc'], [1, 'asc']),
+        order: ([8, 'asc'], [2, 'asc'], [1, 'asc']),
         dom: 'Bfrtip',
         buttons: [
           'excel',
           'print'
         ],
-        keys: true,
         responsive: true,
         stateSave: true,
         "ajax": {
