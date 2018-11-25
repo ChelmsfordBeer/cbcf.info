@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+  <!-- Only for this page -->
+  <meta name="robots" content="noindex" />
+
   <!-- Properties to update per page -->
   <title>Contact Us | Chelmsford Beer &amp; Cider Festivals</title>
   <meta property="og:title" content="Contact Us | Chelmsford Beer & Cider Festivals">
@@ -14,7 +17,7 @@
   <meta property="og:url" content="https://cbcf.info/contact">
 
   <!-- Font Awesome -->
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous">
 
   <!-- Bootstrap core CSS -->
   <link href="./css/bootstrap.css" rel="stylesheet">
@@ -194,7 +197,8 @@
             <hr>
             <li class="nav-item">
               <a class="nav-link hoverable d-none d-lg-block" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Facebook page</span></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Facebook page</span></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Facebook
+                  page</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link hoverable d-none d-lg-block" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Twitter page</span></a>
@@ -205,12 +209,16 @@
               <a class="nav-link hoverable d-block d-lg-none" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Facebook page</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Snapchat account</span></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Snapchat account</span></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Snapchat
+                  account</span></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals
+                  Snapchat account</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals YouTube channel</span></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals YouTube channel</span></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals YouTube
+                  channel</span></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals
+                  YouTube channel</span></a>
             </li>
           </ul>
         </div>
@@ -350,6 +358,17 @@
   <!--/.Footer-->
 
   <!-- SCRIPTS -->
+
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.29.1/dist/sweetalert2.all.min.js" integrity="sha256-sPAIQlZYcmYHwS/pOLExnBqdh7rnChqDpGsHZVHR+YI=" crossorigin="anonymous"></script>
+  <script nonce="cCthNn1oX31KfkpMJ2cmRg==">
+    swal({
+      title: 'Thanks for your message!',
+      text: 'We will reply to you as soon as we can!',
+      type: 'success',
+      confirmButtonText: 'Cool'
+    })
+  </script>
 
   <!-- JQuery -->
   <script type="text/javascript" src="./js/jquery.min.js"></script>
