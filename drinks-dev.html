@@ -131,6 +131,17 @@
     .cbcf-purple-light {
       background-color: #1F284B;
     }
+
+    .nav-pills .nav-item .nav-Links:hover,
+    .nav-pills .nav-item .nav-Links:active,
+    .nav-pills .nav-item .nav-Links:focus {
+      background-color: #673BB5;
+      color: #fff;
+    }
+
+    .nav-pills .nav-item .nav-Links {
+      background-color: #232D53;
+    }
   </style>
 
   <!-- Datatables CSS -->
@@ -233,7 +244,7 @@
 
 
   <div class="container">
-
+    <br>
     <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" id="beer-list-button" data-toggle="pill" href="#beer-list" role="tab" aria-controls="beer-list" aria-selected="true">Beer</a>
@@ -248,6 +259,7 @@
         <a class="nav-link" id="keykeg-list-button" data-toggle="pill" href="#keykeg-list" role="tab" aria-controls="keykeg-list" aria-selected="false">Keykeg</a>
       </li>
     </ul>
+    <br>
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade show active" id="beer-list" role="tabpanel" aria-labelledby="beer-list-button">
         <table id="table-beer" class="display" style="width:100%">
