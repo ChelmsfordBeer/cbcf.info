@@ -6,37 +6,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="canonical" href="https://cbcf.info/volunteer" />
 
-  <!-- icon in the highest resolution we need it for -->
-  <link rel="icon" sizes="192x192" href="./img/icon.png">
-
-  <!-- reuse same icon for Safari -->
-  <link rel="apple-touch-icon" href="./img/icon.png">
-  <link rel="apple-touch-startup-image" href="./img/icon.png">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Chelmsford Beer">
-
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#006393">
-
+  <!-- Properties to update per page -->
   <title>Volunteer | Chelmsford Beer &amp; Cider Festivals</title>
-  <meta name="description" content="Chelmsford Summer Beer & Cider Festival 2018 - 10th-14th July 2018 at Admirals Park, Rainsford Road, Chelmsford, CM1 2PL" />
-
-  <meta property="og:title" content="Love Beer? Volunteer!">
-  <meta property="og:description" content="Chelmsford Beer & Cider Festivals - Chelmsford & Mid-Essex CAMRA">
-  <meta property="og:image" content="https://cbcf.info/img/banner.jpg">
+  <meta property="og:title" content="Volunteer | Chelmsford Beer & Cider Festivals">
+  <link rel="canonical" href="https://cbcf.info/volunteer" />
   <meta property="og:url" content="https://cbcf.info/volunteer">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="og:site_name" content="Chelmsford Beer & Cider Festivals">
-  <meta name="twitter:image:alt" content="Chelmsford Beer & Cider Festivals - Chelmsford & Mid-Essex CAMRA">
-  <meta name="twitter:site" content="@ChelmsfordBEER">
-
-  <link rel="manifest" href="./manifest.json">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="./css/fontawesome-all.css" media="all">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous">
 
   <!-- Bootstrap core CSS -->
   <link href="./css/bootstrap.css" rel="stylesheet">
@@ -47,13 +25,29 @@
 
   <!-- Template styles -->
   <style>
+    .flex-center {
+      color: #fff;
+    }
+
     body,
     html {
       height: 100%;
     }
 
-    .flex-center {
-      color: #fff;
+   .header-page {
+      background: #242E54;
+      height: 40%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .intro-1 {
+      background: #242E54;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     }
 
     .nav-item a:hover {
@@ -80,7 +74,7 @@
 
     @media only screen and (max-width: 767px) {
       .navbar {
-        background-color: #006393;
+        background-color: #242E54;
       }
       .display-3 {
         font-size: 2rem;
@@ -94,70 +88,116 @@
     .dropdown .dropdown-menu .dropdown-item:hover,
     .dropdown .dropdown-menu .dropdown-item:active,
     .dropdown .dropdown-menu .dropdown-item:focus {
-      color: #1d1e1f;
-      background-color: #1DADE2;
+      color: #1E274A;
+      background-color: #1E274A;
+    }
+
+    @media only screen and (max-width: 334px) {
+      .navbar-brand {
+        display: none;
+      }
+      .cbcf-normal {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: 335px) {
+      .navbar-brand-sm {
+        display: none;
+      }
+      .cbcf-sm {
+        display: none;
+      }
+    }
+
+    .cbcf-purple {
+      background-color: #232D53;
+    }
+
+    .cbcf-purple-light {
+      background-color: #1F284B;
     }
   </style>
 
 </head>
 
 <body>
-
   <header>
-
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark unique-color-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="./home">
-                    <strong class="d-block d-sm-none">Chelmsford Beer Festivals</strong><strong class="d-none d-sm-block">Chelmsford Beer &amp; Cider Festivals</strong>
-                </a>
+          <strong class="d-block d-sm-none">Chelmsford Beer Festivals</strong><strong class="d-none d-sm-block">Chelmsford Beer &amp; Cider Festivals</strong>
+        </a>
+        <a class="navbar-brand-sm" href="./home">
+          <strong>CBCF</strong>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="animated-icon4"><span></span><span></span><span></span></div>
-                </button>
+          <div class="animated-icon3"><span></span><span></span><span></span><span></span></div>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <!-- Desktop Navlinks -->
             <li class="nav-item">
-              <a class="nav-link hoverable" href="./home" rel="nofollow">Home</a>
+              <a class="nav-link hoverable" href="./home">Home</a>
             </li>
+            <!-- Drink Lists -->
             <li class="nav-item">
-              <a class="nav-link hoverable" href="./gallery/" rel="nofollow">Gallery</a>
+              <a class="nav-link hoverable" href="./drinks">Drink Lists</a>
+            </li>
+            <!-- Travel Info -->
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="./travel">Travel Info</a>
+            </li>
+            <!-- FAQs -->
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="./faqs">FAQs</a>
             </li>
             <!-- Volunteer -->
             <li class="nav-item">
-              <a class="nav-link hoverable" href="./volunteer" rel="nofollow">Volunteer</a>
+              <a class="nav-link hoverable" href="./volunteer">Volunteer</a>
             </li>
-            <!-- About the Festival Dropdown -->
+            <!-- About CBCF Dropdown -->
             <li class="nav-item dropdown">
               <a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
               <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item hoverable" href="./history">Our History</a>
-                <a class="dropdown-item hoverable" href="./contact">Contact Us</a>
-                <a class="dropdown-item hoverable" href="//www.chelmsford.camra.org.uk/">Chelmsford &amp; Mid Essex CAMRA</a>
+                <a class="dropdown-item" href="./archive">Previous Festivals</a>
+                <a class="dropdown-item" href="./history">Our History</a>
+                <a class="dropdown-item" href="./contact">Contact Us</a>
+                <a class="dropdown-item" href="//www.chelmsford.camra.org.uk/" rel="nofollow">Chelmsford &amp; Mid Essex CAMRA</a>
               </div>
             </li>
           </ul>
-          <ul class="navbar-nav ml-auto nav-flex-icons">
+          <ul class="navbar-nav ml-auto nav-flex-icons" aria-hidden="true">
             <!-- Social Links -->
             <span class="navbar-text white-text d-block d-lg-none" style="padding-left: 6px;">
-							Follow us on social media!
-						</span>
+              <strong>Follow us on social media!</strong>
+            </span>
             <hr>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square"></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square fa-2x"></i></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Facebook page</span></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Facebook
+                  page</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter"></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter fa-2x"></i></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Twitter page</span></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Twitter page</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram"></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram fa-2x"></i></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Instagram page</span></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Facebook page</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost"></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost fa-2x"></i></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Snapchat
+                  account</span></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals
+                  Snapchat account</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals YouTube
+                  channel</span></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals
+                  YouTube channel</span></a>
             </li>
           </ul>
         </div>
@@ -177,16 +217,16 @@
         <!--Featured image -->
         <div class="view overlay hm-white-light z-depth-1-half d-block d-md-none">
           <picture>
-            <source srcset="img/volunteer/volunteer-wide.webp" type="image/webp">
-            <source srcset="img/volunteer/volunteer-wide.png" type="image/png">
-            <img class="img-fluid" src="img/volunteer/volunteer-wide.png" alt="Volunteers from 2017">
+            <source srcset="./img/volunteer/volunteer-wide.webp" type="image/webp">
+            <source srcset="./img/volunteer/volunteer-wide.png" type="image/png">
+            <img class="img-fluid" src="./img/volunteer/volunteer-wide.png" alt="Volunteers from 2017">
           </picture>
         </div>
         <div class="view overlay hm-white-light d-none d-md-block">
           <picture>
-            <source srcset="img/volunteer/volunteer-grid.webp" type="image/webp">
-            <source srcset="img/volunteer/volunteer-grid.png" type="image/png">
-            <img class="img-fluid" src="img/volunteer/volunteer-grid.png" alt="Volunteers from 2017">
+            <source srcset="./img/volunteer/volunteer-grid.webp" type="image/webp">
+            <source srcset="./img/volunteer/volunteer-grid.png" type="image/png">
+            <img class="img-fluid" src="./img/volunteer/volunteer-grid.png" alt="Volunteers from 2017">
           </picture>
         </div>
         <br>
@@ -197,10 +237,10 @@
         <h1 class="h2-responsive font-bold dark-grey-text" style="text-align: center;">Love Beer? Volunteer!</h1>
         <hr>
         <strong class="dark-grey-text mt-3">As long as you are over the age of 18, your help is welcomed.<br><br>
-							You do not need to be a member of CAMRA (the Campaign for Real Ale) to volunteer, or even to like beer!<br><br>
-							We have roles in many different areas for all abilities.<br><br>
-							All we really need is enthusiasm and your time.</strong><br><br>
-        <center><a href="#whyvolunteer" class="btn btn-lg btn-indigo">What's in it for me?&nbsp;<i class="far fa-arrow-circle-down"></i></a></center>
+          You do not need to be a member of CAMRA (the Campaign for Real Ale) to volunteer, or even to like beer!<br><br>
+          We have roles in many different areas for all abilities.<br><br>
+          All we really need is enthusiasm and your time.</strong><br><br>
+        <center><a href="#whyvolunteer" class="btn btn-lg btn-indigo">What's in it for me?&nbsp;<i class="far fa-arrow-circle-down" aria-hidden="true"></i></a></center>
       </div>
     </div>
     <!--/.First row-->
@@ -208,29 +248,29 @@
 
   <!-- Main Container-->
   <div class="container" id="content">
-    <div class="divider-new pt-5" id="whyvolunteer">
-      <h2 class="h2-responsive black-text mx-4 font-bold wow fadeIn">Why Volunteer?</h2>
+    <div class="divider-new pt-5">
+      <h2 class="h2-responsive black-text mx-4 font-bold wow fadeIn" id="whyvolunteer">Why Volunteer?</h2>
     </div>
     <!--Why Volunteer Row-->
     <div class="row mt-5 pt-4">
       <!--First columnn-->
       <div class="col-lg-4">
         <!--Card-->
-        <div class="card mb-r wow fadeIn hoverable" data-wow-delay="0.2s">
+        <div class="card mb-r hoverable">
 
           <!--Card image-->
           <picture>
-            <source srcset="img/volunteer/1.webp" type="image/webp">
-            <source srcset="img/volunteer/1.jpg" type="image/jpeg">
-            <img class="img-fluid" src="img/volunteer/1.jpg" alt="Volunteers from 2017">
+            <source srcset="./img/volunteer/1.webp" type="image/webp">
+            <source srcset="./img/volunteer/1.jpg" type="image/jpeg">
+            <img class="img-fluid" src="./img/volunteer/1.jpg" alt="Volunteers at Summer 2016 Festival stage tent" height="300px">
           </picture>
 
           <!--Card content-->
           <div class="card-body">
             <!--Title-->
             <h4 class="card-title" style="text-align: center;">
-                                <strong>In return for your time you’ll get free beer and cider and be fed when you're working</strong>
-                            </h4>
+              <strong>In return for your time you’ll get free beer and cider and be fed when you're working</strong>
+            </h4>
           </div>
 
         </div>
@@ -241,21 +281,21 @@
       <!--Second columnn-->
       <div class="col-lg-4">
         <!--Card-->
-        <div class="card mb-r wow fadeIn hoverable" data-wow-delay="0.4s">
+        <div class="card mb-r hoverable">
 
           <!--Card image-->
           <picture>
-            <source srcset="img/volunteer/2.webp" type="image/webp">
-            <source srcset="img/volunteer/2.jpg" type="image/jpeg">
-            <img class="img-fluid" src="img/volunteer/2.jpg" alt="Volunteers from 2017">
+            <source srcset="./img/volunteer/2.webp" type="image/webp">
+            <source srcset="./img/volunteer/2.jpg" type="image/jpeg">
+            <img class="img-fluid" src="./img/volunteer/2.jpg" alt="Volunteers at the Winter 2018 Festival" height="300px">
           </picture>
 
           <!--Card content-->
           <div class="card-body">
             <!--Title-->
             <h4 class="card-title" style="text-align: center;">
-                                <strong>You will also get a volunteer souvenir shirt to wear after working 8 hours or more</strong>
-                            </h4>
+              <strong>You will also get a volunteer souvenir shirt to wear after working 8 hours or more</strong>
+            </h4>
           </div>
 
         </div>
@@ -267,21 +307,21 @@
       <!--Third columnn-->
       <div class="col-lg-4">
         <!--Card-->
-        <div class="card wow fadeIn hoverable" data-wow-delay="0.6s">
+        <div class="card hoverable">
 
           <!--Card image-->
           <picture>
-            <source srcset="img/volunteer/3.webp" type="image/webp">
-            <source srcset="img/volunteer/3.jpg" type="image/jpeg">
-            <img class="img-fluid" src="img/volunteer/3.jpg" alt="Volunteers from 2017">
+            <source srcset="./img/volunteer/3.webp" type="image/webp">
+            <source srcset="./img/volunteer/3.jpg" type="image/jpeg">
+            <img class="img-fluid" src="./img/volunteer/3.jpg" alt="Cider Bar Team for Winter 2018 Festival" height="300px">
           </picture>
 
           <!--Card content-->
           <div class="card-body">
             <!--Title-->
             <h4 class="card-title" style="text-align: center;">
-                                <strong>Be part of a team who produce one of the top UK beer and cider festivals</strong>
-                            </h4>
+              <strong>Be part of a team who produce one of the top UK beer and cider festivals</strong>
+            </h4>
           </div>
 
         </div>
@@ -290,11 +330,13 @@
       <!--Third columnn-->
     </div>
     <!--/.Why Volunteer Row-->
-    <br>
-    <center><a class="btn btn-lg btn-indigo wow fadeIn" data-wow-delay="0.2s" href="#roles">What do volunteers do?&nbsp;<i class="far fa-arrow-circle-down"></i></a></center>
 
-    <div class="divider-new pt-5" id="roles">
-      <h2 class="h2-responsive black-text mx-4 font-bold wow fadeIn">Volunteer Roles</h2>
+    <br class="d-block d-md-none">
+    <br class="d-block d-md-none">
+    <center><a class="btn btn-lg btn-indigo" href="#roles">What do volunteers do?&nbsp;<i class="far fa-arrow-circle-down" aria-hidden="true"></i></a></center>
+
+    <div class="divider-new pt-5">
+      <h2 class="h2-responsive black-text mx-4 font-bold" id="roles">Volunteer Roles</h2>
     </div>
 
     <!-- Roles row -->
@@ -305,15 +347,16 @@
 
         <!--Panel-->
         <div class="card card-body text-left white hoverable">
-          <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
+          <p class="feature-title title font-bold font-up spacing mt-4 mx-4">
             <span class="fa-stack mr-2" aria-hidden="true">
-							  <i class="fas fa-square fa-stack-2x indigo-text"></i>
-							  <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
-							</span>
+              <i class="fas fa-square fa-stack-2x indigo-text"></i>
+              <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
+            </span>
             <strong>Build and Takedown</strong>
           </p>
-          <p class="grey-text font-small mx-4">
-            During set up, duties include putting up fences, installing cooling equipment, installing signs, taking deliveries, erecting stillage and scaffolding, running cables and pipes, installing lights, putting out tables and chairs, racking up the beer/cider.
+          <p class="dark-grey-text font-small mx-4">
+            During set up, duties include putting up fences, installing cooling equipment, installing signs, taking deliveries, erecting stillage and scaffolding, running cables and pipes, installing lights, putting out tables and chairs, racking up
+            the beer/cider.
             During take down, duties include dismantling and clearing the site after the festival, including a final litter pick.
           </p>
         </div>
@@ -327,14 +370,14 @@
 
         <!--Panel-->
         <div class="card card-body text-left white hoverable">
-          <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
+          <p class="feature-title title font-bold font-up spacing mt-4 mx-4">
             <span class="fa-stack mr-2" aria-hidden="true">
-							  <i class="fas fa-square fa-stack-2x indigo-text"></i>
-							  <i class="fas fa-snowflake fa-stack-1x fa-inverse"></i>
-							</span>
+              <i class="fas fa-square fa-stack-2x indigo-text"></i>
+              <i class="fas fa-snowflake fa-stack-1x fa-inverse"></i>
+            </span>
             <strong>Cooling Team</strong>
           </p>
-          <p class="grey-text font-small mx-4">
+          <p class="dark-grey-text font-small mx-4">
             Installing the CAMRA cooling systems on both the cider and beer bars. If you don’t have prior experience full training will be given. This does include checking the systems are functioning correctly during the festival week.
           </p>
         </div>
@@ -348,14 +391,14 @@
 
         <!--Panel-->
         <div class="card card-body text-left white hoverable">
-          <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
+          <p class="feature-title title font-bold font-up spacing mt-4 mx-4">
             <span class="fa-stack mr-2" aria-hidden="true">
-							  <i class="fas fa-square fa-stack-2x indigo-text"></i>
-							  <i class="fas fa-glass-martini fa-stack-1x fa-inverse"></i>
-							</span>
+              <i class="fas fa-square fa-stack-2x indigo-text"></i>
+              <i class="fas fa-glass-martini fa-stack-1x fa-inverse"></i>
+            </span>
             <strong>Entrance and Glasses</strong>
           </p>
-          <p class="grey-text font-small mx-4">
+          <p class="dark-grey-text font-small mx-4">
             This team welcomes our customers, takes their entrance money and deposits for glasses. They also hand out glasses, load and unload the dishwashers, give back deposits for any glasses that are returned, and say goodbye to the customers.
           </p>
         </div>
@@ -369,14 +412,14 @@
 
         <!--Panel-->
         <div class="card card-body text-left white hoverable">
-          <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
+          <p class="feature-title title font-bold font-up spacing mt-4 mx-4">
             <span class="fa-stack mr-2" aria-hidden="true">
-							  <i class="fas fa-square fa-stack-2x indigo-text"></i>
-							  <i class="fas fa-info fa-stack-1x fa-inverse"></i>
-							</span>
+              <i class="fas fa-square fa-stack-2x indigo-text"></i>
+              <i class="fas fa-info fa-stack-1x fa-inverse"></i>
+            </span>
             <strong>Information &amp; Membership</strong>
           </p>
-          <p class="grey-text font-small mx-4">
+          <p class="dark-grey-text font-small mx-4">
             This team encourages our customers to join CAMRA, processes memberships and answers questions about the festival.
           </p>
         </div>
@@ -390,14 +433,14 @@
 
         <!--Panel-->
         <div class="card card-body text-left white hoverable">
-          <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
+          <p class="feature-title title font-bold font-up spacing mt-4 mx-4">
             <span class="fa-stack mr-2" aria-hidden="true">
-							  <i class="fas fa-square fa-stack-2x indigo-text"></i>
-							  <i class="fas fa-beer fa-stack-1x fa-inverse"></i>
-							</span>
+              <i class="fas fa-square fa-stack-2x indigo-text"></i>
+              <i class="fas fa-beer fa-stack-1x fa-inverse"></i>
+            </span>
             <strong>Beer, Cider and Keykeg Bars</strong>
           </p>
-          <p class="grey-text font-small mx-4">
+          <p class="dark-grey-text font-small mx-4">
             This may be what you first think of when you think about volunteering at the festival. This is the team that serves the drinks, helps the customers with their selection and takes their money.
           </p>
         </div>
@@ -411,14 +454,14 @@
 
         <!--Panel-->
         <div class="card card-body text-left white hoverable">
-          <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
+          <p class="feature-title title font-bold font-up spacing mt-4 mx-4">
             <span class="fa-stack mr-2" aria-hidden="true">
-							  <i class="fas fa-square fa-stack-2x indigo-text"></i>
-							  <i class="fas fa-beer fa-stack-1x fa-inverse"></i>
-							</span>
+              <i class="fas fa-square fa-stack-2x indigo-text"></i>
+              <i class="fas fa-beer fa-stack-1x fa-inverse"></i>
+            </span>
             <strong>Beer, Cider and Keykeg Cellars</strong>
           </p>
-          <p class="grey-text font-small mx-4">
+          <p class="dark-grey-text font-small mx-4">
             This team ensures the products are ready for sale, checks cooling, moves casks, and manages the stock.
           </p>
         </div>
@@ -432,14 +475,14 @@
 
         <!--Panel-->
         <div class="card card-body text-left white hoverable">
-          <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
+          <p class="feature-title title font-bold font-up spacing mt-4 mx-4">
             <span class="fa-stack mr-2" aria-hidden="true">
-							  <i class="fas fa-square fa-stack-2x indigo-text"></i>
-							  <i class="fas fa-money-bill fa-stack-1x fa-inverse"></i>
-							</span>
+              <i class="fas fa-square fa-stack-2x indigo-text"></i>
+              <i class="fas fa-money-bill fa-stack-1x fa-inverse"></i>
+            </span>
             <strong>Finance</strong>
           </p>
-          <p class="grey-text font-small mx-4">
+          <p class="dark-grey-text font-small mx-4">
             The finance team moves money from tills to the finance office, counts the cash and does some accounting routines.
           </p>
         </div>
@@ -453,15 +496,16 @@
 
         <!--Panel-->
         <div class="card card-body text-left white hoverable">
-          <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
+          <p class="feature-title title font-bold font-up spacing mt-4 mx-4">
             <span class="fa-stack mr-2" aria-hidden="true">
-							  <i class="fas fa-square fa-stack-2x indigo-text"></i>
-							  <i class="fas fa-cog fa-stack-1x fa-inverse"></i>
-							</span>
+              <i class="fas fa-square fa-stack-2x indigo-text"></i>
+              <i class="fas fa-cog fa-stack-1x fa-inverse"></i>
+            </span>
             <strong>Operations and Maintenance</strong>
           </p>
-          <p class="grey-text font-small mx-4">
-            This team does everything from taking deliveries to fixing broken toilet seats! (You are not expected to clean the toilets) They check power supplies, fix leaks, move barriers, man the service entrance and are involved in opening and closing the site.
+          <p class="dark-grey-text font-small mx-4">
+            This team does everything from taking deliveries to fixing broken toilet seats! (You are not expected to clean the toilets) They check power supplies, fix leaks, move barriers, man the service entrance and are involved in opening and
+            closing the site.
           </p>
         </div>
         <!--/.Panel-->
@@ -474,14 +518,14 @@
 
         <!--Panel-->
         <div class="card card-body text-left white hoverable">
-          <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
+          <p class="feature-title title font-bold font-up spacing mt-4 mx-4">
             <span class="fa-stack mr-2" aria-hidden="true">
-							  <i class="fas fa-square fa-stack-2x indigo-text"></i>
-							  <i class="fas fa-trash-alt fa-stack-1x fa-inverse"></i>
-							</span>
+              <i class="fas fa-square fa-stack-2x indigo-text"></i>
+              <i class="fas fa-trash-alt fa-stack-1x fa-inverse"></i>
+            </span>
             <strong>Litter Picking and Waste Management</strong>
           </p>
-          <p class="grey-text font-small mx-4">
+          <p class="dark-grey-text font-small mx-4">
             The festival generates a lot of rubbish, and this team keeps on top of it, ensuring the site is kept clean. This includes moving around bins, litter picking, cleaning tables. Please note volunteers are not required to clean toilets.
           </p>
         </div>
@@ -495,15 +539,16 @@
 
         <!--Panel-->
         <div class="card card-body text-left white hoverable">
-          <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
+          <p class="feature-title title font-bold font-up spacing mt-4 mx-4">
             <span class="fa-stack mr-2" aria-hidden="true">
-							  <i class="fas fa-square fa-stack-2x indigo-text"></i>
-							  <i class="fas fa-users fa-stack-1x fa-inverse"></i>
-							</span>
+              <i class="fas fa-square fa-stack-2x indigo-text"></i>
+              <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+            </span>
             <strong>Volunteer Reception</strong>
           </p>
-          <p class="grey-text font-small mx-4">
-            We treasure our volunteers and need smiley cheery people to welcome them into the festival at the Volunteer Reception, allocate volunteers to areas, hand out food tokens and shirts as well as being a listening ear and helping hand for any volunteer problems
+          <p class="dark-grey-text font-small mx-4">
+            We treasure our volunteers and need smiley cheery people to welcome them into the festival at the Volunteer Reception, allocate volunteers to areas, hand out food tokens and shirts as well as being a listening ear and helping hand for
+            any volunteer problems
             which may arise.
           </p>
         </div>
@@ -517,16 +562,17 @@
 
         <!--Panel-->
         <div class="card card-body text-left white hoverable">
-          <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
+          <p class="feature-title title font-bold font-up spacing mt-4 mx-4">
             <span class="fa-stack mr-2" aria-hidden="true">
-							  <i class="fas fa-square fa-stack-2x indigo-text"></i>
-							  <i class="fas fa-star fa-stack-1x fa-inverse"></i>
-							</span>
+              <i class="fas fa-square fa-stack-2x indigo-text"></i>
+              <i class="fas fa-star fa-stack-1x fa-inverse"></i>
+            </span>
             <strong>We're looking for someone like you (yes you!)</strong>
           </p>
-          <p class="grey-text font-small mx-4">
+          <p class="dark-grey-text font-small mx-4">
             As well as the roles outlined above, we are always on the lookout for anyone willing to use their existing skills or who may be interested in gaining new skills with us. We are currently seeking volunteers with skills in:
-            <br><br> Telehandlers <i class="fal fa-hand-paper"></i> / Finance <i class="fal fa-credit-card"></i> / Electricians <i class="fal fa-bolt"></i> / Plumbers <i class="fal fa-tint"></i> / Personnel Section Managers <i class="fal fa-users"></i>            / Scissor Lift Operators <i class="fal fa-cut"></i> / Corporate Hospitality Coordinator <i class="fal fa-map-marker"></i> / Education Programme Coordinator <i class="fal fa-graduation-cap"></i> / Administrator <i class="fal fa-paperclip"></i>
+            <br><br> Telehandlers <i class="fal fa-hand-paper" aria-hidden="true"></i> / Finance <i class="fal fa-credit-card" aria-hidden="true"></i> / Electricians <i class="fal fa-bolt" aria-hidden="true"></i> / Plumbers <i class="fal fa-tint" aria-hidden="true"></i> / Personnel Section Managers <i class="fal fa-users" aria-hidden="true"></i>
+            / Scissor Lift Operators <i class="fal fa-cut" aria-hidden="true"></i> / Corporate Hospitality Coordinator <i class="fal fa-map-marker" aria-hidden="true"></i> / Education Programme Coordinator <i class="fal fa-graduation-cap" aria-hidden="true"></i> / Administrator <i class="fal fa-paperclip" aria-hidden="true"></i>
           </p>
         </div>
         <!--/.Panel-->
@@ -536,49 +582,49 @@
 
     </div>
     <!-- /.Roles row -->
-    <br>
+    <br class="d-block d-md-none">
     <center>
-      <a class="btn btn-lg btn-indigo" href="#signup">Where do I sign up?&nbsp;<i class="far fa-arrow-circle-down"></i></a>
-      <a class="btn btn-lg btn-primary" href="faq#volunteer">Have some questions?&nbsp;<i class="far fa-info-circle"></i></a>
+      <a class="btn btn-lg btn-indigo" href="#signup">Where do I sign up?&nbsp;<i class="far fa-arrow-circle-down" aria-hidden="true"></i></a>
+      <a class="btn btn-lg btn-deep-purple" href="faqs#volunteer">Have some questions?&nbsp;<i class="far fa-info-circle" aria-hidden="true"></i></a>
     </center>
 
-    <div class="divider-new pt-5" id="signup">
-      <h2 class="h2-responsive black-text mx-4 font-bold wow fadeIn">Becoming a volunteer</h2>
+    <div class="divider-new pt-5">
+      <h2 class="h2-responsive black-text mx-4 font-bold" id="signup">Becoming a volunteer</h2>
     </div>
 
-    <div class="jumbotron wow bounceInUp hoverable" id="jumbo">
-      <h1 class="h1-responsive"><center><strong>We're looking for Volunteers for 2019...</strong></center></h1>
+    <div class="jumbotron wow fadeIn hoverable" id="jumbo">
+      <h1 class="h1-responsive">
+        <center><strong>We're looking for Volunteers for 2019...</strong></center>
+      </h1>
       <br>
       <!--Grid row-->
       <div class="row text-center">
 
         <!--Grid column-->
         <div class="col-md-4 mb-r">
-          <i class="far fa-3x fa-beer"></i>
+          <i class="far fa-3x fa-beer" aria-hidden="true"></i>
           <h5 class="font-bold mt-3">As long as you are over the age of 18, your help is welcomed</h5>
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
         <div class="col-md-4 mb-r">
-          <i class="far fa-3x fa-cog"></i>
+          <i class="far fa-3x fa-cog" aria-hidden="true"></i>
           <h5 class="font-bold mt-3">We have roles in many different areas for all abilities</h5>
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
         <div class="col-md-4 mb-r">
-          <i class="far fa-3x fa-thumbs-up"></i>
+          <i class="far fa-3x fa-thumbs-up" aria-hidden="true"></i>
           <h5 class="font-bold mt-3">All we really need is enthusiasm and your time</h5>
         </div>
         <!--Grid column-->
 
       </div>
       <!--Grid row-->
-      <hr class="my-2">
-      <p>You don’t even have to be local to Chelmsford as we can offer camping, catering and showering facilities on site, and caravans are welcome too.</p>
       <center>
-        <a class="btn btn-success btn-lg" role="button" href="//volunteer.cbcf.info/" rel="nofollow">Register your interest! <i class="far fa-arrow-circle-right"></i></a>
+        <a class="btn btn-deep-purple btn-lg hoverable" role="button" href="//volunteer.cbcf.info/" rel="nofollow">Register your interest! <i class="far fa-arrow-circle-right" aria-hidden="true"></i></a>
       </center>
     </div>
 
@@ -586,33 +632,35 @@
   <!--/ Main container-->
 
   <!--Footer-->
-  <footer class="page-footer blue center-on-small-only">
+  <footer class="page-footer cbcf-purple-light center-on-small-only">
 
-    <!--Footer Links-->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <center>
-            <h5 class="title">Copyright Notice</h5>
-            <small>All rights reserved. Chelmsford Beer Festival® &amp; Chelmsford Beer &amp; Cider Festival™, Chelmsford Winter Beer &amp; Cider Festival™ &amp; Chelmsford Summer Beer &amp; Cider Festival™</small>
-            <br>
-            <small>The trademarks, logos and artwork displayed are the registered and unregistered trademarks and copyright of Campaign for Real Ale, except where third party ownership is indicated.</small>
-            <br>
-            <small>Whilst every effort is made to ensure that the information on this site is accurate and up to date, no responsibility for errors and omissions can be accepted.</small>
-            <div class="my-3"></div>
-          </center>
-        </div>
-      </div>
+    <!--Copyright Notice-->
+    <div class="col-md-12" style="text-align: center;">
+      <h5 class="title">Copyright Notice</h5>
+      <small>All rights reserved. Chelmsford Beer Festival® &amp; Chelmsford Beer &amp; Cider Festival™, Chelmsford Winter Beer &amp; Cider Festival™ &amp; Chelmsford Summer Beer &amp; Cider Festival™</small>
+      <br>
+      <small>The trademarks, logos and artwork displayed are the registered and unregistered trademarks and copyright of Campaign for Real Ale, except where third party ownership is indicated.</small>
+      <br>
+      <small>Whilst every effort is made to ensure that the information on this site is accurate and up to date, no responsibility for errors and omissions can be accepted.</small>
+      <p></p>
     </div>
-    <!--/.Footer Links-->
+    <!--/.Copyright Notice-->
 
-    <!--Copyright-->
-    <div class="footer-copyright">
+    <!--Privacy/GitHub-->
+    <div class="footer-copyright" style="background-color: #1B2343;">
       <div class="container-fluid">
         <a href="./privacy">Privacy Policy</a> | Site Design: <a href="https://github.com/tmaguire/cbcf.info">Thomas Maguire</a>
       </div>
     </div>
-    <!--/.Copyright-->
+    <!--/.Privacy/GitHub-->
+
+    <!--License-->
+    <div class="footer-copyright cbcf-purple">
+      <div class="container-fluid">
+        <p style="color: #fff;">This site is licensed under the <a href="https://github.com/tmaguire/cbcf.info/blob/master/LICENSE" rel="nofollow">Mozilla Public License 2.0</a></p>
+      </div>
+    </div>
+    <!--/License-->
 
   </footer>
   <!--/.Footer-->
@@ -647,6 +695,9 @@
 
   <!-- Smooth Scrolling -->
   <script src="./js/zenscroll-min.js"></script>
+  <script>
+    zenscroll.setup(null, 75)
+  </script>
 
   <!-- WebP Support Module -->
   <script src="./js/webp.js"></script>

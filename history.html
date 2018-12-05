@@ -6,37 +6,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="canonical" href="https://cbcf.info/history" />
 
-  <!-- icon in the highest resolution we need it for -->
-  <link rel="icon" sizes="192x192" href="./img/icon.png">
-
-  <!-- reuse same icon for Safari -->
-  <link rel="apple-touch-icon" href="./img/icon.png">
-  <link rel="apple-touch-startup-image" href="./img/icon.png">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Chelmsford Beer">
-
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#006393">
-
+  <!-- Properties to update per page -->
   <title>Our History | Chelmsford Beer &amp; Cider Festivals</title>
-  <meta name="description" content="Chelmsford Beer & Cider Festivals - Chelmsford & Mid-Essex CAMRA" />
-
-  <meta property="og:title" content="Our History">
-  <meta property="og:description" content="Chelmsford Beer & Cider Festivals - Chelmsford & Mid-Essex CAMRA">
-  <meta property="og:image" content="https://cbcf.info/img/banner.jpg">
+  <meta property="og:title" content="Our History | Chelmsford Beer & Cider Festivals">
+  <link rel="canonical" href="https://cbcf.info/history" />
   <meta property="og:url" content="https://cbcf.info/history">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="og:site_name" content="Chelmsford Beer & Cider Festivals">
-  <meta name="twitter:image:alt" content="Chelmsford Beer & Cider Festivals - Chelmsford & Mid-Essex CAMRA">
-  <meta name="twitter:site" content="@ChelmsfordBEER">
-
-  <link rel="manifest" href="./manifest.json">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="./css/fontawesome-all.css" media="all">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous">
 
   <!-- Bootstrap core CSS -->
   <link href="./css/bootstrap.css" rel="stylesheet">
@@ -47,11 +25,22 @@
 
   <!-- Template styles -->
   <style>
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 75%;
+    .navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+  }
+
+    .navbar {
+      box-shadow: none !important;
+    }
+
+    @media (max-width: 991.98px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #242E54 !important;
+      }
+    }
+
+    .flex-center {
+      color: #fff;
     }
 
     body,
@@ -59,23 +48,19 @@
       height: 100%;
     }
 
-    .flex-center {
-      color: #fff;
-    }
-
-    .webp .header-page {
-      background: url("./img/landing.webp");
+   .header-page {
+      background: #242E54;
       height: 40%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
     }
 
-    .no-webp .header-page {
-      background: url("./img/landing.png");
-      height: 50%;
-      background-position: center;
-      background-repeat: no-repeat;
+    .intro-1 {
+      background: #242E54;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
       background-size: cover;
     }
 
@@ -103,7 +88,7 @@
 
     @media only screen and (max-width: 767px) {
       .navbar {
-        background-color: #006393;
+        background-color: #242E54;
       }
       .display-3 {
         font-size: 2rem;
@@ -117,83 +102,123 @@
     .dropdown .dropdown-menu .dropdown-item:hover,
     .dropdown .dropdown-menu .dropdown-item:active,
     .dropdown .dropdown-menu .dropdown-item:focus {
-      color: #1d1e1f;
-      background-color: #1DADE2;
+      color: #1E274A;
+      background-color: #1E274A;
+    }
+
+    @media only screen and (max-width: 334px) {
+      .navbar-brand {
+        display: none;
+      }
+      .cbcf-normal {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: 335px) {
+      .navbar-brand-sm {
+        display: none;
+      }
+      .cbcf-sm {
+        display: none;
+      }
+    }
+
+    .cbcf-purple {
+      background-color: #232D53;
+    }
+
+    .cbcf-purple-light {
+      background-color: #1F284B;
     }
   </style>
 
 </head>
 
 <body>
-
   <header>
-
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark unique-color-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark unique-color-dark fixed-top scrolling-navbar">
       <div class="container">
         <a class="navbar-brand" href="./home">
-                    <strong class="d-block d-sm-none">Chelmsford Beer Festivals</strong><strong class="d-none d-sm-block">Chelmsford Beer &amp; Cider Festivals</strong>
-                </a>
+          <strong class="d-block d-sm-none">Chelmsford Beer Festivals</strong><strong class="d-none d-sm-block">Chelmsford Beer &amp; Cider Festivals</strong>
+        </a>
+        <a class="navbar-brand-sm" href="./home">
+          <strong>CBCF</strong>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="animated-icon4"><span></span><span></span><span></span></div>
-                </button>
+          <div class="animated-icon3"><span></span><span></span><span></span><span></span></div>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <!-- Desktop Navlinks -->
             <li class="nav-item">
-              <a class="nav-link hoverable" href="./home" rel="nofollow">Home</a>
+              <a class="nav-link hoverable" href="./home">Home</a>
             </li>
+            <!-- Drink Lists -->
             <li class="nav-item">
-              <a class="nav-link hoverable" href="./gallery/" rel="nofollow">Gallery</a>
+              <a class="nav-link hoverable" href="./drinks">Drink Lists</a>
+            </li>
+            <!-- Travel Info -->
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="./travel">Travel Info</a>
+            </li>
+            <!-- FAQs -->
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="./faqs">FAQs</a>
             </li>
             <!-- Volunteer -->
             <li class="nav-item">
-              <a class="nav-link hoverable" href="./volunteer" rel="nofollow">Volunteer</a>
+              <a class="nav-link hoverable" href="./volunteer">Volunteer</a>
             </li>
-            <!-- About the Festival Dropdown -->
+            <!-- About CBCF Dropdown -->
             <li class="nav-item dropdown">
               <a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
               <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item hoverable" href="./history">Our History</a>
-                <a class="dropdown-item hoverable" href="./contact">Contact Us</a>
-                <a class="dropdown-item hoverable" href="//www.chelmsford.camra.org.uk/">Chelmsford &amp; Mid Essex CAMRA</a>
+                <a class="dropdown-item" href="./archive">Previous Festivals</a>
+                <a class="dropdown-item" href="./history">Our History</a>
+                <a class="dropdown-item" href="./contact">Contact Us</a>
+                <a class="dropdown-item" href="//www.chelmsford.camra.org.uk/" rel="nofollow">Chelmsford &amp; Mid Essex CAMRA</a>
               </div>
             </li>
           </ul>
-          <ul class="navbar-nav ml-auto nav-flex-icons">
+          <ul class="navbar-nav ml-auto nav-flex-icons" aria-hidden="true">
             <!-- Social Links -->
             <span class="navbar-text white-text d-block d-lg-none" style="padding-left: 6px;">
-							Follow us on social media!
-						</span>
+              <strong>Follow us on social media!</strong>
+            </span>
             <hr>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square"></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square fa-2x"></i></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Facebook page</span></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Facebook page</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter"></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter fa-2x"></i></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Twitter page</span></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Twitter page</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram"></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram fa-2x"></i></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Instagram page</span></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Facebook page</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost"></i></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost fa-2x"></i></a>
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Snapchat account</span></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Snapchat account</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hoverable d-none d-lg-block" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals YouTube channel</span></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals YouTube channel</span></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!--/.Navbar-->
-
   </header>
 
   <!--Intro Section-->
   <section class="header-page">
     <div class="flex-center">
-      <h1 class="mt-4 mb-5 wow fadeInUp font-bold" data-wow-delay="0.2s"><i class="far fa-book"></i>&nbsp;Our History</h1>
+      <h1 class="mt-4 mb-5 wow fadeInUp font-bold" data-wow-delay="0.2s" style="text-align: center;"><i class="far fa-book"></i>&nbsp;Our History</h1>
     </div>
   </section>
 
@@ -217,10 +242,13 @@
         </picture>
       </div>
       <div class="col-sm-8 bodyText wow fadeIn" data-wow-duration="3s"><br>
-        <p>The Chelmsford CAMRA Beer Festival has always been a highpoint in the year for real ale enthusiasts, but when it was first held back in July 1977, and for some years afterwards, it was very different to the festival you know and love today.</p>
-        <p>The function room behind the Lion and Lamb (if you are of a certain generation you will know this place on Duke Street better as Dukes Nightclub) was the venue for that first festival, changing to Chancellor Hall the following year. To give you
+        <p>The Chelmsford CAMRA Beer Festival has always been a highpoint in the year for real ale enthusiasts, but when it was first held back in July 1977, and for some years afterwards, it was very different to the festival you know and love
+          today.</p>
+        <p>The function room behind the Lion and Lamb (if you are of a certain generation you will know this place on Duke Street better as Dukes Nightclub) was the venue for that first festival, changing to Chancellor Hall the following year. To
+          give you
           an idea of how much the festival has changed, that year there were 34 beers from 16 breweries on sale; last year there were over 300 real ales on offer, without taking into account the ciders, perries and international bar!</p>
-        <p>1979 saw the Beer Festival return to the Lion and Lamb for the final time. The following year for the first (but not final) time, there was no festival, as there was no suitable venue available. The Students’ Union Bar at what was then the Anglia
+        <p>1979 saw the Beer Festival return to the Lion and Lamb for the final time. The following year for the first (but not final) time, there was no festival, as there was no suitable venue available. The Students’ Union Bar at what was then
+          the Anglia
           Polytechnic College on Victoria Road hosted the festival in 1981, but again in 1982 the festival was not held. This time it was due to difficulties obtaining a licence, and the objections of a few antagonist landlords.</p>
       </div>
     </div>
@@ -228,11 +256,14 @@
     <div class="row">
       <div class="col-sm-8 bodyText">
         <p>Happily, the next year these were resolved, and 1983 saw 55 beers from 26 breweries (but no cider) on sale. Since then, the festival has taken place every year and stayed at its new home at the APU until 2005.</p>
-        <p>Real Ale Sausages were a popular snack while the festival was being held at the Student Union Bar, but it was when the festival moved to the larger sports hall on the ground floor that the food on offer became more recognizable as it is today,
+        <p>Real Ale Sausages were a popular snack while the festival was being held at the Student Union Bar, but it was when the festival moved to the larger sports hall on the ground floor that the food on offer became more recognizable as it is
+          today,
           with the introduction of the burger and hot dog concession which also sold homemade curries. This was accompanied by the famous Podge's pickled eggs and even a cheese stall.</p>
-        <p>The festival then moved another step closer to its current incarnation as cider and foreign beers were first sold at the festival. It was when the Summer Festival outgrew the Students Union Bar, and in 2000 the Branch held its first Winter Beer
+        <p>The festival then moved another step closer to its current incarnation as cider and foreign beers were first sold at the festival. It was when the Summer Festival outgrew the Students Union Bar, and in 2000 the Branch held its first
+          Winter Beer
           Festival in that venue.</p>
-        <p>We were always looking for ways to improve the festivals, and as both the Summer and Winter Beer Festivals grew in popularity, one year the Branch experimented by making the winter beer festival ticket only, which, perhaps due to a lack of publicity,
+        <p>We were always looking for ways to improve the festivals, and as both the Summer and Winter Beer Festivals grew in popularity, one year the Branch experimented by making the winter beer festival ticket only, which, perhaps due to a lack
+          of publicity,
           was not a success, and the experiment was not repeated!</p>
       </div>
       <div class="col-sm-4">
@@ -246,9 +277,11 @@
 
     <div class="row">
       <div class="col-sm-12 bodyText">
-        <p>We were fortunate that with the summer festival there was ample space for people to stand or sit on the grass outside, and we were even more fortunate that for the latter years when the summer festival was in the sports hall, the weather, especially
+        <p>We were fortunate that with the summer festival there was ample space for people to stand or sit on the grass outside, and we were even more fortunate that for the latter years when the summer festival was in the sports hall, the weather,
+          especially
           on the Friday night, was good as there would have been little chance of accommodating all the customers in the sports hall in the event of a thunderstorm!</p>
-        <p>After 22 years of residency, rumours of the imminent closure of the APU in town centre due to relocation led to the branch looking for other suitable venues in Chelmsford town centre. When no venue could be found, the branch took the festival
+        <p>After 22 years of residency, rumours of the imminent closure of the APU in town centre due to relocation led to the branch looking for other suitable venues in Chelmsford town centre. When no venue could be found, the branch took the
+          festival
           in a whole new direction, deciding to organise an outdoor summer festival in a marquee within easy proximity of Chelmsford town centre.</p>
       </div>
     </div>
@@ -265,20 +298,21 @@
 
     <div class="row">
       <div class="col-sm-12 bodyText">
-        <p>Having made this decision, all that remained was to find a suitable space, and to tackle the daunting task of planning an outside festival. Luckily a venue was forthcoming - the football ground adjacent to Moulsham Mill – and the branch were very
+        <p>Having made this decision, all that remained was to find a suitable space, and to tackle the daunting task of planning an outside festival. Luckily a venue was forthcoming - the football ground adjacent to Moulsham Mill – and the branch
+          were very
           fortunate in having volunteers who had been closely involved in the organisation, set up and operation of Chelmsford's Cathedral Festival as well as a number of large Scouting events including 30,000 people Jamborees.</p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-12 bodyText">
-        <p>In 2006 we moved outdoors, with the additional available space, we could stock beer from more breweries and for the first time sold more than 300 different brands of beer. We also had a dedicated cider bar and for the first time, asked a brewery
-          (Woodforde's) if they would like to run a bar, as well as a local vineyard (Felstar) for the sale of locally produced wines.</p>
-        <p>This also saw the first of our hugely popular family fun days, held on the Saturday afternoon, when we had a bouncy castle, an inflatable slide, face painting and an ice cream van for the children. We were also extremely fortunate that that year
-          the sun shone for the entire festival and it was a delight to see whole groups of families having picnics and enjoying the wide selection of beverages on offer whilst their children ate ice creams and were refreshed by the free soft drinks.
-          Although it was very hard work for the volunteers with long, hot hours, the festival was a resounding success, and we haven’t looked back. Every year since, the Summer Festival has been an outdoor event with marquees.</p>
-        <p>However, it did not stay at the football ground for long. Partly because of the possible redevelopment of the area surrounding the Army & Navy, and also because we felt the summer festival could again run out of space, after unsuccessful negotiations
-          with the local authority to relocate the festival to Central Park in Chelmsford, in 2008 we relocated to its present location in Admirals Park.</p>
+        <p>In 2006 we moved outdoors, with the additional available space, we could stock beer from more breweries and for the first time sold more than 300 different brands of beer. We also had a dedicated cider bar and for the first time, asked a
+          brewery (Woodforde's) if they would like to run a bar, as well as a local vineyard (Felstar) for the sale of locally produced wines.</p>
+        <p>This also saw the first of our hugely popular family fun days, held on the Saturday afternoon, when we had a bouncy castle, an inflatable slide, face painting and an ice cream van for the children. We were also extremely fortunate that
+          that year the sun shone for the entire festival and it was a delight to see whole groups of families having picnics and enjoying the wide selection of beverages on offer whilst their children ate ice creams and were refreshed by the free
+          soft drinks. Although it was very hard work for the volunteers with long, hot hours, the festival was a resounding success, and we haven’t looked back. Every year since, the Summer Festival has been an outdoor event with marquees.</p>
+        <p>However, it did not stay at the football ground for long. Partly because of the possible redevelopment of the area surrounding the Army & Navy, and also because we felt the summer festival could again run out of space, after unsuccessful
+          negotiations with the local authority to relocate the festival to Central Park in Chelmsford, in 2008 we relocated to its present location in Admirals Park.</p>
         <p>So while the festival has changed hugely over the past 40 years there has always been one constant – the love of a good pint, and the desire to make every year better and better.</p>
         <br>
       </div>
@@ -287,33 +321,35 @@
   <!--/ Main container-->
 
   <!--Footer-->
-  <footer class="page-footer blue center-on-small-only">
+  <footer class="page-footer cbcf-purple-light center-on-small-only">
 
-    <!--Footer Links-->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <center>
-            <h5 class="title">Copyright Notice</h5>
-            <small>All rights reserved. Chelmsford Beer Festival® &amp; Chelmsford Beer &amp; Cider Festival™, Chelmsford Winter Beer &amp; Cider Festival™ &amp; Chelmsford Summer Beer &amp; Cider Festival™</small>
-            <br>
-            <small>The trademarks, logos and artwork displayed are the registered and unregistered trademarks and copyright of Campaign for Real Ale, except where third party ownership is indicated.</small>
-            <br>
-            <small>Whilst every effort is made to ensure that the information on this site is accurate and up to date, no responsibility for errors and omissions can be accepted.</small>
-            <div class="my-3"></div>
-          </center>
-        </div>
-      </div>
+    <!--Copyright Notice-->
+    <div class="col-md-12" style="text-align: center;">
+      <h5 class="title">Copyright Notice</h5>
+      <small>All rights reserved. Chelmsford Beer Festival® &amp; Chelmsford Beer &amp; Cider Festival™, Chelmsford Winter Beer &amp; Cider Festival™ &amp; Chelmsford Summer Beer &amp; Cider Festival™</small>
+      <br>
+      <small>The trademarks, logos and artwork displayed are the registered and unregistered trademarks and copyright of Campaign for Real Ale, except where third party ownership is indicated.</small>
+      <br>
+      <small>Whilst every effort is made to ensure that the information on this site is accurate and up to date, no responsibility for errors and omissions can be accepted.</small>
+      <p></p>
     </div>
-    <!--/.Footer Links-->
+    <!--/.Copyright Notice-->
 
-    <!--Copyright-->
-    <div class="footer-copyright">
+    <!--Privacy/GitHub-->
+    <div class="footer-copyright" style="background-color: #1B2343;">
       <div class="container-fluid">
         <a href="./privacy">Privacy Policy</a> | Site Design: <a href="https://github.com/tmaguire/cbcf.info">Thomas Maguire</a>
       </div>
     </div>
-    <!--/.Copyright-->
+    <!--/.Privacy/GitHub-->
+
+    <!--License-->
+    <div class="footer-copyright cbcf-purple">
+      <div class="container-fluid">
+        <p style="color: #fff;">This site is licensed under the <a href="https://github.com/tmaguire/cbcf.info/blob/master/LICENSE" rel="nofollow">Mozilla Public License 2.0</a></p>
+      </div>
+    </div>
+    <!--/License-->
 
   </footer>
   <!--/.Footer-->
@@ -348,6 +384,9 @@
 
   <!-- Smooth Scrolling -->
   <script src="./js/zenscroll-min.js"></script>
+  <script>
+    zenscroll.setup(null, 75)
+  </script>
 
   <!-- WebP Support Module -->
   <script src="./js/webp.js"></script>

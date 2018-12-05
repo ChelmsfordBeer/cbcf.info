@@ -1,0 +1,414 @@
+[{
+    "Drink Name": "Maple Stout",
+    "Style": "Stout",
+    "Brewery": "Arundel",
+    "Location": "Sussex",
+    "ABV (%)": 5.4
+  },
+  {
+    "Drink Name": "Smoked Porter",
+    "Style": "Porter",
+    "Brewery": "Arundel",
+    "Location": "Sussex",
+    "ABV (%)": 6
+  },
+  {
+    "Drink Name": "Wild Heaven",
+    "Style": "",
+    "Brewery": "Arundel",
+    "Location": "Sussex",
+    "ABV (%)": 5.2
+  },
+  {
+    "Drink Name": "Bloody 'Ell",
+    "Style": "",
+    "Brewery": "Beavertown",
+    "Location": "London",
+    "ABV (%)": 7.2
+  },
+  {
+    "Drink Name": "Smog Rocket",
+    "Style": "",
+    "Brewery": "Beavertown",
+    "Location": "London",
+    "ABV (%)": 5.4
+  },
+  {
+    "Drink Name": "Estsa Loco?",
+    "Style": "",
+    "Brewery": "Bone Machine",
+    "Location": "Pocklington, E Yorks",
+    "ABV (%)": 4.5
+  },
+  {
+    "Drink Name": "Funny Bone",
+    "Style": "",
+    "Brewery": "Bone Machine",
+    "Location": "Pocklington, E Yorks",
+    "ABV (%)": 4
+  },
+  {
+    "Drink Name": "Ripchord",
+    "Style": "",
+    "Brewery": "BrewBoard",
+    "Location": "Cambridge",
+    "ABV (%)": 4.3
+  },
+  {
+    "Drink Name": "Lakota",
+    "Style": "",
+    "Brewery": "BrewBoard",
+    "Location": "Cambridge",
+    "ABV (%)": 5.1
+  },
+  {
+    "Drink Name": "Handroid",
+    "Style": "",
+    "Brewery": "BrewBoard",
+    "Location": "Cambridge",
+    "ABV (%)": 6.4
+  },
+  {
+    "Drink Name": "Black Mandariana Sour",
+    "Style": "",
+    "Brewery": "Chorlton",
+    "Location": "Manchester",
+    "ABV (%)": 6
+  },
+  {
+    "Drink Name": "DDH Pale Citra",
+    "Style": "Pale Ale",
+    "Brewery": "Cloudwater",
+    "Location": "Manchester",
+    "ABV (%)": 5.5
+  },
+  {
+    "Drink Name": "Cowcatcher",
+    "Style": "",
+    "Brewery": "East London Brewery",
+    "Location": "Clapton, London",
+    "ABV (%)": 4.8
+  },
+  {
+    "Drink Name": "Beatnik",
+    "Style": "",
+    "Brewery": "Gipsy Hill",
+    "Location": "London",
+    "ABV (%)": 3.8
+  },
+  {
+    "Drink Name": "N1: APA",
+    "Style": "",
+    "Brewery": "Hammerton",
+    "Location": "Islington, London",
+    "ABV (%)": 4.1
+  },
+  {
+    "Drink Name": "Islington: Steam Lager",
+    "Style": "Lager",
+    "Brewery": "Hammerton",
+    "Location": "Islington, London",
+    "ABV (%)": 4.7
+  },
+  {
+    "Drink Name": "Crunch (Limited Edition)",
+    "Style": "",
+    "Brewery": "Hammerton",
+    "Location": "Islington, London",
+    "ABV (%)": 5.4
+  },
+  {
+    "Drink Name": "Panama Creature: Extra Pale Ale",
+    "Style": "Pale Ale",
+    "Brewery": "Hammerton",
+    "Location": "Islington, London",
+    "ABV (%)": 4.2
+  },
+  {
+    "Drink Name": "Tzatziki Sour",
+    "Style": "",
+    "Brewery": "Mad Hatter",
+    "Location": "Liverpool",
+    "ABV (%)": 4.2
+  },
+  {
+    "Drink Name": "Double Nightmare on Bold Street",
+    "Style": "",
+    "Brewery": "Mad Hatter",
+    "Location": "Liverpool",
+    "ABV (%)": 8.5
+  },
+  {
+    "Drink Name": "Lick Face Pale",
+    "Style": "Pale Ale",
+    "Brewery": "Mad Hatter",
+    "Location": "Liverpool",
+    "ABV (%)": 4
+  },
+  {
+    "Drink Name": "Penny Lane",
+    "Style": "",
+    "Brewery": "Mad Hatter",
+    "Location": "Liverpool",
+    "ABV (%)": 3.9
+  },
+  {
+    "Drink Name": "Saucery",
+    "Style": "",
+    "Brewery": "Magic Rock",
+    "Location": "Huddersfield",
+    "ABV (%)": 3.9
+  },
+  {
+    "Drink Name": "Salty Kiss",
+    "Style": "",
+    "Brewery": "Magic Rock",
+    "Location": "Huddersfield",
+    "ABV (%)": 4.1
+  },
+  {
+    "Drink Name": "Fantasma",
+    "Style": "",
+    "Brewery": "Magic Rock",
+    "Location": "Huddersfield",
+    "ABV (%)": 6.5
+  },
+  {
+    "Drink Name": "Earl Grey IPA",
+    "Style": "IPA",
+    "Brewery": "Marble Beers",
+    "Location": "Manchester",
+    "ABV (%)": 6.8
+  },
+  {
+    "Drink Name": "Dinosaurs will Die",
+    "Style": "",
+    "Brewery": "Marble Beers",
+    "Location": "Manchester",
+    "ABV (%)": 4.1
+  },
+  {
+    "Drink Name": "Exotic Peppercorn Vienna Lager",
+    "Style": "Lager",
+    "Brewery": "Marble Beers",
+    "Location": "Manchester",
+    "ABV (%)": 5.2
+  },
+  {
+    "Drink Name": "Full Guard DIPA",
+    "Style": "IPA",
+    "Brewery": "Marble Beers",
+    "Location": "Manchester",
+    "ABV (%)": 8.5
+  },
+  {
+    "Drink Name": "Brown",
+    "Style": "",
+    "Brewery": "Maregade",
+    "Location": "Hackney, London",
+    "ABV (%)": 4.6
+  },
+  {
+    "Drink Name": "Maple Milk Stout",
+    "Style": "Stout",
+    "Brewery": "Maregade",
+    "Location": "Hackney, London",
+    "ABV (%)": 4.5
+  },
+  {
+    "Drink Name": "Fusion 2016",
+    "Style": "",
+    "Brewery": "Moor",
+    "Location": "Bristol",
+    "ABV (%)": 8
+  },
+  {
+    "Drink Name": "INCRUSéE Balsamic Milk Stout",
+    "Style": "Stout",
+    "Brewery": "ORA Brewing",
+    "Location": "Bermondsey, London",
+    "ABV (%)": 6
+  },
+  {
+    "Drink Name": "Germinal",
+    "Style": "",
+    "Brewery": "Pig & Porter",
+    "Location": "Tunbridge Wells",
+    "ABV (%)": 3.7
+  },
+  {
+    "Drink Name": "Sandstorm",
+    "Style": "",
+    "Brewery": "Pig & Porter",
+    "Location": "Tunbridge Wells",
+    "ABV (%)": 4.9
+  },
+  {
+    "Drink Name": "Pale Fire",
+    "Style": "Pale Ale",
+    "Brewery": "Pressure Drop",
+    "Location": "Tottenham, London",
+    "ABV (%)": 4.8
+  },
+  {
+    "Drink Name": "Bosko",
+    "Style": "",
+    "Brewery": "Pressure Drop",
+    "Location": "Tottenham, London",
+    "ABV (%)": 6.5
+  },
+  {
+    "Drink Name": "Big Chief",
+    "Style": "",
+    "Brewery": "Redemption",
+    "Location": "Tottenham, London",
+    "ABV (%)": 5.5
+  },
+  {
+    "Drink Name": "Rock the Kazbek",
+    "Style": "",
+    "Brewery": "Redemption",
+    "Location": "Tottenham, London",
+    "ABV (%)": 4
+  },
+  {
+    "Drink Name": "Broken Dream",
+    "Style": "",
+    "Brewery": "Siren",
+    "Location": "Wokingham",
+    "ABV (%)": 6.5
+  },
+  {
+    "Drink Name": "Suspended in Secrets",
+    "Style": "",
+    "Brewery": "Siren",
+    "Location": "Wokingham",
+    "ABV (%)": 4
+  },
+  {
+    "Drink Name": "White Tips",
+    "Style": "",
+    "Brewery": "Siren",
+    "Location": "Wokingham",
+    "ABV (%)": 4.6
+  },
+  {
+    "Drink Name": "Pale Armadillo",
+    "Style": "",
+    "Brewery": "Tempest",
+    "Location": "Galashields",
+    "ABV (%)": 3.8
+  },
+  {
+    "Drink Name": "Elemental Porter",
+    "Style": "",
+    "Brewery": "Tempest",
+    "Location": "Galashields",
+    "ABV (%)": 5.1
+  },
+  {
+    "Drink Name": "Modern Helles",
+    "Style": "",
+    "Brewery": "Tempest",
+    "Location": "Galashields",
+    "ABV (%)": 4.1
+  },
+  {
+    "Drink Name": "Mango Berliner",
+    "Style": "",
+    "Brewery": "Tempest",
+    "Location": "Galashields",
+    "ABV (%)": 4.2
+  },
+  {
+    "Drink Name": "Green River",
+    "Style": "",
+    "Brewery": "Tempest + Duration",
+    "Location": "Galashields",
+    "ABV (%)": 4.5
+  },
+  {
+    "Drink Name": "Jaipur",
+    "Style": "",
+    "Brewery": "Thornbridge",
+    "Location": "Bakewell",
+    "ABV (%)": 5.9
+  },
+  {
+    "Drink Name": "Tzara",
+    "Style": "",
+    "Brewery": "Thornbridge",
+    "Location": "Bakewell",
+    "ABV (%)": 4.8
+  },
+  {
+    "Drink Name": "AM-PM",
+    "Style": "",
+    "Brewery": "Thornbridge",
+    "Location": "Bakewell",
+    "ABV (%)": 4.5
+  },
+  {
+    "Drink Name": "Monsters: No More Tuesdays",
+    "Style": "",
+    "Brewery": "Torrside",
+    "Location": "High Peak, Derbyshire",
+    "ABV (%)": 11.5
+  },
+  {
+    "Drink Name": "Zuur Rhubarb",
+    "Style": "",
+    "Brewery": "Vibrant",
+    "Location": "Lymington",
+    "ABV (%)": 3.5
+  },
+  {
+    "Drink Name": "Wheat Wave",
+    "Style": "",
+    "Brewery": "Vibrant",
+    "Location": "Lymington",
+    "ABV (%)": 4.8
+  },
+  {
+    "Drink Name": "Metropolis",
+    "Style": "",
+    "Brewery": "Vibrant",
+    "Location": "Lymington",
+    "ABV (%)": 6
+  },
+  {
+    "Drink Name": "Blank Space Gose",
+    "Style": "",
+    "Brewery": "Wildweather",
+    "Location": "Reading",
+    "ABV (%)": 4.5
+  },
+  {
+    "Drink Name": "First Person Fruiter",
+    "Style": "",
+    "Brewery": "Wildweather",
+    "Location": "Reading",
+    "ABV (%)": 5
+  },
+  {
+    "Drink Name": "Complete History",
+    "Style": "",
+    "Brewery": "Wildweather",
+    "Location": "Reading",
+    "ABV (%)": 5.5
+  },
+  {
+    "Drink Name": "Welcome to the Crumble",
+    "Style": "",
+    "Brewery": "Wildweather",
+    "Location": "Reading",
+    "ABV (%)": 5.5
+  },
+  {
+    "Drink Name": "Shell Fish Besterd",
+    "Style": "",
+    "Brewery": "Wildweather",
+    "Location": "Reading",
+    "ABV (%)": 6
+  }
+]
