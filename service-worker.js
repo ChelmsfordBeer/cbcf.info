@@ -42,7 +42,7 @@ this.addEventListener('install', event => {
         'https://cbcf.info/webfonts/fa-solid-900.svg',
         'https://cbcf.info/webfonts/fa-solid-900.ttf',
         'https://cbcf.info/webfonts/fa-solid-900.woff',
-        'https://cbcf.info/webfonts/fa-solid-900.woff2'
+        'https://cbcf.info/webfonts/fa-solid-900.woff2',
         offlineUrl
       ]); //Need to add additional pages/assets if required for datatable drinks list
     })
