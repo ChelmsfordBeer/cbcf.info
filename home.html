@@ -511,11 +511,11 @@
 
   			// change attributes and text if full text is shown/hidden
   			if (!fullTextWrapper.hasAttribute('hidden')) {
-  				toggleButtonText.innerText = '<i class="fas fa-angle-down" aria-hidden="true"></i>&nbsp;Show More';
+  				toggleButtonText.innerText = 'Show More';
   				fullTextWrapper.setAttribute('hidden', true);
   				toggleButton.setAttribute('aria-expanded', false);
   			} else {
-  				toggleButtonText.innerText = '<i class="fas fa-angle-down" aria-hidden="true"></i>&nbsp;Show Less';
+  				toggleButtonText.innerText = 'Show Less';
   				fullTextWrapper.removeAttribute('hidden');
   				toggleButton.setAttribute('aria-expanded', true);
   			}
