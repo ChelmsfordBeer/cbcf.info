@@ -341,12 +341,12 @@
                       <li>Great selection of vegetarian dishes</li>
                       <li>Pulled pork roll with stuffing and smoky BBQ sauce</li>
                       <li>Ham cooked in real cider with egg and chips</li>
-                      <li>Daily specials</li>
-                      <b>Come for the beer, stay for the food!</b>
+                      <li>Daily specials</li><br>
+                      <b>Come for the beer, stay for the food!</b><br>
                       <i><a href="//www.facebook.com/HopleafCatering/" rel="nofollow">Like us on Facebook</a> for menu updates or check on the blackboard during the festival. Allergy advice available on request.</i>
                     </p>
               	</div>
-                <button aria-expanded="false" aria-controls="more-1" class="toggle-content" hidden><span class="text">Read More</span> <span class="visually-hidden">about Hopleaf's food selection</span></button>
+                <button aria-expanded="false" aria-controls="more-1" class="toggle-content btn btn-indigo" hidden><span class="text">Read More</span> <span class="visually-hidden">about Hopleaf's food selection</span></button>
               </div>
             </div>
             <!--/First row-->
@@ -511,11 +511,11 @@
 
   			// change attributes and text if full text is shown/hidden
   			if (!fullTextWrapper.hasAttribute('hidden')) {
-  				toggleButtonText.innerText = 'Show More';
+  				toggleButtonText.innerText = '<i class="fas fa-angle-down" aria-hidden="true"></i>&nbsp;Show More';
   				fullTextWrapper.setAttribute('hidden', true);
   				toggleButton.setAttribute('aria-expanded', false);
   			} else {
-  				toggleButtonText.innerText = 'Show Less';
+  				toggleButtonText.innerText = '<i class="fas fa-angle-down" aria-hidden="true"></i>&nbsp;Show Less';
   				fullTextWrapper.removeAttribute('hidden');
   				toggleButton.setAttribute('aria-expanded', true);
   			}
