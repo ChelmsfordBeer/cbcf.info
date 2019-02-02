@@ -118,6 +118,14 @@
     .cbcf-purple-light {
       background-color: #1F284B;
     }
+
+    .btn-facebook {
+      background-color: #3B5998;
+    }
+
+    .btn-twitter {
+      background-color: #00B2FF;
+    }
   </style>
 
 </head>
@@ -331,7 +339,22 @@
               </div>
               <div class="col-10">
                 <h5 class="feature-title">Hopleaf</h5>
-                <p>Hot & cold food will be available from Hopleaf who do a range of food.</p>
+                <p>Great Beer deserves great food. Hopleaf are delighted to be back at the Winter Beer Festival. We use local suppliers and fresh ingredients to create a variety of homemade dishes.</p>
+                <div id="more-1" class="fulltext">
+                		<p>
+                      <li>Authentic curries from a mild Korma to fiery Naga, with sides including samosa.</li>
+                      <li>Hand carved salt beef marinated by us to our own recipe.</li>
+                      <li>Butcher’s sausages in Salt n Pepper French stick.</li>
+                      <li>Locally made burgers with butter fried onions & optional homemade chilli relish.</li>
+                      <li>Great selection of vegetarian dishes</li>
+                      <li>Pulled pork roll with stuffing and smoky BBQ sauce</li>
+                      <li>Ham cooked in real cider with egg and chips</li>
+                      <li>Daily specials</li><br>
+                      <b>Come for the beer, stay for the food!</b><br>
+                      <i><a href="//www.facebook.com/HopleafCatering/" rel="nofollow">Like us on Facebook</a> for menu updates or check on the blackboard during the festival. Allergy advice available on request.</i>
+                    </p>
+              	</div>
+                <button aria-expanded="false" aria-controls="more-1" class="toggle-content btn btn-indigo" hidden><span class="text">Read More</span> <span class="visually-hidden">about Hopleaf's food selection</span></button>
               </div>
             </div>
             <!--/First row-->
@@ -373,6 +396,60 @@
 
       </section>
       <!--Section: Food & Snacks-->
+
+      <hr class="my-5">
+
+      <!--Section: Festival Charity-->
+      <section id="charity">
+
+        <h3 class="h3 text-center mb-5">Our Festival Charity</h3>
+
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 px-4">
+
+            <center>
+              <picture>
+                <source srcset="./img/home/3.webp" type="image/webp">
+                <source srcset="./img/home/3.png" type="image/png">
+                <img class="img-fluid" src="./img/home/3.png" alt="Sanctus are the festival charity for the Chelmsford Winter Beer & Cider Festival 2019">
+              </picture>
+            </center>
+
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12">
+
+            <div style="text-align: center;">
+              <h3 class="h3 mb-3">Sanctus Chelmsford</h3>
+              <h5>Sanctus is a small but vital charity established in the bitter winter of 2011. Sanctus feeds the growing number of homeless, hungry and vulnerable individuals in our city. We run a free café offering breakfast, hot and cold drinks, snacks and a cooked homemade lunch. We are also able to help by offering accommodation to some of our service users, as well as 1:1 support/advice, and a range of enrichment activities including training, a Book Club, Music Club and Allotment Project.</h5>
+            </div>
+
+            <!-- CTA -->
+            <center>
+              <a href="http://www.sanctus-home.com" class="btn btn-indigo">Learn more
+                <i class="far fa-info-circle ml-1" aria-hidden="true"></i>
+              </a>
+              <a href="//www.facebook.com/SanctusLoveAllServeAll/" class="btn btn-facebook">Like Sanctus on Facebook
+                <i class="far fa-thumbs-up ml-1" aria-hidden="true"></i>
+              </a>
+              <a href="//twitter.com/SanctusCharity" rel="noreferrer" class="btn btn-twitter">Follow Sanctus on Twitter
+                <i class="fab fa-twitter ml-1" aria-hidden="true"></i>
+              </a>
+            </center>
+
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/Grid row-->
+
+      </section>
+      <!--Section: Festival Charity-->
 
       <hr class="my-5">
 
@@ -467,6 +544,47 @@
 
   <!-- WebP Support Module -->
   <script src="./js/webp.js"></script>
+
+  <!-- Make the Hopleaf section work -->
+  <script nonce="cSVlQVdlYVdkOWB7XEw+UA==">
+    if ('querySelector' in document &&
+  	'addEventListener' in window) {
+
+  	var toggleButtons = document.querySelectorAll('.toggle-content');
+  	var fullTextWrappers = document.querySelectorAll('.fulltext');
+  	var fullText;
+  	var toggleButtonText;
+
+
+  	[].forEach.call(fullTextWrappers, function(fullTextWrapper) {
+  		// hide all full text on load
+  		fullTextWrapper.setAttribute('hidden', true);
+  	});
+
+  	[].forEach.call(toggleButtons, function(toggleButton) {
+  		// show toggle more buttons
+  		toggleButton.removeAttribute('hidden');
+
+  		// add listener for each button
+  		toggleButton.addEventListener('click', function () {
+
+  			fullTextWrapper = this.parentElement.querySelector('.fulltext');
+  			toggleButtonText = this.querySelector('.text');
+
+  			// change attributes and text if full text is shown/hidden
+  			if (!fullTextWrapper.hasAttribute('hidden')) {
+  				toggleButtonText.innerText = 'Show More';
+  				fullTextWrapper.setAttribute('hidden', true);
+  				toggleButton.setAttribute('aria-expanded', false);
+  			} else {
+  				toggleButtonText.innerText = 'Show Less';
+  				fullTextWrapper.removeAttribute('hidden');
+  				toggleButton.setAttribute('aria-expanded', true);
+  			}
+  		});
+  	});
+  }
+  </script>
 
 </body>
 
