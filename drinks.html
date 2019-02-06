@@ -26,8 +26,8 @@
   <!-- Template styles -->
   <style>
     .navbar:not(.top-nav-collapse) {
-    background: transparent !important;
-  }
+      background: transparent !important;
+    }
 
     .navbar {
       box-shadow: none !important;
@@ -48,7 +48,7 @@
       height: 100%;
     }
 
-   .header-page {
+    .header-page {
       background: #242E54;
       height: 40%;
       background-position: center;
@@ -90,10 +90,12 @@
       .navbar {
         background-color: #242E54;
       }
+
       .display-3 {
         font-size: 2rem;
         margin-top: 5rem;
       }
+
       h3 {
         font-size: 1rem;
       }
@@ -110,6 +112,7 @@
       .navbar-brand {
         display: none;
       }
+
       .cbcf-normal {
         display: none;
       }
@@ -119,6 +122,7 @@
       .navbar-brand-sm {
         display: none;
       }
+
       .cbcf-sm {
         display: none;
       }
@@ -142,10 +146,49 @@
     .nav-pills .nav-link {
       background-color: #232D53;
     }
+
+    .cbcf-info {
+      background-color: #00536f;
+    }
+
+    .table {
+      color: #000;
+    }
+
+    .pagination .page-link:hover {
+      color: #000;
+    }
+
+    .pagination .active .page-link:hover {
+      color: #000;
+    }
+
+    .pagination .active .page-link {
+      background-color: #4c9cfe;
+      color: #000;
+    }
+
+    .btn-secondary {
+      background-color: #6c328a;
+    }
+
+    .buttons-print:before {
+      content: '\f02f';
+      font-family: 'Font Awesome 5 Pro';
+      font-weight: 300;
+      padding-right: 5px;
+    }
+
+    .buttons-excel:before {
+      content: '\f65b';
+      font-family: 'Font Awesome 5 Pro';
+      font-weight: 300;
+      padding-right: 5px;
+    }
   </style>
 
   <!-- Datatables CSS -->
-  <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.18/b-1.5.4/b-colvis-1.5.4/b-html5-1.5.4/b-print-1.5.4/fh-3.1.4/kt-2.5.0/r-2.2.2/sl-1.2.6/datatables.min.css" integrity="sha384-mqgp1EmBzscTq7yvoSLTz8yyj3G0tleiHf8EHDdw/+jbQ6whwY/Cb5DDwjninFxA"
+  <link rel="stylesheet" href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.4/b-flash-1.5.4/b-html5-1.5.4/b-print-1.5.4/r-2.2.2/datatables.min.css" integrity="sha384-Q/Z4PUQse57S6tiODpAhQDJF4EbfHTrpkf8p10nLHDuOQod/IlTOk/DsasNk8Xly"
     crossorigin="anonymous">
 
 </head>
@@ -256,7 +299,7 @@
     <br>
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade show active" id="beer-list" role="tabpanel" aria-labelledby="beer-list-button">
-        <table id="table-beer" class="display" style="width:100%" data-order='[ [2, "asc"], [0, "asc"] ]' data-page-length='20'>
+        <table id="table-beer" class="display table table-striped table-bordered" style="width:100%" data-order='[ [2, "asc"], [0, "asc"] ]' data-page-length='20'>
           <thead>
             <tr>
               <td><b>Drink Name</b></td>
@@ -269,7 +312,7 @@
         </table>
       </div>
       <div class="tab-pane fade" id="cider-list" role="tabpanel" aria-labelledby="cider-list-button">
-        <table id="table-cider" class="display" style="width:100%" data-order='[[2, "asc"], [0, "asc"]]' data-page-length='20'>
+        <table id="table-cider" class="display table table-striped table-bordered" style="width:100%" data-order='[[2, "asc"], [0, "asc"]]' data-page-length='20'>
           <thead>
             <tr>
               <td><b>Drink Name</b></td>
@@ -283,7 +326,7 @@
       </div>
     </div>
     <div class="my-5"></div>
-    <div class="card info-color-dark text-center z-depth-2">
+    <div class="card cbcf-info text-center z-depth-2">
       <div class="card-body">
         <p class="white-text mb-0"><strong>Drink lists provided are subject to change without notice.</strong><br><br><i>This list was last updated on Wednesday 6th February</i></p>
       </div>
@@ -345,7 +388,7 @@
   </script>
 
   <!-- Datatables JS -->
-  <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.18/b-1.5.4/b-colvis-1.5.4/b-html5-1.5.4/b-print-1.5.4/fh-3.1.4/kt-2.5.0/r-2.2.2/sl-1.2.6/datatables.min.js"></script>
+  <script src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.4/b-flash-1.5.4/b-html5-1.5.4/b-print-1.5.4/r-2.2.2/datatables.min.js" integrity="sha384-Hu6VO98PsltAArPz1oWPnjMF1wmpL6tLr+roCejyrR2E+HWEwRd+VjEs2Ad+3XZv" crossorigin="anonymous"></script>
 
   <!-- Datatables Config -->
   <script nonce="fUoyKEcubmAsaFdqLVFIZQ==">
@@ -362,6 +405,27 @@
           "url": "./listings/beer.json",
           "dataSrc": ""
         },
+        "columnDefs": [{
+            "type": "html",
+            "targets": 0
+          },
+          {
+            "type": "html",
+            "targets": 1
+          },
+          {
+            "type": "html",
+            "targets": 2
+          },
+          {
+            "type": "html",
+            "targets": 3
+          },
+          {
+            "type": "html-num",
+            "targets": 4
+          }
+        ],
         "columns": [{
             "data": "Drink Name"
           },
@@ -392,6 +456,27 @@
           "url": "./listings/cider.json",
           "dataSrc": ""
         },
+        "columnDefs": [{
+            "type": "html",
+            "targets": 0
+          },
+          {
+            "type": "html",
+            "targets": 1
+          },
+          {
+            "type": "html",
+            "targets": 2
+          },
+          {
+            "type": "html",
+            "targets": 3
+          },
+          {
+            "type": "html-num",
+            "targets": 4
+          }
+        ],
         "columns": [{
             "data": "Drink Name"
           },
