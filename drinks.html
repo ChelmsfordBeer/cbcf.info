@@ -26,8 +26,8 @@
   <!-- Template styles -->
   <style>
     .navbar:not(.top-nav-collapse) {
-    background: transparent !important;
-  }
+      background: transparent !important;
+    }
 
     .navbar {
       box-shadow: none !important;
@@ -48,7 +48,7 @@
       height: 100%;
     }
 
-   .header-page {
+    .header-page {
       background: #242E54;
       height: 40%;
       background-position: center;
@@ -90,10 +90,12 @@
       .navbar {
         background-color: #242E54;
       }
+
       .display-3 {
         font-size: 2rem;
         margin-top: 5rem;
       }
+
       h3 {
         font-size: 1rem;
       }
@@ -110,6 +112,7 @@
       .navbar-brand {
         display: none;
       }
+
       .cbcf-normal {
         display: none;
       }
@@ -119,6 +122,7 @@
       .navbar-brand-sm {
         display: none;
       }
+
       .cbcf-sm {
         display: none;
       }
@@ -145,7 +149,7 @@
   </style>
 
   <!-- Datatables CSS -->
-  <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.18/b-1.5.4/b-colvis-1.5.4/b-html5-1.5.4/b-print-1.5.4/fh-3.1.4/kt-2.5.0/r-2.2.2/sl-1.2.6/datatables.min.css" integrity="sha384-mqgp1EmBzscTq7yvoSLTz8yyj3G0tleiHf8EHDdw/+jbQ6whwY/Cb5DDwjninFxA" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/b-1.5.4/b-html5-1.5.4/b-print-1.5.4/r-2.2.2/datatables.min.css" />
 
 </head>
 
@@ -344,7 +348,7 @@
   </script>
 
   <!-- Datatables JS -->
-  <script src="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.18/b-1.5.4/b-colvis-1.5.4/b-html5-1.5.4/b-print-1.5.4/fh-3.1.4/kt-2.5.0/r-2.2.2/sl-1.2.6/datatables.min.js" integrity="sha384-C37cu7Mhik7rExLXlvfxeokjinffOIO65Gn5lPjumQNhnSq5LefykmaNycoZ8F5D" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/b-1.5.4/b-html5-1.5.4/b-print-1.5.4/r-2.2.2/datatables.min.js"></script>
 
   <!-- Datatables Config -->
   <script nonce="fUoyKEcubmAsaFdqLVFIZQ==">
@@ -361,6 +365,27 @@
           "url": "./listings/beer.json",
           "dataSrc": ""
         },
+        "columnDefs": [{
+            "type": "html",
+            "targets": 0
+          },
+          {
+            "type": "html",
+            "targets": 1
+          },
+          {
+            "type": "html",
+            "targets": 2
+          },
+          {
+            "type": "html",
+            "targets": 3
+          },
+          {
+            "type": "num",
+            "targets": 4
+          }
+        ],
         "columns": [{
             "data": "Drink Name"
           },
@@ -391,6 +416,27 @@
           "url": "./listings/cider.json",
           "dataSrc": ""
         },
+        "columnDefs": [{
+            "type": "html",
+            "targets": 0
+          },
+          {
+            "type": "html",
+            "targets": 1
+          },
+          {
+            "type": "html",
+            "targets": 2
+          },
+          {
+            "type": "html",
+            "targets": 3
+          },
+          {
+            "type": "num",
+            "targets": 4
+          }
+        ],
         "columns": [{
             "data": "Drink Name"
           },
