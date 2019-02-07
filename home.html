@@ -340,38 +340,21 @@
               <div class="col-10">
                 <h5 class="feature-title">Hopleaf</h5>
                 <p>Great Beer deserves great food. Hopleaf are delighted to be back at the Winter Beer Festival. We use local suppliers and fresh ingredients to create a variety of homemade dishes.</p>
-                <div id="more-1" class="fulltext">
-                		<p>
-                      <li>Authentic curries from a mild Korma to fiery Naga, with sides including samosa.</li>
-                      <li>Hand carved salt beef marinated by us to our own recipe.</li>
-                      <li>Butcher’s sausages in Salt n Pepper French stick.</li>
-                      <li>Locally made burgers with butter fried onions & optional homemade chilli relish.</li>
-                      <li>Great selection of vegetarian dishes</li>
-                      <li>Pulled pork roll with stuffing and smoky BBQ sauce</li>
-                      <li>Ham cooked in real cider with egg and chips</li>
-                      <li>Daily specials</li><br>
-                      <b>Come for the beer, stay for the food!</b><br>
-                      <i><a href="//www.facebook.com/HopleafCatering/" rel="nofollow">Like us on Facebook</a> for menu updates or check on the blackboard during the festival. Allergy advice available on request.</i>
-                    </p>
-              	</div>
-                <button aria-expanded="false" aria-controls="more-1" class="toggle-content btn btn-indigo" hidden><span class="text">Read More</span> <span class="visually-hidden">about Hopleaf's food selection</span></button>
+                	<p>
+                    <li>Authentic curries from a mild Korma to fiery Naga, with sides including samosa.</li>
+                    <li>Hand carved salt beef marinated by us to our own recipe.</li>
+                    <li>Butcher’s sausages in Salt n Pepper French stick.</li>
+                    <li>Locally made burgers with butter fried onions & optional homemade chilli relish.</li>
+                    <li>Great selection of vegetarian dishes</li>
+                    <li>Pulled pork roll with stuffing and smoky BBQ sauce</li>
+                    <li>Ham cooked in real cider with egg and chips</li>
+                    <li>Daily specials</li><br>
+                    <b>Come for the beer, stay for the food!</b><br>
+                    <i><a href="//www.facebook.com/HopleafCatering/" rel="nofollow">Like us on Facebook</a> for menu updates or check on the blackboard during the festival. Allergy advice available on request.</i>
+                  </p>
               </div>
             </div>
             <!--/First row-->
-
-            <div style="height:30px"></div>
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="far fa-cookie fa-2x blue-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Oddfellows Chocolate</h5>
-                <p>Oddfellows (formerly Merry Berry) <a href="http://oddfellowschocolate.co.uk" rel="nofollow">oddfellowschocolate.co.uk</a> will have a range of truffles and chocolates.</p>
-              </div>
-            </div>
-            <!--/Second row-->
 
           </div>
           <!--/Grid column-->
@@ -544,47 +527,6 @@
 
   <!-- WebP Support Module -->
   <script src="./js/webp.js"></script>
-
-  <!-- Make the Hopleaf section work -->
-  <script nonce="cSVlQVdlYVdkOWB7XEw+UA==">
-    if ('querySelector' in document &&
-  	'addEventListener' in window) {
-
-  	var toggleButtons = document.querySelectorAll('.toggle-content');
-  	var fullTextWrappers = document.querySelectorAll('.fulltext');
-  	var fullText;
-  	var toggleButtonText;
-
-
-  	[].forEach.call(fullTextWrappers, function(fullTextWrapper) {
-  		// hide all full text on load
-  		fullTextWrapper.setAttribute('hidden', true);
-  	});
-
-  	[].forEach.call(toggleButtons, function(toggleButton) {
-  		// show toggle more buttons
-  		toggleButton.removeAttribute('hidden');
-
-  		// add listener for each button
-  		toggleButton.addEventListener('click', function () {
-
-  			fullTextWrapper = this.parentElement.querySelector('.fulltext');
-  			toggleButtonText = this.querySelector('.text');
-
-  			// change attributes and text if full text is shown/hidden
-  			if (!fullTextWrapper.hasAttribute('hidden')) {
-  				toggleButtonText.innerText = 'Show More';
-  				fullTextWrapper.setAttribute('hidden', true);
-  				toggleButton.setAttribute('aria-expanded', false);
-  			} else {
-  				toggleButtonText.innerText = 'Show Less';
-  				fullTextWrapper.removeAttribute('hidden');
-  				toggleButton.setAttribute('aria-expanded', true);
-  			}
-  		});
-  	});
-  }
-  </script>
 
 </body>
 
