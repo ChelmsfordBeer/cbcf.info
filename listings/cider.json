@@ -209,6 +209,13 @@
     "ABV (%)": 4
   },
   {
+    "Drink Name": "Farmhouse Perry",
+    "Style": "Perry",
+    "Producer": "Gwatkins",
+    "Location": "Abbey Dore, Herefordshire",
+    "ABV (%)": 7.5
+  },
+  {
     "Drink Name": "Black Dragon",
     "Style": "Cider",
     "Producer": "Gwynt Y Ddraig",
@@ -368,13 +375,6 @@
     "Producer": "Snails Bank",
     "Location": "Bishops Frome, Herefordshire",
     "ABV (%)": 4
-  },
-  {
-    "Drink Name": "Very Perry",
-    "Style": "Perry",
-    "Producer": "Snails Bank",
-    "Location": "Bishops Frome, Herefordshire",
-    "ABV (%)": 5.1
   },
   {
     "Drink Name": "Old Rosie",
