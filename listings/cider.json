@@ -41,6 +41,13 @@
     "ABV (%)": 6.5
   },
   {
+    "Drink Name": "Bushels",
+    "Style": "Cider",
+    "Producer": "Biddendens",
+    "Location": "Ashford, Kent",
+    "ABV (%)": 6
+  },
+  {
     "Drink Name": "Red Love (SV)",
     "Style": "Cider",
     "Producer": "Biddendens",
@@ -48,25 +55,11 @@
     "ABV (%)": 5
   },
   {
-    "Drink Name": "Strong Kentish",
-    "Style": "Cider",
-    "Producer": "Biddendens",
-    "Location": "Ashford, Kent",
-    "ABV (%)": 8.4
-  },
-  {
-    "Drink Name": "Sweet",
+    "Drink Name": "Essex Gold 9K",
     "Style": "Cider",
     "Producer": "Big Bear Cider Mill",
     "Location": "Stisted, Essex",
     "ABV (%)": 5.6
-  },
-  {
-    "Drink Name": "Cuckoo Penny (Rhubarb)",
-    "Style": "Cider",
-    "Producer": "Celtic Marches",
-    "Location": "Bishops Frome, Herefordshire",
-    "ABV (%)": 4.5
   },
   {
     "Drink Name": "Craklin' Rosie Perry",
@@ -74,6 +67,13 @@
     "Producer": "Celtic Marches",
     "Location": "Bishops Frome, Herefordshire",
     "ABV (%)": 4.5
+  },
+  {
+    "Drink Name": "Cuckoo Penny (Rhubarb)",
+    "Style": "Cider",
+    "Producer": "Celtic Marches",
+    "Location": "Bishops Frome, Herefordshire",
+    "ABV (%)": 4
   },
   {
     "Drink Name": "Lily The Pink",
@@ -87,7 +87,7 @@
     "Style": "Cider",
     "Producer": "Celtic Marches",
     "Location": "Bishops Frome, Herefordshire",
-    "ABV (%)": 4.5
+    "ABV (%)": 4
   },
   {
     "Drink Name": "Ruby Tuesday (Raspberry)",
@@ -101,7 +101,14 @@
     "Style": "Cider",
     "Producer": "Colcombe House",
     "Location": "Hampton Bishop, Herefordshire",
-    "ABV (%)": 6
+    "ABV (%)": 5.5
+  },
+  {
+    "Drink Name": "The Rouge (Strawberry/Raspberry)",
+    "Style": "Cider",
+    "Producer": "Colcombe House",
+    "Location": "Hampton Bishop, Herefordshire",
+    "ABV (%)": 4
   },
   {
     "Drink Name": "Farmhouse",
@@ -129,7 +136,7 @@
     "Style": "Perry",
     "Producer": "Crones",
     "Location": "Kenninghall, Norfolk",
-    "ABV (%)": 6
+    "ABV (%)": 6.4
   },
   {
     "Drink Name": "Rum Cask (Organic)",
@@ -171,7 +178,7 @@
     "Style": "Cider",
     "Producer": "Double Vision",
     "Location": "Maidstone, Kent",
-    "ABV (%)": 7.4
+    "ABV (%)": 6.9
   },
   {
     "Drink Name": "Duddas Apricot",
@@ -185,7 +192,7 @@
     "Style": "Cider",
     "Producer": "Dudda's Tun Cider",
     "Location": "Doddington, Kent",
-    "ABV (%)": 5.5
+    "ABV (%)": 5.2
   },
   {
     "Drink Name": "Duddas Spiced",
@@ -199,7 +206,7 @@
     "Style": "Perry",
     "Producer": "Farmer Jims",
     "Location": "Newton Abbot, Devon",
-    "ABV (%)": 4
+    "ABV (%)": 4.5
   },
   {
     "Drink Name": "Rhubarb Bob",
@@ -213,7 +220,7 @@
     "Style": "Perry",
     "Producer": "Gwatkins",
     "Location": "Abbey Dore, Herefordshire",
-    "ABV (%)": 7.5
+    "ABV (%)": 6
   },
   {
     "Drink Name": "Black Dragon",
@@ -223,18 +230,18 @@
     "ABV (%)": 7.2
   },
   {
+    "Drink Name": "Dog Dancer",
+    "Style": "Cider",
+    "Producer": "Gwynt Y Ddraig",
+    "Location": "Llantwit Fardre, Glamorganshire",
+    "ABV (%)": 6.5
+  },
+  {
     "Drink Name": "Farmhouse Pyder",
     "Style": "Cider",
     "Producer": "Gwynt Y Ddraig",
     "Location": "Llantwit Fardre, Glamorganshire",
     "ABV (%)": 6
-  },
-  {
-    "Drink Name": "Fiery Fox",
-    "Style": "Cider",
-    "Producer": "Gwynt Y Ddraig",
-    "Location": "Llantwit Fardre, Glamorganshire",
-    "ABV (%)": 6.5
   },
   {
     "Drink Name": "Haymaker",
@@ -280,14 +287,14 @@
   },
   {
     "Drink Name": "Hazy Rays",
-    "Style": "Cider",
+    "Style": "Perry",
     "Producer": "Hogans",
     "Location": "Haselor, Warwickshire",
     "ABV (%)": 3.9
   },
   {
     "Drink Name": "Lonely Partridge Perry",
-    "Style": "Perry",
+    "Style": "Cider",
     "Producer": "Hogans",
     "Location": "Haselor, Warwickshire",
     "ABV (%)": 5.8
@@ -297,14 +304,14 @@
     "Style": "Cider",
     "Producer": "Kentish Pip",
     "Location": "Bekesbourne, Kent",
-    "ABV (%)": 6
+    "ABV (%)": 5.7
   },
   {
     "Drink Name": "Vintage Pip",
     "Style": "Cider",
     "Producer": "Kentish Pip",
     "Location": "Bekesbourne, Kent",
-    "ABV (%)": 5
+    "ABV (%)": 6
   },
   {
     "Drink Name": "Bee Sting",
@@ -370,17 +377,10 @@
     "ABV (%)": 4
   },
   {
-    "Drink Name": "Raspberry Ripple (Raspberry/Vanilla)",
-    "Style": "Cider",
-    "Producer": "Snails Bank",
-    "Location": "Bishops Frome, Herefordshire",
-    "ABV (%)": 4
-  },
-  {
     "Drink Name": "Old Rosie",
     "Style": "Cider",
     "Producer": "Westons",
     "Location": "Much Marcle, Herefordshire",
-    "ABV (%)": 7.3
+    "ABV (%)": 6.8
   }
 ]
