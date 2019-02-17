@@ -3,384 +3,439 @@
     "Style": "Perry",
     "Producer": "Barbourne Cider Co.",
     "Location": "Worcester, Worcestershire",
-    "ABV (%)": 5
+    "ABV (%)": 5,
+    "Grade": "Medium Sweet"
   },
   {
     "Drink Name": "Con-Cox-tion Pyder",
     "Style": "Pyder",
     "Producer": "Berties Cider Co.",
     "Location": "Braintree, Essex",
-    "ABV (%)": 6.3
+    "ABV (%)": 6.3,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Galanthus Perry",
     "Style": "Perry",
     "Producer": "Berties Cider Co.",
     "Location": "Braintree, Essex",
-    "ABV (%)": 5.8
+    "ABV (%)": 5.8,
+    "Grade": "Sweet"
   },
   {
     "Drink Name": "OBSession",
     "Style": "Cider",
     "Producer": "Berties Cider Co.",
     "Location": "Braintree, Essex",
-    "ABV (%)": 4.5
+    "ABV (%)": 4.5,
+    "Grade": "Medium Sweet"
   },
   {
     "Drink Name": "Pearf-Hic! Perry",
     "Style": "Perry",
     "Producer": "Berties Cider Co.",
     "Location": "Braintree, Essex",
-    "ABV (%)": 6.5
+    "ABV (%)": 6.5,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Phoenix",
     "Style": "Cider",
     "Producer": "Berties Cider Co.",
     "Location": "Braintree, Essex",
-    "ABV (%)": 6.5
+    "ABV (%)": 6.5,
+    "Grade": "Medium Dry"
   },
   {
     "Drink Name": "Bushels",
     "Style": "Cider",
     "Producer": "Biddendens",
     "Location": "Ashford, Kent",
-    "ABV (%)": 6
+    "ABV (%)": 6,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Red Love (SV)",
     "Style": "Cider",
     "Producer": "Biddendens",
     "Location": "Ashford, Kent",
-    "ABV (%)": 5
+    "ABV (%)": 5,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Essex Gold 9K",
     "Style": "Cider",
     "Producer": "Big Bear Cider Mill",
     "Location": "Stisted, Essex",
-    "ABV (%)": 5.6
+    "ABV (%)": 5.6,
+    "Grade": "Medium Sweet"
   },
   {
     "Drink Name": "Craklin' Rosie Perry",
     "Style": "Perry",
     "Producer": "Celtic Marches",
     "Location": "Bishops Frome, Herefordshire",
-    "ABV (%)": 4.5
+    "ABV (%)": 4.5,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Cuckoo Penny (Rhubarb)",
     "Style": "Cider",
     "Producer": "Celtic Marches",
     "Location": "Bishops Frome, Herefordshire",
-    "ABV (%)": 4
+    "ABV (%)": 4,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Lily The Pink",
     "Style": "Cider",
     "Producer": "Celtic Marches",
     "Location": "Bishops Frome, Herefordshire",
-    "ABV (%)": 4.5
+    "ABV (%)": 4.5,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Nell Gwynne (Orange/Cinnamon)",
     "Style": "Cider",
     "Producer": "Celtic Marches",
     "Location": "Bishops Frome, Herefordshire",
-    "ABV (%)": 4
+    "ABV (%)": 4,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Ruby Tuesday (Raspberry)",
     "Style": "Cider",
     "Producer": "Celtic Marches",
     "Location": "Bishops Frome, Herefordshire",
-    "ABV (%)": 4
+    "ABV (%)": 4,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Willie Gunn",
     "Style": "Cider",
     "Producer": "Colcombe House",
     "Location": "Hampton Bishop, Herefordshire",
-    "ABV (%)": 5.5
+    "ABV (%)": 5.5,
+    "Grade": "Medium Dry"
   },
   {
     "Drink Name": "The Rouge (Strawberry/Raspberry)",
     "Style": "Cider",
     "Producer": "Colcombe House",
     "Location": "Hampton Bishop, Herefordshire",
-    "ABV (%)": 4
+    "ABV (%)": 4,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Farmhouse",
     "Style": "Cider",
     "Producer": "Cornish Orchards",
     "Location": "Duloe, Cornwall",
-    "ABV (%)": 4.8
+    "ABV (%)": 4.8,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Freak Show",
     "Style": "Cider",
     "Producer": "Cotswold Cider Co",
     "Location": "Coleshill, Oxfordshire",
-    "ABV (%)": 4.5
+    "ABV (%)": 4.5,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Muscle Mary (Raspberry)",
     "Style": "Cider",
     "Producer": "Cotswold Cider Co",
     "Location": "Coleshill, Oxfordshire",
-    "ABV (%)": 4
+    "ABV (%)": 4,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Perry (Organic)",
     "Style": "Perry",
     "Producer": "Crones",
     "Location": "Kenninghall, Norfolk",
-    "ABV (%)": 6.4
+    "ABV (%)": 6.4,
+    "Grade": "Medium Dry"
   },
   {
     "Drink Name": "Rum Cask (Organic)",
     "Style": "Cider",
     "Producer": "Crones",
     "Location": "Kenninghall, Norfolk",
-    "ABV (%)": 7.5
+    "ABV (%)": 7.5,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Winter Festival (Spiced)",
     "Style": "Cider",
     "Producer": "Delvin End",
     "Location": "Sible Hedingham, Essex",
-    "ABV (%)": 7
+    "ABV (%)": 7,
+    "Grade": "Dry"
   },
   {
     "Drink Name": "Sweet Maiden",
     "Style": "Cider",
     "Producer": "Dorset Nectar",
     "Location": "Waytown, Dorset",
-    "ABV (%)": 5
+    "ABV (%)": 5,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Wild Cat Organic",
     "Style": "Cider",
     "Producer": "Dorset Nectar",
     "Location": "Waytown, Dorset",
-    "ABV (%)": 5.5
+    "ABV (%)": 5.5,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Impeared Vision",
     "Style": "Perry",
     "Producer": "Double Vision",
     "Location": "Maidstone, Kent",
-    "ABV (%)": 7.4
+    "ABV (%)": 7.4,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Sweet",
     "Style": "Cider",
     "Producer": "Double Vision",
     "Location": "Maidstone, Kent",
-    "ABV (%)": 6.9
+    "ABV (%)": 6.9,
+    "Grade": "Sweet"
   },
   {
     "Drink Name": "Duddas Apricot",
     "Style": "Cider",
     "Producer": "Dudda's Tun Cider",
     "Location": "Doddington, Kent",
-    "ABV (%)": 4
+    "ABV (%)": 4,
+    "Grade": "Very Sweet"
   },
   {
     "Drink Name": "Duddas Greenhorn",
     "Style": "Cider",
     "Producer": "Dudda's Tun Cider",
     "Location": "Doddington, Kent",
-    "ABV (%)": 5.2
+    "ABV (%)": 5.2,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Duddas Spiced",
     "Style": "Cider",
     "Producer": "Dudda's Tun Cider",
     "Location": "Doddington, Kent",
-    "ABV (%)": 4
+    "ABV (%)": 4,
+    "Grade": "Sweet"
   },
   {
     "Drink Name": "Farmyard Perry",
     "Style": "Perry",
     "Producer": "Farmer Jims",
     "Location": "Newton Abbot, Devon",
-    "ABV (%)": 4.5
+    "ABV (%)": 4.5,
+    "Grade": "Medium Sweet"
   },
   {
     "Drink Name": "Rhubarb Bob",
     "Style": "Cider",
     "Producer": "Farmer Jims",
     "Location": "Newton Abbot, Devon",
-    "ABV (%)": 4
+    "ABV (%)": 4,
+    "Grade": "Very Sweet"
   },
   {
     "Drink Name": "Farmhouse Perry",
     "Style": "Perry",
     "Producer": "Gwatkins",
     "Location": "Abbey Dore, Herefordshire",
-    "ABV (%)": 6
+    "ABV (%)": 6,
+    "Grade": "Very Sweet"
   },
   {
     "Drink Name": "Black Dragon",
     "Style": "Cider",
     "Producer": "Gwynt Y Ddraig",
     "Location": "Llantwit Fardre, Glamorganshire",
-    "ABV (%)": 7.2
+    "ABV (%)": 7.2,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Dog Dancer",
     "Style": "Cider",
     "Producer": "Gwynt Y Ddraig",
     "Location": "Llantwit Fardre, Glamorganshire",
-    "ABV (%)": 6.5
+    "ABV (%)": 6.5,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Farmhouse Pyder",
     "Style": "Cider",
     "Producer": "Gwynt Y Ddraig",
     "Location": "Llantwit Fardre, Glamorganshire",
-    "ABV (%)": 6
+    "ABV (%)": 6,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Haymaker",
     "Style": "Cider",
     "Producer": "Gwynt Y Ddraig",
     "Location": "Llantwit Fardre, Glamorganshire",
-    "ABV (%)": 6.5
+    "ABV (%)": 6.5,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Two Trees Perry",
     "Style": "Perry",
     "Producer": "Gwynt Y Ddraig",
     "Location": "Llantwit Fardre, Glamorganshire",
-    "ABV (%)": 4.5
+    "ABV (%)": 4.5,
+    "Grade": "Medium Sweet"
   },
   {
     "Drink Name": "No. 8",
     "Style": "Cider",
     "Producer": "Harry's",
     "Location": "Long Sutton, Somerset",
-    "ABV (%)": 6.2
+    "ABV (%)": 6.2,
+    "Grade": "Medium Sweet"
   },
   {
     "Drink Name": "Crooked Branch",
     "Style": "Cider",
     "Producer": "Haygrove Evolution",
     "Location": "Ledbury, Herefordshire",
-    "ABV (%)": 5
+    "ABV (%)": 5,
+    "Grade": "Medium Dry"
   },
   {
     "Drink Name": "Thrown Hat",
     "Style": "Cider",
     "Producer": "Haygrove Evolution",
     "Location": "Ledbury, Herefordshire",
-    "ABV (%)": 5
+    "ABV (%)": 5,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Harvest Press",
     "Style": "Cider",
     "Producer": "Hogans",
     "Location": "Haselor, Warwickshire",
-    "ABV (%)": 5.3
+    "ABV (%)": 5.3,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Hazy Rays",
     "Style": "Perry",
     "Producer": "Hogans",
     "Location": "Haselor, Warwickshire",
-    "ABV (%)": 3.9
+    "ABV (%)": 3.9,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Lonely Partridge Perry",
     "Style": "Cider",
     "Producer": "Hogans",
     "Location": "Haselor, Warwickshire",
-    "ABV (%)": 5.8
+    "ABV (%)": 5.8,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Craftsman",
     "Style": "Cider",
     "Producer": "Kentish Pip",
     "Location": "Bekesbourne, Kent",
-    "ABV (%)": 5.7
+    "ABV (%)": 5.7,
+    "Grade": "Medium Dry"
   },
   {
     "Drink Name": "Vintage Pip",
     "Style": "Cider",
     "Producer": "Kentish Pip",
     "Location": "Bekesbourne, Kent",
-    "ABV (%)": 6
+    "ABV (%)": 6,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Bee Sting",
     "Style": "Perry",
     "Producer": "Lilleys",
     "Location": "Frome, Somerset",
-    "ABV (%)": 7.5
+    "ABV (%)": 7.5,
+    "Grade": "Very Sweet"
   },
   {
     "Drink Name": "Crazy Goat",
     "Style": "Pyder",
     "Producer": "Lilleys",
     "Location": "Frome, Somerset",
-    "ABV (%)": 6.8
+    "ABV (%)": 6.8,
+    "Grade": "Sweet"
   },
   {
     "Drink Name": "Rhubarb",
     "Style": "Cider",
     "Producer": "Lilleys",
     "Location": "Frome, Somerset",
-    "ABV (%)": 4
+    "ABV (%)": 4,
+    "Grade": "Medium Sweet"
   },
   {
     "Drink Name": "Strawberry",
     "Style": "Cider",
     "Producer": "Lilleys",
     "Location": "Frome, Somerset",
-    "ABV (%)": 4
+    "ABV (%)": 4,
+    "Grade": "Medium Sweet"
   },
   {
     "Drink Name": "Golden Harvest",
     "Style": "Cider",
     "Producer": "Rich's Cider Farm",
     "Location": "Highbridge, Somerset",
-    "ABV (%)": 4.5
+    "ABV (%)": 4.5,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Legbender Dry",
     "Style": "Cider",
     "Producer": "Rich's Cider Farm",
     "Location": "Highbridge, Somerset",
-    "ABV (%)": 6
+    "ABV (%)": 6,
+    "Grade": "Dry"
   },
   {
     "Drink Name": "Berry Lane (Raspberry)",
     "Style": "Cider",
     "Producer": "Sandford Orchards",
     "Location": "Crediton, Devon",
-    "ABV (%)": 4
+    "ABV (%)": 4,
+    "Grade": "Medium"
   },
   {
     "Drink Name": "Fanny's Bramble (Blackberry)",
     "Style": "Cider",
     "Producer": "Sandford Orchards",
     "Location": "Crediton, Devon",
-    "ABV (%)": 4
+    "ABV (%)": 4,
+    "Grade": "Medium Sweet"
   },
   {
     "Drink Name": "Fruit Bat (Mixed Berries)",
     "Style": "Cider",
     "Producer": "Snails Bank",
     "Location": "Bishops Frome, Herefordshire",
-    "ABV (%)": 4
+    "ABV (%)": 4,
+    "Grade": "Sweet"
   },
   {
     "Drink Name": "Old Rosie",
     "Style": "Cider",
     "Producer": "Westons",
     "Location": "Much Marcle, Herefordshire",
-    "ABV (%)": 6.8
+    "ABV (%)": 6.8,
+    "Grade": "Medium"
   }
 ]

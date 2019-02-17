@@ -320,6 +320,7 @@
               <td><b>Producer</b></td>
               <td><b>Location</b></td>
               <td><b>ABV (%)</b></td>
+              <td><b>Grading</b></td>
             </tr>
           </thead>
         </table>
@@ -444,7 +445,6 @@
         ]
       });
       $('#table-cider').DataTable({
-        order: ([3, 'asc'], [1, 'asc']),
         dom: 'Bfrtip',
         buttons: [
           'excel',
@@ -475,6 +475,10 @@
           {
             "type": "html-num",
             "targets": 4
+          },
+          {
+            "type": "html",
+            "targets": 5
           }
         ],
         "columns": [{
@@ -491,6 +495,10 @@
           },
           {
             "data": "ABV (%)"
+          }
+          },
+          {
+            "data": "Grading"
           }
         ]
       });
