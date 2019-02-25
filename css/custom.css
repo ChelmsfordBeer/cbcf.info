@@ -1,3 +1,84 @@
+.flex-center {
+  color: #fff;
+}
+
+.nav-link a:hover {
+  color: #fff !important;
+}
+
+.nav-link a {
+  color: #fff !important;
+}
+
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link:hover, .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+  color: #fff;
+}
+
+.dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover,
+.dropdown .dropdown-menu.dropdown-primary .dropdown-item:active,
+.dropdown .dropdown-menu.dropdown-primary .dropdown-item.active,
+.dropup .dropdown-menu.dropdown-primary .dropdown-item:hover,
+.dropup .dropdown-menu.dropdown-primary .dropdown-item:active,
+.dropup .dropdown-menu.dropdown-primary .dropdown-item.active,
+.dropleft .dropdown-menu.dropdown-primary .dropdown-item:hover,
+.dropleft .dropdown-menu.dropdown-primary .dropdown-item:active,
+.dropleft .dropdown-menu.dropdown-primary .dropdown-item.active,
+.dropright .dropdown-menu.dropdown-primary .dropdown-item:hover,
+.dropright .dropdown-menu.dropdown-primary .dropdown-item:active,
+.dropright .dropdown-menu.dropdown-primary .dropdown-item.active {
+  color: #fff;
+  background-color: #75408F !important;
+}
+
+.dropdown-item a {
+  color: #000;
+  background-color: #fff;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 334px) {
+  .navbar-brand {
+    display: none;
+  }
+
+  .cbcf-normal {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 335px) {
+  .navbar-brand-sm {
+    display: none;
+  }
+
+  .cbcf-sm {
+    display: none;
+  }
+}
+
+.cbcf-primary {
+  background-color: #75408F !important;
+}
+
+.cbcf-secondary {
+  background-color: #4D2B5F !important;
+}
+
+.cbcf-dark {
+  background-color: #2C1C36 !important;
+}
+
+.btn-facebook {
+  background-color: #3B5998 !important;
+}
+
+.btn-twitter {
+  background-color: #00B2FF !important;
+}
+
 /* Navbar Menu Icon */
 .animated-icon1, .animated-icon2, .animated-icon3, .animated-icon4 {
   width: 30px;
@@ -34,15 +115,15 @@
 }
 
 .animated-icon1 span {
-    background: #ffffff;
+  background: #ffffff;
 }
 
 .animated-icon3 span {
-    background: #ffffff;
+  background: #ffffff;
 }
 
 .animated-icon4 span {
-    background: #ffffff;
+  background: #ffffff;
 }
 
 .animated-icon1 span:nth-child(1) {
@@ -115,6 +196,7 @@
   width: 0%;
   left: 50%;
 }
+
 .animated-icon4 span:nth-child(1) {
   top: 0px;
   -webkit-transform-origin: left center;
