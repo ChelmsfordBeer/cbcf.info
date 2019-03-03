@@ -1,6 +1,6 @@
 'use strict';
 
-var cacheVersion = 13;
+var cacheVersion = 14;
 var currentCache = {
   offline: 'offline-cache' + cacheVersion
 };
@@ -13,7 +13,7 @@ this.addEventListener('install', event => {
       return cache.addAll([
         'https://cbcf.info/css/bootstrap.css',
         'https://cbcf.info/css/mdb.css',
-        'https://cbcf.info/css/style.css',
+        'https://cbcf.info/css/custom.css',
         'https://cbcf.info/css/all.css',
         'https://cbcf.info/js/jquery.min.js',
         'https://cbcf.info/js/popper.min.js',
