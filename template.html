@@ -30,11 +30,23 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark cbcf-primary fixed-top scrolling-navbar">
       <div class="container">
-        <a class="navbar-brand" href="./home">
-          <strong class="d-block d-sm-none">Chelmsford Beer Festivals</strong><strong class="d-none d-sm-block">Chelmsford Beer &amp; Cider Festivals</strong>
+        <a class="navbar-brand d-none d-xl-block" href="./home">
+          <strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;Chelmsford Beer &amp; Cider Festivals</strong>
+        </a>
+        <a class="navbar-brand d-none d-lg-block d-xl-none" href="./home">
+          <strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;CBCF</strong>
+        </a>
+        <a class="navbar-brand d-none d-md-block d-lg-none" href="./home">
+          <strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;Chelmsford Beer &amp; Cider Festivals</strong>
+        </a>
+        <a class="navbar-brand d-none d-sm-block d-md-none" href="./home">
+          <strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;Chelmsford Beer &amp; Cider Festivals</strong>
+        </a>
+        <a class="navbar-brand d-xs-block d-sm-none" href="./home">
+          <strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;Chelmsford Beer Festivals</strong>
         </a>
         <a class="navbar-brand-sm" href="./home">
-          <strong>CBCF</strong>
+          <strong style="color: #fff;"><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;CBCF</strong>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <div class="animated-icon3"><span></span><span></span><span></span><span></span></div>
@@ -45,31 +57,51 @@
             <li class="nav-item">
               <a class="nav-link hoverable" href="./home">Home</a>
             </li>
-            <!-- Drink Lists -->
-            <!-- <li class="nav-item">
-              <a class="nav-link hoverable" href="./drinks">Drink Lists</a>
-            </li> -->
-            <!-- Travel Info -->
-            <li class="nav-item">
-              <a class="nav-link hoverable" href="./travel">Travel Info</a>
+            <!-- Visitor Information -->
+            <li class="nav-item dropdown">
+              <a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visitor Info</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./times-prices">Opening times & Prices</a>
+                <a class="dropdown-item" href="./travel">Travel Info</a>
+                <!-- <a class="dropdown-item" href="./entertainment">Entertainment</a> -->
+                <a class="dropdown-item" href="./accessibility">Accessibility</a>
+                <!-- <a class="dropdown-item" href="./faqs">FAQs</a>
+                <a class="dropdown-item" href="./survival-guide">Festival Survival Guide</a>
+                <a class="dropdown-item" href="./children">Children</a> -->
+              </div>
             </li>
-            <!-- FAQs -->
-            <!-- <li class="nav-item">
-              <a class="nav-link hoverable" href="./faqs">FAQs</a>
+            <!-- Drinks & Food -->
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drinks &amp; Food</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./beer">Beer</a>
+                <a class="dropdown-item" href="./cider">Cider &amp; Perry</a>
+                <a class="dropdown-item" href="./belgian-beer">Belgian Beer</a>
+                <a class="dropdown-item" href="./wine">Wine</a>
+                <a class="dropdown-item" href="./food">Food</a>
+                <a class="dropdown-item" href="./allergies">Allergies</a>
+              </div>
             </li> -->
             <!-- Volunteer -->
             <li class="nav-item">
-              <a class="nav-link hoverable" href="./volunteer">Volunteer</a>
+              <a class="nav-link hoverable" href="./volunteer">Volunteering</a>
             </li>
             <!-- About CBCF Dropdown -->
             <li class="nav-item dropdown">
               <a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
               <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="./archive">Previous Festivals</a>
+                <!-- <a class="dropdown-item" href="./sponsorship">Sponsorship</a>
+                <a class="dropdown-item" href="./suppliers">Suppliers</a>
+                <a class="dropdown-item" href="./corporate">Corporate Events</a> -->
                 <a class="dropdown-item" href="./history">Our History</a>
-                <a class="dropdown-item" href="./contact">Contact Us</a>
+                <a class="dropdown-item" href="./archive">Previous Festivals</a>
                 <a class="dropdown-item" href="//www.chelmsford.camra.org.uk/" rel="nofollow">Chelmsford &amp; Mid Essex CAMRA</a>
+                <a class="dropdown-item" href="http://www.camra.org.uk/" rel="nofollow">National CAMRA</a>
               </div>
+            </li>
+            <!-- Contact Us -->
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="./contact">Contact Us</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto nav-flex-icons" aria-hidden="true">
@@ -111,11 +143,9 @@
   </header>
 
   <!--Intro Section-->
-  <section class="header-page">
-    <div class="flex-center">
-      <h1 class="mt-4 mb-5 wow fadeInUp font-bold" data-wow-delay="0.2s" style="text-align: center;"><i class="far fa-star" aria-hidden="true"></i>&nbsp;TEMPLATE</h1>
-    </div>
-  </section>
+  <br class="my-3"></br>
+  <br class="my-3"></br>
+  <h1 class="h1" style="text-align: center;"><i class="fal fa-star" aria-hidden="true"></i>&nbsp;TEMPLATE</h1>
 
 
   <div class="container">

@@ -1544,10 +1544,10 @@ button.bg-light:focus {
 
 body {
   font-family: "Lato", sans-serif;
-  font-weight: 300; }
+  font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300; }
+  font-weight: 400; }
 
 .h1-responsive {
   font-size: 150%; }
@@ -6538,7 +6538,7 @@ a.btn:not([href]):not([tabindex]):hover {
     font-size: 0.9rem;
     font-weight: 400; }
   .card .md-form label {
-    font-weight: 300; }
+    font-weight: 400; }
 
 .dropdown .dropdown-menu .dropdown-item:active {
   background-color: #757575; }
@@ -6618,7 +6618,7 @@ a.btn:not([href]):not([tabindex]):hover {
 .navbar {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  font-weight: 300; }
+  font-weight: 400; }
   .navbar form .md-form input {
     margin: 0 5px 1px 8px; }
   .navbar .breadcrumb {
@@ -6626,7 +6626,7 @@ a.btn:not([href]):not([tabindex]):hover {
     padding: 0.3rem 0 0 1rem;
     background-color: inherit;
     font-size: 15px;
-    font-weight: 300; }
+    font-weight: 400; }
     .navbar .breadcrumb .breadcrumb-item {
       color: #fff; }
       .navbar .breadcrumb .breadcrumb-item.active {
@@ -6664,7 +6664,7 @@ a.btn:not([href]):not([tabindex]):hover {
     .navbar .dropdown-menu a {
       padding: 10px;
       font-size: 0.9375rem;
-      font-weight: 300;
+      font-weight: 400;
       color: #000; }
     @media (max-width: 600px) {
       .navbar .dropdown-menu form {
@@ -6704,16 +6704,16 @@ a.btn:not([href]):not([tabindex]):hover {
     color: #000; }
     .navbar.navbar-light form .md-form .form-control::-webkit-input-placeholder {
       color: #000;
-      font-weight: 300; }
+      font-weight: 400; }
     .navbar.navbar-light form .md-form .form-control:-ms-input-placeholder {
       color: #000;
-      font-weight: 300; }
+      font-weight: 400; }
     .navbar.navbar-light form .md-form .form-control::-ms-input-placeholder {
       color: #000;
-      font-weight: 300; }
+      font-weight: 400; }
     .navbar.navbar-light form .md-form .form-control::placeholder {
       color: #000;
-      font-weight: 300; }
+      font-weight: 400; }
   .navbar.navbar-dark .navbar-nav .nav-item .nav-link.disbled {
     color: rgba(255, 255, 255, 0.25); }
     .navbar.navbar-dark .navbar-nav .nav-item .nav-link.disbled:hover {
@@ -6746,16 +6746,16 @@ a.btn:not([href]):not([tabindex]):hover {
     color: #fff; }
     .navbar.navbar-dark form .md-form .form-control::-webkit-input-placeholder {
       color: #fff;
-      font-weight: 300; }
+      font-weight: 400; }
     .navbar.navbar-dark form .md-form .form-control:-ms-input-placeholder {
       color: #fff;
-      font-weight: 300; }
+      font-weight: 400; }
     .navbar.navbar-dark form .md-form .form-control::-ms-input-placeholder {
       color: #fff;
-      font-weight: 300; }
+      font-weight: 400; }
     .navbar.navbar-dark form .md-form .form-control::placeholder {
       color: #fff;
-      font-weight: 300; }
+      font-weight: 400; }
   @media (min-width: 600px) {
     .navbar.scrolling-navbar {
       -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
@@ -8236,7 +8236,7 @@ table th {
 
 table td {
   font-size: 0.9rem;
-  font-weight: 300; }
+  font-weight: 400; }
 
 table.table thead th {
   border-top: none; }
@@ -12083,7 +12083,7 @@ button.mdb-autocomplete-clear {
   .md-accordion .card .card-body {
     font-size: 0.9rem;
     line-height: 1.7;
-    font-weight: 300;
+    font-weight: 400;
     color: #626262; }
 
 .accordion-gradient-bcg {
@@ -12392,7 +12392,7 @@ span[data-jarallax-element] {
       list-style-type: none; }
     .side-nav .collapsible a {
       color: #fff;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 0.8rem;
       height: 36px;
       line-height: 36px; }
@@ -12529,7 +12529,7 @@ span[data-jarallax-element] {
     padding: 0; }
     .side-nav .search-form input[type=text] {
       border-bottom: 1px solid rgba(255, 255, 255, 0.65);
-      font-weight: 300;
+      font-weight: 400;
       padding-left: 1.88rem; }
       .side-nav .search-form input[type=text]::-webkit-input-placeholder {
         color: #fff; }
@@ -13619,7 +13619,7 @@ button.md-toast-close-button {
     color: #fff; }
   .test-skin .navbar form .md-form .form-control {
     color: #fff;
-    font-weight: 300; }
+    font-weight: 400; }
     .test-skin .navbar form .md-form .form-control::-webkit-input-placeholder {
       color: #fff; }
     .test-skin .navbar form .md-form .form-control:-ms-input-placeholder {
@@ -13921,7 +13921,7 @@ button.md-toast-close-button {
     color: #424242; }
   .white-skin .navbar form .md-form .form-control {
     color: #424242;
-    font-weight: 300; }
+    font-weight: 400; }
     .white-skin .navbar form .md-form .form-control::-webkit-input-placeholder {
       color: #424242; }
     .white-skin .navbar form .md-form .form-control:-ms-input-placeholder {
@@ -14247,7 +14247,7 @@ button.md-toast-close-button {
     color: #fff; }
   .black-skin .navbar form .md-form .form-control {
     color: #fff;
-    font-weight: 300; }
+    font-weight: 400; }
     .black-skin .navbar form .md-form .form-control::-webkit-input-placeholder {
       color: #fff; }
     .black-skin .navbar form .md-form .form-control:-ms-input-placeholder {
@@ -14547,7 +14547,7 @@ button.md-toast-close-button {
     color: #fff; }
   .cyan-skin .navbar form .md-form .form-control {
     color: #fff;
-    font-weight: 300; }
+    font-weight: 400; }
     .cyan-skin .navbar form .md-form .form-control::-webkit-input-placeholder {
       color: #fff; }
     .cyan-skin .navbar form .md-form .form-control:-ms-input-placeholder {
@@ -14847,7 +14847,7 @@ button.md-toast-close-button {
     color: #fff; }
   .mdb-skin .navbar form .md-form .form-control {
     color: #fff;
-    font-weight: 300; }
+    font-weight: 400; }
     .mdb-skin .navbar form .md-form .form-control::-webkit-input-placeholder {
       color: #fff; }
     .mdb-skin .navbar form .md-form .form-control:-ms-input-placeholder {
@@ -15147,7 +15147,7 @@ button.md-toast-close-button {
     color: #fff; }
   .deep-purple-skin .navbar form .md-form .form-control {
     color: #fff;
-    font-weight: 300; }
+    font-weight: 400; }
     .deep-purple-skin .navbar form .md-form .form-control::-webkit-input-placeholder {
       color: #fff; }
     .deep-purple-skin .navbar form .md-form .form-control:-ms-input-placeholder {
@@ -15447,7 +15447,7 @@ button.md-toast-close-button {
     color: #fff; }
   .navy-blue-skin .navbar form .md-form .form-control {
     color: #fff;
-    font-weight: 300; }
+    font-weight: 400; }
     .navy-blue-skin .navbar form .md-form .form-control::-webkit-input-placeholder {
       color: #fff; }
     .navy-blue-skin .navbar form .md-form .form-control:-ms-input-placeholder {
@@ -15747,7 +15747,7 @@ button.md-toast-close-button {
     color: #fff; }
   .pink-skin .navbar form .md-form .form-control {
     color: #fff;
-    font-weight: 300; }
+    font-weight: 400; }
     .pink-skin .navbar form .md-form .form-control::-webkit-input-placeholder {
       color: #fff; }
     .pink-skin .navbar form .md-form .form-control:-ms-input-placeholder {
@@ -16047,7 +16047,7 @@ button.md-toast-close-button {
     color: #fff; }
   .indigo-skin .navbar form .md-form .form-control {
     color: #fff;
-    font-weight: 300; }
+    font-weight: 400; }
     .indigo-skin .navbar form .md-form .form-control::-webkit-input-placeholder {
       color: #fff; }
     .indigo-skin .navbar form .md-form .form-control:-ms-input-placeholder {
@@ -16347,7 +16347,7 @@ button.md-toast-close-button {
     color: #fff; }
   .light-blue-skin .navbar form .md-form .form-control {
     color: #fff;
-    font-weight: 300; }
+    font-weight: 400; }
     .light-blue-skin .navbar form .md-form .form-control::-webkit-input-placeholder {
       color: #fff; }
     .light-blue-skin .navbar form .md-form .form-control:-ms-input-placeholder {
@@ -16647,7 +16647,7 @@ button.md-toast-close-button {
     color: #fff; }
   .grey-skin .navbar form .md-form .form-control {
     color: #fff;
-    font-weight: 300; }
+    font-weight: 400; }
     .grey-skin .navbar form .md-form .form-control::-webkit-input-placeholder {
       color: #fff; }
     .grey-skin .navbar form .md-form .form-control:-ms-input-placeholder {
@@ -17194,7 +17194,7 @@ button.md-toast-close-button {
   text-align: center;
   background-color: #4285f4;
   padding-bottom: 0.9375rem;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 1rem; }
   .picker__date-display .clockpicker-display {
     vertical-align: middle;
@@ -17471,7 +17471,7 @@ button.md-toast-close-button {
       text-align: center;
       background-color: #4285f4;
       padding-bottom: 0.9375rem;
-      font-weight: 300;
+      font-weight: 400;
       margin-bottom: 1rem; }
       .picker__box .picker__header .picker__date-display .picker__weekday-display {
         background-color: #206ff2;
@@ -17805,7 +17805,7 @@ button.md-toast-close-button {
         display: inline-block;
         float: none;
         padding-left: 0.7rem;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 0.86rem;
         color: #9e9e9e; }
     .mdb-feed .news .excerpt .added-images {
@@ -17818,7 +17818,7 @@ button.md-toast-close-button {
       margin-bottom: 0.6rem;
       max-width: 450px; }
     .mdb-feed .news .excerpt .feed-footer .like {
-      font-weight: 300;
+      font-weight: 400;
       font-size: 0.86rem;
       color: #9e9e9e; }
       .mdb-feed .news .excerpt .feed-footer .like:hover .fas, .mdb-feed .news .excerpt .feed-footer .like:hover .fab, .mdb-feed .news .excerpt .feed-footer .like:hover .far {
@@ -17862,7 +17862,7 @@ button.md-toast-close-button {
   margin-bottom: 0.3rem; }
 
 .card-personal .card-body .card-meta {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.86rem;
   color: #757575; }
   .card-personal .card-body .card-meta .fas, .card-personal .card-body .card-meta .fab, .card-personal .card-body .card-meta .far {
@@ -17877,7 +17877,7 @@ button.md-toast-close-button {
 
 .news-card .content .right-side-meta {
   float: right;
-  font-weight: 300;
+  font-weight: 400;
   color: #9e9e9e;
   margin-top: 0.3rem; }
 
@@ -17991,7 +17991,7 @@ section.team-section .avatar img {
     .pricing-card .price .number {
       font-size: 5rem;
       padding: 1.5rem;
-      font-weight: 300; }
+      font-weight: 400; }
       .pricing-card .price .number:before {
         content: "$";
         position: absolute;

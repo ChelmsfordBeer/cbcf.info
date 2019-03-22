@@ -8,10 +8,10 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <!-- Properties to update per page -->
-  <title>Travel Info | Chelmsford Beer &amp; Cider Festivals</title>
-  <meta property="og:title" content="Travel Info | Chelmsford Beer & Cider Festivals">
-  <link rel="canonical" href="https://cbcf.info/travel" />
-  <meta property="og:url" content="https://cbcf.info/travel">
+  <title>TEMPLATE | Chelmsford Beer &amp; Cider Festivals</title>
+  <meta property="og:title" content="TEMPLATE | Chelmsford Beer & Cider Festivals">
+  <link rel="canonical" href="https://cbcf.info/TEMPLATE" />
+  <meta property="og:url" content="https://cbcf.info/TEMPLATE">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="./css/all.css">
@@ -30,11 +30,23 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark cbcf-primary fixed-top scrolling-navbar">
       <div class="container">
-        <a class="navbar-brand" href="./home">
-          <strong class="d-block d-sm-none">Chelmsford Beer Festivals</strong><strong class="d-none d-sm-block">Chelmsford Beer &amp; Cider Festivals</strong>
+        <a class="navbar-brand d-none d-xl-block" href="./home">
+          <strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;Chelmsford Beer &amp; Cider Festivals</strong>
+        </a>
+        <a class="navbar-brand d-none d-lg-block d-xl-none" href="./home">
+          <strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;CBCF</strong>
+        </a>
+        <a class="navbar-brand d-none d-md-block d-lg-none" href="./home">
+          <strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;Chelmsford Beer &amp; Cider Festivals</strong>
+        </a>
+        <a class="navbar-brand d-none d-sm-block d-md-none" href="./home">
+          <strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;Chelmsford Beer &amp; Cider Festivals</strong>
+        </a>
+        <a class="navbar-brand d-xs-block d-sm-none" href="./home">
+          <strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;Chelmsford Beer Festivals</strong>
         </a>
         <a class="navbar-brand-sm" href="./home">
-          <strong>CBCF</strong>
+          <strong style="color: #fff;"><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;CBCF</strong>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <div class="animated-icon3"><span></span><span></span><span></span><span></span></div>
@@ -45,31 +57,51 @@
             <li class="nav-item">
               <a class="nav-link hoverable" href="./home">Home</a>
             </li>
-            <!-- Drink Lists -->
-            <!-- <li class="nav-item">
-              <a class="nav-link hoverable" href="./drinks">Drink Lists</a>
-            </li> -->
-            <!-- Travel Info -->
-            <li class="nav-item">
-              <a class="nav-link hoverable" href="./travel">Travel Info</a>
+            <!-- Visitor Information -->
+            <li class="nav-item dropdown">
+              <a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visitor Info</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./times-prices">Opening times & Prices</a>
+                <a class="dropdown-item" href="./travel">Travel Info</a>
+                <!-- <a class="dropdown-item" href="./entertainment">Entertainment</a> -->
+                <a class="dropdown-item" href="./accessibility">Accessibility</a>
+                <!-- <a class="dropdown-item" href="./faqs">FAQs</a>
+                <a class="dropdown-item" href="./survival-guide">Festival Survival Guide</a>
+                <a class="dropdown-item" href="./children">Children</a> -->
+              </div>
             </li>
-            <!-- FAQs -->
-            <!-- <li class="nav-item">
-              <a class="nav-link hoverable" href="./faqs">FAQs</a>
+            <!-- Drinks & Food -->
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drinks &amp; Food</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./beer">Beer</a>
+                <a class="dropdown-item" href="./cider">Cider &amp; Perry</a>
+                <a class="dropdown-item" href="./belgian-beer">Belgian Beer</a>
+                <a class="dropdown-item" href="./wine">Wine</a>
+                <a class="dropdown-item" href="./food">Food</a>
+                <a class="dropdown-item" href="./allergies">Allergies</a>
+              </div>
             </li> -->
             <!-- Volunteer -->
             <li class="nav-item">
-              <a class="nav-link hoverable" href="./volunteer">Volunteer</a>
+              <a class="nav-link hoverable" href="./volunteer">Volunteering</a>
             </li>
             <!-- About CBCF Dropdown -->
             <li class="nav-item dropdown">
               <a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
               <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="./archive">Previous Festivals</a>
+                <!-- <a class="dropdown-item" href="./sponsorship">Sponsorship</a>
+                <a class="dropdown-item" href="./suppliers">Suppliers</a>
+                <a class="dropdown-item" href="./corporate">Corporate Events</a> -->
                 <a class="dropdown-item" href="./history">Our History</a>
-                <a class="dropdown-item" href="./contact">Contact Us</a>
+                <a class="dropdown-item" href="./archive">Previous Festivals</a>
                 <a class="dropdown-item" href="//www.chelmsford.camra.org.uk/" rel="nofollow">Chelmsford &amp; Mid Essex CAMRA</a>
+                <a class="dropdown-item" href="http://www.camra.org.uk/" rel="nofollow">National CAMRA</a>
               </div>
+            </li>
+            <!-- Contact Us -->
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="./contact">Contact Us</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto nav-flex-icons" aria-hidden="true">
@@ -111,11 +143,9 @@
   </header>
 
   <!--Intro Section-->
-  <section class="header-page">
-    <div class="flex-center">
-      <h1 class="mt-4 mb-5 wow fadeInUp font-bold" data-wow-delay="0.2s"><i class="far fa-map" aria-hidden="true"></i>&nbsp;Travel Info</h1>
-    </div>
-  </section>
+  <br class="my-3"></br>
+  <br class="my-3"></br>
+  <h1 class="h1" style="text-align: center;"><i class="fal fa-map" aria-hidden="true"></i>&nbsp;Travel Info</h1>
 
 
   <!-- Main container-->
@@ -137,15 +167,15 @@
         <br class="d-none d-lg-block">
         <h2 class="d-none d-lg-block">Directions to the festival</h2>
         <ul class="fa-ul d-none d-lg-block">
-          <li class="d-none d-lg-block" style="font-size:large;"><span class="fa-li"><i class="fal fa-map-marker-alt" aria-hidden="true"></i></span><a href="//goo.gl/maps/WLu9XEq5bnx" rel="nofollow">From your current location</a></li>
-          <li class="d-none d-lg-block" style="font-size:large;"><span class="fa-li"><i class="fal fa-map-marker-alt" aria-hidden="true"></i></span><a href="//goo.gl/maps/stPWX8Me6XB2" rel="nofollow">From Chelmsford Train/Bus Station</a></li>
-          <li class="d-none d-lg-block" style="font-size:large;"><span class="fa-li"><i class="fal fa-map-marker-alt" aria-hidden="true"></i></span><a href="//goo.gl/maps/F7gZoUgPzmw" rel="nofollow">From Chelmsford City Centre</a></li>
+          <li class="d-none d-lg-block" style="font-size:large;"><span class="fa-li"><i class="fal fa-map-marker-alt" aria-hidden="true"></i></span><a href="//goo.gl/maps/NL856h7AGRP2" rel="nofollow">From your current location</a></li>
+          <li class="d-none d-lg-block" style="font-size:large;"><span class="fa-li"><i class="fal fa-map-marker-alt" aria-hidden="true"></i></span><a href="//goo.gl/maps/Yr8iYB6uhiy" rel="nofollow">From Chelmsford Train/Bus Station</a></li>
+          <li class="d-none d-lg-block" style="font-size:large;"><span class="fa-li"><i class="fal fa-map-marker-alt" aria-hidden="true"></i></span><a href="//goo.gl/maps/yVvMZ7qaCAE2" rel="nofollow">From High Chelmer Shopping Centre</a></li>
         </ul>
         <br class="d-none d-lg-block">
         <h2 class="d-none d-lg-block">Parking information</h2>
         <ul class="fa-ul d-none d-lg-block">
           <li class="d-none d-lg-block" style="font-size:large;"><span class="fa-li"><i class="fal fa-info-circle" aria-hidden="true"></i></span><strong>Please note that there is no parking at the festival site.</strong></li>
-          <li class="d-none d-lg-block" style="font-size:large;"><span class="fa-li"><i class="fal fa-car" aria-hidden="true"></i></span><a href="//goo.gl/maps/Zt1vFZ94Kxx" rel="nofollow">Nearby car parks</a></li>
+          <li class="d-none d-lg-block" style="font-size:large;"><span class="fa-li"><i class="fal fa-car" aria-hidden="true"></i></span><a href="//goo.gl/maps/2e3MoGM5k8p" rel="nofollow">Nearby car parks</a></li>
         </ul>
         <!--Desktop Column-->
       </div>
@@ -155,16 +185,16 @@
       <div class="col-lg-5 col-md-6 d-block d-lg-none">
         <h2 class="d-block d-lg-none">Directions to the festival</h2>
         <ul class="fa-ul d-block d-lg-none">
-          <li class="d-block d-lg-none" style="font-size:large;"><span class="fa-li"><i class="fal fa-map-marker-alt" aria-hidden="true"></i></span><a href="//goo.gl/maps/WLu9XEq5bnx" rel="nofollow">From your current location</a></li>
-          <li class="d-block d-lg-none" style="font-size:large;"><span class="fa-li"><i class="fal fa-map-marker-alt" aria-hidden="true"></i></span><a href="//goo.gl/maps/stPWX8Me6XB2" rel="nofollow">From Chelmsford Train Station</a></li>
-          <li class="d-block d-lg-none" style="font-size:large;"><span class="fa-li"><i class="fal fa-map-marker-alt" aria-hidden="true"></i></span><a href="//goo.gl/maps/F7gZoUgPzmw" rel="nofollow">From High Chelmer Shopping Centre</a></li>
+          <li class="d-block d-lg-none" style="font-size:large;"><span class="fa-li"><i class="fal fa-map-marker-alt" aria-hidden="true"></i></span><a href="//goo.gl/maps/NL856h7AGRP2" rel="nofollow">From your current location</a></li>
+          <li class="d-block d-lg-none" style="font-size:large;"><span class="fa-li"><i class="fal fa-map-marker-alt" aria-hidden="true"></i></span><a href="//goo.gl/maps/Yr8iYB6uhiy" rel="nofollow">From Chelmsford Train Station</a></li>
+          <li class="d-block d-lg-none" style="font-size:large;"><span class="fa-li"><i class="fal fa-map-marker-alt" aria-hidden="true"></i></span><a href="//goo.gl/maps/yVvMZ7qaCAE2" rel="nofollow">From High Chelmer Shopping Centre</a></li>
         </ul>
       </div>
       <div class="col-lg-5 col-md-6 d-block d-lg-none">
         <h2 class="d-block d-lg-none">Parking information</h2>
         <ul class="fa-ul d-block d-lg-none">
           <li class="d-block d-lg-none" style="font-size:large;"><span class="fa-li"><i class="fal fa-info-circle" aria-hidden="true"></i></span><strong>Please note that there is no parking at the festival site.</strong></li>
-          <li class="d-block d-lg-none" style="font-size:large;"><span class="fa-li"><i class="fal fa-car" aria-hidden="true"></i></span><a href="//goo.gl/maps/Zt1vFZ94Kxx" rel="nofollow">Nearby car parks</a></li>
+          <li class="d-block d-lg-none" style="font-size:large;"><span class="fa-li"><i class="fal fa-car" aria-hidden="true"></i></span><a href="//goo.gl/maps/2e3MoGM5k8p" rel="nofollow">Nearby car parks</a></li>
         </ul>
       </div>
       <!--Mobile Column-->
@@ -176,7 +206,7 @@
         <p>Admirals Park, Rainsford Road, Chelmsford, Essex, CM1 2PL</p>
         <!--Google map-->
         <div id="map-container" class="z-depth-1-half map-container mb-5" style="height: 400px" title="Chelmsford Winter Beer & Cider Festival location"></div>
-        <p style="text-align: center;"><a href="//goo.gl/maps/gXiG7VfGMk72" rel="nofollow">Open
+        <p style="text-align: center;"><a href="//goo.gl/maps/xzCyq4cK3KE2" rel="nofollow">Open
             in Google
             Maps&nbsp;<i class="fal fa-external-link" aria-hidden="true"></i></a></p>
 
@@ -266,7 +296,7 @@
   <script nonce="NXZgdi85NlgwPz1qTXFJYmNZbXQrVSwndCtPS2ZCT1s=">
     // Regular map
     function regular_map() {
-      var var_location = new google.maps.LatLng(51.7398306, 0.4642045);
+      var var_location = new google.maps.LatLng(51.7388676, 0.453921);
 
       var var_mapoptions = {
         center: var_location,

@@ -39,22 +39,14 @@
   color: #fff;
 }
 
-@media only screen and (max-width: 334px) {
+@media only screen and (max-width: 364px) {
   .navbar-brand {
-    display: none;
-  }
-
-  .cbcf-normal {
     display: none;
   }
 }
 
-@media only screen and (min-width: 335px) {
+@media only screen and (min-width: 365px) {
   .navbar-brand-sm {
-    display: none;
-  }
-
-  .cbcf-sm {
     display: none;
   }
 }

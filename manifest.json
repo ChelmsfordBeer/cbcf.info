@@ -1,8 +1,8 @@
 {
   "name": "Chelmsford Beer & Cider Festivals",
   "short_name": "CBCF",
-  "theme_color": "#181F3B",
-  "background_color": "#232d53",
+  "theme_color": "#75408E",
+  "background_color": "#4D2B5F",
   "display": "standalone",
   "orientation": "portrait",
   "start_url": "/home.html",

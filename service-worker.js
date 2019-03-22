@@ -1,6 +1,6 @@
 'use strict';
 
-var cacheVersion = 14;
+var cacheVersion = 15;
 var currentCache = {
   offline: 'offline-cache' + cacheVersion
 };
@@ -20,9 +20,7 @@ this.addEventListener('install', event => {
         'https://cbcf.info/js/bootstrap.js',
         'https://cbcf.info/js/mdb.min.js',
         'https://cbcf.info/js/zenscroll-min.js',
-        'https://cbcf.info/js/webp.js',
-        'https://cbcf.info/img/home/winter.webp',
-        'https://cbcf.info/img/home/winter.png',
+        'https://cbcf.info/js/webp.js',,
         'https://cbcf.info/webfonts/fa-brands-400.eot',
         'https://cbcf.info/webfonts/fa-brands-400.svg',
         'https://cbcf.info/webfonts/fa-brands-400.ttf',
