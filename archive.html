@@ -14,213 +14,138 @@
 	<meta property="og:url" content="https://cbcf.info/archive">
 
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/all.css">
 
 	<!-- Bootstrap core CSS -->
 	<link href="./css/bootstrap.css" rel="stylesheet">
 
 	<!-- Material Design Bootstrap -->
 	<link href="./css/mdb.css" rel="stylesheet">
-	<link href="./css/style.css" rel="stylesheet">
-
-	<!-- Template styles -->
-  <style>
-    .navbar:not(.top-nav-collapse) {
-    background: transparent !important;
-  }
-
-    .navbar {
-      box-shadow: none !important;
-    }
-
-    @media (max-width: 991.98px) {
-      .navbar:not(.top-nav-collapse) {
-        background: #242E54 !important;
-      }
-    }
-
-    .flex-center {
-      color: #fff;
-    }
-
-    body,
-    html {
-      height: 100%;
-    }
-
-   .header-page {
-      background: #242E54;
-      height: 40%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .intro-1 {
-      background: #242E54;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
-    .nav-item a:hover {
-      color: #fff !important;
-    }
-
-    .nav-item a {
-      color: #f8f8f8 !important;
-    }
-
-    .navbar .btn-group .dropdown-menu a:hover {
-      color: #000 !important;
-    }
-
-    .navbar .btn-group .dropdown-menu a:active {
-      color: #fff !important;
-    }
-
-    @media only screen and (max-width: 667px) {
-      .display-3 {
-        font-size: 3rem;
-      }
-    }
-
-    @media only screen and (max-width: 767px) {
-      .navbar {
-        background-color: #242E54;
-      }
-      .display-3 {
-        font-size: 2rem;
-        margin-top: 5rem;
-      }
-      h3 {
-        font-size: 1rem;
-      }
-    }
-
-    .dropdown .dropdown-menu .dropdown-item:hover,
-    .dropdown .dropdown-menu .dropdown-item:active,
-    .dropdown .dropdown-menu .dropdown-item:focus {
-      color: #1E274A;
-      background-color: #1E274A;
-    }
-
-    @media only screen and (max-width: 334px) {
-      .navbar-brand {
-        display: none;
-      }
-      .cbcf-normal {
-        display: none;
-      }
-    }
-
-    @media only screen and (min-width: 335px) {
-      .navbar-brand-sm {
-        display: none;
-      }
-      .cbcf-sm {
-        display: none;
-      }
-    }
-
-    .cbcf-purple {
-      background-color: #232D53;
-    }
-
-    .cbcf-purple-light {
-      background-color: #1F284B;
-    }
-  </style>
+	<link href="./css/custom.css" rel="stylesheet">
 
 </head>
 
 <body>
-  <header>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark unique-color-dark fixed-top scrolling-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="./home">
-          <strong class="d-block d-sm-none">Chelmsford Beer Festivals</strong><strong class="d-none d-sm-block">Chelmsford Beer &amp; Cider Festivals</strong>
-        </a>
-        <a class="navbar-brand-sm" href="./home">
-          <strong>CBCF</strong>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <div class="animated-icon3"><span></span><span></span><span></span><span></span></div>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <!-- Desktop Navlinks -->
-            <li class="nav-item">
-              <a class="nav-link hoverable" href="./home">Home</a>
-            </li>
-            <!-- Drink Lists -->
-            <li class="nav-item">
-              <a class="nav-link hoverable" href="./drinks">Drink Lists</a>
-            </li>
-            <!-- Travel Info -->
-            <li class="nav-item">
-              <a class="nav-link hoverable" href="./travel">Travel Info</a>
-            </li>
-            <!-- FAQs -->
-            <li class="nav-item">
-              <a class="nav-link hoverable" href="./faqs">FAQs</a>
-            </li>
-            <!-- Volunteer -->
-            <li class="nav-item">
-              <a class="nav-link hoverable" href="./volunteer">Volunteer</a>
-            </li>
-            <!-- About CBCF Dropdown -->
-            <li class="nav-item dropdown">
-              <a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+	<header>
+		<!--Navbar-->
+		<nav class="navbar navbar-expand-lg navbar-dark cbcf-primary fixed-top scrolling-navbar">
+			<div class="container">
+				<a class="navbar-brand d-none d-xl-block" href="./home">
+					<strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;Chelmsford Beer &amp; Cider Festivals</strong>
+				</a>
+				<a class="navbar-brand d-none d-lg-block d-xl-none" href="./home">
+					<strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;CBCF</strong>
+				</a>
+				<a class="navbar-brand d-none d-md-block d-lg-none" href="./home">
+					<strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;Chelmsford Beer &amp; Cider Festivals</strong>
+				</a>
+				<a class="navbar-brand d-none d-sm-block d-md-none" href="./home">
+					<strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;Chelmsford Beer &amp; Cider Festivals</strong>
+				</a>
+				<a class="navbar-brand d-xs-block d-sm-none" href="./home">
+					<strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;Chelmsford Beer Festivals</strong>
+				</a>
+				<a class="navbar-brand-sm" href="./home">
+					<strong style="color: #fff;"><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;CBCF</strong>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<div class="animated-icon3"><span></span><span></span><span></span><span></span></div>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<!-- Desktop Navlinks -->
+						<li class="nav-item">
+							<a class="nav-link hoverable" href="./home">Home</a>
+						</li>
+						<!-- Visitor Information -->
+						<li class="nav-item dropdown">
+							<a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visitor Info</a>
+							<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="./times-prices">Opening times & Prices</a>
+								<a class="dropdown-item" href="./travel">Travel Info</a>
+								<!-- <a class="dropdown-item" href="./entertainment">Entertainment</a> -->
+								<a class="dropdown-item" href="./accessibility">Accessibility</a>
+								<!-- <a class="dropdown-item" href="./faqs">FAQs</a>
+                <a class="dropdown-item" href="./survival-guide">Festival Survival Guide</a>
+                <a class="dropdown-item" href="./children">Children</a> -->
+							</div>
+						</li>
+						<!-- Drinks & Food -->
+						<!-- <li class="nav-item dropdown">
+              <a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drinks &amp; Food</a>
               <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="./archive">Previous Festivals</a>
-                <a class="dropdown-item" href="./history">Our History</a>
-                <a class="dropdown-item" href="./contact">Contact Us</a>
-                <a class="dropdown-item" href="//www.chelmsford.camra.org.uk/" rel="nofollow">Chelmsford &amp; Mid Essex CAMRA</a>
+                <a class="dropdown-item" href="./beer">Beer</a>
+                <a class="dropdown-item" href="./cider">Cider &amp; Perry</a>
+                <a class="dropdown-item" href="./belgian-beer">Belgian Beer</a>
+                <a class="dropdown-item" href="./wine">Wine</a>
+                <a class="dropdown-item" href="./food">Food</a>
+                <a class="dropdown-item" href="./allergies">Allergies</a>
               </div>
-            </li>
-          </ul>
+            </li> -->
+						<!-- Volunteer -->
+						<li class="nav-item">
+							<a class="nav-link hoverable" href="./volunteer">Volunteering</a>
+						</li>
+						<!-- About CBCF Dropdown -->
+						<li class="nav-item dropdown">
+							<a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+							<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+								<!-- <a class="dropdown-item" href="./sponsorship">Sponsorship</a>
+                <a class="dropdown-item" href="./suppliers">Suppliers</a>
+                <a class="dropdown-item" href="./corporate">Corporate Events</a> -->
+								<a class="dropdown-item" href="./history">Our History</a>
+								<a class="dropdown-item" href="./archive">Previous Festivals</a>
+								<a class="dropdown-item" href="//www.chelmsford.camra.org.uk/" rel="nofollow">Chelmsford &amp; Mid Essex CAMRA</a>
+								<a class="dropdown-item" href="http://www.camra.org.uk/" rel="nofollow">National CAMRA</a>
+							</div>
+						</li>
+						<!-- Contact Us -->
+						<li class="nav-item">
+							<a class="nav-link hoverable" href="./contact">Contact Us</a>
+						</li>
+					</ul>
 					<ul class="navbar-nav ml-auto nav-flex-icons" aria-hidden="true">
-            <!-- Social Links -->
-            <span class="navbar-text white-text d-block d-lg-none" style="padding-left: 6px;">
-              <strong>Follow us on social media!</strong>
-            </span>
-            <hr>
-            <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Facebook page</span></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Facebook page</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Twitter page</span></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Twitter page</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Instagram page</span></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Facebook page</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Snapchat account</span></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Snapchat account</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link hoverable d-none d-lg-block" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals YouTube channel</span></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals YouTube channel</span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!--/.Navbar-->
-  </header>
+						<!-- Social Links -->
+						<span class="navbar-text white-text d-block d-lg-none" style="padding-left: 6px;">
+							<strong>Follow us on social media!</strong>
+						</span>
+						<hr>
+						<li class="nav-item">
+							<a class="nav-link hoverable d-none d-lg-block" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Facebook page</span></a>
+							<a class="nav-link hoverable d-block d-lg-none" href="//www.facebook.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Facebook
+									page</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link hoverable d-none d-lg-block" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Twitter page</span></a>
+							<a class="nav-link hoverable d-block d-lg-none" href="//twitter.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Twitter page</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link hoverable d-none d-lg-block" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Instagram page</span></a>
+							<a class="nav-link hoverable d-block d-lg-none" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Instagram page</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link hoverable d-none d-lg-block" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Snapchat
+									account</span></a>
+							<a class="nav-link hoverable d-block d-lg-none" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals
+									Snapchat account</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link hoverable d-none d-lg-block" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals YouTube
+									channel</span></a>
+							<a class="nav-link hoverable d-block d-lg-none" href="//www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw" rel="nofollow"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals
+									YouTube channel</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--/.Navbar-->
+	</header>
 
 	<!--Intro Section-->
-	<section class="header-page">
-		<div class="flex-center">
-			<h1 class="mt-4 mb-5 wow fadeInUp font-bold" data-wow-delay="0.2s" style="text-align: center;"><i class="far fa-images" aria-hidden="true"></i>&nbsp;Previous Festivals</h1>
-		</div>
-	</section>
+	<br class="my-3"></br>
+	<br class="my-3"></br>
+	<h1 class="h1" style="text-align: center;"><i class="fal fa-images" aria-hidden="true"></i>&nbsp;Previous Festivals</h1>
 
 
 	<div class="container">
@@ -229,6 +154,37 @@
 		<section>
 
 			<div class="row pt-3">
+				<!--2019 Winter columnn-->
+				<div class="col-sm-4 mb-r">
+
+					<!--Card-->
+					<div class="card hoverable wow fadeIn">
+
+						<!--Card image-->
+						<div class="view overlay">
+							<picture>
+								<source srcset="./img/archive/2019-w.webp" type="image/webp">
+								<source srcset="./img/archive/2019-w.png" type="image/png">
+								<img class="img-fluid" src="./img/archive/2019-w.png" alt="Winter Festival 2019">
+							</picture>
+							<a href="./2019/winter">
+								<div class="mask rgba-white-slight"></div>
+							</a>
+						</div>
+
+						<!--Card content-->
+						<div class="card-body">
+							<!--Title-->
+							<h4 class="card-title text-center">Winter Festival 2019</h4>
+							<center>
+								<a href="./2019/winter" class="btn cbcf-primary">View photos</a>
+							</center>
+						</div>
+
+					</div>
+					<!--/.Card-->
+				</div>
+				<!--2019 Winter columnn-->
 
 				<!--First columnn-->
 				<div class="col-sm-4 mb-r">
@@ -237,14 +193,14 @@
 					<div class="card hoverable wow fadeIn">
 
 						<!--Card image-->
-						<div class="view overlay hm-white-slight">
+						<div class="view overlay">
 							<picture>
 								<source srcset="./img/archive/2018-s.webp" type="image/webp">
 								<source srcset="./img/archive/2018-s.jpg" type="image/jpeg">
 								<img class="img-fluid" src="./img/archive/2018-s.jpg" alt="Summer Festival 2018">
 							</picture>
 							<a href="./2018/summer">
-								<div class="mask"></div>
+								<div class="mask rgba-white-slight"></div>
 							</a>
 						</div>
 
@@ -253,7 +209,7 @@
 							<!--Title-->
 							<h4 class="card-title text-center">Summer Festival 2018</h4>
 							<center>
-								<a href="./2018/summer" class="btn btn-indigo">View photos</a>
+								<a href="./2018/summer" class="btn cbcf-primary">View photos</a>
 							</center>
 						</div>
 
@@ -269,14 +225,14 @@
 					<div class="card hoverable wow fadeIn">
 
 						<!--Card image-->
-						<div class="view overlay hm-white-slight">
+						<div class="view overlay">
 							<picture>
 								<source srcset="./img/archive/2018-w.webp" type="image/webp">
 								<source srcset="./img/archive/2018-w.jpg" type="image/jpeg">
 								<img class="img-fluid" src="./img/archive/2018-w.jpg" alt="Winter Festival 2018">
 							</picture>
 							<a href="./2018/winter">
-								<div class="mask"></div>
+								<div class="mask rgba-white-slight"></div>
 							</a>
 						</div>
 
@@ -285,7 +241,7 @@
 							<!--Title-->
 							<h4 class="card-title text-center">Winter Festival 2018</h4>
 							<center>
-								<a href="./2018/winter" class="btn btn-indigo">View photos</a>
+								<a href="./2018/winter" class="btn cbcf-primary">View photos</a>
 							</center>
 						</div>
 
@@ -293,7 +249,9 @@
 					<!--/.Card-->
 				</div>
 				<!--Second columnn-->
-
+			</div>
+			<br class="d-xs-none d-sm-block"></br>
+			<div class="row align-items-center">
 				<!--Third columnn-->
 				<div class="col-sm-4 mb-r">
 
@@ -301,14 +259,14 @@
 					<div class="card hoverable wow fadeIn">
 
 						<!--Card image-->
-						<div class="view overlay hm-white-slight">
+						<div class="view overlay">
 							<picture>
 								<source srcset="./img/archive/2017-s.webp" type="image/webp">
 								<source srcset="./img/archive/2017-s.jpg" type="image/jpeg">
 								<img class="img-fluid" src="./img/archive/2017-s.jpg" alt="Summer Festival 2017">
 							</picture>
 							<a href="./2017/summer">
-								<div class="mask"></div>
+								<div class="mask rgba-white-slight"></div>
 							</a>
 						</div>
 
@@ -317,7 +275,7 @@
 							<!--Title-->
 							<h4 class="card-title text-center">Summer Festival 2017</h4>
 							<center>
-								<a href="./2017/summer" class="btn btn-indigo">View photos</a>
+								<a href="./2017/summer" class="btn cbcf-primary">View photos</a>
 							</center>
 						</div>
 
@@ -325,8 +283,7 @@
 					<!--/.Card-->
 				</div>
 				<!--Third columnn-->
-			</div>
-			<div class="row align-items-center">
+
 				<!--Fourth columnn-->
 				<div class="col-sm-4 mb-r">
 
@@ -334,7 +291,7 @@
 					<div class="card hoverable wow fadeIn">
 
 						<!--Card image-->
-						<div class="view overlay hm-white-slight">
+						<div class="view overlay">
 							<center>
 								<picture>
 									<source srcset="./img/archive/2017-w.webp" type="image/webp">
@@ -343,7 +300,7 @@
 								</picture>
 							</center>
 							<a href="./2017/winter">
-								<div class="mask"></div>
+								<div class="mask rgba-white-slight"></div>
 							</a>
 						</div>
 
@@ -352,7 +309,7 @@
 							<!--Title-->
 							<h4 class="card-title text-center">Winter Festival 2017</h4>
 							<center>
-								<a href="./2017/winter" class="btn btn-indigo">View photos</a>
+								<a href="./2017/winter" class="btn cbcf-primary">View photos</a>
 							</center>
 						</div>
 
@@ -360,6 +317,7 @@
 					<!--/.Card-->
 				</div>
 				<!--Fourth columnn-->
+
 				<!--Fifth columnn-->
 				<div class="col-sm-4 mb-r">
 
@@ -367,7 +325,7 @@
 					<div class="card hoverable wow fadeIn">
 
 						<!--Card image-->
-						<div class="view overlay hm-white-slight">
+						<div class="view overlay">
 							<center>
 								<picture>
 									<source srcset="./img/archive/2016-s.webp" type="image/webp">
@@ -376,7 +334,7 @@
 								</picture>
 							</center>
 							<a href="./2016/summer">
-								<div class="mask"></div>
+								<div class="mask rgba-white-slight"></div>
 							</a>
 						</div>
 
@@ -385,7 +343,7 @@
 							<!--Title-->
 							<h4 class="card-title text-center">Summer Festival 2016</h4>
 							<center>
-								<a href="./2016/summer" class="btn btn-indigo">View photos</a>
+								<a href="./2016/summer" class="btn cbcf-primary">View photos</a>
 							</center>
 						</div>
 
@@ -393,7 +351,9 @@
 					<!--/.Card-->
 				</div>
 				<!--Fifth columnn-->
-
+			</div>
+			<br class="d-xs-none d-sm-block"></br>
+			<div class="row align-items-center">
 				<!--Sixth columnn-->
 				<div class="col-sm-4 mb-r">
 
@@ -401,14 +361,14 @@
 					<div class="card hoverable wow fadeIn">
 
 						<!--Card image-->
-						<div class="view overlay hm-white-slight">
+						<div class="view overlay">
 							<picture>
 								<source srcset="./img/archive/2016-w.webp" type="image/webp">
 								<source srcset="./img/archive/2016-w.jpg" type="image/jpeg">
 								<img class="img-fluid" src="./img/archive/2016-w.jpg" alt="Winter Festival 2016">
 							</picture>
 							<a href="./2016/winter">
-								<div class="mask"></div>
+								<div class="mask rgba-white-slight"></div>
 							</a>
 						</div>
 
@@ -417,7 +377,7 @@
 							<!--Title-->
 							<h4 class="card-title text-center">Winter Festival 2016</h4>
 							<center>
-								<a href="./2016/winter" class="btn btn-indigo">View photos</a>
+								<a href="./2016/winter" class="btn cbcf-primary">View photos</a>
 							</center>
 						</div>
 
@@ -425,8 +385,7 @@
 					<!--/.Card-->
 				</div>
 				<!--Sixth columnn-->
-			</div>
-			<div class="row align-items-center">
+
 				<!--Seventh columnn-->
 				<div class="col-sm-4 mb-r">
 
@@ -434,7 +393,7 @@
 					<div class="card hoverable wow fadeIn">
 
 						<!--Card image-->
-						<div class="view overlay hm-white-slight">
+						<div class="view overlay">
 							<center>
 								<picture>
 									<source srcset="./img/archive/2015-s.webp" type="image/webp">
@@ -443,7 +402,7 @@
 								</picture>
 							</center>
 							<a href="./2015/summer">
-								<div class="mask"></div>
+								<div class="mask rgba-white-slight"></div>
 							</a>
 						</div>
 
@@ -452,7 +411,7 @@
 							<!--Title-->
 							<h4 class="card-title text-center">Summer Festival 2015</h4>
 							<center>
-								<a href="./2015/summer" class="btn btn-indigo">View photos</a>
+								<a href="./2015/summer" class="btn cbcf-primary">View photos</a>
 							</center>
 						</div>
 
@@ -467,7 +426,7 @@
 					<div class="card hoverable wow fadeIn">
 
 						<!--Card image-->
-						<div class="view overlay hm-white-slight">
+						<div class="view overlay">
 							<center>
 								<picture>
 									<source srcset="./img/archive/2015-w.webp" type="image/webp">
@@ -476,7 +435,7 @@
 								</picture>
 							</center>
 							<a href="./2015/winter">
-								<div class="mask"></div>
+								<div class="mask rgba-white-slight"></div>
 							</a>
 						</div>
 
@@ -485,7 +444,7 @@
 							<!--Title-->
 							<h4 class="card-title text-center">Winter Festival 2015</h4>
 							<center>
-								<a href="./2015/winter" class="btn btn-indigo">View photos</a>
+								<a href="./2015/winter" class="btn cbcf-primary">View photos</a>
 							</center>
 						</div>
 
@@ -493,7 +452,9 @@
 					<!--/.Card-->
 				</div>
 				<!--Eighth columnn-->
-
+			</div>
+			<br class="d-xs-none d-sm-block"></br>
+			<div class="row align-items-center">
 				<!--Ninth columnn-->
 				<div class="col-sm-4 mb-r">
 
@@ -501,14 +462,14 @@
 					<div class="card hoverable wow fadeIn">
 
 						<!--Card image-->
-						<div class="view overlay hm-white-slight">
+						<div class="view overlay">
 							<picture>
 								<source srcset="./img/archive/2014-s.webp" type="image/webp">
 								<source srcset="./img/archive/2014-s.jpg" type="image/jpeg">
 								<img class="img-fluid" src="./img/archive/2014-s.jpg" alt="Summer Festival 2014">
 							</picture>
 							<a href="./2014/summer">
-								<div class="mask"></div>
+								<div class="mask rgba-white-slight"></div>
 							</a>
 						</div>
 
@@ -517,7 +478,7 @@
 							<!--Title-->
 							<h4 class="card-title text-center">Summer Festival 2014</h4>
 							<center>
-								<a href="./2014/summer" class="btn btn-indigo">View photos</a>
+								<a href="./2014/summer" class="btn cbcf-primary">View photos</a>
 							</center>
 						</div>
 
@@ -525,8 +486,7 @@
 					<!--/.Card-->
 				</div>
 				<!--Ninth columnn-->
-			</div>
-			<div class="row align-items-center">
+
 				<!--Tenth columnn-->
 				<div class="col-sm-4 mb-r">
 
@@ -534,7 +494,7 @@
 					<div class="card hoverable wow fadeIn">
 
 						<!--Card image-->
-						<div class="view overlay hm-white-slight">
+						<div class="view overlay">
 							<center>
 								<picture>
 									<source srcset="./img/archive/2014-w.webp" type="image/webp">
@@ -543,7 +503,7 @@
 								</picture>
 							</center>
 							<a href="./2014/winter">
-								<div class="mask"></div>
+								<div class="mask rgba-white-slight"></div>
 							</a>
 						</div>
 
@@ -552,7 +512,7 @@
 							<!--Title-->
 							<h4 class="card-title text-center">Winter Festival 2014</h4>
 							<center>
-								<a href="./2014/winter" class="btn btn-indigo">View photos</a>
+								<a href="./2014/winter" class="btn cbcf-primary">View photos</a>
 							</center>
 						</div>
 
@@ -567,7 +527,7 @@
 					<div class="card hoverable wow fadeIn">
 
 						<!--Card image-->
-						<div class="view overlay hm-white-slight">
+						<div class="view overlay">
 							<center>
 								<picture>
 									<source srcset="./img/archive/2013-s.webp" type="image/webp">
@@ -576,7 +536,7 @@
 								</picture>
 							</center>
 							<a href="./2013/summer">
-								<div class="mask"></div>
+								<div class="mask rgba-white-slight"></div>
 							</a>
 						</div>
 
@@ -585,7 +545,7 @@
 							<!--Title-->
 							<h4 class="card-title text-center">Summer Festival 2013</h4>
 							<center>
-								<a href="./2013/summer" class="btn btn-indigo">View photos</a>
+								<a href="./2013/summer" class="btn cbcf-primary">View photos</a>
 							</center>
 						</div>
 
@@ -593,7 +553,9 @@
 					<!--/.Card-->
 				</div>
 				<!--Eleventh columnn-->
-
+			</div>
+			<br class="d-xs-none d-sm-block"></br>
+			<div class="row align-items-center">
 				<!--Twelfth columnn-->
 				<div class="col-sm-4 mb-r">
 
@@ -601,14 +563,14 @@
 					<div class="card hoverable wow fadeIn">
 
 						<!--Card image-->
-						<div class="view overlay hm-white-slight">
+						<div class="view overlay">
 							<picture>
 								<source srcset="./img/archive/2013-w.webp" type="image/webp">
 								<source srcset="./img/archive/2013-w.jpg" type="image/jpeg">
 								<img class="img-fluid" src="./img/archive/2013-w.jpg" alt="Winter Festival 2013">
 							</picture>
 							<a href="./2013/winter">
-								<div class="mask"></div>
+								<div class="mask rgba-white-slight"></div>
 							</a>
 						</div>
 
@@ -617,7 +579,7 @@
 							<!--Title-->
 							<h4 class="card-title text-center">Winter Festival 2013</h4>
 							<center>
-								<a href="./2013/winter" class="btn btn-indigo">View photos</a>
+								<a href="./2013/winter" class="btn cbcf-primary">View photos</a>
 							</center>
 						</div>
 
@@ -629,12 +591,14 @@
 		</section>
 		<!--/Section: Festival Selector -->
 	</div>
+	<br class="my-3"></br>
 
 	<!--Footer-->
-	<footer class="page-footer cbcf-purple-light center-on-small-only">
+	<footer class="page-footer cbcf-primary center-on-small-only">
 
 		<!--Copyright Notice-->
 		<div class="col-md-12" style="text-align: center;">
+			<br>
 			<h5 class="title">Copyright Notice</h5>
 			<small>All rights reserved. Chelmsford Beer Festival® &amp; Chelmsford Beer &amp; Cider Festival™, Chelmsford Winter Beer &amp; Cider Festival™ &amp; Chelmsford Summer Beer &amp; Cider Festival™</small>
 			<br>
@@ -646,7 +610,7 @@
 		<!--/.Copyright Notice-->
 
 		<!--Privacy/GitHub-->
-		<div class="footer-copyright" style="background-color: #1B2343;">
+		<div class="footer-copyright cbcf-secondary" style="text-align: center;">
 			<div class="container-fluid">
 				<a href="./privacy">Privacy Policy</a> | Site Design: <a href="https://github.com/tmaguire/cbcf.info">Thomas Maguire</a>
 			</div>
@@ -654,8 +618,8 @@
 		<!--/.Privacy/GitHub-->
 
 		<!--License-->
-		<div class="footer-copyright cbcf-purple">
-			<div class="container-fluid">
+		<div class="footer-copyright cbcf-dark">
+			<div class="container-fluid" style="text-align: center;">
 				<p style="color: #fff;">This site is licensed under the <a href="https://github.com/tmaguire/cbcf.info/blob/master/LICENSE" rel="nofollow">Mozilla Public License 2.0</a></p>
 			</div>
 		</div>
@@ -673,7 +637,7 @@
 	<script type="text/javascript" src="./js/popper.min.js"></script>
 
 	<!-- Bootstrap core JavaScript -->
-	<script type="text/javascript" src="./js/bootstrap.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
 
 	<!-- MDB core JavaScript -->
 	<script type="text/javascript" src="./js/mdb.min.js"></script>

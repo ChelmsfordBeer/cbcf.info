@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="full-height">
+<html lang="en">
 
 <head>
 
@@ -8,138 +8,45 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <!-- Properties to update per page -->
-  <title>Home | Chelmsford Beer &amp; Cider Festivals</title>
-  <meta property="og:title" content="Home | Chelmsford Beer & Cider Festivals">
+  <title>Chelmsford Beer &amp; Cider Festivals</title>
+  <meta property="og:title" content="Chelmsford Beer & Cider Festivals">
   <link rel="canonical" href="https://cbcf.info/home" />
   <meta property="og:url" content="https://cbcf.info/home">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/all.css">
 
   <!-- Bootstrap core CSS -->
   <link href="./css/bootstrap.css" rel="stylesheet">
 
   <!-- Material Design Bootstrap -->
   <link href="./css/mdb.css" rel="stylesheet">
-  <link href="./css/style.css" rel="stylesheet">
-
-  <!-- Template styles -->
-  <style>
-    .navbar:not(.top-nav-collapse) {
-      background: transparent !important;
-    }
-
-    .navbar {
-      box-shadow: none !important;
-    }
-
-    @media (max-width: 991.98px) {
-      .navbar:not(.top-nav-collapse) {
-        background: #242E54 !important;
-      }
-    }
-
-    .flex-center {
-      color: #fff;
-    }
-
-    .intro-1 {
-      background: #242E54;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
-    .nav-item a:hover {
-      color: #fff !important;
-    }
-
-    .nav-item a {
-      color: #f8f8f8 !important;
-    }
-
-    .navbar .btn-group .dropdown-menu a:hover {
-      color: #000 !important;
-    }
-
-    .navbar .btn-group .dropdown-menu a:active {
-      color: #fff !important;
-    }
-
-    @media only screen and (max-width: 667px) {
-      .display-3 {
-        font-size: 3rem;
-      }
-    }
-
-    @media only screen and (max-width: 767px) {
-      .navbar {
-        background-color: #242E54;
-      }
-      .display-3 {
-        font-size: 2rem;
-        margin-top: 5rem;
-      }
-      h3 {
-        font-size: 1rem;
-      }
-    }
-
-    .dropdown .dropdown-menu .dropdown-item:hover,
-    .dropdown .dropdown-menu .dropdown-item:active,
-    .dropdown .dropdown-menu .dropdown-item:focus {
-      color: #1E274A;
-      background-color: #1E274A;
-    }
-
-    @media only screen and (max-width: 334px) {
-      .navbar-brand {
-        display: none;
-      }
-      .cbcf-normal {
-        display: none;
-      }
-    }
-
-    @media only screen and (min-width: 335px) {
-      .navbar-brand-sm {
-        display: none;
-      }
-      .cbcf-sm {
-        display: none;
-      }
-    }
-
-    .cbcf-purple {
-      background-color: #232D53;
-    }
-
-    .cbcf-purple-light {
-      background-color: #1F284B;
-    }
-
-    .btn-facebook {
-      background-color: #3B5998;
-    }
-
-    .btn-twitter {
-      background-color: #00B2FF;
-    }
-  </style>
+  <link href="./css/custom.css" rel="stylesheet">
 
 </head>
 
 <body>
   <header>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark unique-color-dark fixed-top scrolling-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark cbcf-primary fixed-top scrolling-navbar">
       <div class="container">
-        <a class="navbar-brand" href="./home">
-          <strong class="d-block d-sm-none">Chelmsford Beer Festivals</strong><strong class="d-none d-sm-block">Chelmsford Beer &amp; Cider Festivals</strong>
+        <a class="navbar-brand d-none d-xl-block" href="./home">
+          <strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;Chelmsford Beer &amp; Cider Festivals</strong>
+        </a>
+        <a class="navbar-brand d-none d-lg-block d-xl-none" href="./home">
+          <strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;CBCF</strong>
+        </a>
+        <a class="navbar-brand d-none d-md-block d-lg-none" href="./home">
+          <strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;Chelmsford Beer &amp; Cider Festivals</strong>
+        </a>
+        <a class="navbar-brand d-none d-sm-block d-md-none" href="./home">
+          <strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;Chelmsford Beer &amp; Cider Festivals</strong>
+        </a>
+        <a class="navbar-brand d-xs-block d-sm-none" href="./home">
+          <strong><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;Chelmsford Beer Festivals</strong>
         </a>
         <a class="navbar-brand-sm" href="./home">
-          <strong>CBCF</strong>
+          <strong style="color: #fff;"><img src="./img/logo.png" height="35px" alt="Chelmsford Beer & Cider Festivals Logo" />&nbsp;&nbsp;CBCF</strong>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <div class="animated-icon3"><span></span><span></span><span></span><span></span></div>
@@ -150,31 +57,51 @@
             <li class="nav-item">
               <a class="nav-link hoverable" href="./home">Home</a>
             </li>
-            <!-- Drink Lists -->
-            <li class="nav-item">
-              <a class="nav-link hoverable" href="./drinks">Drink Lists</a>
+            <!-- Visitor Information -->
+            <li class="nav-item dropdown">
+              <a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visitor Info</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./times-prices">Opening times & Prices</a>
+                <a class="dropdown-item" href="./travel">Travel Info</a>
+                <!-- <a class="dropdown-item" href="./entertainment">Entertainment</a> -->
+                <a class="dropdown-item" href="./accessibility">Accessibility</a>
+                <!-- <a class="dropdown-item" href="./faqs">FAQs</a>
+                <a class="dropdown-item" href="./survival-guide">Festival Survival Guide</a>
+                <a class="dropdown-item" href="./children">Children</a> -->
+              </div>
             </li>
-            <!-- Travel Info -->
-            <li class="nav-item">
-              <a class="nav-link hoverable" href="./travel">Travel Info</a>
-            </li>
-            <!-- FAQs -->
-            <li class="nav-item">
-              <a class="nav-link hoverable" href="./faqs">FAQs</a>
-            </li>
+            <!-- Drinks & Food -->
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drinks &amp; Food</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./beer">Beer</a>
+                <a class="dropdown-item" href="./cider">Cider &amp; Perry</a>
+                <a class="dropdown-item" href="./belgian-beer">Belgian Beer</a>
+                <a class="dropdown-item" href="./wine">Wine</a>
+                <a class="dropdown-item" href="./food">Food</a>
+                <a class="dropdown-item" href="./allergies">Allergies</a>
+              </div>
+            </li> -->
             <!-- Volunteer -->
             <li class="nav-item">
-              <a class="nav-link hoverable" href="./volunteer">Volunteer</a>
+              <a class="nav-link hoverable" href="./volunteer">Volunteering</a>
             </li>
             <!-- About CBCF Dropdown -->
             <li class="nav-item dropdown">
               <a class="nav-link hoverable dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
               <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="./archive">Previous Festivals</a>
+                <!-- <a class="dropdown-item" href="./sponsorship">Sponsorship</a>
+                <a class="dropdown-item" href="./suppliers">Suppliers</a>
+                <a class="dropdown-item" href="./corporate">Corporate Events</a> -->
                 <a class="dropdown-item" href="./history">Our History</a>
-                <a class="dropdown-item" href="./contact">Contact Us</a>
+                <a class="dropdown-item" href="./archive">Previous Festivals</a>
                 <a class="dropdown-item" href="//www.chelmsford.camra.org.uk/" rel="nofollow">Chelmsford &amp; Mid Essex CAMRA</a>
+                <a class="dropdown-item" href="http://www.camra.org.uk/" rel="nofollow">National CAMRA</a>
               </div>
+            </li>
+            <!-- Contact Us -->
+            <li class="nav-item">
+              <a class="nav-link hoverable" href="./contact">Contact Us</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto nav-flex-icons" aria-hidden="true">
@@ -194,7 +121,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link hoverable d-none d-lg-block" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Instagram page</span></a>
-              <a class="nav-link hoverable d-block d-lg-none" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Facebook page</span></a>
+              <a class="nav-link hoverable d-block d-lg-none" href="//www.instagram.com/chelmsfordbeer" rel="nofollow"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Instagram page</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link hoverable d-none d-lg-block" href="//www.snapchat.com/add/chelmsfordbeer" rel="nofollow"><i class="fab fa-snapchat-ghost" aria-hidden="true"></i><span class="sr-only">Chelmsford Beer and Cider Festivals Snapchat
@@ -213,40 +140,9 @@
       </div>
     </nav>
     <!--/.Navbar-->
-
-    <!--Intro Section-->
-    <section class="view intro-1">
-      <div class="full-bg-img flex-center">
-        <div class="container">
-          <ul>
-            <li>
-              <center class="wow fadeIn">
-                <picture>
-                  <source srcset="./img/home/winter.webp" type="image/webp">
-                  <source srcset="./img/home/winter.png" type="image/png">
-                  <img class="img-fluid" src="./img/home/winter.png" alt="Chelmsford Winter Beer & Cider Festival 2019 logo" width="20%">
-                </picture>
-              </center>
-            </li>
-            <li class="cbcf-normal">
-              <h2 class="mt-4 mb-5 wow bounceIn font-bold" data-wow-delay="0.5s">Chelmsford Winter Beer &amp; Cider Festival 2019</h2>
-              <h4 class="mt-4 mb-5 wow fadeInUp" data-wow-delay="0.8s">20th to 23rd February 2019</h4>
-            </li>
-            <li class="cbcf-sm">
-              <h4 class="mt-4 mb-5 wow fadeInDown font-bold" data-wow-delay="0.5s">Chelmsford Winter Beer &amp; Cider Festival 2019</h4>
-              <h6 class="mt-4 mb-5 wow fadeInUp" data-wow-delay="0.8s">20th to 23rd February 2019</h6>
-            </li>
-            <li>
-              <a href="#details" class="btn btn-indigo btn-lg wow fadeInLeft hoverable" data-wow-delay="1.2s"><i class="far fa-arrow-circle-down" aria-hidden="true"></i>&nbsp; More details</a>
-              <a href="./drinks" class="btn btn-deep-purple btn-lg wow fadeInRight hoverable" data-wow-delay="1.2s"><i class="far fa-beer" aria-hidden="true"></i>&nbsp; Drink Lists</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
   </header>
 
-  <main>
+  <main class="mt-4 pt-4">
     <div class="container">
 
       <!--Section: Main info-->
@@ -256,14 +152,14 @@
         <div class="row" id="details">
 
           <!--Grid column-->
-          <div class="col-md-6 mb-4">
+          <div class="col-lg-6 mb-4">
 
             <!--Header picture-->
             <center>
               <picture>
-                <source srcset="./img/home/1.webp" type="image/webp">
-                <source srcset="./img/home/1.png" type="image/png">
-                <img class="img-fluid z-depth-1-half" src="./img/home/1.png" alt="Winter Festival glasses from 2018">
+                <source srcset="./img/home/summer.webp" type="image/webp">
+                <source srcset="./img/home/summer.png" type="image/png">
+                <img class="img-fluid" src="./img/home/summer.png" alt="Chelmsford Summer Beer and Cider Festival 2019 logo">
               </picture>
             </center>
             <!--Header picture-->
@@ -273,42 +169,28 @@
           <!--Grid column-->
 
           <!--Grid column-->
-          <div class="col-md-6 mb-4">
+          <div class="col-lg-6 mb-4">
 
             <!--Main heading-->
             <div style="text-align: center;">
-              <h3 class="h3 mb-3">Chelmsford Winter Beer &amp; Cider Festival 2019</h3>
-              <h4>Wednesday 20th February to Saturday 23rd February</h4>
-              <h5>Open from 12pm each day</h5>
-              <p>King Edward VI Grammar School (KEGS), Broomfield Road, CM1 3SX</p>
+              <h1 class="h1">Chelmsford Summer Beer &amp; Cider Festival 2019</h1>
+              <h2 class="h2">Tuesday 2nd to Saturday 6th July 2019</h2>
+              <h3 class="h3">Admirals Park, Rainsford Road, Chelmsford, CM1 2PL</h3>
             </div>
             <!--Main heading-->
 
             <hr>
-
+            <p>Welcome to the Chelmsford Summer Beer and Cider Festival. The festival is one of the oldest CAMRA beer festivals and one of the lergest in the country.</p>
             <ul>
-              <li><strong>170+</strong> Real Ales<br></li>
-              <li><strong>50+</strong> Real Ciders, Perries &amp; Pyders<br></li>
-              <li><strong>Hot &amp; cold food</strong> and soft drinks available at all times</li>
-              <li><strong>Free entrance before 6pm</strong> and then £3 after 6pm (except CAMRA members)</li>
-              <li>£3 refundable glass hire</li>
+              <li><strong>Brewery Bars</strong><br></li>
+              <li><strong>300+</strong> Real Ales<br></li>
+              <li><strong>Key keg bar</strong><br></li>
+              <li><strong>100+</strong> Real Ciders, Perries &amp; Pyders<br></li>
+              <li><strong>Wine</strong><br></li>
+              <li><strong>Podge's Belgian Beer Tours</strong><br></li>
+              <li><strong>World food kitchen</strong> with over 15 different foods from around the world</li>
+              <li><strong>Family day attractions for the children</strong></li>
             </ul>
-
-            <!-- CTA -->
-            <center>
-              <a href="./drinks" class="btn btn-indigo">Drinks List
-                <i class="far fa-beer ml-1" aria-hidden="true"></i>
-              </a>
-              <a href="#food" class="btn btn-indigo">Food &amp; Snacks
-                <i class="far fa-utensils ml-1" aria-hidden="true"></i>
-              </a>
-              <a href="./travel" class="btn btn-indigo">Travel Info
-                <i class="far fa-map ml-1" aria-hidden="true"></i>
-              </a>
-              <a href="./faqs" class="btn btn-indigo">FAQs
-                <i class="far fa-question ml-1" aria-hidden="true"></i>
-              </a>
-            </center>
 
           </div>
           <!--Grid column-->
@@ -319,152 +201,99 @@
       </section>
       <!--Section: Main info-->
 
-      <hr class="my-5">
-
-      <!--Section: Food & Snacks-->
-      <section id="food">
-
-        <h3 class="h3 text-center mb-5">Food &amp; Snacks</h3>
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 px-4">
-
-            <!--First row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="far fa-utensils fa-2x indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Hopleaf</h5>
-                <p>Great Beer deserves great food. Hopleaf are delighted to be back at the Winter Beer Festival. We use local suppliers and fresh ingredients to create a variety of homemade dishes.</p>
-                	<p>
-                    <li>Authentic curries from a mild Korma to fiery Naga, with sides including samosa.</li>
-                    <li>Hand carved salt beef marinated by us to our own recipe.</li>
-                    <li>Butcher’s sausages in Salt n Pepper French stick.</li>
-                    <li>Locally made burgers with butter fried onions & optional homemade chilli relish.</li>
-                    <li>Great selection of vegetarian dishes</li>
-                    <li>Pulled pork roll with stuffing and smoky BBQ sauce</li>
-                    <li>Ham cooked in real cider with egg and chips</li>
-                    <li>Daily specials</li><br>
-                    <b>Come for the beer, stay for the food!</b><br>
-                    <i><a href="//www.facebook.com/HopleafCatering/" rel="nofollow">Like us on Facebook</a> for menu updates or check on the blackboard during the festival. Allergy advice available on request.</i>
-                  </p>
-              </div>
-            </div>
-            <!--/First row-->
-
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12">
-
-
-            <center>
-              <picture>
-                <source srcset="./img/home/2.webp" type="image/webp">
-                <source srcset="./img/home/2.png" type="image/png">
-                <img class="img-fluid z-depth-1-half" src="./img/home/2.png" alt="Hopleaf Catering at Winter Festival 2018">
-              </picture>
-            </center>
-
-          </div>
-          <!--/Grid column-->
-
+      <!-- Volunteering Callout -->
+      <div class="card">
+        <div class="card-body" style="text-align: center;">
+          <strong>The festival is organised and run by volunteers, like all CAMRA festivals. We always welcome volunteers both old and new.</strong>
+          <a class="btn cbcf-primary" title="About volunteering for Chelmsford Beer and Cider Festivals" href="./volunteer"><i class="far fa-info-circle"></i>&nbsp;Find out more</a>
         </div>
-        <!--/Grid row-->
+      </div>
+      <!-- Volunteering Callout -->
 
-      </section>
-      <!--Section: Food & Snacks-->
-
-      <hr class="my-5">
+      <br class="my-3"></br>
 
       <!--Section: Festival Charity-->
-      <section id="charity">
+      <!-- <section id="charities">
 
-        <h3 class="h3 text-center mb-5">Our Festival Charity</h3>
+        <h1 class="h3 text-center mb-5">Our Festival Charities</h1>
 
-        <!--Grid row-->
         <div class="row">
 
-          <!--Grid column-->
           <div class="col-lg-6 col-md-12 px-4">
 
             <center>
               <picture>
-                <source srcset="./img/home/3.webp" type="image/webp">
-                <source srcset="./img/home/3.png" type="image/png">
-                <img class="img-fluid" src="./img/home/3.png" alt="Sanctus are the festival charity for the Chelmsford Winter Beer & Cider Festival 2019">
+                <source srcset="./img/home/1.webp" type="image/webp">
+                <source srcset="./img/home/1.png" type="image/png">
+                <img class="img-fluid" src="./img/home/1.png" alt="Essex and Herts Air Ambulance Logo">
               </picture>
             </center>
-
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12">
-
+            <br>
             <div style="text-align: center;">
-              <h3 class="h3 mb-3">Sanctus Chelmsford</h3>
-              <h5>Sanctus is a small but vital charity established in the bitter winter of 2011. Sanctus feeds the growing number of homeless, hungry and vulnerable individuals in our city. We run a free café offering breakfast, hot and cold drinks, snacks and a cooked homemade lunch. We are also able to help by offering accommodation to some of our service users, as well as 1:1 support/advice, and a range of enrichment activities including training, a Book Club, Music Club and Allotment Project.</h5>
+              <h2 class="h3 mb-3">Essex and Herts Air Ambulance</h2>
+              <h3 class="h5">Our aim is to save lives, reduce or prevent disability, or suffering from critical illness and injury, by delivering a first class pre-hospital emergency medical service to the people of Essex, Hertfordshire and
+                surrounding areas.</h3>
             </div>
 
-            <!-- CTA -->
             <center>
-              <a href="http://www.sanctus-home.com" class="btn btn-indigo">Learn more
+              <a href="//ehaat.org/about-us/about-ehaat/" class="btn btn-indigo">Learn more
                 <i class="far fa-info-circle ml-1" aria-hidden="true"></i>
               </a>
-              <a href="//www.facebook.com/SanctusLoveAllServeAll/" class="btn btn-facebook">Like Sanctus on Facebook
+              <a href="//www.facebook.com/EssexandHertsAirAmbulance/" class="btn btn-facebook">Like EHAAT on Facebook
                 <i class="far fa-thumbs-up ml-1" aria-hidden="true"></i>
               </a>
-              <a href="//twitter.com/SanctusCharity" rel="noreferrer" class="btn btn-twitter">Follow Sanctus on Twitter
+              <a href="//twitter.com/ehaat_" rel="noreferrer" class="btn btn-twitter">Follow EHAAT on Twitter
                 <i class="fab fa-twitter ml-1" aria-hidden="true"></i>
               </a>
             </center>
 
           </div>
-          <!--/Grid column-->
+
+          <div class="col-lg-6 col-md-12">
+
+            <center>
+              <picture>
+                <source srcset="./img/home/2.webp" type="image/webp">
+                <source srcset="./img/home/2.png" type="image/png">
+                <img class="img-fluid" src="./img/home/2.png" alt="Home-Start Essex Logo">
+              </picture>
+            </center>
+            <br>
+            <div style="text-align: center;">
+              <h2 class="h3 mb-3">Home-Start Essex</h2>
+              <h3 class="h5">Home-Start is a nationally and internationally recognised service with over 40 years of experience supporting families. First founded by Margaret Harrison in 1973 in Leicester, Home-Start has grown from strength to
+                strength.</h3>
+            </div>
+
+            <center>
+              <a href="//home-startessex.org.uk/our-story/" class="btn btn-indigo">Learn more
+                <i class="far fa-info-circle ml-1" aria-hidden="true"></i>
+              </a>
+              <a href="//www.facebook.com/HomeStartEssex/" class="btn btn-facebook">Like Home-Start on Facebook
+                <i class="far fa-thumbs-up ml-1" aria-hidden="true"></i>
+              </a>
+              <a href="//www.twitter/homestartessex" rel="noreferrer" class="btn btn-twitter">Follow Home-Start on Twitter
+                <i class="fab fa-twitter ml-1" aria-hidden="true"></i>
+              </a>
+            </center>
+
+          </div>
 
         </div>
-        <!--/Grid row-->
 
-      </section>
+      </section> -->
       <!--Section: Festival Charity-->
-
-      <hr class="my-5">
-
-      <!--Section: EatDrinkSeek spot-->
-      <section>
-
-        <h4 class="mt-4 mb-5 text-center">Find us on Eat Drink Seek!</h4>
-
-        <center>
-          <picture>
-            <source srcset="./img/home/4.webp" type="image/webp">
-            <source srcset="./img/home/4.png" type="image/png">
-            <a href="//www.eatdrinkseek.co.uk/beer-festivals/"><img class="img-fluid" width="30%" src="./img/home/4.png" alt="Find our festival and more on EatDrinkSeek.co.uk!"></a>
-          </picture>
-        </center>
-
-        <br>
-
-        <p style="text-align: center;"><strong><i>This website, social media pages and the festival are run by volunteers, <a href="./volunteer">why not join us</a>?</strong></i></p>
-
-      </section>
-      <!--Section: Something Missing-->
 
     </div>
   </main>
   <!--Main layout-->
 
   <!--Footer-->
-  <footer class="page-footer cbcf-purple-light center-on-small-only">
+  <footer class="page-footer cbcf-primary center-on-small-only">
 
     <!--Copyright Notice-->
     <div class="col-md-12" style="text-align: center;">
+      <br>
       <h5 class="title">Copyright Notice</h5>
       <small>All rights reserved. Chelmsford Beer Festival® &amp; Chelmsford Beer &amp; Cider Festival™, Chelmsford Winter Beer &amp; Cider Festival™ &amp; Chelmsford Summer Beer &amp; Cider Festival™</small>
       <br>
@@ -476,7 +305,7 @@
     <!--/.Copyright Notice-->
 
     <!--Privacy/GitHub-->
-    <div class="footer-copyright" style="background-color: #1B2343;">
+    <div class="footer-copyright cbcf-secondary" style="text-align: center;">
       <div class="container-fluid">
         <a href="./privacy">Privacy Policy</a> | Site Design: <a href="https://github.com/tmaguire/cbcf.info">Thomas Maguire</a>
       </div>
@@ -484,8 +313,8 @@
     <!--/.Privacy/GitHub-->
 
     <!--License-->
-    <div class="footer-copyright cbcf-purple">
-      <div class="container-fluid">
+    <div class="footer-copyright cbcf-dark">
+      <div class="container-fluid" style="text-align: center;">
         <p style="color: #fff;">This site is licensed under the <a href="https://github.com/tmaguire/cbcf.info/blob/master/LICENSE" rel="nofollow">Mozilla Public License 2.0</a></p>
       </div>
     </div>
@@ -503,7 +332,7 @@
   <script type="text/javascript" src="./js/popper.min.js"></script>
 
   <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="./js/bootstrap.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="./js/mdb.min.js"></script>
