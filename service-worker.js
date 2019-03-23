@@ -20,7 +20,7 @@ this.addEventListener('install', event => {
         'https://cbcf.info/js/bootstrap.js',
         'https://cbcf.info/js/mdb.min.js',
         'https://cbcf.info/js/zenscroll-min.js',
-        'https://cbcf.info/js/webp.js',,
+        'https://cbcf.info/js/webp.js', ,
         'https://cbcf.info/webfonts/fa-brands-400.eot',
         'https://cbcf.info/webfonts/fa-brands-400.svg',
         'https://cbcf.info/webfonts/fa-brands-400.ttf',
