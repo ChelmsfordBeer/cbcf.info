@@ -17,11 +17,11 @@
 <meta name="description" content="The Official Chelmsford Beer & Cider Festivals website - run by the Chelmsford and Mid-Essex Campaign For Real Ale." />
 <meta property="og:description" content="The Official Chelmsford Beer & Cider Festivals website - run by the Chelmsford and Mid-Essex Campaign For Real Ale">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://cbcf.info/img/banner.jpg">
+<meta property="og:image" content="https://cbcf.info/img/banner.png">
 <meta property="og:image:alt" content="Chelmsford Summer Beer & Cider Festival 2019 - 2nd to 6th July 2019 at Admirals Park, Rainsford Road, CM1 2PL">
 <meta property="fb:admins" content="181973398514531">
 <meta itemprop="description" content="The Official Chelmsford Beer & Cider Festivals website - run by the Chelmsford and Mid-Essex Campaign For Real Ale">
-<meta itemprop="image" content="https://cbcf.info/img/banner.jpg">
+<meta itemprop="image" content="https://cbcf.info/img/banner.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:site_name" content="Chelmsford Beer & Cider Festivals">
 <meta name="twitter:image:alt" content="The Official Chelmsford Beer & Cider Festivals website - run by the Chelmsford and Mid-Essex Campaign For Real Ale">
@@ -68,9 +68,10 @@
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
+    "https://cbcf.info/2018/0026.jpg",
+    "https://cbcf.info/2018/0050.jpg",
+    "https://cbcf.info/2018/0074.jpg",
+    "https://cbcf.info/2018/0144.jpg"
    ],
   "description": "The 41st Chelmsford Summer Beer & Cider Festival. Organised by Chelmsford & Mid Essex Campaign for Real Ale (CAMRA)."
 }
