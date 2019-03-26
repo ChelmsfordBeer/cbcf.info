@@ -1,8 +1,19 @@
 html,
 body,
 .view {
-  height: 100%; }
+  height: 100%;
+}
 
 @media (max-width: 740px) {
   .full-page-intro {
-    height: 1000px; } }
+    height: 1000px;
+  }
+}
+
+.page-404 {
+  background: #75408F;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
