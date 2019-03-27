@@ -5,7 +5,7 @@ body,
 }
 
 @media (max-width: 740px) {
-  .full-page-intro {
+  .page-404-block {
     height: 1000px;
   }
 }
