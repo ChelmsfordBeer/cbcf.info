@@ -71,6 +71,18 @@
   background-color: #00B2FF !important;
 }
 
+.color-facebook {
+  color: #3B5998;
+}
+
+.color-twitter {
+  color: #00B2FF;
+}
+
+.color-instagram {
+  color: #C32AA3;
+}
+
 /* Navbar Menu Icon */
 .animated-icon1, .animated-icon2, .animated-icon3, .animated-icon4 {
   width: 30px;
