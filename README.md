@@ -22,8 +22,8 @@ Please note that the timescales above are a rough guide.
 
 ## To dos
 
--  Finalise content on Winter Festival pages.
--  Start work on offline web app for drinks list (datatables)
+-  Continue working on accessibility features/compliancy for SBF19
+-  Work on new content when it is supplied
 
 ## Contact details
 
@@ -31,4 +31,4 @@ Should you find something wrong with either our source code or website content, 
 
 -  <network@cbcf.info> or <webmaster@cbcf.info>.
 
--  During festival week, a contact number will be displayed here for emergency content change requests...
+-  Leave a voicemail on 01245 526899
