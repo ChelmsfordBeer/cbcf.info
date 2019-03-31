@@ -2,6 +2,14 @@
   color: #fff;
 }
 
+.charity-img {
+  max-height: 147px !important;
+}
+
+.centre {
+  text-align: center;
+}
+
 .home-logo {
   max-width: 75%;
 }
