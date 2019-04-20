@@ -266,7 +266,6 @@
               <div class="card-body card-body-cascade text-center">
                 <!--Title-->
                 <h2 class="h4 card-title">A purpose-built entertainment tent for live music</h2>
-                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                 <a href="#schedule" class="btn cbcf-secondary btn-md">See the line up <span class="sr-only">of music acts taking place at the festival stage tent this year</span></a>
               </div>
             </div>
@@ -291,7 +290,6 @@
               <div class="card-body card-body-cascade text-center">
                 <!--Title-->
                 <h2 class="h4 card-title">Family Fun Day on Saturday from 12pm to 6pm</h2>
-                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                 <a href="#activities" class="btn cbcf-secondary btn-md">Find out more <span class="sr-only">about the family fun day</span></a>
               </div>
             </div>
@@ -316,7 +314,6 @@
               <div class="card-body card-body-cascade text-center">
                 <!--Title-->
                 <h2 class="h4 card-title">Axe throwing from the Flying Iron Company <span class="badge cbcf-dark">New for 2019</span></h2>
-                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                 <a href="#activities" class="btn cbcf-secondary btn-md">Learn more <span class="sr-only">about the axe throwing experience</span></a>
               </div>
             </div>
@@ -341,8 +338,7 @@
               <div class="card-body card-body-cascade text-center">
                 <!--Title-->
                 <h2 class="h4 card-title">Salsa and dancing on our opening night <span class="badge cbcf-dark">New for 2019</span></h2>
-                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                <a href="#activities" class="btn cbcf-secondary btn-md">Get the details <span class="sr-only">about the salsa dancing experience at the summer festival</span></a>
+                <a data-toggle="modal" data-target="#sdModal" class="btn cbcf-secondary btn-md">Get the details <span class="sr-only">about the salsa dancing experience at the summer festival</span></a>
               </div>
             </div>
             <!-- Card -->
@@ -473,7 +469,7 @@
               <li class="events-group">
                 <div class="top-info"><span>Wednesday</span></div>
                 <ul style="list-style: none;">
-                  <li class="single-event" data-start="17:00" data-end="20:00" data-content="band-02" data-event="event-2">
+                  <li class="single-event" data-start="18:00" data-end="20:00" data-content="band-02" data-event="event-2">
                     <a href="#0">
                       <em class="event-name">Champs</em>
                     </a>
@@ -592,6 +588,30 @@
         <br class="my-3"></br>
 
       </div>
+      <!-- Salsa D'Lite Modal -->
+      <div class="modal fade" id="sdModal" tabindex="-1" role="dialog" aria-labelledby="sdLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title w-100" id="sdLabel">Salsa D'Lite</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <picture>
+                <source srcset="./img/home/modal.webp" type="image/webp">
+                <source srcset="./img/home/modal.jpg" type="image/jpeg">
+                <img class="img-fluid" src="./img/home/modal.jpg" alt="Salsa D'Lite Salsa Club - Opening night Salsa party at the 2019 Summer Beer and Cider Festival Chelmsford. Featuring Latin DJ, group line dances & Rueda, dance demonstrations and taster lessons. Come join us and dance the night away with your friends and family!">
+              </picture>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn cbcf-secondary btn-sm" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Salsa D'Lite Modal -->
       <!--/ Main container-->
 
 
