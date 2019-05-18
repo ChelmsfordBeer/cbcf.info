@@ -2,6 +2,10 @@
   color: #fff;
 }
 
+.hidden {
+  display: none;
+}
+
 .charity-img {
   max-height: 147px !important;
 }
@@ -26,6 +30,14 @@
   color: #fff;
 }
 
+.cbcf-tb {
+  height: 100px;
+}
+
+.cbcf-lf {
+  font-size: large;
+}
+
 .dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover,
 .dropdown .dropdown-menu.dropdown-primary .dropdown-item:active,
 .dropdown .dropdown-menu.dropdown-primary .dropdown-item.active,
@@ -45,6 +57,10 @@
 .dropdown-item a {
   color: #000;
   background-color: #fff;
+}
+
+.btn:hover {
+  color: #fff;
 }
 
 .btn:hover {

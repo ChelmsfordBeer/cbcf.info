@@ -22,6 +22,7 @@ Please note that the timescales above are a rough guide.
 
 ## To dos
 
+-  Finalise migration to Gulp backend for automation of future page creation
 -  Continue working on accessibility features/compliancy for SBF19
 -  Work on new content when it is supplied
 
