@@ -104,7 +104,7 @@ strong {
 }
 
 .cbcf-lf {
-  font-size: large;
+  font-size: large !important;
 }
 
 .cbcf-map {
@@ -114,6 +114,7 @@ strong {
 .cbcf-am {
   height: 35px !important;
 }
+
 .dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover,
 .dropdown .dropdown-menu.dropdown-primary .dropdown-item:active,
 .dropdown .dropdown-menu.dropdown-primary .dropdown-item.active,
