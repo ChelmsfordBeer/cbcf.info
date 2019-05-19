@@ -448,76 +448,12 @@
   </div>
 
   <!--Footer-->
-  <footer class="page-footer cbcf-primary center-on-small-only">
-
-    <!--Copyright Notice-->
-    <div class="col-md-12 centre">
-      <br>
-      <h1 class="h5">Copyright Notice</h1>
-      <small>All rights reserved. Chelmsford Beer Festival® &amp; Chelmsford Beer &amp; Cider Festival™, Chelmsford Winter Beer &amp; Cider Festival™ &amp; Chelmsford Summer Beer &amp; Cider Festival™</small>
-      <br>
-      <small>The trademarks, logos and artwork displayed are the registered and unregistered trademarks and copyright of Campaign for Real Ale, except where third party ownership is indicated.</small>
-      <br>
-      <small>Whilst every effort is made to ensure that the information on this site is accurate and up to date, no responsibility for errors and omissions can be accepted.</small>
-      <p></p>
-    </div>
-    <!--/.Copyright Notice-->
-
-    <!--Privacy/GitHub-->
-    <div class="footer-copyright cbcf-secondary centre">
-      <div class="container-fluid">
-        <a href="../privacy">Privacy Policy</a> | Site Design: <a href="https://github.com/tmaguire/cbcf.info">Thomas Maguire</a>
-      </div>
-    </div>
-    <!--/.Privacy/GitHub-->
-
-    <!--License-->
-    <div class="footer-copyright cbcf-dark">
-      <div class="container-fluid centre">
-        <p class="text-white">This site is licensed under the <a href="https://github.com/tmaguire/cbcf.info/blob/master/LICENSE" rel="nofollow">Mozilla Public License 2.0</a></p>
-      </div>
-    </div>
-    <!--/License-->
-
-  </footer>
+  @@include('./footer.html')
   <!--/.Footer-->
 
-  <!-- SCRIPTS -->
-
-  <!-- JQuery -->
-  <script type="text/javascript" src="../js/jquery.min.js"></script>
-
-  <!-- Bootstrap dropdown -->
-  <script type="text/javascript" src="../js/popper.min.js"></script>
-
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="../js/mdb.min.js"></script>
-
-  <!-- Animations init-->
-  <script>
-    new WOW().init();
-  </script>
-
-  <!-- Navbar Menu Icon Animation -->
-  <script>
-    $(document).ready(function() {
-      $('.animated-icon1,.animated-icon3,.animated-icon4').click(function() {
-        $(this).toggleClass('open');
-      });
-    });
-  </script>
-
-  <!-- Smooth Scrolling -->
-  <script src="../js/zenscroll-min.js"></script>
-  <script>
-    zenscroll.setup(null, 75)
-  </script>
-
-  <!-- WebP Support Module -->
-  <script src="../js/webp.js"></script>
+  <!--Scripts-->
+  @@include('./scripts.html')
+  <!--/.Scripts-->
 
 </body>
 
