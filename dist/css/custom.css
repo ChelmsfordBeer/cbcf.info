@@ -107,6 +107,10 @@ strong {
   font-size: large;
 }
 
+.cbcf-map {
+  height: 400px;
+}
+
 .dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover,
 .dropdown .dropdown-menu.dropdown-primary .dropdown-item:active,
 .dropdown .dropdown-menu.dropdown-primary .dropdown-item.active,
