@@ -111,6 +111,9 @@ strong {
   height: 400px;
 }
 
+.cbcf-am {
+  height: 35px !important;
+}
 .dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover,
 .dropdown .dropdown-menu.dropdown-primary .dropdown-item:active,
 .dropdown .dropdown-menu.dropdown-primary .dropdown-item.active,
