@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Properties to update per page -->
+  <title>Contact Us | Chelmsford Beer &amp; Cider Festivals</title>
+  <meta property="og:title" content="Contact Us | Chelmsford Beer & Cider Festivals">
+  <link rel="canonical" href="https://cbcf.info/contact" />
+  <meta property="og:url" content="https://cbcf.info/contact">
+
+  @@include('./head.html')
+
+</head>
+
+<body>
+  <header>
+    @@include('./menu.html')
+  </header>
+
+  <!--Intro Section-->
+  <br class="my-3"></br>
+  <br class="my-3"></br>
+  <h1 class="h1 centre"><i class="fal fa-envelope" aria-hidden="true"></i>&nbsp;Contact Us</h1>
+
+  <div class="container" id="content">
+
+    <section class="section mb-5 pt-5">
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-12">
+
+          <!--Form with header-->
+          <div class="card">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="card-body form">
+                  <!--Header-->
+                  <div class="formHeader mb-1 pt-3">
+                    <h2 class="centre">Fill in a form</h2>
+                  </div>
+
+                  <br>
+
+                  <div id="form-messages"></div>
+
+                  <form method="POST" action="https://formaholic.com/f/a7a1eb1cffab0794" accept-charset="UTF-8">
+
+                    <div class="md-form">
+                      <i class="fa fa-user prefix grey-text" aria-hidden="true"></i>
+                      <input type="text" id="name" class="form-control required" name="name" required>
+                      <label for="name">Your name</label>
+                    </div>
+
+                    <div class="md-form">
+                      <i class="fa fa-envelope prefix grey-text" aria-hidden="true"></i>
+                      <input type="email" id="email" class="form-control required" name="email" required>
+                      <label for="email">Your email</label>
+                    </div>
+
+                    <div class="md-form">
+                      <i class="fa fa-pencil prefix grey-text" aria-hidden="true"></i>
+                      <textarea type="text" id="message" name="message" class="md-textarea form-control required cbcf-tb" required></textarea>
+                      <label for="message">Your message</label>
+                    </div>
+                    <input type="text" name="_gotcha" class="hidden">
+                    <div class="text-center">
+                      <button class="btn cbcf-primary" type="submit">Send <i class="fas fa-paper-plane ml-1" aria-hidden="true"></i></button>
+                    </div>
+                  </form>
+                  <br>
+                  <p class="centre"><b>By submitting this form you agree to our <a href="//cbcf.info/privacy">Privacy Policy</a>.</b></p>
+
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card-body">
+                  <div class="formHeader mb-1 pt-3">
+                    <h2 class="centre">Email us direct</h2>
+                  </div>
+                  <div class="card-body contact text-center">
+                    <p><b>General Enquiries</b><br><i class="fas fa-envelope-square" aria-hidden="true"></i> <a href="mailto:hi@cbcf.info">hi@cbcf.info</a></p>
+                    <p><b>Concession Enquiries</b><br><i class="fas fa-envelope-square" aria-hidden="true"></i> <a href="mailto:concessions@cbcf.info">concessions@cbcf.info</a></p>
+                    <p><b>Volunteering Information</b><br><i class="fas fa-envelope-square" aria-hidden="true"></i> <a href="mailto:volunteer@cbcf.info">volunteer@cbcf.info</a></p>
+                  </div>
+                  <div class="formHeader mb-1 pt-3">
+                    <h2 class="centre">Phone us</h2>
+                  </div>
+                  <div class="card-body contact text-center">
+                    <p><b>General Enquiries</b><br><i class="fas fa-phone-square" aria-hidden="true"></i> <a href="tel:+441245526899">01245 526 899</a></p>
+                    <br>
+                    <p><i>Please note that our volunteers are unable to answer the phone line outside of festival hours, but we can give you a callback if you leave us a message!</i></p>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/Form with header-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+    </section>
+
+  </div>
+  <!--/ Main container-->
+
+
+  <!--Footer-->
+  @@include('./footer.html')
+  <!--/.Footer-->
+
+  <!--Scripts-->
+  @@include('./scripts.html')
+  <!--/.Scripts-->
+
+</body>
+
+</html>
