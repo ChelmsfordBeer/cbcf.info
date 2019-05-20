@@ -155,7 +155,7 @@
 
         <!-- Information regarding content -->
         <div class="alert alert-info centre animated bounce" role="alert">
-          <strong><i class="far fa-info-circle" aria-hidden="true"></i>&nbsp;Information on beers will be coming soon</strong>
+          <strong><i class="far fa-info-circle" aria-hidden="true"></i>&nbsp;Information on beers, ciders and keykeg will be coming soon!</strong>
         </div>
         <!-- Information regarding content -->
 
@@ -286,7 +286,7 @@
                   <div class="card-body card-body-cascade text-center">
                     <!-- Text -->
                     <h2 class="h2 card-title">Flying Iron Co. Axe Throwing</h2>
-                    <p class="card-text">Unleash your inner Viking with axe throwing courtesy of Flying Iron Co. from Thursday to Saturday</p>
+                    <p class="card-text">Unleash your inner Viking with axe throwing courtesy of Flying Iron Co. from Tuesday to Saturday</p>
                   </div>
                   <!-- Card content -->
                 </div>
@@ -304,7 +304,7 @@
                       <source srcset="./img/home/f3.jpg" type="image/jpeg">
                       <img class="card-img-top" src="./img/home/f3.jpg" alt="Champs will be running a Charity evening on the Wednesday night">
                     </picture>
-                    <a href="./entertainment#schedule">
+                    <a data-toggle="modal" data-target="#chModal">
                       <div class="mask rgba-white-slight"></div>
                     </a>
                   </div>
@@ -312,7 +312,7 @@
                   <div class="card-body card-body-cascade text-center">
                     <!-- Text -->
                     <h2 class="h2 card-title">Champs Charity Evening</h2>
-                    <p class="card-text">Local amateur group playing and singing favourites and new songs to raise money for our Festival Charities</p>
+                    <p class="card-text">Local amateur group playing and singing favourites and new songs to raise money for our Festival Charities on Wednesday evening</p>
                   </div>
                   <!-- Card content -->
                 </div>
@@ -408,9 +408,9 @@
           </div>
           <div class="modal-body">
             <picture>
-              <source srcset="./img/home/modal.webp" type="image/webp">
-              <source srcset="./img/home/modal.jpg" type="image/jpeg">
-              <img class="img-fluid" src="./img/home/modal.jpg" alt="Salsa D'Lite Salsa Club - Opening night Salsa party at the 2019 Summer Beer and Cider Festival Chelmsford. Featuring Latin DJ, group line dances & Rueda, dance demonstrations and taster lessons. Come join us and dance the night away with your friends and family!">
+              <source srcset="./img/home/modal1.webp" type="image/webp">
+              <source srcset="./img/home/modal1.jpg" type="image/jpeg">
+              <img class="img-fluid" src="./img/home/modal1.jpg" alt="Salsa D'Lite Salsa Club - Opening night Salsa party at the 2019 Summer Beer and Cider Festival Chelmsford. Featuring Latin DJ, group line dances & Rueda, dance demonstrations and taster lessons. Come join us and dance the night away with your friends and family!">
             </picture>
           </div>
           <div class="modal-footer">
@@ -420,6 +420,30 @@
       </div>
     </div>
     <!-- Salsa D'Lite Modal -->
+    <!-- Champs Modal -->
+    <div class="modal fade" id="chModal" tabindex="-1" role="dialog" aria-labelledby="chLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title w-100" id="chLabel">Champs Charity Evening</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <picture>
+              <source srcset="./img/home/modal.webp" type="image/webp">
+              <source srcset="./img/home/modal.jpg" type="image/jpeg">
+              <img class="img-fluid" src="./img/home/modal.jpg" alt="">
+            </picture>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn cbcf-secondary btn-sm" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Champs Modal -->
   </main>
   <!--Main layout-->
 
