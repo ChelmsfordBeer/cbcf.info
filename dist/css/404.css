@@ -9,11 +9,3 @@ body,
     height: 1000px;
   }
 }
-
-.page-404 {
-  background: #75408F;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
