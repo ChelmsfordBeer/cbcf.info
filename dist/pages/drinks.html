@@ -57,19 +57,19 @@
             <p class="white-text mb-0"><strong>List coming soon!</strong></p>
           </div>
         </div>
-        <!-- <ul class="centre">
-          <li class="btn"><a href="#" class="beer-all">All</a></li>
-          <li class="btn"><a href="#" class="beer">Barley Wine</a></li>
-          <li class="btn"><a href="#" class="beer">Bitter</a></li>
-          <li class="btn"><a href="#" class="beer">Cask Lager</a></li>
-          <li class="btn"><a href="#" class="beer">Dark Mild</a></li>
-          <li class="btn"><a href="#" class="beer">Dark/Old Ale</a></li>
-          <li class="btn"><a href="#" class="beer">Fruit/Spice</a></li>
-          <li class="btn"><a href="#" class="beer">Golden</a></li>
-          <li class="btn"><a href="#" class="beer">IPA</a></li>
-          <li class="btn"><a href="#" class="beer">Light Mild</a></li>
-          <li class="btn"><a href="#" class="beer">Stout/Porter</a></li>
-        </ul>
+        <!-- <center>
+          <a href="#" class="btn cbcf-secondary beer-all">All</a>
+          <a href="#" class="btn cbcf-secondary beer">Barley Wine</a>
+          <a href="#" class="btn cbcf-secondary beer">Bitter</a>
+          <a href="#" class="btn cbcf-secondary beer">Cask Lager</a>
+          <a href="#" class="btn cbcf-secondary beer">Dark Mild</a>
+          <a href="#" class="btn cbcf-secondary beer">Dark/Old Ale</a>
+          <a href="#" class="btn cbcf-secondary beer">Fruit/Spice</a>
+          <a href="#" class="btn cbcf-secondary beer">Golden</a>
+          <a href="#" class="btn cbcf-secondary beer">IPA</a>
+          <a href="#" class="btn cbcf-secondary beer">Light Mild</a>
+          <a href="#" class="btn cbcf-secondary beer">Stout/Porter</a>
+        </center>
         <table id="table-beer" class="display table table-striped table-bordered" style="width:100%" data-order='[ [1, "asc"], [0, "asc"] ]' data-page-length='20'>
           <thead>
             <tr>
@@ -83,12 +83,12 @@
         </table> -->
       </div>
       <div class="tab-pane fade" id="cider-list" role="tabpanel" aria-labelledby="cider-list-button">
-        <ul class="centre">
-          <li class="btn"><a href="#" class="cider-all">All</a></li>
-          <li class="btn"><a href="#" class="cider">Cider</a></li>
-          <li class="btn"><a href="#" class="cider">Perry</a></li>
-          <li class="btn"><a href="#" class="cider">Pyder</a></li>
-        </ul>
+        <center>
+          <a href="#" class="btn cbcf-secondary cider-all">All</a>
+          <a href="#" class="btn cbcf-secondary cider">Cider</a>
+          <a href="#" class="btn cbcf-secondary cider">Perry</a>
+          <a href="#" class="btn cbcf-secondary cider">Pyder</a>
+        </center>
         <table id="table-cider" class="display table table-striped table-bordered" style="width:100%" data-order='[[1, "asc"], [0, "asc"]]' data-page-length='20'>
           <thead>
             <tr>
@@ -107,9 +107,9 @@
             <p class="white-text mb-0"><strong>List coming soon!</strong></p>
           </div>
         </div>
-        <!-- <ul class="centre">
-          <li class="btn"><a href="#" class="keykeg-all">All</a></li>
-        </ul>
+        <!-- <center>
+          <a href="#" class="btn cbcf-secondary keykeg-all">All</a>
+        </center>
         <table id="table-keykeg" class="display table table-striped table-bordered" style="width:100%" data-order='[[1, "asc"], [0, "asc"]]' data-page-length='20'>
           <thead>
             <tr>
@@ -129,9 +129,9 @@
           </div>
         </div>
         <br class="my-5">
-        <ul class="centre">
-          <li class="btn"><a href="#" class="foreign-all">All</a></li>
-        </ul>
+        <center>
+          <a href="#" class="btn cbcf-secondary foreign-all">All</a>
+        </center>
         <table id="table-foreign" class="display table table-striped table-bordered" style="width:100%" data-order='[[1, "asc"], [0, "asc"]]' data-page-length='20'>
           <thead>
             <tr>
@@ -370,13 +370,13 @@
         ]
       });
       //Table 1 - Beer
-      $('ul').on('click', 'a.beer', function() {
+      $('center').on('click', 'a.beer', function() {
         table1
           .columns(3)
           .search($(this).text())
           .draw();
       });
-      $('ul').on('click', 'a.beer-all', function() {
+      $('center').on('click', 'a.beer-all', function() {
         table1
           .search('')
           .columns(3)
@@ -384,13 +384,13 @@
           .draw();
       });
       //Table 2 - Cider
-      $('ul').on('click', 'a.cider', function() {
+      $('center').on('click', 'a.cider', function() {
         table2
           .columns(3)
           .search($(this).text())
           .draw();
       });
-      $('ul').on('click', 'a.cider-all', function() {
+      $('center').on('click', 'a.cider-all', function() {
         table2
           .search('')
           .columns(3)
@@ -398,13 +398,13 @@
           .draw();
       });
       //Table 3 - Key Keg
-      $('ul').on('click', 'a.keykeg', function() {
+      $('center').on('click', 'a.keykeg', function() {
         table3
           .columns(3)
           .search($(this).text())
           .draw();
       });
-      $('ul').on('click', 'a.keykeg-all', function() {
+      $('center').on('click', 'a.keykeg-all', function() {
         table3
           .search('')
           .columns(3)
@@ -412,13 +412,13 @@
           .draw();
       });
       //Table 4 - Foreign Beer
-      $('ul').on('click', 'a.keykeg', function() {
+      $('center').on('click', 'a.keykeg', function() {
         table4
           .columns(3)
           .search($(this).text())
           .draw();
       });
-      $('ul').on('click', 'a.keykeg-all', function() {
+      $('center').on('click', 'a.keykeg-all', function() {
         table4
           .search('')
           .columns(3)
