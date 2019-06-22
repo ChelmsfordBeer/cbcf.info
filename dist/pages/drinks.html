@@ -37,45 +37,118 @@
     <br>
     <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
       <li class="nav-item">
-        <a class="btn btn-deep-purple btn-block active" id="beer-list-button" data-toggle="pill" href="#beer-list" role="tab" aria-controls="beer-list" aria-selected="true">Beer</a>
+        <a class="btn cbcf-primary btn-block active" id="beer-list-button" data-toggle="pill" href="#beer-list" role="tab" aria-controls="beer-list" aria-selected="true">Beer</a>
       </li>
       <li class="nav-item">
-        <a class="btn btn-deep-purple btn-block" id="cider-list-button" data-toggle="pill" href="#cider-list" role="tab" aria-controls="cider-list" aria-selected="false">Cider</a>
+        <a class="btn cbcf-primary btn-block" id="cider-list-button" data-toggle="pill" href="#cider-list" role="tab" aria-controls="cider-list" aria-selected="false">Cider</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn cbcf-primary btn-block" id="keykeg-list-button" data-toggle="pill" href="#keykeg-list" role="tab" aria-controls="keykeg-list" aria-selected="false">Key Keg</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn cbcf-primary btn-block" id="foreign-list-button" data-toggle="pill" href="#foreign-list" role="tab" aria-controls="foreign-list" aria-selected="false">Belgian Bar</a>
       </li>
     </ul>
     <br>
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade show active" id="beer-list" role="tabpanel" aria-labelledby="beer-list-button">
+        <div class="card primary-color-dark text-center">
+          <div class="card-body">
+            <p class="white-text mb-0"><strong>List coming soon!</strong></p>
+          </div>
+        </div>
+        <!-- <ul class="centre">
+          <li class="btn"><a href="#" class="beer-all">All</a></li>
+          <li class="btn"><a href="#" class="beer">Barley Wine</a></li>
+          <li class="btn"><a href="#" class="beer">Bitter</a></li>
+          <li class="btn"><a href="#" class="beer">Cask Lager</a></li>
+          <li class="btn"><a href="#" class="beer">Dark Mild</a></li>
+          <li class="btn"><a href="#" class="beer">Dark/Old Ale</a></li>
+          <li class="btn"><a href="#" class="beer">Fruit/Spice</a></li>
+          <li class="btn"><a href="#" class="beer">Golden</a></li>
+          <li class="btn"><a href="#" class="beer">IPA</a></li>
+          <li class="btn"><a href="#" class="beer">Light Mild</a></li>
+          <li class="btn"><a href="#" class="beer">Stout/Porter</a></li>
+        </ul>
         <table id="table-beer" class="display table table-striped table-bordered" style="width:100%" data-order='[ [1, "asc"], [0, "asc"] ]' data-page-length='20'>
           <thead>
             <tr>
-              <td><b>Drink Name</b></td>
-              <td><b>Brewery</b></td>
-              <td><b>Location</b></td>
-              <td><b>Style</b></td>
-              <td><b>ABV (%)</b></td>
+              <td><strong>Drink Name</strong></td>
+              <td><strong>Brewery</strong></td>
+              <td><strong>Location</strong></td>
+              <td><strong>Style</strong></td>
+              <td><strong>ABV (%)</strong></td>
+            </tr>
+          </thead>
+        </table> -->
+      </div>
+      <div class="tab-pane fade" id="cider-list" role="tabpanel" aria-labelledby="cider-list-button">
+        <ul class="centre">
+          <li class="btn"><a href="#" class="cider-all">All</a></li>
+          <li class="btn"><a href="#" class="cider">Cider</a></li>
+          <li class="btn"><a href="#" class="cider">Perry</a></li>
+          <li class="btn"><a href="#" class="cider">Pyder</a></li>
+        </ul>
+        <table id="table-cider" class="display table table-striped table-bordered" style="width:100%" data-order='[[1, "asc"], [0, "asc"]]' data-page-length='20'>
+          <thead>
+            <tr>
+              <td><strong>Drink Name</strong></td>
+              <td><strong>Producer</strong></td>
+              <td><strong>Location</strong></td>
+              <td><strong>Type</strong></td>
+              <td><strong>ABV (%)</strong></td>
             </tr>
           </thead>
         </table>
       </div>
-      <div class="tab-pane fade" id="cider-list" role="tabpanel" aria-labelledby="cider-list-button">
-        <table id="table-cider" class="display table table-striped table-bordered" style="width:100%" data-order='[[1, "asc"], [0, "asc"]]' data-page-length='20'>
+      <div class="tab-pane fade" id="keykeg-list" role="tabpanel" aria-labelledby="keykeg-list-button">
+        <div class="card primary-color-dark text-center">
+          <div class="card-body">
+            <p class="white-text mb-0"><strong>List coming soon!</strong></p>
+          </div>
+        </div>
+        <!-- <ul class="centre">
+          <li class="btn"><a href="#" class="keykeg-all">All</a></li>
+        </ul>
+        <table id="table-keykeg" class="display table table-striped table-bordered" style="width:100%" data-order='[[1, "asc"], [0, "asc"]]' data-page-length='20'>
           <thead>
             <tr>
-              <td><b>Drink Name</b></td>
-              <td><b>Producer</b></td>
-              <td><b>Location</b></td>
-              <td><b>Type</b></td>
-              <td><b>ABV (%)</b></td>
+              <td><strong>Drink Name</strong></td>
+              <td><strong>Brewery</strong></td>
+              <td><strong>Location</strong></td>
+              <td><strong>Style</strong></td>
+              <td><strong>ABV (%)</strong></td>
+            </tr>
+          </thead>
+        </table> -->
+      </div>
+      <div class="tab-pane fade" id="foreign-list" role="tabpanel" aria-labelledby="foreign-list-button">
+        <div class="card amber darken-4 text-center">
+          <div class="card-body">
+            <p class="black-text mb-0"><strong>The Belgian Bar is not a CAMRA bar</strong></p>
+          </div>
+        </div>
+        <br class="my-5">
+        <ul class="centre">
+          <li class="btn"><a href="#" class="foreign-all">All</a></li>
+        </ul>
+        <table id="table-foreign" class="display table table-striped table-bordered" style="width:100%" data-order='[[1, "asc"], [0, "asc"]]' data-page-length='20'>
+          <thead>
+            <tr>
+              <td><strong>Drink Name</strong></td>
+              <td><strong>Brewery</strong></td>
+              <td><strong>Location</strong></td>
+              <td><strong>Style</strong></td>
+              <td><strong>ABV (%)</strong></td>
             </tr>
           </thead>
         </table>
       </div>
     </div>
     <div class="my-5"></div>
-    <div class="card cbcf-info text-center z-depth-2">
+    <div class="card primary-color-dark text-center z-depth-2">
       <div class="card-body">
-        <p class="white-text mb-0"><strong>Drink lists provided are subject to change without notice.</strong><br><br><i>Beer list was last updated on Monday 18th February</i><br><i>Cider list was last updated on Monday 18th February</i></p>
+        <p class="white-text mb-0"><strong>Drink lists provided are subject to change without notice.</strong><br><br><i>Cider list was last updated on Wednesday 19th June</i><br><i>Foreign list was last updated on Thursday 6th June</i></p>
       </div>
     </div>
     <div class="my-5"></div>
@@ -96,7 +169,7 @@
   <!-- Datatables Config -->
   <script nonce="fUoyKEcubmAsaFdqLVFIZQ==">
     $(document).ready(function() {
-      $('#table-beer').DataTable({
+      var table1 = $('#table-beer').DataTable({
         dom: 'Bfrtip',
         buttons: [
           'excel',
@@ -145,28 +218,8 @@
             "data": "ABV (%)"
           }
         ],
-        initComplete: function () {
-            this.api().columns([1, 2, 3]).every( function () {
-                var column = this;
-                var select = $('<select><option value=""></option></select>')
-                    .appendTo( $(column.footer()).empty() )
-                    .on( 'change', function () {
-                        var val = $.fn.dataTable.util.escapeRegex(
-                            $(this).val()
-                        );
-
-                        column
-                            .search( val ? '^'+val+'$' : '', true, false )
-                            .draw();
-                    } );
-
-                column.data().unique().sort().each( function ( d, j ) {
-                    select.append( '<option value="'+d+'">'+d+'</option>' )
-                } );
-            } );
-        },
       });
-      $('#table-cider').DataTable({
+      var table2 = $('#table-cider').DataTable({
         dom: 'Bfrtip',
         buttons: [
           'excel',
@@ -215,6 +268,162 @@
             "data": "ABV (%)"
           }
         ]
+      });
+      var table3 = $('#table-keykeg').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+          'excel',
+          'print'
+        ],
+        responsive: true,
+        stateSave: false,
+        "ajax": {
+          "url": "./listings/keykeg.json",
+          "dataSrc": ""
+        },
+        "columnDefs": [{
+            "type": "html",
+            "targets": 0
+          },
+          {
+            "type": "html",
+            "targets": 1
+          },
+          {
+            "type": "html",
+            "targets": 2
+          },
+          {
+            "type": "html",
+            "targets": 3
+          },
+          {
+            "type": "html-num",
+            "targets": 4
+          }
+        ],
+        "columns": [{
+            "data": "Drink Name"
+          },
+          {
+            "data": "Brewery"
+          },
+          {
+            "data": "Location"
+          },
+          {
+            "data": "Style"
+          },
+          {
+            "data": "ABV (%)"
+          }
+        ]
+      });
+      var table4 = $('#table-foreign').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+          'excel',
+          'print'
+        ],
+        responsive: true,
+        stateSave: false,
+        "ajax": {
+          "url": "./listings/foreign.json",
+          "dataSrc": ""
+        },
+        "columnDefs": [{
+            "type": "html",
+            "targets": 0
+          },
+          {
+            "type": "html",
+            "targets": 1
+          },
+          {
+            "type": "html",
+            "targets": 2
+          },
+          {
+            "type": "html",
+            "targets": 3
+          },
+          {
+            "type": "html-num",
+            "targets": 4
+          }
+        ],
+        "columns": [{
+            "data": "Drink Name"
+          },
+          {
+            "data": "Brewery"
+          },
+          {
+            "data": "Location"
+          },
+          {
+            "data": "Style"
+          },
+          {
+            "data": "ABV (%)"
+          }
+        ]
+      });
+      //Table 1 - Beer
+      $('ul').on('click', 'a.beer', function() {
+        table1
+          .columns(3)
+          .search($(this).text())
+          .draw();
+      });
+      $('ul').on('click', 'a.beer-all', function() {
+        table1
+          .search('')
+          .columns(3)
+          .search('')
+          .draw();
+      });
+      //Table 2 - Cider
+      $('ul').on('click', 'a.cider', function() {
+        table2
+          .columns(3)
+          .search($(this).text())
+          .draw();
+      });
+      $('ul').on('click', 'a.cider-all', function() {
+        table2
+          .search('')
+          .columns(3)
+          .search('')
+          .draw();
+      });
+      //Table 3 - Key Keg
+      $('ul').on('click', 'a.keykeg', function() {
+        table3
+          .columns(3)
+          .search($(this).text())
+          .draw();
+      });
+      $('ul').on('click', 'a.keykeg-all', function() {
+        table3
+          .search('')
+          .columns(3)
+          .search('')
+          .draw();
+      });
+      //Table 4 - Foreign Beer
+      $('ul').on('click', 'a.keykeg', function() {
+        table4
+          .columns(3)
+          .search($(this).text())
+          .draw();
+      });
+      $('ul').on('click', 'a.keykeg-all', function() {
+        table4
+          .search('')
+          .columns(3)
+          .search('')
+          .draw();
       });
     });
   </script>
