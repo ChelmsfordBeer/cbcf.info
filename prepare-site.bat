@@ -1,9 +1,1 @@
-gulp fileinclude
-gulp fileinclude1
-gulp fileinclude2
-gulp fileinclude3
-gulp fileinclude4
-gulp fileinclude5
-gulp fileinclude6
-gulp fileinclude7
-gulp css-minify
+gulp fileinclude && gulp fileinclude1 && gulp fileinclude2 && gulp fileinclude3 && gulp fileinclude4 && gulp fileinclude5 && gulp fileinclude6 && gulp fileinclude7 && gulp css-minify && pause
