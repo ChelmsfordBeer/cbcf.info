@@ -74,6 +74,7 @@
           <a href="#" class="btn cbcf-secondary beer">Stout</a>
           <a href="#" class="btn cbcf-secondary beer">Wheat/Rye</a>
         </center>
+        <br class="my-5">
         <table id="table-beer" class="display table table-striped table-bordered" style="width:100%" data-order='[ [1, "asc"], [0, "asc"] ]' data-page-length='20'>
           <thead>
             <tr>
@@ -106,25 +107,42 @@
         </table>
       </div>
       <div class="tab-pane fade" id="keykeg-list" role="tabpanel" aria-labelledby="keykeg-list-button">
-        <div class="card primary-color-dark text-center">
+        <!-- <div class="card primary-color-dark text-center">
           <div class="card-body">
             <p class="white-text mb-0"><strong>List coming soon!</strong></p>
           </div>
-        </div>
-        <!-- <center>
+        </div> -->
+        <center>
           <a href="#" class="btn cbcf-secondary keykeg-all">All</a>
+          <!-- <a href="#" class="btn cbcf-secondary keykeg-gluten">Gluten Free</a>
+          <a href="#" class="btn cbcf-secondary keykeg-vegan">Vegan Friendly</a> -->
+          <a href="#" class="btn cbcf-secondary keykeg">APA</a>
+          <a href="#" class="btn cbcf-secondary keykeg">Bitter</a>
+          <a href="#" class="btn cbcf-secondary keykeg">Gold</a>
+          <a href="#" class="btn cbcf-secondary keykeg">IPA</a>
+          <a href="#" class="btn cbcf-secondary keykeg">Lager</a>
+          <a href="#" class="btn cbcf-secondary keykeg">NEIPA</a>
+          <a href="#" class="btn cbcf-secondary keykeg">Pale</a>
+          <a href="#" class="btn cbcf-secondary keykeg">Porter</a>
+          <a href="#" class="btn cbcf-secondary keykeg">Sour</a>
+          <a href="#" class="btn cbcf-secondary keykeg">Speciality</a>
+          <a href="#" class="btn cbcf-secondary keykeg">Speciality/Saison</a>
+          <a href="#" class="btn cbcf-secondary keykeg">Speciality/Stout</a>
+          <a href="#" class="btn cbcf-secondary keykeg">Stout</a>
         </center>
+        <br class="my-5">
         <table id="table-keykeg" class="display table table-striped table-bordered" style="width:100%" data-order='[[1, "asc"], [0, "asc"]]' data-page-length='20'>
           <thead>
             <tr>
               <td><strong>Drink Name</strong></td>
               <td><strong>Brewery</strong></td>
-              <td><strong>Location</strong></td>
               <td><strong>Style</strong></td>
               <td><strong>ABV (%)</strong></td>
+              <td><strong>Gluten Free?</strong></td>
+              <td><strong>Vegan Friendly?</strong></td>
             </tr>
           </thead>
-        </table> -->
+        </table>
       </div>
       <div class="tab-pane fade" id="foreign-list" role="tabpanel" aria-labelledby="foreign-list-button">
         <div class="card amber darken-4 text-center">
@@ -143,6 +161,7 @@
           <a href="#" class="btn cbcf-secondary foreign">Lambics</a>
           <a href="#" class="btn cbcf-secondary foreign">Wild Beers</a>
         </center>
+        <br class="my-5">
         <table id="table-foreign" class="display table table-striped table-bordered" style="width:100%" data-order='[[1, "asc"], [0, "asc"]]' data-page-length='20'>
           <thead>
             <tr>
@@ -163,7 +182,8 @@
           <br><br>
           <i>Beer list was last updated on Thursday 6th June</i><br>
           <i>Cider list was last updated on Wednesday 19th June</i><br>
-          <i>Foreign list was last updated on Thursday 6th June</i>
+          <i>Key Keg list was last updated on Monday 24th June</i><br>
+          <i>Foreign Bar list was last updated on Thursday 6th June</i>
         </p>
       </div>
     </div>
@@ -212,7 +232,7 @@
           {
             "type": "html-num",
             "targets": 3
-          }//,
+          } //,
           //{
           //  "type": "html-num",
           //  "targets": 4
@@ -316,6 +336,10 @@
           {
             "type": "html-num",
             "targets": 4
+          },
+          {
+            "type": "html",
+            "targets": 5
           }
         ],
         "columns": [{
@@ -325,13 +349,16 @@
             "data": "Brewery"
           },
           {
-            "data": "Location"
-          },
-          {
             "data": "Style"
           },
           {
             "data": "ABV (%)"
+          },
+          {
+            "data": "Gluten Free?"
+          },
+          {
+            "data": "Vegan Friendly?"
           }
         ]
       });
@@ -416,25 +443,25 @@
       //Table 3 - Key Keg
       $('center').on('click', 'a.keykeg', function() {
         table3
-          .columns(3)
+          .columns(2)
           .search($(this).text())
           .draw();
       });
       $('center').on('click', 'a.keykeg-all', function() {
         table3
-          .search('')
-          .columns(3)
-          .search('')
-          .draw();
+        .search('')
+        .columns(2)
+        .search('')
+        .draw();
       });
       //Table 4 - Foreign Beer
-      $('center').on('click', 'a.keykeg', function() {
+      $('center').on('click', 'a.foreign', function() {
         table4
           .columns(3)
           .search($(this).text())
           .draw();
       });
-      $('center').on('click', 'a.keykeg-all', function() {
+      $('center').on('click', 'a.foreign-all', function() {
         table4
           .search('')
           .columns(3)
