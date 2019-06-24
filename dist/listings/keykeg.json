@@ -1,414 +1,546 @@
-[{
-    "Drink Name": "Maple Stout",
-    "Style": "Stout",
-    "Brewery": "Arundel",
-    "Location": "Sussex",
-    "ABV (%)": 5.4
-  },
-  {
-    "Drink Name": "Smoked Porter",
-    "Style": "Porter",
-    "Brewery": "Arundel",
-    "Location": "Sussex",
-    "ABV (%)": 6
-  },
-  {
-    "Drink Name": "Wild Heaven",
-    "Style": "",
-    "Brewery": "Arundel",
-    "Location": "Sussex",
-    "ABV (%)": 5.2
-  },
-  {
-    "Drink Name": "Bloody 'Ell",
-    "Style": "",
-    "Brewery": "Beavertown",
-    "Location": "London",
-    "ABV (%)": 7.2
-  },
-  {
-    "Drink Name": "Smog Rocket",
-    "Style": "",
-    "Brewery": "Beavertown",
-    "Location": "London",
-    "ABV (%)": 5.4
-  },
-  {
-    "Drink Name": "Estsa Loco?",
-    "Style": "",
-    "Brewery": "Bone Machine",
-    "Location": "Pocklington, E Yorks",
-    "ABV (%)": 4.5
-  },
-  {
-    "Drink Name": "Funny Bone",
-    "Style": "",
-    "Brewery": "Bone Machine",
-    "Location": "Pocklington, E Yorks",
-    "ABV (%)": 4
-  },
-  {
-    "Drink Name": "Ripchord",
-    "Style": "",
-    "Brewery": "BrewBoard",
-    "Location": "Cambridge",
-    "ABV (%)": 4.3
-  },
-  {
-    "Drink Name": "Lakota",
-    "Style": "",
-    "Brewery": "BrewBoard",
-    "Location": "Cambridge",
-    "ABV (%)": 5.1
-  },
-  {
-    "Drink Name": "Handroid",
-    "Style": "",
-    "Brewery": "BrewBoard",
-    "Location": "Cambridge",
-    "ABV (%)": 6.4
-  },
-  {
-    "Drink Name": "Black Mandariana Sour",
-    "Style": "",
-    "Brewery": "Chorlton",
-    "Location": "Manchester",
-    "ABV (%)": 6
-  },
-  {
-    "Drink Name": "DDH Pale Citra",
-    "Style": "Pale Ale",
-    "Brewery": "Cloudwater",
-    "Location": "Manchester",
-    "ABV (%)": 5.5
-  },
-  {
-    "Drink Name": "Cowcatcher",
-    "Style": "",
-    "Brewery": "East London Brewery",
-    "Location": "Clapton, London",
-    "ABV (%)": 4.8
-  },
-  {
-    "Drink Name": "Beatnik",
-    "Style": "",
-    "Brewery": "Gipsy Hill",
-    "Location": "London",
-    "ABV (%)": 3.8
-  },
-  {
-    "Drink Name": "N1: APA",
-    "Style": "",
-    "Brewery": "Hammerton",
-    "Location": "Islington, London",
-    "ABV (%)": 4.1
-  },
-  {
-    "Drink Name": "Islington: Steam Lager",
-    "Style": "Lager",
-    "Brewery": "Hammerton",
-    "Location": "Islington, London",
-    "ABV (%)": 4.7
-  },
-  {
-    "Drink Name": "Crunch (Limited Edition)",
-    "Style": "",
-    "Brewery": "Hammerton",
-    "Location": "Islington, London",
-    "ABV (%)": 5.4
-  },
-  {
-    "Drink Name": "Panama Creature: Extra Pale Ale",
-    "Style": "Pale Ale",
-    "Brewery": "Hammerton",
-    "Location": "Islington, London",
-    "ABV (%)": 4.2
-  },
-  {
-    "Drink Name": "Tzatziki Sour",
-    "Style": "",
-    "Brewery": "Mad Hatter",
-    "Location": "Liverpool",
-    "ABV (%)": 4.2
-  },
-  {
-    "Drink Name": "Double Nightmare on Bold Street",
-    "Style": "",
-    "Brewery": "Mad Hatter",
-    "Location": "Liverpool",
-    "ABV (%)": 8.5
-  },
-  {
-    "Drink Name": "Lick Face Pale",
-    "Style": "Pale Ale",
-    "Brewery": "Mad Hatter",
-    "Location": "Liverpool",
-    "ABV (%)": 4
-  },
-  {
-    "Drink Name": "Penny Lane",
-    "Style": "",
-    "Brewery": "Mad Hatter",
-    "Location": "Liverpool",
-    "ABV (%)": 3.9
-  },
-  {
-    "Drink Name": "Saucery",
-    "Style": "",
-    "Brewery": "Magic Rock",
-    "Location": "Huddersfield",
-    "ABV (%)": 3.9
-  },
-  {
-    "Drink Name": "Salty Kiss",
-    "Style": "",
-    "Brewery": "Magic Rock",
-    "Location": "Huddersfield",
-    "ABV (%)": 4.1
-  },
-  {
-    "Drink Name": "Fantasma",
-    "Style": "",
-    "Brewery": "Magic Rock",
-    "Location": "Huddersfield",
-    "ABV (%)": 6.5
-  },
-  {
-    "Drink Name": "Earl Grey IPA",
-    "Style": "IPA",
-    "Brewery": "Marble Beers",
-    "Location": "Manchester",
-    "ABV (%)": 6.8
-  },
-  {
-    "Drink Name": "Dinosaurs will Die",
-    "Style": "",
-    "Brewery": "Marble Beers",
-    "Location": "Manchester",
-    "ABV (%)": 4.1
-  },
-  {
-    "Drink Name": "Exotic Peppercorn Vienna Lager",
-    "Style": "Lager",
-    "Brewery": "Marble Beers",
-    "Location": "Manchester",
-    "ABV (%)": 5.2
-  },
-  {
-    "Drink Name": "Full Guard DIPA",
-    "Style": "IPA",
-    "Brewery": "Marble Beers",
-    "Location": "Manchester",
-    "ABV (%)": 8.5
-  },
-  {
-    "Drink Name": "Brown",
-    "Style": "",
-    "Brewery": "Maregade",
-    "Location": "Hackney, London",
-    "ABV (%)": 4.6
-  },
-  {
-    "Drink Name": "Maple Milk Stout",
-    "Style": "Stout",
-    "Brewery": "Maregade",
-    "Location": "Hackney, London",
-    "ABV (%)": 4.5
-  },
-  {
-    "Drink Name": "Fusion 2016",
-    "Style": "",
-    "Brewery": "Moor",
-    "Location": "Bristol",
-    "ABV (%)": 8
-  },
-  {
-    "Drink Name": "INCRUSéE Balsamic Milk Stout",
-    "Style": "Stout",
-    "Brewery": "ORA Brewing",
-    "Location": "Bermondsey, London",
-    "ABV (%)": 6
-  },
-  {
-    "Drink Name": "Germinal",
-    "Style": "",
-    "Brewery": "Pig & Porter",
-    "Location": "Tunbridge Wells",
-    "ABV (%)": 3.7
-  },
-  {
-    "Drink Name": "Sandstorm",
-    "Style": "",
-    "Brewery": "Pig & Porter",
-    "Location": "Tunbridge Wells",
-    "ABV (%)": 4.9
-  },
-  {
-    "Drink Name": "Pale Fire",
-    "Style": "Pale Ale",
-    "Brewery": "Pressure Drop",
-    "Location": "Tottenham, London",
-    "ABV (%)": 4.8
-  },
-  {
-    "Drink Name": "Bosko",
-    "Style": "",
-    "Brewery": "Pressure Drop",
-    "Location": "Tottenham, London",
-    "ABV (%)": 6.5
-  },
-  {
-    "Drink Name": "Big Chief",
-    "Style": "",
-    "Brewery": "Redemption",
-    "Location": "Tottenham, London",
-    "ABV (%)": 5.5
-  },
-  {
-    "Drink Name": "Rock the Kazbek",
-    "Style": "",
-    "Brewery": "Redemption",
-    "Location": "Tottenham, London",
-    "ABV (%)": 4
-  },
-  {
-    "Drink Name": "Broken Dream",
-    "Style": "",
-    "Brewery": "Siren",
-    "Location": "Wokingham",
-    "ABV (%)": 6.5
-  },
-  {
-    "Drink Name": "Suspended in Secrets",
-    "Style": "",
-    "Brewery": "Siren",
-    "Location": "Wokingham",
-    "ABV (%)": 4
-  },
-  {
-    "Drink Name": "White Tips",
-    "Style": "",
-    "Brewery": "Siren",
-    "Location": "Wokingham",
-    "ABV (%)": 4.6
-  },
-  {
-    "Drink Name": "Pale Armadillo",
-    "Style": "",
-    "Brewery": "Tempest",
-    "Location": "Galashields",
-    "ABV (%)": 3.8
-  },
-  {
-    "Drink Name": "Elemental Porter",
-    "Style": "",
-    "Brewery": "Tempest",
-    "Location": "Galashields",
-    "ABV (%)": 5.1
-  },
-  {
-    "Drink Name": "Modern Helles",
-    "Style": "",
-    "Brewery": "Tempest",
-    "Location": "Galashields",
-    "ABV (%)": 4.1
-  },
-  {
-    "Drink Name": "Mango Berliner",
-    "Style": "",
-    "Brewery": "Tempest",
-    "Location": "Galashields",
-    "ABV (%)": 4.2
-  },
-  {
-    "Drink Name": "Green River",
-    "Style": "",
-    "Brewery": "Tempest + Duration",
-    "Location": "Galashields",
-    "ABV (%)": 4.5
-  },
-  {
-    "Drink Name": "Jaipur",
-    "Style": "",
-    "Brewery": "Thornbridge",
-    "Location": "Bakewell",
-    "ABV (%)": 5.9
-  },
-  {
-    "Drink Name": "Tzara",
-    "Style": "",
-    "Brewery": "Thornbridge",
-    "Location": "Bakewell",
-    "ABV (%)": 4.8
-  },
-  {
-    "Drink Name": "AM-PM",
-    "Style": "",
-    "Brewery": "Thornbridge",
-    "Location": "Bakewell",
-    "ABV (%)": 4.5
-  },
-  {
-    "Drink Name": "Monsters: No More Tuesdays",
-    "Style": "",
-    "Brewery": "Torrside",
-    "Location": "High Peak, Derbyshire",
-    "ABV (%)": 11.5
-  },
-  {
-    "Drink Name": "Zuur Rhubarb",
-    "Style": "",
-    "Brewery": "Vibrant",
-    "Location": "Lymington",
-    "ABV (%)": 3.5
-  },
-  {
-    "Drink Name": "Wheat Wave",
-    "Style": "",
-    "Brewery": "Vibrant",
-    "Location": "Lymington",
-    "ABV (%)": 4.8
-  },
-  {
-    "Drink Name": "Metropolis",
-    "Style": "",
-    "Brewery": "Vibrant",
-    "Location": "Lymington",
-    "ABV (%)": 6
-  },
-  {
-    "Drink Name": "Blank Space Gose",
-    "Style": "",
-    "Brewery": "Wildweather",
-    "Location": "Reading",
-    "ABV (%)": 4.5
-  },
-  {
-    "Drink Name": "First Person Fruiter",
-    "Style": "",
-    "Brewery": "Wildweather",
-    "Location": "Reading",
-    "ABV (%)": 5
-  },
-  {
-    "Drink Name": "Complete History",
-    "Style": "",
-    "Brewery": "Wildweather",
-    "Location": "Reading",
-    "ABV (%)": 5.5
-  },
-  {
-    "Drink Name": "Welcome to the Crumble",
-    "Style": "",
-    "Brewery": "Wildweather",
-    "Location": "Reading",
-    "ABV (%)": 5.5
-  },
-  {
-    "Drink Name": "Shell Fish Besterd",
-    "Style": "",
-    "Brewery": "Wildweather",
-    "Location": "Reading",
-    "ABV (%)": 6
-  }
+[
+ {
+   "Brewery": "Three Blind Mice",
+   "Drink Name": "Battle Scars",
+   "Style": "Speciality/Stout",
+   "ABV (%)": 9.7,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Three Blind Mice",
+   "Drink Name": "Acid Drop",
+   "Style": "Sour",
+   "ABV (%)": 5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Three Blind Mice",
+   "Drink Name": "Hip Hip Puree Blackberry and Rose Sour",
+   "Style": "Sour",
+   "ABV (%)": 3.1,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Three Blind Mice",
+   "Drink Name": "Simple Stout",
+   "Style": "Stout",
+   "ABV (%)": 5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Ampersand",
+   "Drink Name": "Bidon",
+   "Style": "Pale",
+   "ABV (%)": 3.9,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Ampersand",
+   "Drink Name": "Cocow",
+   "Style": "Stout",
+   "ABV (%)": 4.8,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Hammerton",
+   "Drink Name": "Working from Home",
+   "Style": "IPA",
+   "ABV (%)": 5.2,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Hammerton",
+   "Drink Name": "Peaches Brew",
+   "Style": "Pale",
+   "ABV (%)": 4.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Hammerton",
+   "Drink Name": "Italy's Boot",
+   "Style": "IPA",
+   "ABV (%)": 7,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Hammerton",
+   "Drink Name": "Open to Suggestion",
+   "Style": "Sour",
+   "ABV (%)": 4.1,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Hammerton",
+   "Drink Name": "Lobster County",
+   "Style": "IPA",
+   "ABV (%)": 6.1,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Hammerton",
+   "Drink Name": "Islington: Steam Lager",
+   "Style": "Lager",
+   "ABV (%)": 4.7,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "ORA",
+   "Drink Name": "Vomero (Mango Pale)",
+   "Style": "Pale",
+   "ABV (%)": 4.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "ORA",
+   "Drink Name": "Limoncello ",
+   "Style": "IPA",
+   "ABV (%)": 6.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Partizan",
+   "Drink Name": "Lemon & Thyme Saison",
+   "Style": "Speciality/Saison",
+   "ABV (%)": 3.8,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Partizan",
+   "Drink Name": "Lager",
+   "Style": "Lager",
+   "ABV (%)": 4.6,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Gorgeous Brewery",
+   "Drink Name": "Goofyhoof",
+   "Style": "Pale",
+   "ABV (%)": 5.4,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Gorgeous Brewery",
+   "Drink Name": "Guzzla Lager",
+   "Style": "Lager",
+   "ABV (%)": 4.8,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Gorgeous Brewery",
+   "Drink Name": "Greaseball APA",
+   "Style": "APA",
+   "ABV (%)": 5.4,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Beerblefish Brewing Co.",
+   "Drink Name": "1853 ESB",
+   "Style": "Bitter",
+   "ABV (%)": 5.3,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Pretty Decent Beer Co.",
+   "Drink Name": "Session IPA",
+   "Style": "IPA",
+   "ABV (%)": 4.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Pretty Decent Beer Co.",
+   "Drink Name": "Oatmeal Stout",
+   "Style": "Stout",
+   "ABV (%)": 4.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Pretty Decent Beer Co.",
+   "Drink Name": "Fruit Gose",
+   "Style": "Speciality",
+   "ABV (%)": 4.8,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Box Social Brewery",
+   "Drink Name": "Campfire Porter",
+   "Style": "Porter",
+   "ABV (%)": 7,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Mothership",
+   "Drink Name": "Brut Pale",
+   "Style": "Pale",
+   "ABV (%)": 4.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Kernel",
+   "Drink Name": "Hallertau Blanc Simcoe",
+   "Style": "APA",
+   "ABV (%)": 5.3,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Kernel",
+   "Drink Name": "Table Beer",
+   "Style": "IPA",
+   "ABV (%)": 3,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Colchester",
+   "Drink Name": "Brazillian",
+   "Style": "Stout",
+   "ABV (%)": 6,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Siren",
+   "Drink Name": "Broken Dream",
+   "Style": "Stout",
+   "ABV (%)": 6.7,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Siren",
+   "Drink Name": "Undercurrent",
+   "Style": "Pale",
+   "ABV (%)": 4.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Siren",
+   "Drink Name": "White Tips",
+   "Style": "IPA",
+   "ABV (%)": 4.6,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Siren",
+   "Drink Name": "Sound Wave",
+   "Style": "IPA",
+   "ABV (%)": 5.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Siren",
+   "Drink Name": "Suspended in Idaho",
+   "Style": "Pale",
+   "ABV (%)": 4,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Weird Beard",
+   "Drink Name": "Black Perle",
+   "Style": "Stout",
+   "ABV (%)": 3.8,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Weird Beard",
+   "Drink Name": "Five O'clock Shadow",
+   "Style": "IPA",
+   "ABV (%)": 7,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "Yes"
+ },
+ {
+   "Brewery": "Weird Beard",
+   "Drink Name": "Little Things That Kill",
+   "Style": "IPA",
+   "ABV (%)": 3.9,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Shiny",
+   "Drink Name": "Big Trouble in Paradise",
+   "Style": "Porter",
+   "ABV (%)": 7.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Shiny",
+   "Drink Name": "Deco",
+   "Style": "IPA",
+   "ABV (%)": 3.8,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Shiny",
+   "Drink Name": "Part Time Patriot",
+   "Style": "NEIPA",
+   "ABV (%)": 5.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Shiny",
+   "Drink Name": "Fallout",
+   "Style": "IPA",
+   "ABV (%)": 4.2,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Brewboard",
+   "Drink Name": "Ripchord",
+   "Style": "Pale",
+   "ABV (%)": 4.3,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Brewboard",
+   "Drink Name": "Bambino",
+   "Style": "APA",
+   "ABV (%)": 5.1,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Mighty Oak",
+   "Drink Name": "Old Man & the Sea",
+   "Style": "Stout",
+   "ABV (%)": 4.1,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Mighty Oak",
+   "Drink Name": "Jake the Snake",
+   "Style": "Gold",
+   "ABV (%)": 4,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Mighty Oak",
+   "Drink Name": "Cascade",
+   "Style": "IPA",
+   "ABV (%)": 6.2,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Tiny Rebel",
+   "Drink Name": "Double Dip",
+   "Style": "Pale",
+   "ABV (%)": 6.3,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Tiny Rebel",
+   "Drink Name": "Pump up the Jam",
+   "Style": "Pale",
+   "ABV (%)": 5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Tiny Rebel",
+   "Drink Name": "Frambuzzi Sour",
+   "Style": "Sour",
+   "ABV (%)": 4.3,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Fierce Beer",
+   "Drink Name": "Pilsner",
+   "Style": "Lager",
+   "ABV (%)": 4.2,
+   "Gluten Free?": "Yes",
+   "Vegan Friendly?": "Yes"
+ },
+ {
+   "Brewery": "Fierce Beer",
+   "Drink Name": "Easy Shift Pale",
+   "Style": "Pale",
+   "ABV (%)": 4.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "Yes"
+ },
+ {
+   "Brewery": "Fierce Beer",
+   "Drink Name": "Moose Mouse",
+   "Style": "Stout",
+   "ABV (%)": 4.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Fierce Beer",
+   "Drink Name": "Day Shift",
+   "Style": "Pale",
+   "ABV (%)": 5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "Yes"
+ },
+ {
+   "Brewery": "Fierce Beer",
+   "Drink Name": "Citrus Tart",
+   "Style": "Sour",
+   "ABV (%)": 4.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "Yes"
+ },
+ {
+   "Brewery": "Fierce Beer",
+   "Drink Name": "Tangerine Tart",
+   "Style": "Sour",
+   "ABV (%)": 4.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "Yes"
+ },
+ {
+   "Brewery": "Track",
+   "Drink Name": "Half Dome ",
+   "Style": "Pale",
+   "ABV (%)": 5.3,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "Yes"
+ },
+ {
+   "Brewery": "Thornbridge",
+   "Drink Name": "Tzara",
+   "Style": "Speciality",
+   "ABV (%)": 4.8,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Thornbridge",
+   "Drink Name": "Tart",
+   "Style": "Sour",
+   "ABV (%)": 6,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Pressure Drop",
+   "Drink Name": "Pale Fire",
+   "Style": "Pale",
+   "ABV (%)": 4.8,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Cloudwater",
+   "Drink Name": "Red Wine BA Chocolate Porter",
+   "Style": "Porter",
+   "ABV (%)": 11,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Cloudwater",
+   "Drink Name": "Raspberry Mimosa Slushie",
+   "Style": "Speciality",
+   "ABV (%)": 9,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Cloudwater",
+   "Drink Name": "Peach Bellini Slushie",
+   "Style": "Speciality",
+   "ABV (%)": 8,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Cloudwater",
+   "Drink Name": "IPA",
+   "Style": "IPA",
+   "ABV (%)": 6.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Cloudwater",
+   "Drink Name": "A New Chapter",
+   "Style": "IPA",
+   "ABV (%)": 6.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Bone Machine",
+   "Drink Name": "Dream Machine",
+   "Style": "Pale",
+   "ABV (%)": 5.2,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Black Sheep",
+   "Drink Name": "54 Degrees North ",
+   "Style": "Lager",
+   "ABV (%)": 4.5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Black Sheep",
+   "Drink Name": "Threedom",
+   "Style": "Pale",
+   "ABV (%)": null,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Black Sheep",
+   "Drink Name": "Pathmaker",
+   "Style": "IPA",
+   "ABV (%)": 5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ },
+ {
+   "Brewery": "Siren",
+   "Drink Name": "Santo",
+   "Style": "Lager",
+   "ABV (%)": 5,
+   "Gluten Free?": "No",
+   "Vegan Friendly?": "No"
+ }
 ]
