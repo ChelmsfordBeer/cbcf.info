@@ -46,33 +46,33 @@
         <a class="btn cbcf-primary btn-block" id="keykeg-list-button" data-toggle="pill" href="#keykeg-list" role="tab" aria-controls="keykeg-list" aria-selected="false">Key Keg</a>
       </li>
       <li class="nav-item">
-        <a class="btn cbcf-primary btn-block" id="foreign-list-button" data-toggle="pill" href="#foreign-list" role="tab" aria-controls="foreign-list" aria-selected="false">Belgian Bar</a>
+        <a class="btn cbcf-primary btn-block" id="foreign-list-button" data-toggle="pill" href="#foreign-list" role="tab" aria-controls="foreign-list" aria-selected="false">Foreign Bar</a>
       </li>
     </ul>
     <br>
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade show active" id="beer-list" role="tabpanel" aria-labelledby="beer-list-button">
-        <div class="card primary-color-dark text-center">
+        <!-- <div class="card primary-color-dark text-center">
           <div class="card-body">
             <p class="white-text mb-0"><strong>This list is not complete and is subject to change</strong></p>
           </div>
-        </div>
+        </div> -->
         <br class="my-5">
         <center>
           <a href="#" class="btn cbcf-secondary beer-all">All</a>
           <a href="#" class="btn cbcf-secondary beer">Amber</a>
           <a href="#" class="btn cbcf-secondary beer">Barley</a>
           <a href="#" class="btn cbcf-secondary beer">Bitter</a>
-          <a href="#" class="btn cbcf-secondary beer">Cask Lager</a>
-          <a href="#" class="btn cbcf-secondary beer">Dark/Old Ale</a>
+          <a href="#" class="btn cbcf-secondary beer">Dark</a>
           <a href="#" class="btn cbcf-secondary beer">Fruit/Spice</a>
           <a href="#" class="btn cbcf-secondary beer">Golden</a>
           <a href="#" class="btn cbcf-secondary beer">IPA</a>
+          <a href="#" class="btn cbcf-secondary beer">Lager</a>
           <a href="#" class="btn cbcf-secondary beer">Mild</a>
           <a href="#" class="btn cbcf-secondary beer">Pale</a>
           <a href="#" class="btn cbcf-secondary beer">Porter</a>
+          <a href="#" class="btn cbcf-secondary beer">Rye</a>
           <a href="#" class="btn cbcf-secondary beer">Stout</a>
-          <a href="#" class="btn cbcf-secondary beer">Wheat/Rye</a>
         </center>
         <br class="my-5">
         <table id="table-beer" class="display table table-striped table-bordered" style="width:100%" data-order='[ [1, "asc"], [0, "asc"] ]' data-page-length='20'>
@@ -80,9 +80,10 @@
             <tr>
               <td><strong>Drink Name</strong></td>
               <td><strong>Brewery</strong></td>
-              <!-- <td><strong>Location</strong></td> -->
               <td><strong>Style</strong></td>
               <td><strong>ABV (%)</strong></td>
+              <td><strong>Gluten Free?</strong></td>
+              <td><strong>Vegan Friendly?</strong></td>
             </tr>
           </thead>
         </table>
@@ -147,7 +148,7 @@
       <div class="tab-pane fade" id="foreign-list" role="tabpanel" aria-labelledby="foreign-list-button">
         <div class="card amber darken-4 text-center">
           <div class="card-body">
-            <p class="black-text mb-0"><strong>The Belgian Bar is not a CAMRA bar</strong></p>
+            <p class="black-text mb-0"><strong>The Foreign Bar is not a CAMRA bar</strong></p>
           </div>
         </div>
         <br class="my-5">
@@ -180,7 +181,7 @@
       <div class="card-body">
         <p class="white-text mb-0"><strong>Drink lists provided are subject to change without notice.</strong>
           <br><br>
-          <i>Beer list was last updated on Thursday 6th June</i><br>
+          <i>Beer list was last updated on Tuesday 25th June</i><br>
           <i>Cider list was last updated on Wednesday 19th June</i><br>
           <i>Key Keg list was last updated on Monday 24th June</i><br>
           <i>Foreign Bar list was last updated on Thursday 6th June</i>
@@ -232,11 +233,15 @@
           {
             "type": "html-num",
             "targets": 3
-          } //,
-          //{
-          //  "type": "html-num",
-          //  "targets": 4
-          //}
+          },
+          {
+            "type": "html",
+            "targets": 4
+          },
+          {
+            "type": "html",
+            "targets": 5
+          }
         ],
         "columns": [{
             "data": "Drink Name"
@@ -244,14 +249,17 @@
           {
             "data": "Brewery"
           },
-          //{
-          //  "data": "Location"
-          //},
           {
             "data": "Style"
           },
           {
             "data": "ABV (%)"
+          },
+          {
+            "data": "Gluten Free?"
+          },
+          {
+            "data": "Vegan Friendly?"
           }
         ],
       });
@@ -330,11 +338,11 @@
             "targets": 2
           },
           {
-            "type": "html",
+            "type": "html-num",
             "targets": 3
           },
           {
-            "type": "html-num",
+            "type": "html",
             "targets": 4
           },
           {
