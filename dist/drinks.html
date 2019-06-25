@@ -172,6 +172,9 @@
         <a class="btn cbcf-primary btn-block" id="keykeg-list-button" data-toggle="pill" href="#keykeg-list" role="tab" aria-controls="keykeg-list" aria-selected="false">Key Keg</a>
       </li>
       <li class="nav-item">
+        <a class="btn cbcf-primary btn-block" id="brewery-list-button" data-toggle="pill" href="#foreign-list" role="tab" aria-controls="brewery-list" aria-selected="false">Brewery Bars</a>
+      </li>
+      <li class="nav-item">
         <a class="btn cbcf-primary btn-block" id="foreign-list-button" data-toggle="pill" href="#foreign-list" role="tab" aria-controls="foreign-list" aria-selected="false">Foreign Bar</a>
       </li>
     </ul>
@@ -267,6 +270,26 @@
               <td><strong>ABV (%)</strong></td>
               <td><strong>Gluten Free?</strong></td>
               <td><strong>Vegan Friendly?</strong></td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tab-pane fade" id="brewery-list" role="tabpanel" aria-labelledby="brewery-list-button">
+        <!-- <div class="card primary-color-dark text-center">
+          <div class="card-body">
+            <p class="white-text mb-0"><strong>List coming soon!</strong></p>
+          </div>
+        </div> -->
+
+        <br class="my-5">
+        <table id="table-brewery" class="display table table-striped table-bordered" style="width:100%" data-order='[[1, "asc"], [0, "asc"]]' data-page-length='20'>
+          <thead>
+            <tr>
+              <td><strong>Drink Name</strong></td>
+              <td><strong>Brewery</strong></td>
+              <td><strong>Style</strong></td>
+              <td><strong>ABV (%)</strong></td>
+              <td><strong>Gluten Free?</strong></td>
             </tr>
           </thead>
         </table>
@@ -563,7 +586,57 @@
           }
         ]
       });
-      var table4 = $('#table-foreign').DataTable({
+      var table4 = $('#table-brewery').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+          'excel',
+          'print'
+        ],
+        responsive: true,
+        stateSave: false,
+        "ajax": {
+          "url": "./listings/brewery.json",
+          "dataSrc": ""
+        },
+        "columnDefs": [{
+            "type": "html",
+            "targets": 0
+          },
+          {
+            "type": "html",
+            "targets": 1
+          },
+          {
+            "type": "html",
+            "targets": 2
+          },
+          {
+            "type": "html-num",
+            "targets": 3
+          },
+          {
+            "type": "html",
+            "targets": 4
+          }
+        ],
+        "columns": [{
+            "data": "Drink Name"
+          },
+          {
+            "data": "Brewery"
+          },
+          {
+            "data": "Style"
+          },
+          {
+            "data": "ABV (%)"
+          },
+          {
+            "data": "Gluten Free?"
+          }
+        ]
+      });
+      var table5 = $('#table-foreign').DataTable({
         dom: 'Bfrtip',
         buttons: [
           'excel',
@@ -655,15 +728,77 @@
         .search('')
         .draw();
       });
-      //Table 4 - Foreign Beer
-      $('center').on('click', 'a.foreign', function() {
+      //Table 4 - Brewery Bars
+      $('#1').on('click', function() {
         table4
+          .columns(1)
+          .search("Billericay Brewing")
+          .draw();
+      });
+      $('#2').on('click', function() {
+        table4
+          .columns(1)
+          .search("Bishop Nick")
+          .draw();
+      });
+      $('#3').on('click', function() {
+        table4
+          .columns(1)
+          .search("Brentwood|Elephant School", true, false, true)
+          .draw();
+      });
+      $('#4').on('click', function() {
+        table4
+          .columns(1)
+          .search("Chelmsford Brew Co.")
+          .draw();
+      });
+      $('#5').on('click', function() {
+        table4
+          .columns(1)
+          .search("Dartmoor")
+          .draw();
+      });
+      $('#6').on('click', function() {
+        table4
+          .columns(1)
+          .search("Nethergate")
+          .draw();
+      });
+      $('#7').on('click', function() {
+        table4
+          .columns(1)
+          .search("Silks Brewery")
+          .draw();
+      });
+      $('#8').on('click', function() {
+        table4
+          .columns(1)
+          .search("Skinners")
+          .draw();
+      });
+      $('#9').on('click', function() {
+        table4
+          .columns(1)
+          .search("Wibblers")
+          .draw();
+      });
+      $('center').on('click', 'a.brewery-all', function() {
+        table4
+          .search('')
+          .columns(1)
+          .search('')
+          .draw();
+      });
+      //Table 5 - Foreign Beer
+      $('center').on('click', 'a.foreign', function() {
+        table5
           .columns(3)
           .search($(this).text())
           .draw();
       });
       $('center').on('click', 'a.foreign-all', function() {
-        table4
+        table5
           .search('')
           .columns(3)
           .search('')
