@@ -37,42 +37,40 @@
     <br>
     <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
       <li class="nav-item">
-        <a class="btn cbcf-primary btn-block active" id="beer-list-button" data-toggle="pill" href="#beer-list" role="tab" aria-controls="beer-list" aria-selected="true">Beer</a>
+        <a class="btn cbcf-primary btn-block active noZensmooth" id="beer-list-button" data-toggle="pill" href="#beer-list" role="tab" aria-controls="beer-list" aria-selected="true">Beer</a>
       </li>
       <li class="nav-item">
-        <a class="btn cbcf-primary btn-block" id="cider-list-button" data-toggle="pill" href="#cider-list" role="tab" aria-controls="cider-list" aria-selected="false">Cider</a>
+        <a class="btn cbcf-primary btn-block noZensmooth" id="cider-list-button" data-toggle="pill" href="#cider-list" role="tab" aria-controls="cider-list" aria-selected="false">Cider</a>
       </li>
       <li class="nav-item">
-        <a class="btn cbcf-primary btn-block" id="keykeg-list-button" data-toggle="pill" href="#keykeg-list" role="tab" aria-controls="keykeg-list" aria-selected="false">Key Keg</a>
+        <a class="btn cbcf-primary btn-block noZensmooth" id="keykeg-list-button" data-toggle="pill" href="#keykeg-list" role="tab" aria-controls="keykeg-list" aria-selected="false">Key Keg</a>
       </li>
       <li class="nav-item">
-        <a class="btn cbcf-primary btn-block" id="foreign-list-button" data-toggle="pill" href="#foreign-list" role="tab" aria-controls="foreign-list" aria-selected="false">Foreign Bar</a>
+        <a class="btn cbcf-primary btn-block noZensmooth" id="brewery-list-button" data-toggle="pill" href="#brewery-list" role="tab" aria-controls="brewery-list" aria-selected="false">Brewery Bars</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn cbcf-primary btn-block noZensmooth" id="foreign-list-button" data-toggle="pill" href="#foreign-list" role="tab" aria-controls="foreign-list" aria-selected="false">Foreign Bar</a>
       </li>
     </ul>
     <br>
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade show active" id="beer-list" role="tabpanel" aria-labelledby="beer-list-button">
-        <!-- <div class="card primary-color-dark text-center">
-          <div class="card-body">
-            <p class="white-text mb-0"><strong>This list is not complete and is subject to change</strong></p>
-          </div>
-        </div> -->
         <br class="my-5">
         <center>
-          <a href="#" class="btn cbcf-secondary beer-all">All</a>
-          <a href="#" class="btn cbcf-secondary beer">Amber</a>
-          <a href="#" class="btn cbcf-secondary beer">Barley</a>
-          <a href="#" class="btn cbcf-secondary beer">Bitter</a>
-          <a href="#" class="btn cbcf-secondary beer">Dark</a>
-          <a href="#" class="btn cbcf-secondary beer">Fruit/Spice</a>
-          <a href="#" class="btn cbcf-secondary beer">Golden</a>
-          <a href="#" class="btn cbcf-secondary beer">IPA</a>
-          <a href="#" class="btn cbcf-secondary beer">Lager</a>
-          <a href="#" class="btn cbcf-secondary beer">Mild</a>
-          <a href="#" class="btn cbcf-secondary beer">Pale</a>
-          <a href="#" class="btn cbcf-secondary beer">Porter</a>
-          <a href="#" class="btn cbcf-secondary beer">Rye</a>
-          <a href="#" class="btn cbcf-secondary beer">Stout</a>
+          <a href="#" class="btn cbcf-secondary beer-all noZensmooth">All</a>
+          <a href="#" class="btn cbcf-secondary beer noZensmooth">Amber</a>
+          <a href="#" class="btn cbcf-secondary beer noZensmooth">Barley</a>
+          <a href="#" class="btn cbcf-secondary beer noZensmooth">Bitter</a>
+          <a href="#" class="btn cbcf-secondary beer noZensmooth">Dark</a>
+          <a href="#" class="btn cbcf-secondary beer noZensmooth">Fruit/Spice</a>
+          <a href="#" class="btn cbcf-secondary beer noZensmooth">Golden</a>
+          <a href="#" class="btn cbcf-secondary beer noZensmooth">IPA</a>
+          <a href="#" class="btn cbcf-secondary beer noZensmooth">Lager</a>
+          <a href="#" class="btn cbcf-secondary beer noZensmooth">Mild</a>
+          <a href="#" class="btn cbcf-secondary beer noZensmooth">Pale</a>
+          <a href="#" class="btn cbcf-secondary beer noZensmooth">Porter</a>
+          <a href="#" class="btn cbcf-secondary beer noZensmooth">Rye</a>
+          <a href="#" class="btn cbcf-secondary beer noZensmooth">Stout</a>
         </center>
         <br class="my-5">
         <table id="table-beer" class="display table table-striped table-bordered" style="width:100%" data-order='[ [1, "asc"], [0, "asc"] ]' data-page-length='20'>
@@ -90,10 +88,10 @@
       </div>
       <div class="tab-pane fade" id="cider-list" role="tabpanel" aria-labelledby="cider-list-button">
         <center>
-          <a href="#" class="btn cbcf-secondary cider-all">All</a>
-          <a href="#" class="btn cbcf-secondary cider">Cider</a>
-          <a href="#" class="btn cbcf-secondary cider">Perry</a>
-          <a href="#" class="btn cbcf-secondary cider">Pyder</a>
+          <a href="#" class="btn cbcf-secondary cider-all noZensmooth">All</a>
+          <a href="#" class="btn cbcf-secondary cider noZensmooth">Cider</a>
+          <a href="#" class="btn cbcf-secondary cider noZensmooth">Perry</a>
+          <a href="#" class="btn cbcf-secondary cider noZensmooth">Pyder</a>
         </center>
         <table id="table-cider" class="display table table-striped table-bordered" style="width:100%" data-order='[[1, "asc"], [0, "asc"]]' data-page-length='20'>
           <thead>
@@ -108,28 +106,21 @@
         </table>
       </div>
       <div class="tab-pane fade" id="keykeg-list" role="tabpanel" aria-labelledby="keykeg-list-button">
-        <!-- <div class="card primary-color-dark text-center">
-          <div class="card-body">
-            <p class="white-text mb-0"><strong>List coming soon!</strong></p>
-          </div>
-        </div> -->
         <center>
-          <a href="#" class="btn cbcf-secondary keykeg-all">All</a>
-          <!-- <a href="#" class="btn cbcf-secondary keykeg-gluten">Gluten Free</a>
-          <a href="#" class="btn cbcf-secondary keykeg-vegan">Vegan Friendly</a> -->
-          <a href="#" class="btn cbcf-secondary keykeg">APA</a>
-          <a href="#" class="btn cbcf-secondary keykeg">Bitter</a>
-          <a href="#" class="btn cbcf-secondary keykeg">Gold</a>
-          <a href="#" class="btn cbcf-secondary keykeg">IPA</a>
-          <a href="#" class="btn cbcf-secondary keykeg">Lager</a>
-          <a href="#" class="btn cbcf-secondary keykeg">NEIPA</a>
-          <a href="#" class="btn cbcf-secondary keykeg">Pale</a>
-          <a href="#" class="btn cbcf-secondary keykeg">Porter</a>
-          <a href="#" class="btn cbcf-secondary keykeg">Sour</a>
-          <a href="#" class="btn cbcf-secondary keykeg">Speciality</a>
-          <a href="#" class="btn cbcf-secondary keykeg">Speciality/Saison</a>
-          <a href="#" class="btn cbcf-secondary keykeg">Speciality/Stout</a>
-          <a href="#" class="btn cbcf-secondary keykeg">Stout</a>
+          <a href="#" class="btn cbcf-secondary keykeg-all noZensmooth">All</a>
+          <a href="#" class="btn cbcf-secondary keykeg noZensmooth">APA</a>
+          <a href="#" class="btn cbcf-secondary keykeg noZensmooth">Bitter</a>
+          <a href="#" class="btn cbcf-secondary keykeg noZensmooth">Gold</a>
+          <a href="#" class="btn cbcf-secondary keykeg noZensmooth">IPA</a>
+          <a href="#" class="btn cbcf-secondary keykeg noZensmooth">Lager</a>
+          <a href="#" class="btn cbcf-secondary keykeg noZensmooth">NEIPA</a>
+          <a href="#" class="btn cbcf-secondary keykeg noZensmooth">Pale</a>
+          <a href="#" class="btn cbcf-secondary keykeg noZensmooth">Porter</a>
+          <a href="#" class="btn cbcf-secondary keykeg noZensmooth">Sour</a>
+          <a href="#" class="btn cbcf-secondary keykeg noZensmooth">Speciality</a>
+          <a href="#" class="btn cbcf-secondary keykeg noZensmooth">Speciality/Saison</a>
+          <a href="#" class="btn cbcf-secondary keykeg noZensmooth">Speciality/Stout</a>
+          <a href="#" class="btn cbcf-secondary keykeg noZensmooth">Stout</a>
         </center>
         <br class="my-5">
         <table id="table-keykeg" class="display table table-striped table-bordered" style="width:100%" data-order='[[1, "asc"], [0, "asc"]]' data-page-length='20'>
@@ -145,6 +136,70 @@
           </thead>
         </table>
       </div>
+      <div class="tab-pane fade" id="brewery-list" role="tabpanel" aria-labelledby="brewery-list-button">
+        <br class="my-5">
+        <center>
+          <picture>
+            <source srcset="./img/brewery/1.webp" type="image/webp">
+            <source srcset="./img/brewery/1.png" type="image/png">
+            <img src="./img/brewery/1.png" alt="Billericay Brewing" class="img-thumbnail cbcf-thumbnail hoverable" id="1">
+          </picture>
+          <picture>
+            <source srcset="./img/brewery/2.webp" type="image/webp">
+            <source srcset="./img/brewery/2.gif" type="image/gif">
+            <img src="./img/brewery/2.gif" alt="Bishop Nick" class="img-thumbnail cbcf-thumbnail hoverable" id="2">
+          </picture>
+          <picture>
+            <source srcset="./img/brewery/3.webp" type="image/webp">
+            <source srcset="./img/brewery/3.jpg" type="image/jpg">
+            <img src="./img/brewery/3.jpg" alt="Brentwood" class="img-thumbnail cbcf-thumbnail hoverable" id="3">
+          </picture>
+          <picture>
+            <source srcset="./img/brewery/4.webp" type="image/webp">
+            <source srcset="./img/brewery/4.jpg" type="image/jpg">
+            <img src="./img/brewery/4.jpg" alt="Chelmsford Brew Co" class="img-thumbnail cbcf-thumbnail hoverable" id="4">
+          </picture>
+          <picture>
+            <source srcset="./img/brewery/5.webp" type="image/webp">
+            <source srcset="./img/brewery/5.jpg" type="image/jpg">
+            <img src="./img/brewery/5.jpg" alt="Dartmoor Brewery" class="img-thumbnail cbcf-thumbnail hoverable" id="5">
+          </picture>
+          <picture>
+            <source srcset="./img/brewery/6.webp" type="image/webp">
+            <source srcset="./img/brewery/6.jpg" type="image/jpg">
+            <img src="./img/brewery/6.jpg" alt="Nethergate Brewery" class="img-thumbnail cbcf-thumbnail hoverable" id="6">
+          </picture>
+          <picture>
+            <source srcset="./img/brewery/7.webp" type="image/webp">
+            <source srcset="./img/brewery/7.jpg" type="image/jpg">
+            <img src="./img/brewery/7.jpg" alt="Silks Brewery" class="img-thumbnail cbcf-thumbnail hoverable" id="7">
+          </picture>
+          <picture>
+            <source srcset="./img/brewery/8.webp" type="image/webp">
+            <source srcset="./img/brewery/8.jpg" type="image/jpg">
+            <img src="./img/brewery/8.jpg" alt="Silks Brewery" class="img-thumbnail cbcf-thumbnail hoverable" id="8">
+          </picture>
+          <picture>
+            <source srcset="./img/brewery/9.webp" type="image/webp">
+            <source srcset="./img/brewery/9.jpg" type="image/jpg">
+            <img src="./img/brewery/9.jpg" alt="Wibblers Brewery" class="img-thumbnail cbcf-thumbnail hoverable" id="9">
+          </picture>
+          <br class="my-5">
+          <a href="#" class="btn cbcf-secondary brewery-all noZensmooth"><i class="fal fa-filter" aria-disabled="true"></i>&nbsp;Clear filter</a>
+        </center>
+        <br class="my-5">
+        <table id="table-brewery" class="display table table-striped table-bordered" style="width:100%" data-order='[[1, "asc"], [0, "asc"]]' data-page-length='20'>
+          <thead>
+            <tr>
+              <td><strong>Drink Name</strong></td>
+              <td><strong>Brewery</strong></td>
+              <td><strong>Style</strong></td>
+              <td><strong>ABV (%)</strong></td>
+              <td><strong>Gluten Free?</strong></td>
+            </tr>
+          </thead>
+        </table>
+      </div>
       <div class="tab-pane fade" id="foreign-list" role="tabpanel" aria-labelledby="foreign-list-button">
         <div class="card amber darken-4 text-center">
           <div class="card-body">
@@ -153,14 +208,14 @@
         </div>
         <br class="my-5">
         <center>
-          <a href="#" class="btn cbcf-secondary foreign-all">All</a>
-          <a href="#" class="btn cbcf-secondary foreign">Ambers & Darks</a>
-          <a href="#" class="btn cbcf-secondary foreign">Blonde Beers</a>
-          <a href="#" class="btn cbcf-secondary foreign">Connoisseur Beers</a>
-          <a href="#" class="btn cbcf-secondary foreign">Fruit/Flavoured Beer</a>
-          <a href="#" class="btn cbcf-secondary foreign">Lagers & Wheat Beers</a>
-          <a href="#" class="btn cbcf-secondary foreign">Lambics</a>
-          <a href="#" class="btn cbcf-secondary foreign">Wild Beers</a>
+          <a href="#" class="btn cbcf-secondary foreign-all noZensmooth">All</a>
+          <a href="#" class="btn cbcf-secondary foreign noZensmooth">Ambers & Darks</a>
+          <a href="#" class="btn cbcf-secondary foreign noZensmooth">Blonde Beers</a>
+          <a href="#" class="btn cbcf-secondary foreign noZensmooth">Connoisseur Beers</a>
+          <a href="#" class="btn cbcf-secondary foreign noZensmooth">Fruit/Flavoured Beer</a>
+          <a href="#" class="btn cbcf-secondary foreign noZensmooth">Lagers & Wheat Beers</a>
+          <a href="#" class="btn cbcf-secondary foreign noZensmooth">Lambics</a>
+          <a href="#" class="btn cbcf-secondary foreign noZensmooth">Wild Beers</a>
         </center>
         <br class="my-5">
         <table id="table-foreign" class="display table table-striped table-bordered" style="width:100%" data-order='[[1, "asc"], [0, "asc"]]' data-page-length='20'>
@@ -184,6 +239,7 @@
           <i>Beer list was last updated on Tuesday 25th June</i><br>
           <i>Cider list was last updated on Wednesday 19th June</i><br>
           <i>Key Keg list was last updated on Monday 24th June</i><br>
+          <i>Brewery Bar list was last updated on Friday 28th June</i><br>
           <i>Foreign Bar list was last updated on Thursday 6th June</i>
         </p>
       </div>
@@ -370,7 +426,57 @@
           }
         ]
       });
-      var table4 = $('#table-foreign').DataTable({
+      var table4 = $('#table-brewery').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+          'excel',
+          'print'
+        ],
+        responsive: true,
+        stateSave: false,
+        "ajax": {
+          "url": "./listings/brewery.json",
+          "dataSrc": ""
+        },
+        "columnDefs": [{
+            "type": "html",
+            "targets": 0
+          },
+          {
+            "type": "html",
+            "targets": 1
+          },
+          {
+            "type": "html",
+            "targets": 2
+          },
+          {
+            "type": "html-num",
+            "targets": 3
+          },
+          {
+            "type": "html",
+            "targets": 4
+          }
+        ],
+        "columns": [{
+            "data": "Drink Name"
+          },
+          {
+            "data": "Brewery"
+          },
+          {
+            "data": "Style"
+          },
+          {
+            "data": "ABV (%)"
+          },
+          {
+            "data": "Gluten Free?"
+          }
+        ]
+      });
+      var table5 = $('#table-foreign').DataTable({
         dom: 'Bfrtip',
         buttons: [
           'excel',
@@ -457,20 +563,82 @@
       });
       $('center').on('click', 'a.keykeg-all', function() {
         table3
-        .search('')
-        .columns(2)
-        .search('')
-        .draw();
+          .search('')
+          .columns(2)
+          .search('')
+          .draw();
       });
-      //Table 4 - Foreign Beer
-      $('center').on('click', 'a.foreign', function() {
+      //Table 4 - Brewery Bars
+      $('#1').on('click', function() {
         table4
+          .columns(1)
+          .search("Billericay Brewing")
+          .draw();
+      });
+      $('#2').on('click', function() {
+        table4
+          .columns(1)
+          .search("Bishop Nick")
+          .draw();
+      });
+      $('#3').on('click', function() {
+        table4
+          .columns(1)
+          .search("Brentwood|Elephant School", true, false, true)
+          .draw();
+      });
+      $('#4').on('click', function() {
+        table4
+          .columns(1)
+          .search("Chelmsford Brew Co.")
+          .draw();
+      });
+      $('#5').on('click', function() {
+        table4
+          .columns(1)
+          .search("Dartmoor")
+          .draw();
+      });
+      $('#6').on('click', function() {
+        table4
+          .columns(1)
+          .search("Nethergate")
+          .draw();
+      });
+      $('#7').on('click', function() {
+        table4
+          .columns(1)
+          .search("Silks Brewery")
+          .draw();
+      });
+      $('#8').on('click', function() {
+        table4
+          .columns(1)
+          .search("Skinners")
+          .draw();
+      });
+      $('#9').on('click', function() {
+        table4
+          .columns(1)
+          .search("Wibblers")
+          .draw();
+      });
+      $('center').on('click', 'a.brewery-all', function() {
+        table4
+          .search('')
+          .columns(1)
+          .search('')
+          .draw();
+      });
+      //Table 5 - Foreign Beer
+      $('center').on('click', 'a.foreign', function() {
+        table5
           .columns(3)
           .search($(this).text())
           .draw();
       });
       $('center').on('click', 'a.foreign-all', function() {
-        table4
+        table5
           .search('')
           .columns(3)
           .search('')
