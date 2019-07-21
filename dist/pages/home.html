@@ -22,329 +22,605 @@
     @@include('./menu.html')
   </header>
 
-  <main class="mt-4 pt-4">
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+            <source src="https://staging.cbcf.info/video/home/1.mp4" type="video/mp4">
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Learn Bootstrap 4 with MDB</strong>
+              </h1>
+
+              <p>
+                <strong>Best & free guide of responsive web design</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
+                  written versions
+                  available. Create your own, stunning website.</strong>
+              </p>
+
+              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
+                free tutorial
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+            <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4">
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Learn Bootstrap 4 with MDB</strong>
+              </h1>
+
+              <p>
+                <strong>Best & free guide of responsive web design</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
+                  written versions
+                  available. Create your own, stunning website.</strong>
+              </p>
+
+              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
+                free tutorial
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+            <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4">
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Learn Bootstrap 4 with MDB</strong>
+              </h1>
+
+              <p>
+                <strong>Best & free guide of responsive web design</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
+                  written versions
+                  available. Create your own, stunning website.</strong>
+              </p>
+
+              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
+                free tutorial
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!--Main layout-->
+  <main>
     <div class="container">
 
       <!--Section: Main info-->
-      <section class="mt-5">
-
-        <!-- Information regarding content -->
-        <div class="alert alert-success centre animated bounce" role="alert">
-          <strong><i class="far fa-info-circle" aria-hidden="true"></i>&nbsp;ROK Kitchen have won the Street Food Chef of The Year Award! <a href="http://www.streatfoodchallenge.co.uk/" rel="nofollow">Learn more</a></strong>
-        </div>
-        <!-- Information regarding content -->
+      <section class="mt-5 wow fadeIn">
 
         <!--Grid row-->
-        <div class="row" id="details">
-
+        <div class="row">
 
           <!--Grid column-->
-          <div class="col-lg-6 mb-4">
+          <div class="col-md-6 mb-4">
 
-
-
-            <!--Header picture-->
-            <center>
-              <picture>
-                <source srcset="./img/home/summer.webp" type="image/webp">
-                <source srcset="./img/home/summer.png" type="image/png">
-                <img class="home-logo" src="./img/home/summer.png" alt="Chelmsford Summer Beer and Cider Festival 2019 logo">
-              </picture>
-            </center>
-            <!--Header picture-->
-
+            <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half"
+              alt="">
 
           </div>
           <!--Grid column-->
 
           <!--Grid column-->
-          <div class="col-lg-6 mb-4">
-            <!--Main heading-->
-            <div class="centre">
-              <h1 class="h1">Chelmsford Summer Beer &amp; Cider Festival 2019</h1>
-              <h2 class="h2">Tuesday 2nd to Saturday 6th July 2019</h2>
-              <h3 class="h3">Admirals Park, Rainsford Road, Chelmsford, CM1 2PL</h3>
-            </div>
-            <!--Main heading-->
+          <div class="col-md-6 mb-4">
+
+            <!-- Main heading -->
+            <h3 class="h3 mb-3">Material Design for Bootstrap</h3>
+            <p>This template is created with Material Design for Bootstrap (
+              <strong>MDB</strong> ) framework.</p>
+            <p>Read details below to learn more about MDB.</p>
+            <!-- Main heading -->
+
             <hr>
-            <p>Welcome to the Chelmsford Summer Beer and Cider Festival. The festival is one of the oldest CAMRA beer festivals and one of the largest in the country.</p>
+
+            <p>
+              <strong>400+</strong> material UI elements,
+              <strong>600+</strong> material icons,
+              <strong>74</strong> CSS animations, SASS files, templates, tutorials and many more.
+              <strong>Free for personal and commercial use.</strong>
+            </p>
+
+            <!-- CTA -->
+            <a target="_blank" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" class="btn btn-grey btn-md">Download
+              <i class="fas fa-download ml-1"></i>
+            </a>
+            <a target="_blank" href="https://mdbootstrap.com/docs/jquery/components/" class="btn btn-grey btn-md">Live
+              demo
+              <i class="far fa-image ml-1"></i>
+            </a>
+
           </div>
           <!--Grid column-->
 
         </div>
         <!--Grid row-->
-
-        <div class="row centre">
-          <div class="col-sm">
-            <h4><span class="badge cbcf-secondary">Brewery Bars</span></h4>
-            <h4><span class="badge cbcf-secondary">300+ Real Ales</span></h4>
-            <h4><span class="badge cbcf-secondary">KeyKeg bar</span></h4>
-          </div>
-          <div class="col-sm">
-            <h4><span class="badge cbcf-secondary">100+ Real Ciders, Perries &amp; Pyders</span></h4>
-            <h4><span class="badge cbcf-secondary">Wine and Gin bars</span></h4>
-            <h4><span class="badge cbcf-secondary">Podge's Belgian Beer Bar</span></h4>
-          </div>
-          <div class="col-sm">
-            <h4><span class="badge cbcf-secondary">World food kitchen with over 15<br>different foods from around the world</span></h4>
-            <h4><span class="badge cbcf-secondary">Family day attractions for the children<br>on Saturday</span></h4>
-            <h4><span class="badge cbcf-secondary">Live entertainment all week</span></h4>
-          </div>
-        </div>
 
       </section>
       <!--Section: Main info-->
 
-      <br class="my-3">
+      <hr class="my-5">
 
-      <!-- Volunteering Callout -->
-      <div class="card">
-        <div class="card-body centre">
-          <strong>The festival is organised and run by volunteers, like all CAMRA festivals. We always welcome volunteers both old and new.</strong>
-          <a class="btn cbcf-primary" title="About volunteering for Chelmsford Beer and Cider Festivals" href="./volunteer"><i class="far fa-info-circle"></i>&nbsp;&nbsp;Find out more</a>
-        </div>
-      </div>
-      <!-- Volunteering Callout -->
+      <!--Section: Main features & Quick Start-->
+      <section>
 
-      <br class="my-3"></br>
-      <hr class="my-3">
-      <br class="my-3"></br>
+        <h3 class="h3 text-center mb-5">About MDB</h3>
 
-      <!--Section: Entertainment-->
-      <section id="entertainment">
+        <!--Grid row-->
+        <div class="row wow fadeIn">
 
-        <h1 class="h1 text-center mb-5">New for 2019<h1>
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 px-4">
 
+            <!--First row-->
             <div class="row">
-
-              <div class="col-lg-3">
-                <!-- Card -->
-                <div class="card card-cascade wider">
-                  <!-- Card image -->
-                  <div class="view view-cascade overlay">
-                    <picture>
-                      <source srcset="./img/home/f1.webp" type="image/webp">
-                      <source srcset="./img/home/f1.jpg" type="image/jpeg">
-                      <img class="card-img-top" src="./img/home/f1.jpg" alt="Salsa D'Lite are performing a salsa dance party on the opening night of the festival">
-                    </picture>
-                    <a data-toggle="modal" data-target="#sdModal">
-                      <div class="mask rgba-white-slight"></div>
-                    </a>
-                  </div>
-                  <!-- Card content -->
-                  <div class="card-body card-body-cascade text-center">
-                    <!-- Text -->
-                    <h2 class="h2 card-title">Salsa D'Lite</h2>
-                    <p class="card-text">Opening night dance evening with lessons, various dances led by an experienced dancer and an open dance session</p>
-                  </div>
-                  <!-- Card content -->
-                </div>
-                <!-- Card -->
+              <div class="col-1 mr-3">
+                <i class="fas fa-code fa-2x indigo-text"></i>
               </div>
-
-              <div class="col-lg-3">
-                <div class="d-md-block d-lg-none"><br class="my-3"></br></div>
-                <!-- Card -->
-                <div class="card card-cascade wider">
-                  <!-- Card image -->
-                  <div class="view view-cascade overlay">
-                    <picture>
-                      <source srcset="./img/home/f2.webp" type="image/webp">
-                      <source srcset="./img/home/f2.jpg" type="image/jpeg">
-                      <img class="card-img-top" src="./img/home/f2.jpg" alt="Flying Iron Co. Axe Throwing will be at the festival from Thursday to Saturday">
-                    </picture>
-                    <a href="./entertainment#activities">
-                      <div class="mask rgba-white-slight"></div>
-                    </a>
-                  </div>
-                  <!-- Card content -->
-                  <div class="card-body card-body-cascade text-center">
-                    <!-- Text -->
-                    <h2 class="h2 card-title">Flying Iron Co. Axe Throwing</h2>
-                    <p class="card-text">Unleash your inner Viking with axe throwing courtesy of Flying Iron Co. from Tuesday to Saturday</p>
-                  </div>
-                  <!-- Card content -->
-                </div>
-                <!-- Card -->
+              <div class="col-10">
+                <h5 class="feature-title">Bootstrap 4</h5>
+                <p class="grey-text">Thanks to MDB you can take advantage of all feature of newest Bootstrap 4.</p>
               </div>
-
-              <div class="col-lg-3">
-                <div class="d-md-block d-lg-none"><br class="my-3"></br></div>
-                <!-- Card -->
-                <div class="card card-cascade wider">
-                  <!-- Card image -->
-                  <div class="view view-cascade overlay">
-                    <picture>
-                      <source srcset="./img/home/f3.webp" type="image/webp">
-                      <source srcset="./img/home/f3.jpg" type="image/jpeg">
-                      <img class="card-img-top" src="./img/home/f3.jpg" alt="Champs will be running a Charity evening on the Wednesday night">
-                    </picture>
-                    <a data-toggle="modal" data-target="#chModal">
-                      <div class="mask rgba-white-slight"></div>
-                    </a>
-                  </div>
-                  <!-- Card content -->
-                  <div class="card-body card-body-cascade text-center">
-                    <!-- Text -->
-                    <h2 class="h2 card-title">Champs Charity Evening</h2>
-                    <p class="card-text">Local amateur group playing and singing favourites and new songs to raise money for our Festival Charities on Wednesday evening</p>
-                  </div>
-                  <!-- Card content -->
-                </div>
-                <!-- Card -->
-              </div>
-
-              <div class="col-lg-3">
-                <div class="d-md-block d-lg-none"><br class="my-3"></br></div>
-                <!-- Card -->
-                <div class="card card-cascade wider">
-                  <!-- Card image -->
-                  <div class="view view-cascade overlay">
-                    <picture>
-                      <source srcset="./img/home/f4.webp" type="image/webp">
-                      <source srcset="./img/home/f4.jpg" type="image/jpeg">
-                      <img class="card-img-top" src="./img/home/f4.jpg" alt="Bottle Bureau will be running a Gin bar at our festival from Thursday to Saturday">
-                    </picture>
-                    <a href="//www.bottlebureau.co.uk" rel="nofollow">
-                      <div class="mask rgba-white-slight"></div>
-                    </a>
-                  </div>
-                  <!-- Card content -->
-                  <div class="card-body card-body-cascade text-center">
-                    <!-- Text -->
-                    <h2 class="h2 card-title">Bottle Bureau Gin Bar</h2>
-                    <p class="card-text">Our friends at Bottle Bureau will be hosting a Gin Bar at our festival this year from Thursday 4th to Saturday 6th July! </p>
-                  </div>
-                  <!-- Card content -->
-                </div>
-                <!-- Card -->
-              </div>
-
             </div>
+            <!--/First row-->
 
-            <br>
+            <div style="height:30px"></div>
 
-            <center><a class="btn btn-lg cbcf-primary centre" href="./entertainment">See the rest of our line up&nbsp;<i class="far fa-arrow-circle-right" aria-hidden="true"></i></a></center>
+            <!--Second row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fas fa-book fa-2x blue-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Detailed documentation</h5>
+                <p class="grey-text">We give you detailed user-friendly documentation at your disposal. It will help
+                  you to implement your ideas
+                  easily.
+                </p>
+              </div>
+            </div>
+            <!--/Second row-->
 
+            <div style="height:30px"></div>
 
+            <!--Third row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fas fa-graduation-cap fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Lots of tutorials</h5>
+                <p class="grey-text">We care about the development of our users. We have prepared numerous tutorials,
+                  which allow you to learn
+                  how to use MDB as well as other technologies.</p>
+              </div>
+            </div>
+            <!--/Third row-->
+
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12">
+
+            <p class="h5 text-center mb-4">Watch our "5 min Quick Start" tutorial</p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cXTThxoywNQ" allowfullscreen></iframe>
+            </div>
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/Grid row-->
 
       </section>
-      <!--Section: Entertainment-->
+      <!--Section: Main features & Quick Start-->
 
-      <br class="my-3"></br>
-      <hr class="my-3">
-      <br class="my-3"></br>
+      <hr class="my-5">
 
-      <!--Section: Festival Charity-->
-      <section id="charities">
+      <!--Section: Not enough-->
+      <section>
 
-        <h1 class="h1 text-center mb-5">Our Festival Charities</h1>
-        <p class="text-center w-responsive mx-auto mb-5">This year we are delighted to work alongside two charities and we hope you support them in their good causes.</p>
+        <h2 class="my-5 h3 text-center">Not enough?</h2>
 
-        <div class="row">
+        <!--First row-->
+        <div class="row features-small mb-5 mt-3 wow fadeIn">
 
-          <div class="col-lg-6 col-md-12 centre">
+          <!--First column-->
+          <div class="col-md-4">
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Free for personal and commercial use</h6>
+                <p class="grey-text">Our license is user-friendly. Feel free to use MDB for both private as well as
+                  commercial projects.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/First row-->
 
-            <picture>
-              <source srcset="./img/home/1.webp" type="image/webp">
-              <source srcset="./img/home/1.png" type="image/png">
-              <img class="img-fluid charity-img" src="./img/home/1.png" alt="Essex and Herts Air Ambulance Logo">
-            </picture>
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">400+ UI elements</h6>
+                <p class="grey-text">An impressive collection of flexible components allows you to develop any project.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Second row-->
 
-            <br class="my-3">
-            <br class="my-3">
+            <!--Third row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">600+ icons</h6>
+                <p class="grey-text">Hundreds of useful, scalable, vector icons at your disposal.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Third row-->
 
-            <h2 class="h2 mb-3">Essex &amp; Herts Air Ambulance</h2>
-            <p>Essex &amp; Herts Air Ambulance, unlike NHS emergency services, is a Charity providing a free life-saving Helicopter Emergency Medical Service (HEMS) for the critically ill and injured of Essex, Hertfordshire and surrounding areas.</p>
-            <p>It costs £9 million every year to cover all charitable costs and aircraft operations. Without access to National Lottery funding and with only limited support from Government, we rely upon the generosity and goodwill of the people
-              and businesses of Essex and Hertfordshire to remain operational and keep saving lives…we can’t fly without you!</p>
-
-            <a href="//ehaat.org/about-us/about-ehaat/" class="btn cbcf-secondary">Learn more <span class="sr-only">about Essex and Herts Air Ambulance on their website</span>&nbsp;<i class="far fa-info-circle ml-1" aria-hidden="true"></i></a>
-            <a href="//www.facebook.com/EssexandHertsAirAmbulance/" class="btn btn-facebook"><i class="fab fa-facebook-square" aria-hidden="true"><span class="sr-only">Like Essex &amp; Herts Air Ambulance on Facebook</span></i></a>
-            <a href="//twitter.com/ehaat_" rel="noreferrer" class="btn btn-twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Follow Essex &amp; Herts Air Ambulance on Twitter</span></a>
-
-
+            <!--Fourth row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Fully responsive</h6>
+                <p class="grey-text">It doesn't matter whether your project will be displayed on desktop, laptop,
+                  tablet or mobile phone. MDB
+                  looks great on each screen.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Fourth row-->
           </div>
+          <!--/First column-->
 
-          <div class="col-lg-6 col-md-12 centre">
-            <div class="d-md-block d-lg-none"><br class="my-3"></br></div>
-
-            <picture>
-              <source srcset="./img/home/2.webp" type="image/webp">
-              <source srcset="./img/home/2.png" type="image/png">
-              <img class="img-fluid charity-img" src="./img/home/2.png" alt="Home-Start Essex Logo">
-            </picture>
-
-            <br class="my-3">
-            <br class="my-3">
-
-            <h2 class="h2 mb-3">Home-Start Essex</h2>
-            <p>Home-Start Essex is a leading family support charity working across Essex to build the confidence and skills of parents and carers to achieve healthy and positive outcomes for children. Our work comprises a long-established
-              volunteer home visiting service, offering emotional and practical help to families experiencing difficulties. We are early years specialists, and work with families with at least one child under the age of eight, and offer some
-              events for families with children up the age of 11.</p>
-
-            <a href="//home-startessex.org.uk/our-story/" class="btn cbcf-secondary">Learn more <span class="sr-only">about Home-Start Essex on their website</span>&nbsp;<i class="far fa-info-circle ml-1" aria-hidden="true"></i></a>
-            <a href="//www.facebook.com/HomeStartEssex/" class="btn btn-facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i><span class="sr-only">Like Home-Start Essex on Facebook</span></a>
-            <a href="//www.twitter/homestartessex" rel="noreferrer" class="btn btn-twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Follow Home-Start Essex on Twitter</span></a>
-
-
+          <!--Second column-->
+          <div class="col-md-4 flex-center">
+            <img src="https://mdbootstrap.com/img/Others/screens.png" alt="MDB Magazine Template displayed on iPhone"
+              class="z-depth-0 img-fluid">
           </div>
+          <!--/Second column-->
+
+          <!--Third column-->
+          <div class="col-md-4 mt-2">
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">70+ CSS animations</h6>
+                <p class="grey-text">Neat and easy to use animations, which will increase the interactivity of your
+                  project and delight your visitors.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Plenty of useful templates</h6>
+                <p class="grey-text">Need inspiration? Use one of our predefined templates for free.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Easy installation</h6>
+                <p class="grey-text">5 minutes, a few clicks and... done. You will be surprised at how easy it is.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Third row-->
+
+            <!--Fourth row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Easy to use and customize</h6>
+                <p class="grey-text">Using MDB is straightforward and pleasant. Components flexibility allows you deep
+                  customization. You will
+                  easily adjust each component to suit your needs.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Fourth row-->
+          </div>
+          <!--/Third column-->
 
         </div>
+        <!--/First row-->
 
       </section>
-      <!--Section: Festival Charity-->
-      <br class="my-3"></br>
+      <!--Section: Not enough-->
+
+      <hr class="mb-5">
+
+      <!--Section: More-->
+      <section>
+
+        <h2 class="my-5 h3 text-center">...and even more</h2>
+
+        <!--First row-->
+        <div class="row features-small mt-5 wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fab fa-firefox fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2 pl-3">
+                <h5 class="feature-title font-bold mb-1">Cross-browser compatibility</h5>
+                <p class="grey-text mt-2">Chrome, Firefox, IE, Safari, Opera, Microsoft Edge - MDB loves all browsers;
+                  all browsers love MDB.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-level-up-alt fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Frequent updates</h5>
+                <p class="grey-text mt-2">MDB becomes better every month. We love the project and enhance as much as
+                  possible.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-comments fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Active community</h5>
+                <p class="grey-text mt-2">Our society grows day by day. Visit our forum and check how it is to be a
+                  part of our family.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-code fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">jQuery 3.x</h5>
+                <p class="grey-text mt-2">MDB is integrated with newest jQuery. Therefore you can use all the latest
+                  features which come along with
+                  it.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/First row-->
+
+        <!--Second row-->
+        <div class="row features-small mt-4 wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-cubes fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Modularity</h5>
+                <p class="grey-text mt-2">Material Design for Bootstrap comes with both, compiled, ready to use
+                  libraries including all features as
+                  well as modules for CSS (SASS files) and JS.</p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-question fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Technical support</h5>
+                <p class="grey-text mt-2">We care about reliability. If you have any questions - do not hesitate to
+                  contact us.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-th fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Flexbox</h5>
+                <p class="grey-text mt-2">MDB fully supports Flex Box. You can forget about alignment issues.</p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="far fa-file-code fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">SASS files</h5>
+                <p class="grey-text mt-2">Arranged and well documented .scss files can't wait until you compile them.</p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/Second row-->
+
+      </section>
+      <!--Section: More-->
 
     </div>
-    <!-- Salsa D'Lite Modal -->
-    <div class="modal fade" id="sdModal" tabindex="-1" role="dialog" aria-labelledby="sdLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title w-100" id="sdLabel">Salsa D'Lite</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <picture>
-              <source srcset="./img/home/modal1.webp" type="image/webp">
-              <source srcset="./img/home/modal1.jpg" type="image/jpeg">
-              <img class="img-fluid" src="./img/home/modal1.jpg" alt="Salsa D'Lite Salsa Club - Opening night Salsa party at the 2019 Summer Beer and Cider Festival Chelmsford. Featuring Latin DJ, group line dances & Rueda, dance demonstrations and taster lessons. Come join us and dance the night away with your friends and family!">
-            </picture>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn cbcf-secondary btn-sm" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Salsa D'Lite Modal -->
-    <!-- Champs Modal -->
-    <div class="modal fade" id="chModal" tabindex="-1" role="dialog" aria-labelledby="chLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title w-100" id="chLabel">Champs Charity Evening</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <picture>
-              <source srcset="./img/home/modal2.webp" type="image/webp">
-              <source srcset="./img/home/modal2.jpg" type="image/jpeg">
-              <img class="img-fluid" src="./img/home/modal2.jpg" alt="Chelmsford Amateur Music Players and Singers (CHAMPS) will be performing a charity evening on Wednesday 3rd July at the Summer Festival from 8pm.">
-            </picture>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn cbcf-secondary btn-sm" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Champs Modal -->
   </main>
   <!--Main layout-->
 
