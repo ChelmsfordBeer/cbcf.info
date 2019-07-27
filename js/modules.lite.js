@@ -24,5 +24,5 @@ exports.modules = [
   './js/dist/mdb-autocomplete.js',
   './js/vendor/enhanced-modals.js',
   './js/dist/treeview.js',
-  './js/vendor/bs-custom-file-input.js/'
+  './js/vendor/bs-custom-file-input.js'
 ];
