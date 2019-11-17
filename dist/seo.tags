@@ -18,7 +18,7 @@
 <meta property="og:description" content="The Official Chelmsford Beer & Cider Festivals website - run by the Chelmsford and Mid-Essex Campaign For Real Ale">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://cbcf.info/img/banner.png">
-<meta property="og:image:alt" content="Chelmsford Summer Beer & Cider Festival 2019 - 2nd to 6th July 2019 at Admirals Park, Rainsford Road, CM1 2PL">
+<meta property="og:image:alt" content="Chelmsford Winter Beer & Cider Festival 2020 - 19th to 22nd February 2020 at King Edward VI Grammar School, Broomfield Road, CM1 3SX">
 <meta property="fb:admins" content="181973398514531">
 <meta itemprop="description" content="The Official Chelmsford Beer & Cider Festivals website - run by the Chelmsford and Mid-Essex Campaign For Real Ale">
 <meta itemprop="image" content="https://cbcf.info/img/banner.png">
@@ -52,17 +52,17 @@
 {
   "@context": "https://schema.org",
   "@type": "Event",
-  "name": "Chelmsford Summer Beer & Cider Festival 2019",
-  "startDate": "2019-07-02T12:00",
-  "endDate": "2019-07-06T22:00",
+  "name": "Chelmsford Winter Beer & Cider Festival 2020",
+  "startDate": "2020-02-19T12:00",
+  "endDate": "2020-02-22T23:00",
   "location": {
     "@type": "Place",
-    "name": "Admirals Park",
+    "name": "King Edward VI Grammar School",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Admirals Park, Rainsford Road",
+      "streetAddress": "King Edward VI Grammar School, Broomfield Rd",
       "addressLocality": "Chelmsford",
-      "postalCode": "CM1 2PL",
+      "postalCode": "CM1 3SX",
       "addressRegion": "Essex",
       "addressCountry": "GB"
     }
@@ -73,6 +73,6 @@
     "https://cbcf.info/2018/0074.jpg",
     "https://cbcf.info/2018/0144.jpg"
    ],
-  "description": "The 41st Chelmsford Summer Beer & Cider Festival. Organised by Chelmsford & Mid Essex Campaign for Real Ale (CAMRA)."
+  "description": "The 21st Chelmsford Winter Beer & Cider Festival. Organised by Chelmsford & Mid Essex Campaign for Real Ale (CAMRA)."
 }
 </script>
