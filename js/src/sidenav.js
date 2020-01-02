@@ -40,7 +40,7 @@
       this.$element = element;
       this.$elementCloned = element.clone().css({
         display: 'inline-block',
-        lineHeight: '24px',
+        lineHeight: '24px'
       });
 
       this.options = this.assignOptions(options);
@@ -65,7 +65,7 @@
 
     init() {
 
-      this.setMENU_WIDTH();
+      this.setMenuWidth();
       this.setMenuTranslation();
       this.closeOnClick();
       this.openOnClick();
@@ -76,17 +76,11 @@
 
     bindTouchEvents() {
 
-      this.$dragTarget.on('click', () => {
+      this.$dragTarget.on('click', () => this.removeMenu());
 
-        this.removeMenu();
-      });
+      this.$elementCloned.on('click', () => this.removeMenu());
 
-      this.$elementCloned.on('click', () => {
-
-        this.removeMenu();
-      });
-
-      this.$dragTarget.on('touchstart', (e) => {
+      this.$dragTarget.on('touchstart', e => {
 
         this.lastTouchVelocity.x.startPosition = e.touches[0].clientX;
         this.lastTouchVelocity.x.startTime = Date.now();
@@ -216,11 +210,7 @@
       if (this.options.showOverlay === true) {
 
         this.$sidenavOverlay = $('<div id="sidenav-overlay"></div>');
-        this.$sidenavOverlay.css('opacity', 0)
-          .on('click', () => {
-
-            this.removeMenu();
-          });
+        this.$sidenavOverlay.css('opacity', 0).on('click', () => this.removeMenu());
 
         this.$body.append(this.$sidenavOverlay);
       }
@@ -402,8 +392,6 @@
           $(this).remove();
         }
       });
-
-      this.$sidenavOverlay = $();
     }
 
     showSidenavOverlay() {
@@ -427,7 +415,7 @@
 
     openOnClick() {
 
-      this.$element.on('click', (e) => {
+      this.$element.on('click', e => {
 
         e.preventDefault();
 
@@ -463,9 +451,14 @@
             easing: this.options.easingOpen
           });
 
-          this.$sidenavOverlay.on('click', () => {
+          this.$sidenavOverlay.on('click', () => this.removeMenu());
 
-            this.removeMenu();
+          this.$sidenavOverlay.on('touchmove', this.touchmoveEventHandler.bind(this));
+          this.$menu.on('touchmove', e => {
+
+            e.preventDefault();
+
+            this.$menu.find('.custom-scrollbar').css('padding-bottom', '30px');
           });
         }
       });
@@ -475,10 +468,7 @@
 
       if (this.options.closeOnClick === true) {
 
-        this.$menu.on('click', 'a:not(.collapsible-header)', () => {
-
-          this.removeMenu();
-        });
+        this.$menu.on('click', 'a:not(.collapsible-header)', () => this.removeMenu());
       }
     }
 
@@ -489,7 +479,7 @@
         this.$menu.prepend(this.$elementCloned);
         this.$menu.find('.logo-wrapper').css({
           borderTop: '1px solid rgba(153,153,153,.3)'
-        })
+        });
       }
     }
 
@@ -516,7 +506,7 @@
           this.$menu.css('transform', 'translateX(0)');
         }
 
-        this.$menu.find('input[type=text]').on('touchstart', e => {
+        this.$menu.find('input[type=text]').on('touchstart', () => {
 
           this.$menu.addClass('transform-fix-input');
         });
@@ -541,7 +531,7 @@
       }
     }
 
-    setMENU_WIDTH() {
+    setMenuWidth() {
 
       const $sidenavBg = $(`#${this.$menu.attr('id')}`).find('> .sidenav-bg');
 
@@ -554,10 +544,7 @@
 
     inputOnClick() {
 
-      this.$menu.find('input[type=text]').on('touchstart', e => {
-
-        this.$menu.css('transform', 'translateX(0)');
-      })
+      this.$menu.find('input[type=text]').on('touchstart', () => this.$menu.css('transform', 'translateX(0)'));
     }
 
     assignOptions(newOptions) {
@@ -592,16 +579,6 @@
       }
 
       this.hideSidenavOverlay();
-    }
-
-    show() {
-
-      this.trigger('click');
-    }
-
-    hide() {
-
-      this.trigger('click');
     }
 
   }

@@ -6,11 +6,11 @@
   let rangeMousedown = false;
   let left;
 
-  const addThumb = function () {
+  function addThumb() {
 
     const $thumb = $(thumbHtml);
     $(rangeType).after($thumb);
-  };
+  }
 
   $(document).on('change', rangeType, function () {
 

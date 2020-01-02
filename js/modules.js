@@ -32,14 +32,16 @@ exports.modules = [
   './js/vendor/jarallax-video.js',
   './js/dist/mdb-autocomplete.js',
   './js/vendor/enhanced-modals.js',
-  './js/dist/treeview.js/',
-  './js/vendor/bs-custom-file-input.js/'
+  './js/dist/treeview.js',
+  './js/vendor/bs-custom-file-input.js'
   // './js/vendor/addons/jquery.zmd.hierarchical-display.js/'
   // './js/vendor/addons/masonry.pkgd.min.js',
   // './js/vendor/addons/imagesloaded.pkgd.min.js'
   // './js/vendor/addons/datatables.js'
+  // './js/vendor/addons/rating.js'
+  // './js/vendor/addons/progressBar.js'
   // './js/vendor/addons-pro/timeline.js',
   // './js/vendor/addons-pro/steppers.js'
   // './js/vendor/addons-pro/multi-range.js'
-  // './js/vendor/addons-pro/rating.js'
+  // './js/vendor/addons-pro/chat.js'
 ];

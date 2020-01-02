@@ -38,13 +38,18 @@
             optionsSelected: 'الخيارات المحددة'
           }
         }
-      }
+      };
 
       this.options = this.assignOptions(options);
 
       this.isMultiple = Boolean(this.$nativeSelect.attr('multiple'));
       this.isSearchable = Boolean(this.$nativeSelect.attr('searchable'));
       this.isRequired = Boolean(this.$nativeSelect.attr('required'));
+      this.isEditable = Boolean(this.$nativeSelect.attr('editable'));
+
+      this.selectAllLabel = Boolean(this.$nativeSelect.attr('selectAllLabel')) ? this.$nativeSelect.attr('selectAllLabel') : 'Select all';
+      this.optionsSelectedLabel = Boolean(this.$nativeSelect.attr('optionsSelectedLabel')) ? this.$nativeSelect.attr('optionsSelectedLabel') : 'options selected';
+      this.keyboardActiveClass = Boolean(this.$nativeSelect.attr('keyboardActiveClass')) ? this.$nativeSelect.attr('keyboardActiveClass') : 'heavy-rain-gradient';
 
       this.uuid = this.options.nativeID !== null && this.options.nativeID !== '' && this.options.nativeID !==
         undefined && typeof this.options.nativeID === 'string' ? this.options.nativeID : this._randomUUID();
@@ -52,11 +57,16 @@
       this.$materialOptionsList = $(`<ul id="select-options-${this.uuid}" class="dropdown-content select-dropdown w-100 ${this.isMultiple ? 'multiple-select-dropdown' : ''}"></ul>`);
       this.$materialSelectInitialOption = $nativeSelect.find('option:selected').text() || $nativeSelect.find('option:first').text() || '';
       this.$nativeSelectChildren = this.$nativeSelect.children('option, optgroup');
-      this.$materialSelect = $(`<input type="text" class="${this.options.BSinputText ? 'browser-default custom-select multi-bs-select select-dropdown': 'select-dropdown'}" readonly="true" ${this.$nativeSelect.is(':disabled') ? 'disabled' : ''} data-activates="select-options-${this.uuid}" value=""/>`);
+      this.$materialSelect = $(`<input type="text" class="${this.options.BSinputText ? 'browser-default custom-select multi-bs-select select-dropdown form-control' : 'select-dropdown form-control'}" ${!this.options.validate && 'readonly="true"'} required="${this.options.validate ? 'true' : 'false'}" ${this.$nativeSelect.is(' :disabled') ? 'disabled' : ''} data-activates="select-options-${this.uuid}" value=""/>`);
       this.$dropdownIcon = this.options.BSinputText ? '' : $('<span class="caret">&#9660;</span>');
       this.$searchInput = null;
-      this.$toggleAll = $(`<li class="select-toggle-all"><span><input type="checkbox" class="form-check-input"><label>Select all</label></span></li>`);
+      this.$toggleAll = $(`<li class="select-toggle-all"><span><input type="checkbox" class="form-check-input"><label>${this.selectAllLabel}</label></span></li>`);
+      this.$addOptionBtn = $('<i class="select-add-option fas fa-plus"></i>');
       this.mainLabel = this.$nativeSelect.next('.mdb-main-label');
+
+      this.$validFeedback = $(`<div class="valid-feedback">${this.options.validFeedback || 'Good choice'}</div>`);
+      this.$invalidFeedback = $(`<div class="invalid-feedback">${this.options.invalidFeedback || 'Bad choice'}</div>`);
+
       this.valuesSelected = [];
       this.keyCodes = {
         tab: 9,
@@ -102,7 +112,7 @@
 
         this.$selectWrapper.addClass(this.$nativeSelect.attr('class').split(' ').filter(el => el !== 'md-form').join(' ')).css({
           marginTop: '1.5rem',
-          marginBottom: '1.5rem',
+          marginBottom: '1.5rem'
         });
 
       } else {
@@ -150,14 +160,14 @@
       if (this.$materialSelect.hasClass('custom-select') && this.$materialSelect.hasClass('select-dropdown')) {
 
         this.$materialSelect.css({
-          'display': 'inline-block',
-          'width': '100%',
-          'height': 'calc(1.5em + .75rem + 2px)',
-          'padding': '.375rem 1.75rem .375rem .75rem',
-          'font-size': '1rem',
-          'line-height': '1.5',
-          'background-color': '#fff',
-          'border': '1px solid #ced4da',
+          display: 'inline-block',
+          width: '100%',
+          height: 'calc(1.5em + .75rem + 2px)',
+          padding: '.375rem 1.75rem .375rem .75rem',
+          fontSize: '1rem',
+          lineHeight: '1.5',
+          backgroundColor: '#fff',
+          border: '1px solid #ced4da'
         });
       }
     }
@@ -178,6 +188,7 @@
       this.$nativeSelect.before(this.$selectWrapper);
 
       this.appendDropdownIcon();
+      this.appendValidation();
       this.appendMaterialSelect();
       this.appendMaterialOptionsList();
       this.appendNativeSelect();
@@ -207,8 +218,12 @@
         });
       } else {
 
-        const index = this.$nativeSelect.find('option:selected').index();
-        this.$materialOptionsList.find('li').eq(index).addClass('active');
+        const preselectedOption = this.$nativeSelect.find('option[selected]');
+        const index = preselectedOption.index();
+        if (preselectedOption.attr('disabled') !== 'disabled' && index >= 0) {
+          this._toggleSelectedValue(index);
+          this.$materialOptionsList.find('li').eq(index).addClass('active');
+        }
       }
 
       this.$nativeSelect.addClass('initialized');
@@ -229,6 +244,13 @@
       this.$selectWrapper.append(this.$dropdownIcon);
     }
 
+    appendValidation() {
+      if (this.options.validate) {
+        this.$validFeedback.insertAfter(this.$selectWrapper);
+        this.$invalidFeedback.insertAfter(this.$selectWrapper);
+      }
+    }
+
     appendMaterialSelect() {
 
       this.$selectWrapper.append(this.$materialSelect);
@@ -239,6 +261,11 @@
       if (this.isSearchable) {
 
         this.appendSearchInputOption();
+      }
+
+      if (this.isEditable && this.isSearchable) {
+
+        this.appendAddOptionBtn();
       }
 
       this.buildMaterialOptions();
@@ -262,21 +289,43 @@
 
       if (this.options.BSsearchIn) {
 
-        this.$searchInput = $(`<span class="search-wrap ml-2"><div class="mt-0"><input type="text" class="search form-control mb-2 w-100 d-block select-default" placeholder="${placeholder}"></div></span>`);
+        this.$searchInput = $(`<span class="search-wrap ml-2"><div class="mt-0"><input type="text" class="search mb-2 w-100 d-block select-default" tabindex="-1" placeholder="${placeholder}"></div></span>`);
       } else {
 
-        this.$searchInput = $(`<span class="search-wrap ml-2"><div class="md-form mt-0"><input type="text" class="search form-control w-100 d-block" placeholder="${placeholder}"></div></span>`);
+        this.$searchInput = $(`<span class="search-wrap ml-2"><div class="md-form mt-0"><input type="text" class="search w-100 d-block" tabindex="-1" placeholder="${placeholder}"></div></span>`);
       }
 
       this.$materialOptionsList.append(this.$searchInput);
-      this.$searchInput.on("click", e => {
+      this.$searchInput.on('click', e => {
         e.stopPropagation();
       });
     }
 
+    appendAddOptionBtn() {
+      this.$searchInput.append(this.$addOptionBtn);
+      this.$addOptionBtn.on('click', this.addNewOption.bind(this));
+    }
+
+    addNewOption() {
+      let val = this.$searchInput.find('input').val();
+      let $newOption = $(`<option value="${val.toLowerCase()}" selected>${val}</option>`).prop('selected', true);
+      if (!this.isMultple) {
+        this.$nativeSelectChildren.each((index, option) => {
+          $(option).attr('selected', false);
+        });
+      };
+      this.$nativeSelect.append($newOption);
+    }
+
     appendToggleAllCheckbox() {
 
-      this.$materialOptionsList.find('li.disabled').first().after(this.$toggleAll);
+      const firstOption = this.$materialOptionsList.find('li').first();
+      if (firstOption.hasClass('disabled') && firstOption.find('input').prop('disabled')) {
+        firstOption.after(this.$toggleAll);
+      } else {
+        this.$materialOptionsList.find('li').first().before(this.$toggleAll);
+      }
+
     }
 
     appendSaveSelectButton() {
@@ -321,7 +370,7 @@
       const iconHtml = iconUrl ? `<img alt="" src="${iconUrl}" class="${classes}">` : '';
       const checkboxHtml = this.isMultiple ? `<input type="checkbox" class="form-check-input" ${disabled}/><label></label>` : '';
 
-      this.$materialOptionsList.append($(`<li class="${disabled} ${optgroupClass} ${this.options.copyClassesOption ? classes : '' } ">${iconHtml}<span class="filtrable">${checkboxHtml} ${$nativeSelectChild.html()} ${fas} ${far} ${fab}</span></li>`));
+      this.$materialOptionsList.append($(`<li class="${disabled} ${optgroupClass} ${this.options.copyClassesOption ? classes : ''} ">${iconHtml}<span class="filtrable">${checkboxHtml} ${$nativeSelectChild.html()} ${fas} ${far} ${fab}</span></li>`));
     }
 
     enableValidation() {
@@ -366,7 +415,7 @@
 
       $saveSelectBtn.on('click', this._onSaveSelectBtnClick.bind(this));
 
-      this.$materialSelect.on('focus', this._onMaterialSelectFocus.bind(this))
+      this.$materialSelect.on('focus', this._onMaterialSelectFocus.bind(this));
       this.$materialSelect.on('click', this._onMaterialSelectClick.bind(this));
       this.$materialSelect.on('blur', this._onMaterialSelectBlur.bind(this));
       this.$materialSelect.on('keydown', this._onMaterialSelectKeydown.bind(this));
@@ -385,7 +434,7 @@
 
       if (this.isSearchable) {
 
-        this.$searchInput.find('.search').on('keyup', this._onSearchInputKeyup);
+        this.$searchInput.find('.search').on('keyup', this._onSearchInputKeyup.bind(this));
       }
 
       $('html').on('click', this._onHTMLClick.bind(this));
@@ -401,14 +450,14 @@
           MaterialSelect.clearMutationObservers();
 
           $select.materialSelect({
-            'destroy': true
+            destroy: true
           });
           $select.materialSelect();
         }
       });
     }
 
-    _onSaveSelectBtnClick(e) {
+    _onSaveSelectBtnClick() {
 
       $('input.multi-bs-select').trigger('close');
       this.$materialOptionsList.hide();
@@ -473,7 +522,9 @@
       this._triggerChangeOnNativeSelect();
 
       if (this.mainLabel.prev().find('input').hasClass('select-dropdown')) {
+
         if (this.mainLabel.prev().find('input.select-dropdown').val().length > 0) {
+
           this.mainLabel.addClass('active');
         }
       }
@@ -487,6 +538,12 @@
 
         this.$materialOptionsList.append(this.buildSingleOption($this, ''));
       }
+    }
+
+    _escapeKeyboardActiveOptions() {
+      this.$materialOptionsList.find('li').each((i, el) => {
+        $(el).removeClass(this.keyboardActiveClass)
+      });
     }
 
     _triggerChangeOnNativeSelect() {
@@ -504,13 +561,14 @@
 
       if ($('ul.select-dropdown').not(this.$materialOptionsList.get(0)).is(':visible')) {
 
-        $(`input.select-dropdown`).trigger('close');
+        $('input.select-dropdown').trigger('close');
       }
+
+      this.mainLabel.addClass('active');
 
       if (!this.$materialOptionsList.is(':visible')) {
 
         $this.trigger('open', ['focus']);
-
         const label = $this.val();
         const $selectedOption = this.$materialOptionsList.find('li').filter(function () {
 
@@ -522,13 +580,20 @@
 
       if (!this.isMultiple) {
 
-        this.mainLabel.addClass('active active-check');
+        this.mainLabel.addClass('active');
       }
+
+      $(document).find('input.select-dropdown').each((i, el) => $(el).val().length <= 0).parent().next('.mdb-main-label')
+        .filter((i, el) => {
+
+          return $(el).prev().find('input.select-dropdown').val().length <= 0 && !$(el).prev().find('input.select-dropdown').hasClass('active');
+        })
+        .removeClass('active');
     }
 
     _onMaterialSelectClick(e) {
 
-      this.mainLabel.addClass('active-check');
+      this.mainLabel.addClass('active');
       e.stopPropagation();
     }
 
@@ -542,13 +607,6 @@
       }
 
       this.$materialOptionsList.find('li.selected').removeClass('selected');
-      this.mainLabel.removeClass('active-check');
-
-      if (this.mainLabel.prev().find('input').hasClass('select-dropdown')) {
-        if (this.mainLabel.prev().find('input.select-dropdown').val() === '') {
-          this.mainLabel.removeClass('active');
-        }
-      }
     }
 
     _onSingleMaterialOptionClick() {
@@ -568,7 +626,6 @@
         }
       }
 
-      this.mainLabel.removeClass('active-check');
     }
 
     _onHTMLClick(e) {
@@ -576,7 +633,11 @@
       if (!$(e.target).closest(`#select-options-${this.uuid}`).length && !$(e.target).hasClass('mdb-select') && $(`#select-options-${this.uuid}`).hasClass('active')) {
 
         this.$materialSelect.trigger('close');
-        this.mainLabel.removeClass('active-check');
+
+        if (!this.$materialSelect.val().length > 0) {
+
+          this.mainLabel.removeClass('active');
+        }
       }
 
       if (this.isSearchable && this.$searchInput !== null && this.$materialOptionsList.hasClass('active')) {
@@ -588,20 +649,16 @@
 
       const checkbox = $(this.$toggleAll).find('input[type="checkbox"]').first();
       const state = !$(checkbox).prop('checked');
+
       $(checkbox).prop('checked', state);
 
-      this.$materialOptionsList.find('li:not(.optgroup):not(.disabled):not(.select-toggle-all)').each((materialOptionIndex, materialOption) => {
+      this.$materialOptionsList.find('li:not(.optgroup):not(.select-toggle-all)').each((materialOptionIndex, materialOption) => {
 
         const $optionCheckbox = $(materialOption).find('input[type="checkbox"]');
 
-        if (state && $optionCheckbox.is(':checked') || !state && !$optionCheckbox.is(':checked')) {
+        if (state && $optionCheckbox.is(':checked') || !state && !$optionCheckbox.is(':checked') || $(materialOption).is(':hidden') || $(materialOption).is('.disabled')) {
 
           return;
-        }
-
-        if (this._isToggleAllPresent()) {
-
-          materialOptionIndex++;
         }
 
         $optionCheckbox.prop('checked', state);
@@ -634,6 +691,7 @@
       const isTab = e.which === this.keyCodes.tab;
       const isEsc = e.which === this.keyCodes.esc;
       const isEnter = e.which === this.keyCodes.enter;
+      const isEnterWithShift = isEnter && e.shiftKey;
       const isArrowUp = e.which === this.keyCodes.arrowUp;
       const isArrowDown = e.which === this.keyCodes.arrowDown;
 
@@ -653,7 +711,10 @@
 
       e.preventDefault();
 
-      if (isEnter) {
+      if (isEnterWithShift) {
+
+        this._handleEnterWithShiftKey($this);
+      } else if (isEnter) {
 
         this._handleEnterKey($this);
       } else if (isArrowDown) {
@@ -676,6 +737,17 @@
       this._handleEscKey(materialSelect);
     }
 
+    _handleEnterWithShiftKey(materialSelect) {
+
+      if (!this.isMultiple) {
+
+        this._handleEnterKey(materialSelect);
+      } else {
+
+        this.$toggleAll.trigger('click');
+      }
+    }
+
     _handleEnterKey(materialSelect) {
 
       const $activeOption = this.$materialOptionsList.find('li.selected:not(.disabled)');
@@ -690,78 +762,128 @@
 
     _handleArrowDownKey() {
 
-      const $firstOption = this.$materialOptionsList.find('li').not('.disabled').first();
-      const $lastOption = this.$materialOptionsList.find('li').not('.disabled').last();
+      const $availableOptions = this.$materialOptionsList.find('li:visible').not('.disabled, .select-toggle-all');
+
+      const $firstOption = this.$materialOptionsList.find('li:visible').not('.disabled, .select-toggle-all').first();
+      const $lastOption = this.$materialOptionsList.find('li:visible').not('.disabled, .select-toggle-all').last();
       const anySelected = this.$materialOptionsList.find('li.selected').length > 0;
 
-      const $currentOption = anySelected ? this.$materialOptionsList.find('li.selected') : $firstOption;
-      const $matchedMaterialOption = $currentOption.is($lastOption) || !anySelected ? $currentOption :
-        $currentOption.next('li:not(.disabled)');
+      const $currentOption = anySelected ? this.$materialOptionsList.find('li.selected').first() : $firstOption;
+      let $nextOption = $currentOption.next('li:visible:not(.disabled, .select-toggle-all)');
+      let $activeOption = $nextOption;
+
+      $availableOptions.each((key, el) => {
+        if ($(el).hasClass(this.keyboardActiveClass)) {
+          $nextOption = $availableOptions.eq(key + 1)
+          $activeOption = $availableOptions.eq(key)
+        }
+      })
+
+      const $matchedMaterialOption = $currentOption.is($lastOption) || !anySelected ? $currentOption : $nextOption;
 
       this._selectSingleOption($matchedMaterialOption);
 
+      this._escapeKeyboardActiveOptions();
+
       if (!$matchedMaterialOption.find('input').is(':checked')) {
 
-        $matchedMaterialOption.removeClass('active');
+        $matchedMaterialOption.removeClass(this.keyboardActiveClass);
       }
 
-      if (!$matchedMaterialOption.prev().hasClass('selected') && !$matchedMaterialOption.prev().find('input').is(':checked')) {
+      if (!$activeOption.hasClass('selected') && !$activeOption.find('input').is(':checked') && this.isMultiple) {
 
-        $matchedMaterialOption.prev().removeClass('active')
+        $activeOption.removeClass('active', this.keyboardActiveClass);
       }
 
-      $matchedMaterialOption.addClass('active');
+      $matchedMaterialOption.addClass(this.keyboardActiveClass);
+      
+      if ($matchedMaterialOption.position()) {
+        this.$materialOptionsList.scrollTop(this.$materialOptionsList.scrollTop() + $matchedMaterialOption.position().top)
+      }
     }
 
     _handleArrowUpKey() {
 
-      const $firstOption = this.$materialOptionsList.find('li').not('.disabled').first();
-      const $lastOption = this.$materialOptionsList.find('li').not('.disabled').last();
+      const $availableOptions = this.$materialOptionsList.find('li:visible').not('.disabled, .select-toggle-all');
+
+      const $firstOption = this.$materialOptionsList.find('li:visible').not('.disabled, .select-toggle-all').first();
+      const $lastOption = this.$materialOptionsList.find('li:visible').not('.disabled, .select-toggle-all').last();
       const anySelected = this.$materialOptionsList.find('li.selected').length > 0;
 
-      const $currentOption = anySelected ? this.$materialOptionsList.find('li.selected') : $lastOption;
-      const $matchedMaterialOption = $currentOption.is($firstOption) || !anySelected ? $currentOption : $currentOption.prev('li:not(.disabled)');
+      const $currentOption = anySelected ? this.$materialOptionsList.find('li.selected').first() : $lastOption;
+      let $prevOption = $currentOption.prev('li:visible:not(.disabled, .select-toggle-all)');
+      let $activeOption = $prevOption;
+
+      $availableOptions.each((key, el) => {
+        if ($(el).hasClass(this.keyboardActiveClass)) {
+          $prevOption = $availableOptions.eq(key - 1)
+          $activeOption = $availableOptions.eq(key)
+        }
+      })
+
+      const $matchedMaterialOption = $currentOption.is($firstOption) || !anySelected ? $currentOption : $prevOption;
 
       this._selectSingleOption($matchedMaterialOption);
 
+      this._escapeKeyboardActiveOptions();
+
       if (!$matchedMaterialOption.find('input').is(':checked')) {
 
-        $matchedMaterialOption.removeClass('active')
+        $matchedMaterialOption.removeClass(this.keyboardActiveClass);
       }
 
-      if (!$matchedMaterialOption.next().hasClass('selected') && !$matchedMaterialOption.next().find('input').is(':checked')) {
+      if (!$activeOption.hasClass('selected') && !$activeOption.find('input').is(':checked') && this.isMultiple) {
 
-        $matchedMaterialOption.next().removeClass('active');
+        $activeOption.removeClass('active', this.keyboardActiveClass);
       }
 
-      $matchedMaterialOption.addClass('active');
+      $matchedMaterialOption.addClass(this.keyboardActiveClass);
+
+      if ($matchedMaterialOption.position()) {
+        this.$materialOptionsList.scrollTop(this.$materialOptionsList.scrollTop() + $matchedMaterialOption.position().top)
+      }
     }
 
     _handleEscKey(materialSelect) {
 
+      this._escapeKeyboardActiveOptions();
       $(materialSelect).trigger('close');
     }
 
     _handleLetterKey(e) {
 
-      let filterQueryString = '';
-      const letter = String.fromCharCode(e.which).toLowerCase();
-      const nonLetters = Object.keys(this.keyCodes).map((key) => this.keyCodes[key]);
-      const isLetterSearchable = letter && nonLetters.indexOf(e.which) === -1;
+      this._escapeKeyboardActiveOptions();
 
-      if (isLetterSearchable) {
+      if (this.isSearchable) {
+        
+        const isLetter = e.which > 46 && e.which < 91
+        const isNumber = e.which > 93 && e.which < 106
+        const isBackspace = e.which === 8
 
-        filterQueryString += letter;
+        if (isLetter || isNumber) this.$searchInput.find('input').val(e.key).focus()
+        if (isBackspace) this.$searchInput.find('input').val('').focus()
 
-        const $matchedMaterialOption = this.$materialOptionsList.find('li').filter((index, element) => $(element).text().toLowerCase().includes(filterQueryString)).first();
+      } else {
+        
+        let filterQueryString = '';
+        const letter = String.fromCharCode(e.which).toLowerCase();
+        const nonLetters = Object.keys(this.keyCodes).map((key) => this.keyCodes[key]);
+        const isLetterSearchable = letter && nonLetters.indexOf(e.which) === -1;
 
-        if (!this.isMultiple) {
+        if (isLetterSearchable) {
 
-          this.$materialOptionsList.find('li').removeClass('active');
+          filterQueryString += letter;
+
+          const $matchedMaterialOption = this.$materialOptionsList.find('li').filter((index, element) => $(element).text().toLowerCase().includes(filterQueryString)).first();
+
+          if (!this.isMultiple) {
+
+            this.$materialOptionsList.find('li').removeClass('active');
+          }
+
+          $matchedMaterialOption.addClass('active');
+          this._selectSingleOption($matchedMaterialOption);
         }
-
-        $matchedMaterialOption.addClass('active');
-        this._selectSingleOption($matchedMaterialOption);
       }
     }
 
@@ -769,9 +891,25 @@
 
       const $this = $(e.target);
 
+      const isTab = e.which === this.keyCodes.tab;
+      const isEsc = e.which === this.keyCodes.esc;
+      const isEnter = e.which === this.keyCodes.enter;
+      const isEnterWithShift = isEnter && e.shiftKey;
+      const isArrowUp = e.which === this.keyCodes.arrowUp;
+      const isArrowDown = e.which === this.keyCodes.arrowDown;
+
+      if (isArrowDown || isTab || isEsc || isArrowUp) {
+        
+        this.$materialSelect.focus();
+        this._handleArrowDownKey();
+        return
+      } 
+
       const $ul = $this.closest('ul');
       const searchValue = $this.val();
       const $options = $ul.find('li span.filtrable');
+
+      let isOptionInList = false;
 
       $options.each(function () {
 
@@ -784,11 +922,34 @@
 
             $option.show().parent().show();
           } else {
-
             $option.hide().parent().hide();
+          }
+          
+          if (liValue.trim() === searchValue.toLowerCase()) {
+            isOptionInList = true;
           }
         }
       });
+      
+      if (isEnter) {
+        if (this.isEditable && !isOptionInList) {
+          this.addNewOption();
+          return;
+        }
+        if (isEnterWithShift) {
+          this._handleEnterWithShiftKey($this);
+        }
+        this.$materialSelect.trigger('open');
+        return;
+      }
+
+      if (searchValue && this.isEditable && !isOptionInList) {
+        this.$addOptionBtn.show();
+      } else {
+        this.$addOptionBtn.hide();
+      }
+
+      this._updateToggleAllOption();
     }
 
     _isToggleAllPresent() {
@@ -798,9 +959,7 @@
 
     _updateToggleAllOption() {
 
-      const $allOptionsButToggleAll = this.$materialOptionsList.find('li').not(
-          '.select-toggle-all, .disabled')
-        .find('[type=checkbox]');
+      const $allOptionsButToggleAll = this.$materialOptionsList.find('li').not('.select-toggle-all, .disabled, :hidden').find('[type=checkbox]');
       const $checkedOptionsButToggleAll = $allOptionsButToggleAll.filter(':checked');
       const isToggleAllChecked = this.$toggleAll.find('[type=checkbox]').is(':checked');
 
@@ -850,7 +1009,7 @@
     _setValueToMaterialSelect() {
 
       let value = '';
-      let optionsSelected = 'options selected';
+      let optionsSelected = this.optionsSelectedLabel;
       const itemsCount = this.valuesSelected.length;
 
       if (this.options.language.active && this.$toggleAll) {
@@ -873,17 +1032,17 @@
         }
       }
 
-      this.valuesSelected.map(el => value += `, ${this.$nativeSelect.find('option').eq(el).text().replace(/  +/g, ' ').trim()}`)
+      this.valuesSelected.map(el => value += `, ${this.$nativeSelect.find('option').eq(el).text().replace(/  +/g, ' ').trim()}`);     
 
       itemsCount >= 5 ? value = `${itemsCount} ${optionsSelected}` : value = value.substring(2);
 
       value.length === 0 && this.mainLabel.length === 0 ? value = this.$nativeSelect.find('option:disabled').eq(0).text() : null;
 
-      value.length > 0 && !this.options.BSinputText ? this.mainLabel.addClass('active active-check') : this.mainLabel.removeClass('active');
+      value.length > 0 && !this.options.BSinputText ? this.mainLabel.addClass('active ') : this.mainLabel.removeClass('active');
 
       this.options.BSinputText ? this.mainLabel.css('top', '-7px') : null;
 
-      this.$nativeSelect.siblings(`${this.options.BSinputText ? `input.multi-bs-select`: `input.select-dropdown`}`).val(value);
+      this.$nativeSelect.siblings(`${this.options.BSinputText ? 'input.multi-bs-select' : 'input.select-dropdown'}`).val(value);
     }
 
     _randomUUID() {
@@ -924,8 +1083,9 @@
         MaterialSelect.clearMutationObservers();
 
         this.materialSelect({
-          'destroy': true
+          destroy: true
         });
+
         const ret = originalVal.call(this, value);
         this.materialSelect();
 
@@ -937,7 +1097,7 @@
   }($.fn.val));
 }(jQuery));
 
-jQuery('select').siblings('input.select-dropdown', 'input.multi-bs-select').on('mousedown', e => {
+$('select').siblings('input.select-dropdown', 'input.multi-bs-select').on('mousedown', e => {
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     if (e.clientX >= e.target.clientWidth || e.clientY >= e.target.clientHeight) {
       e.preventDefault();

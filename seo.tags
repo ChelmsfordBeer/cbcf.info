@@ -1,0 +1,78 @@
+<!-- Below are the tags that are injected to all pages by Netlify -->
+
+<!-- Main icon -->
+<link rel="icon" sizes="192x192" href="//cbcf.info/img/icon.png">
+
+<!-- Safari/iOS specific icons -->
+<link rel="apple-touch-icon" href="//cbcf.info/img/icon.png">
+<link rel="apple-touch-startup-image" href="//cbcf.info/img/icon.png">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="CBCF">
+
+<!-- Chrome, Firefox OS and Opera theme colour -->
+<meta name="theme-color" content="#000000">
+
+<!-- Additional Metadata for social sharing -->
+<meta name="description" content="The Official Chelmsford Beer & Cider Festivals website - run by the Chelmsford and Mid-Essex Campaign For Real Ale." />
+<meta property="og:description" content="The Official Chelmsford Beer & Cider Festivals website - run by the Chelmsford and Mid-Essex Campaign For Real Ale">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://cbcf.info/img/banner.png">
+<meta property="og:image:alt" content="Chelmsford Winter Beer & Cider Festival 2020 - 19th to 22nd February 2020 at King Edward VI Grammar School, Broomfield Road, CM1 3SX">
+<meta property="fb:admins" content="181973398514531">
+<meta itemprop="description" content="The Official Chelmsford Beer & Cider Festivals website - run by the Chelmsford and Mid-Essex Campaign For Real Ale">
+<meta itemprop="image" content="https://cbcf.info/img/banner.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="Chelmsford Beer & Cider Festivals">
+<meta name="twitter:image:alt" content="The Official Chelmsford Beer & Cider Festivals website - run by the Chelmsford and Mid-Essex Campaign For Real Ale">
+<meta name="twitter:site" content="@ChelmsfordBEER">
+
+<!-- Manifest for PWA -->
+<link rel="manifest" href="//cbcf.info/manifest.json">
+
+<!-- Google Listings -->
+<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"url": "https://cbcf.info",
+			"name": "Chelmsford Beer & Cider Festivals",
+			"image": "https://cbcf.info/img/icon.png",
+			"description": "Chelmsford Beer & Cider Festivals aim to provide Chelmsford City with two great Beer and Cider Festivals each year, putting the real back into Real Ale and Real Cider. Organised by Chelmsford & Mid Essex Campaign for Real Ale (CAMRA).",
+			"sameAs": [
+				"https://www.facebook.com/chelmsfordbeer",
+				"https://twitter.com/chelmsfordbeer",
+				"https://www.instagram.com/chelmsfordbeer",
+				"https://www.snapchat.com/add/chelmsfordbeer",
+				"https://www.youtube.com/channel/UCzacYKZgrWy-5LvzYar7eMw"
+			]
+		}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Chelmsford Winter Beer & Cider Festival 2020",
+  "startDate": "2020-02-19T12:00",
+  "endDate": "2020-02-22T23:00",
+  "location": {
+    "@type": "Place",
+    "name": "King Edward VI Grammar School",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "King Edward VI Grammar School, Broomfield Rd",
+      "addressLocality": "Chelmsford",
+      "postalCode": "CM1 3SX",
+      "addressRegion": "Essex",
+      "addressCountry": "GB"
+    }
+  },
+  "image": [
+    "https://cbcf.info/2018/0026.jpg",
+    "https://cbcf.info/2018/0050.jpg",
+    "https://cbcf.info/2018/0074.jpg",
+    "https://cbcf.info/2018/0144.jpg"
+   ],
+  "description": "The 21st Chelmsford Winter Beer & Cider Festival. Organised by Chelmsford & Mid Essex Campaign for Real Ale (CAMRA)."
+}
+</script>

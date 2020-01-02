@@ -21,3 +21,7 @@ Disallow: /js/
 Disallow: /listings/
 Disallow: /signature/
 Disallow: /webfonts/
+Disallow: /pages/
+Disallow: /templates/
+Disallow: /partials/
+Disallow: /unused-pages/

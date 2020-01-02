@@ -1,61 +1,43 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
-const cssmin = require('gulp-cssmin');
-const browserSync = require('browser-sync').create();
+const browserSync = require('browser-sync');
 const concat = require('gulp-concat');
+const cssmin = require('gulp-cssmin');
+const imagemin = require('gulp-imagemin');
 const minify = require('gulp-minify');
 const rename = require('gulp-rename');
-const imagemin = require('gulp-imagemin');
-const fs = require('fs');
-
+const sass = require('gulp-sass');
+const fileinclude = require('gulp-file-include');
 const cssAddonsPath = './css/modules/';
 
-// CSS Tasks
-gulp.task('css-compile', function() {
-  gulp.src('scss/*.scss')
-    .pipe(sass({
-      outputStyle: 'nested'
-    }).on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['last 10 versions'],
-      cascade: false
-    }))
-    .pipe(gulp.dest('./dist/css/'));
 
-  gulp.start('css-compile-modules');
-});
 
-// CSS Tasks
-gulp.task('css-compile-modules', function() {
+gulp.task('css-compile-modules', (done) => {
   gulp.src('scss/**/modules/**/*.scss')
     .pipe(sass({
       outputStyle: 'nested'
     }).on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['last 10 versions'],
-      cascade: false
-    }))
+    .pipe(autoprefixer())
     .pipe(rename({
       dirname: cssAddonsPath
     }))
     .pipe(gulp.dest('./dist/'));
+
+  done();
 });
 
+// CSS Tasks
+gulp.task('css-compile', gulp.series('css-compile-modules', () => {
+  return gulp.src('scss/*.scss')
+    .pipe(sass({
+      outputStyle: 'nested'
+    }).on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(gulp.dest('./dist/css/'));
+}));
 
-gulp.task('css-minify', function() {
-  gulp.src(['./dist/css/*.css', '!./dist/css/*.min.css', '!./dist/css/bootstrap.css'])
-    .pipe(cssmin())
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest('./dist/css'));
-
-  gulp.start('css-minify-modules');
-});
-
-gulp.task('css-minify-modules', function() {
-  gulp.src(['./dist/css/modules/*.css', '!./dist/css/modules/*.min.css'])
+gulp.task('css-minify-modules', () => {
+  return gulp.src(['./dist/css/modules/*.css', '!./dist/css/modules/*.min.css'])
     .pipe(cssmin())
     .pipe(rename({
       suffix: '.min'
@@ -63,32 +45,39 @@ gulp.task('css-minify-modules', function() {
     .pipe(gulp.dest('./dist/css/modules'));
 });
 
+gulp.task('css-minify', gulp.series('css-minify-modules', () => {
+  return gulp.src(['./dist/css/*.css', '!./dist/css/*.min.css', '!./dist/css/bootstrap.css'])
+    .pipe(cssmin())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('./dist/css'));
+
+}));
+
 // JavaScript Tasks
-gulp.task('js-build', function() {
-
-  const plugins = getJSModules();
-
-  gulp.src(plugins.modules)
-    .pipe(concat('mdb.js'))
-    .pipe(gulp.dest('./dist/js/'));
-
-  gulp.start('js-lite-build');
-});
-
-gulp.task('js-lite-build', function() {
+gulp.task('js-lite-build', () => {
 
   const pluginsLite = getLiteJSModules();
 
-  gulp.src(pluginsLite.modules)
+  return gulp.src(pluginsLite.modules)
     .pipe(concat('mdb.lite.js'))
     .pipe(gulp.dest('./dist/js/'));
 
-  gulp.start('js-lite-minify');
-
 });
 
-gulp.task('js-minify', function() {
-  gulp.src(['./dist/js/mdb.js'])
+gulp.task('js-build', gulp.series('js-lite-build', () => {
+
+  const plugins = getJSModules();
+
+  return gulp.src(plugins.modules)
+    .pipe(concat('mdb.js'))
+    .pipe(gulp.dest('./dist/js/'));
+
+}));
+
+gulp.task('js-lite-minify', () => {
+  return gulp.src(['./dist/js/mdb.lite.js'])
     .pipe(minify({
       ext: {
         // src:'.js',
@@ -99,22 +88,21 @@ gulp.task('js-minify', function() {
     .pipe(gulp.dest('./dist/js'));
 });
 
-
-gulp.task('js-lite-minify', function() {
-  gulp.src(['./dist/js/mdb.lite.js'])
+gulp.task('js-minify', gulp.series('js-lite-minify', () => {
+  return gulp.src(['./dist/js/mdb.js'])
     .pipe(minify({
       ext: {
         // src:'.js',
         min: '.min.js'
       },
-      noSource: true,
+      noSource: true
     }))
     .pipe(gulp.dest('./dist/js'));
-});
+}));
 
 // Image Compression
-gulp.task('img-compression', function() {
-  gulp.src('./img/*')
+gulp.task('img-compression', () => {
+  return gulp.src('./img/*')
     .pipe(imagemin([
       imagemin.gifsicle({
         interlaced: true
@@ -127,19 +115,91 @@ gulp.task('img-compression', function() {
       }),
       imagemin.svgo({
         plugins: [{
-            removeViewBox: true
-          },
-          {
-            cleanupIDs: false
-          }
+          removeViewBox: true
+        }, {
+          cleanupIDs: false
+        }
         ]
       })
     ]))
     .pipe(gulp.dest('./dist/img'));
 });
 
+// File Includes
+gulp.task('fileinclude', () => {
+  return gulp.src(['dist/pages/*.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: './dist/partials'
+    }))
+    .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('fileinclude1', () => {
+  return gulp.src(['dist/2013/pages/*.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: './dist/partials'
+    }))
+    .pipe(gulp.dest('./dist/2013'));
+});
+
+gulp.task('fileinclude2', () => {
+  return gulp.src(['dist/2014/pages/*.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: './dist/partials'
+    }))
+    .pipe(gulp.dest('./dist/2014'));
+});
+
+gulp.task('fileinclude3', () => {
+  return gulp.src(['dist/2015/pages/*.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: './dist/partials'
+    }))
+    .pipe(gulp.dest('./dist/2015'));
+});
+
+gulp.task('fileinclude4', () => {
+  return gulp.src(['dist/2016/pages/*.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: './dist/partials'
+    }))
+    .pipe(gulp.dest('./dist/2016'));
+});
+
+gulp.task('fileinclude5', () => {
+  return gulp.src(['dist/2017/pages/*.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: './dist/partials'
+    }))
+    .pipe(gulp.dest('./dist/2017'));
+});
+
+gulp.task('fileinclude6', () => {
+  return gulp.src(['dist/2018/pages/*.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: './dist/partials'
+    }))
+    .pipe(gulp.dest('./dist/2018'));
+});
+
+gulp.task('fileinclude7', () => {
+  return gulp.src(['dist/2019/pages/*.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: './dist/partials'
+    }))
+    .pipe(gulp.dest('./dist/2019'));
+});
+
 // Live Server
-gulp.task('live-server', function() {
+gulp.task('live-server', () => {
   browserSync.init({
     server: {
       baseDir: './dist',
@@ -154,23 +214,46 @@ gulp.task('live-server', function() {
 });
 
 // Watch on everything
-gulp.task('mdb-go', function() {
-  gulp.start('live-server');
-  gulp.watch('scss/**/*.scss', ['css-compile']);
-  gulp.watch(['dist/css/*.css', '!dist/css/*.min.css'], ['css-minify']);
-  gulp.watch('js/**/*.js', ['js-build']);
-  gulp.watch(['dist/js/*.js', '!dist/js/*.min.js'], ['js-minify']);
-  gulp.watch('**/*', {
-    cwd: './img/'
-  }, ['img-compression']);
-  gulp.watch(['dist/pages/*.html', 'dist/partials/*.html'], ['fileinclude']);
-  gulp.watch(['dist/2013/pages/*.html', 'dist/partials/*.html'], ['fileinclude1']);
-  gulp.watch(['dist/2014/pages/*.html', 'dist/partials/*.html'], ['fileinclude2']);
-  gulp.watch(['dist/2015/pages/*.html', 'dist/partials/*.html'], ['fileinclude3']);
-  gulp.watch(['dist/2016/pages/*.html', 'dist/partials/*.html'], ['fileinclude4']);
-  gulp.watch(['dist/2017/pages/*.html', 'dist/partials/*.html'], ['fileinclude5']);
-  gulp.watch(['dist/2018/pages/*.html', 'dist/partials/*.html'], ['fileinclude6']);
-  gulp.watch(['dist/2019/pages/*.html', 'dist/partials/*.html'], ['fileinclude7']);
+gulp.task('mdb-go', (done) => {
+
+  browserSync.init({
+    server: {
+      baseDir: './dist',
+      directory: true
+    },
+    notify: false
+  });
+
+  gulp.watch('scss/**/*.scss', gulp.series('css-compile', (done) => {
+    browserSync.reload();
+    done();
+  }));
+
+  gulp.watch(['dist/css/*.css', '!dist/css/*.min.css'], gulp.series('css-minify', (done) => {
+    browserSync.reload();
+    done();
+  }));
+
+  gulp.watch('js/**/*.js', gulp.series('js-build', (done) => {
+    browserSync.reload();
+    done();
+  }));
+
+  gulp.watch(['dist/js/*.js', '!dist/js/*.min.js'], gulp.series('js-minify', () => {
+    browserSync.reload();
+    done();
+  }));
+
+  // gulp.watch('**/*', {
+  //   cwd: './img/'
+  // }, ['img-compression']);
+
+  gulp.watch('**/*.html', (done) => {
+    browserSync.reload();
+    done();
+  });
+
+  done();
 });
 
 function getJSModules() {
@@ -182,91 +265,3 @@ function getLiteJSModules() {
   delete require.cache[require.resolve('./js/modules.lite.js')];
   return require('./js/modules.lite.js');
 }
-
-//HTML Includes
-var fileinclude = require('gulp-file-include')
-var fileinclude1 = require('gulp-file-include')
-var fileinclude2 = require('gulp-file-include')
-var fileinclude3 = require('gulp-file-include')
-var fileinclude4 = require('gulp-file-include')
-var fileinclude5 = require('gulp-file-include')
-var fileinclude6 = require('gulp-file-include')
-var fileinclude7 = require('gulp-file-include')
-
-gulp.task('fileinclude', function() {
-  gulp.src(['dist/pages/*.html'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: './dist/partials'
-    }))
-    .pipe(gulp.dest('./dist'));
-});
-
-gulp.task('fileinclude1', function() {
-  gulp.src(['dist/2013/pages/*.html'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: './dist/partials'
-    }))
-    .pipe(gulp.dest('./dist/2013'));
-});
-
-gulp.task('fileinclude2', function() {
-  gulp.src(['dist/2014/pages/*.html'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: './dist/partials'
-    }))
-    .pipe(gulp.dest('./dist/2014'));
-});
-
-gulp.task('fileinclude3', function() {
-  gulp.src(['dist/2015/pages/*.html'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: './dist/partials'
-    }))
-    .pipe(gulp.dest('./dist/2015'));
-});
-
-gulp.task('fileinclude4', function() {
-  gulp.src(['dist/2016/pages/*.html'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: './dist/partials'
-    }))
-    .pipe(gulp.dest('./dist/2016'));
-});
-
-gulp.task('fileinclude5', function() {
-  gulp.src(['dist/2017/pages/*.html'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: './dist/partials'
-    }))
-    .pipe(gulp.dest('./dist/2017'));
-});
-
-gulp.task('fileinclude6', function() {
-  gulp.src(['dist/2018/pages/*.html'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: './dist/partials'
-    }))
-    .pipe(gulp.dest('./dist/2018'));
-});
-
-gulp.task('fileinclude7', function() {
-  gulp.src(['dist/2019/pages/*.html'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: './dist/partials'
-    }))
-    .pipe(gulp.dest('./dist/2019'));
-});
-
-function defaultTask(cb) {
-  cb();
-}
-
-exports.default = defaultTask

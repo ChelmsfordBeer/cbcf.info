@@ -1,28 +1,32 @@
 (($) => {
 
-  const INPUT_DATA = {};
-  const DATA_COLOR = '';
-  const BUTTON_X_COLOR = '';
-  const BUTTON_X_BLUR_COLOR = '#ced4da';
-  const INPUT_FOCUS = '1px solid #4285f4';
-  const INPUT_BLUR = '1px solid #ced4da';
-  const INPUT_FOCUS_SHADOW = '0 1px 0 0 #4285f4';
-  const INPUT_BLUR_SHADOW = '';
-  const ENTER_CHAR_CODE = 13;
+  const inputData = {};
+  const dataColor = '';
+  const buttonCloseColor = '';
+  const buttonCloseBlurColor = '#ced4da';
+  const inputFocus = '1px solid #4285f4';
+  const inputBlur = '1px solid #ced4da';
+  const inputFocusShadow = '0 1px 0 0 #4285f4';
+  const inputBlurShadow = '';
+  const enterCharCode = 13;
+  const arrowUpCharCode = 38;
+  const arrowDownCharCode = 40;
+  let count = -1;
+  let nextScrollHeight = -45;
 
   class mdbAutocomplete {
 
     constructor(input, options) {
 
       this.defaults = {
-        data: INPUT_DATA,
-        dataColor: DATA_COLOR,
-        xColor: BUTTON_X_COLOR,
-        xBlurColor: BUTTON_X_BLUR_COLOR,
-        inputFocus: INPUT_FOCUS,
-        inputBlur: INPUT_BLUR,
-        inputFocusShadow: INPUT_FOCUS_SHADOW,
-        inputBlurShadow: INPUT_BLUR_SHADOW
+        data: inputData,
+        dataColor: dataColor,
+        closeColor: buttonCloseColor,
+        closeBlurColor: buttonCloseBlurColor,
+        inputFocus: inputFocus,
+        inputBlur: inputBlur,
+        inputFocusShadow: inputFocusShadow,
+        inputBlurShadow: inputBlurShadow
       };
 
       this.$input = input;
@@ -42,9 +46,9 @@
       this.clearAutocomplete();
     }
 
-    assignOptions(newOptions) {
+    assignOptions(options) {
 
-      return $.extend({}, this.defaults, newOptions);
+      return $.extend({}, this.defaults, options);
     }
 
     setData() {
@@ -76,6 +80,18 @@
 
       this.$input.on('keyup', e => {
 
+        if (e.which === enterCharCode) {
+          if (!this.options.data.includes(this.$input.val())) {
+            this.options.data.push(this.$input.val());
+          }
+          this.$autocompleteWrap.find('.selected').trigger('click');
+          this.$autocompleteWrap.empty();
+          this.inputBlur();
+          count = -1;
+          nextScrollHeight = -45;
+          return count;
+        }
+
         const $inputValue = this.$input.val();
 
         this.$autocompleteWrap.empty();
@@ -91,23 +107,58 @@
               this.$autocompleteWrap.append(option);
             }
           }
-        }
 
-        if (e.which === ENTER_CHAR_CODE) {
+          const $ulList = this.$autocompleteWrap;
+          const $ulItems = this.$autocompleteWrap.find('li');
+          const nextItemHeight = $ulItems.eq(count).outerHeight();
+          const previousItemHeight = $ulItems.eq(count - 1).outerHeight();
 
-          this.$autocompleteWrap.children(':first').trigger('click');
-          this.$autocompleteWrap.empty();
-        }
+          if (e.which === arrowDownCharCode) {
+            if (count > $ulItems.length - 2) {
 
-        if ($inputValue.length === 0) {
+              count = -1;
+              $ulItems.scrollTop(0);
+              nextScrollHeight = -45;
 
-          this.$input.parent().find('.mdb-autocomplete-clear').css('visibility', 'hidden');
+              return
+            } else {
+
+              count++;
+
+            }
+
+            nextScrollHeight += nextItemHeight;
+            $ulList.scrollTop(nextScrollHeight);
+            $ulItems.eq(count).addClass('selected');
+
+          } else if (e.which === arrowUpCharCode) {
+
+            if (count < 1) {
+              count = $ulItems.length;
+              $ulList.scrollTop($ulList.prop('scrollHeight'));
+              nextScrollHeight = $ulList.prop('scrollHeight') - nextItemHeight;
+            } else {
+
+              count--;
+
+            }
+            nextScrollHeight -= previousItemHeight;
+            $ulList.scrollTop(nextScrollHeight);
+            $ulItems.eq(count).addClass('selected');
+
+          }
+          if ($inputValue.length === 0) {
+
+            this.$clearButton.css('visibility', 'hidden');
+          } else {
+
+            this.$clearButton.css('visibility', 'visible');
+          }
+
+          this.$autocompleteWrap.children().css('color', this.options.dataColor);
         } else {
-
-          this.$input.parent().find('.mdb-autocomplete-clear').css('visibility', 'visible');
+          this.$clearButton.css('visibility', 'hidden');
         }
-
-        this.$autocompleteWrap.children().css('color', this.options.dataColor);
       });
     }
 
@@ -126,9 +177,12 @@
 
       this.$clearButton.on('click', e => {
 
+        count = -1;
+        nextScrollHeight = -45;
+
         e.preventDefault();
 
-        let $this = $(e.currentTarget);
+        const $this = $(e.currentTarget);
 
         $this.parent().find('.mdb-autocomplete').val('');
         $this.css('visibility', 'hidden');
@@ -144,13 +198,13 @@
         this.$input.on('click keyup', e => {
 
           e.preventDefault();
-          $(e.target).parent().find('.mdb-autocomplete-clear').find('svg').css('fill', xColor);
+          $(e.target).parent().find('.mdb-autocomplete-clear').find('svg').css('fill', this.options.closeColor);
         });
 
         this.$input.on('blur', e => {
 
           e.preventDefault();
-          $(e.target).parent().find('.mdb-autocomplete-clear').find('svg').css('fill', xBlurColor);
+          $(e.target).parent().find('.mdb-autocomplete-clear').find('svg').css('fill', this.options.closeBlurColor);
         });
       }
     }
@@ -161,8 +215,5 @@
       new mdbAutocomplete($(this), options);
     });
   };
-
-  //deprecated, delete soon
-  $.fn.mdb_autocomplete = $.fn.mdbAutocomplete;
 
 })(jQuery);
