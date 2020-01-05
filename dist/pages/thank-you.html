@@ -17,7 +17,12 @@
   <meta property="og:url" content="https://cbcf.info/contact">
 
   @@include('./head.html')
-
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script nonce="krQ7HBvcmbsdIEXH6OlB">
+    function onSubmit(token) {
+      document.getElementById("contact-form").submit();
+    }
+  </script>
 </head>
 
 <body>
@@ -86,7 +91,7 @@
                       value="https://cbcf.info/thank-you"
                     />
                     <div class="text-center">
-                      <button class="btn cbcf-primary" type="submit">Send <i class="fas fa-paper-plane ml-1" aria-hidden="true"></i></button>
+                      <button class="btn cbcf-primary g-recaptcha" data-sitekey="6LesA0sUAAAAAIsWzgR7e7nMOzBPSM0BjLzpJXg0" data-callback='onSubmit' type="submit">Send <i class="fas fa-paper-plane ml-1" aria-hidden="true"></i></button>
                     </div>
                   </form>
                   <br>
