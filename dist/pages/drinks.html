@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Properties to update per page -->
+  <title>Drink Lists | Chelmsford Beer &amp; Cider Festivals</title>
+  <meta property="og:title" content="Drink Lists | Chelmsford Beer & Cider Festivals">
+  <link rel="canonical" href="https://cbcf.info/drinks" />
+  <meta property="og:url" content="https://cbcf.info/drinks">
+
+  @@include('./head.html')
+
+  <!-- Datatables CSS -->
+  <link href="./css/drinks.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.4/b-flash-1.5.4/b-html5-1.5.4/b-print-1.5.4/r-2.2.2/datatables.min.css" integrity="sha256-uNanyshKNZLkr+GYQRJ92ztcgmxMZOx6i4ZhfMLg3OQ=" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    @@include('./menu.html')
+  </header>
+
+  <!--Intro Section-->
+  <br class="my-3"></br>
+  <br class="my-3"></br>
+  <h1 class="h1 centre"><i class="fal fa-beer" aria-hidden="true"></i>&nbsp;Drink Lists</h1>
+
+
+  <div class="container">
+    <br>
+    <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="btn cbcf-primary btn-block active" id="beer-list-button" data-toggle="pill" href="#beer-list" role="tab" aria-controls="beer-list" aria-selected="true">Beer</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn cbcf-primary btn-block" id="cider-list-button" data-toggle="pill" href="#cider-list" role="tab" aria-controls="cider-list" aria-selected="false">Cider</a>
+      </li>
+    </ul>
+    <br>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="beer-list" role="tabpanel" aria-labelledby="beer-list-button">
+        <div class="card primary-color-dark text-center">
+          <div class="card-body">
+            <p class="white-text mb-0"><strong>This list is not complete and is subject to change</strong></p>
+          </div>
+        </div>
+        <!-- <br class="my-5">
+        <center>
+          <a href="#" class="btn cbcf-secondary beer-all">All</a>
+          <a href="#" class="btn cbcf-secondary beer">Amber</a>
+          <a href="#" class="btn cbcf-secondary beer">Barley</a>
+          <a href="#" class="btn cbcf-secondary beer">Bitter</a>
+          <a href="#" class="btn cbcf-secondary beer">Dark</a>
+          <a href="#" class="btn cbcf-secondary beer">Fruit/Spice</a>
+          <a href="#" class="btn cbcf-secondary beer">Golden</a>
+          <a href="#" class="btn cbcf-secondary beer">IPA</a>
+          <a href="#" class="btn cbcf-secondary beer">Lager</a>
+          <a href="#" class="btn cbcf-secondary beer">Mild</a>
+          <a href="#" class="btn cbcf-secondary beer">Pale</a>
+          <a href="#" class="btn cbcf-secondary beer">Porter</a>
+          <a href="#" class="btn cbcf-secondary beer">Rye</a>
+          <a href="#" class="btn cbcf-secondary beer">Stout</a>
+        </center> -->
+        <br class="my-5">
+        <table id="table-beer" class="display table table-striped table-bordered" style="width:100%" data-order='[ [1, "asc"], [0, "asc"] ]' data-page-length='20'>
+          <thead>
+            <tr>
+              <td><strong>Drink Name</strong></td>
+              <td><strong>Brewery</strong></td>
+              <td><strong>ABV (%)</strong></td>
+              <td><strong>Tasting Notes</strong></td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tab-pane fade" id="cider-list" role="tabpanel" aria-labelledby="cider-list-button">
+        <div class="card primary-color-dark text-center">
+          <div class="card-body">
+            <p class="white-text mb-0"><strong>This list is not complete and is subject to change</strong></p>
+          </div>
+        </div>
+        <!-- <center>
+          <a href="#" class="btn cbcf-secondary cider-all">All</a>
+          <a href="#" class="btn cbcf-secondary cider">Cider</a>
+          <a href="#" class="btn cbcf-secondary cider">Perry</a>
+          <a href="#" class="btn cbcf-secondary cider">Pyder</a>
+        </center> -->
+        <br class="my-5">
+        <table id="table-cider" class="display table table-striped table-bordered" style="width:100%" data-order='[[1, "asc"], [0, "asc"]]' data-page-length='20'>
+          <thead>
+            <tr>
+              <td><strong>Drink Name</strong></td>
+              <td><strong>Producer</strong></td>
+              <td><strong>Location</strong></td>
+              <td><strong>ABV (%)</strong></td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+    <div class="my-5"></div>
+    <div class="card primary-color-dark text-center z-depth-2">
+      <div class="card-body">
+        <p class="white-text mb-0"><strong>Drink lists provided are subject to change without notice.</strong>
+          <br><br>
+          <i>Beer list was last updated on Sunday 15th February</i><br>
+          <i>Cider list was last updated on Friday 31st January</i>
+        </p>
+      </div>
+    </div>
+    <div class="my-5"></div>
+  </div>
+
+  <!--Footer-->
+  @@include('./footer.html')
+  <!--/.Footer-->
+
+  <!--Scripts-->
+  @@include('./scripts.html')
+  <!--/.Scripts-->
+
+  <!-- Datatables JS -->
+  <script src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.4/b-flash-1.5.4/b-html5-1.5.4/b-print-1.5.4/r-2.2.2/datatables.min.js" integrity="sha256-gzZc/K0ltlJyP1I1J9lcEXo8SjJxEgzYXq+sIPI82t0=" crossorigin="anonymous"></script>
+
+  <!-- Datatables Config -->
+  <script nonce="fUoyKEcubmAsaFdqLVFIZQ==">
+    $(document).ready(function() {
+      var table1 = $('#table-beer').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+          'excel',
+          'print'
+        ],
+        responsive: true,
+        stateSave: false,
+        "ajax": {
+          "url": "./listings/beer.json",
+          "dataSrc": ""
+        },
+        "columnDefs": [{
+            "type": "html",
+            "targets": 0
+          },
+          {
+            "type": "html",
+            "targets": 1
+          },
+          {
+            "type": "html-num",
+            "targets": 2
+          },
+          {
+            "type": "html",
+            "targets": 3
+          }
+        ],
+        "columns": [{
+            "data": "Drink Name"
+          },
+          {
+            "data": "Brewery"
+          },
+          {
+            "data": "ABV"
+          },
+          {
+            "data": "Tasting Notes"
+          }
+        ],
+      });
+      var table2 = $('#table-cider').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+          'excel',
+          'print'
+        ],
+        responsive: true,
+        stateSave: false,
+        "ajax": {
+          "url": "./listings/cider.json",
+          "dataSrc": ""
+        },
+        "columnDefs": [{
+            "type": "html",
+            "targets": 0
+          },
+          {
+            "type": "html",
+            "targets": 1
+          },
+          {
+            "type": "html",
+            "targets": 2
+          },
+          {
+            "type": "html-num",
+            "targets": 3
+          }
+        ],
+        "columns": [{
+            "data": "Name"
+          },
+          {
+            "data": "Producer"
+          },
+          {
+            "data": "Location"
+          },
+          {
+            "data": "ABV"
+          }
+        ]
+      });
+      // //Table 1 - Beer
+      // $('center').on('click', 'a.beer', function() {
+      //   table1
+      //     .columns(2)
+      //     .search($(this).text())
+      //     .draw();
+      // });
+      // $('center').on('click', 'a.beer-all', function() {
+      //   table1
+      //     .search('')
+      //     .columns(2)
+      //     .search('')
+      //     .draw();
+      // });
+      // //Table 2 - Cider
+      // $('center').on('click', 'a.cider', function() {
+      //   table2
+      //     .columns(3)
+      //     .search($(this).text())
+      //     .draw();
+      // });
+      // $('center').on('click', 'a.cider-all', function() {
+      //   table2
+      //     .search('')
+      //     .columns(3)
+      //     .search('')
+      //     .draw();
+      // });
+    });
+  </script>
+
+</body>
+
+</html>
