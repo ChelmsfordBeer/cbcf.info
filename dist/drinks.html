@@ -174,11 +174,6 @@
     <br>
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade show active" id="beer-list" role="tabpanel" aria-labelledby="beer-list-button">
-        <div class="card primary-color-dark text-center">
-          <div class="card-body">
-            <p class="white-text mb-0"><strong>This list is not complete and is subject to change</strong></p>
-          </div>
-        </div>
         <!-- <br class="my-5">
         <center>
           <a href="#" class="btn cbcf-secondary beer-all">All</a>
@@ -202,18 +197,13 @@
             <tr>
               <td><strong>Drink Name</strong></td>
               <td><strong>Brewery</strong></td>
+              <td><strong>Style</strong></td>
               <td><strong>ABV (%)</strong></td>
-              <td><strong>Tasting Notes</strong></td>
             </tr>
           </thead>
         </table>
       </div>
       <div class="tab-pane fade" id="cider-list" role="tabpanel" aria-labelledby="cider-list-button">
-        <div class="card primary-color-dark text-center">
-          <div class="card-body">
-            <p class="white-text mb-0"><strong>This list is not complete and is subject to change</strong></p>
-          </div>
-        </div>
         <!-- <center>
           <a href="#" class="btn cbcf-secondary cider-all">All</a>
           <a href="#" class="btn cbcf-secondary cider">Cider</a>
@@ -238,8 +228,8 @@
       <div class="card-body">
         <p class="white-text mb-0"><strong>Drink lists provided are subject to change without notice.</strong>
           <br><br>
-          <i>Beer list was last updated on Sunday 15th February</i><br>
-          <i>Cider list was last updated on Friday 31st January</i>
+          <i>Beer list was last updated on Tuesday 18th February</i><br>
+          <i>Cider list was last updated on Tuesday 18th February</i>
         </p>
       </div>
     </div>
@@ -348,25 +338,25 @@
             "targets": 1
           },
           {
-            "type": "html-num",
+            "type": "html",
             "targets": 2
           },
           {
-            "type": "html",
+            "type": "html-num",
             "targets": 3
           }
         ],
         "columns": [{
-            "data": "Drink Name"
+            "data": "Beer"
           },
           {
             "data": "Brewery"
           },
           {
-            "data": "ABV"
+            "data": "Style"
           },
           {
-            "data": "Tasting Notes"
+            "data": "ABV"
           }
         ],
       });
