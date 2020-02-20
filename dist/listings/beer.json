@@ -1,860 +1,860 @@
 [
     {
-        "Brewery": "1 Mile End Brewery",
-        "Beer": "Salvation Pale Ale",
-        "ABV": "4.4",
-        "Style": "Golden"
+      "Brewery": "1 Mile End Brewery",
+      "Beer": "Salvation Pale Ale",
+      "ABV": 4.4,
+      "Style": "Golden"
     },
     {
-        "Brewery": "1 Mile End Brewery",
-        "Beer": "Passion Pale Ale",
-        "ABV": "4.5",
-        "Style": "Golden"
+      "Brewery": "1 Mile End Brewery",
+      "Beer": "Passion Pale Ale",
+      "ABV": 4.5,
+      "Style": "Golden"
     },
     {
-        "Brewery": "1 Mile End Brewery",
-        "Beer": "Alphonso Mango Pale Ale",
-        "ABV": "5.0",
-        "Style": "Golden"
+      "Brewery": "1 Mile End Brewery",
+      "Beer": "Alphonso Mango Pale Ale ",
+      "ABV": 5,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Adnams",
-        "Beer": "Lighthouse",
-        "ABV": "3.5",
-        "Style": "Golden"
+      "Brewery": "Adnams",
+      "Beer": "Lighthouse",
+      "ABV": 3.5,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Adnams",
-        "Beer": "Old Ale",
-        "ABV": "4.1",
-        "Style": "Dark"
+      "Brewery": "Adnams",
+      "Beer": "Old Ale",
+      "ABV": 4.1,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Batemans",
-        "Beer": "Dark Fruits Porter",
-        "ABV": "4.4",
-        "Style": "Dark"
+      "Brewery": "Batemans",
+      "Beer": "Dark Fruits Porter",
+      "ABV": 4.4,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Beatnikz Republic",
-        "Beer": "I Smash Azacca",
-        "ABV": "5.0",
-        "Style": "Bitter"
+      "Brewery": "Beatnikz Republic",
+      "Beer": "I Smash Azacca",
+      "ABV": 5,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Beatnikz Republic",
-        "Beer": "Crimson Flare",
-        "ABV": "5.0",
-        "Style": "Golden"
+      "Brewery": "Beatnikz Republic",
+      "Beer": "Crimson Flare",
+      "ABV": 5,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Billericay",
-        "Beer": "Blonde",
-        "ABV": "4.0",
-        "Style": "Golden"
+      "Brewery": "Billericay",
+      "Beer": "Blonde",
+      "ABV": 4,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Bishop Nick",
-        "Beer": "Ridleys Rite",
-        "ABV": "3.6",
-        "Style": "Dark"
+      "Brewery": "Bishop Nick",
+      "Beer": "Ridleys Rite",
+      "ABV": 3.6,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Bishop Nick",
-        "Beer": "Heresy",
-        "ABV": "4.0",
-        "Style": "Golden"
+      "Brewery": "Bishop Nick",
+      "Beer": "Heresy",
+      "ABV": 4,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Bishop Nick",
-        "Beer": "Devout",
-        "ABV": "4.5",
-        "Style": "Bitter"
+      "Brewery": "Bishop Nick",
+      "Beer": "Devout",
+      "ABV": 4.5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Black Sheep",
-        "Beer": "Riggwelter",
-        "ABV": "5.9",
-        "Style": "Dark"
+      "Brewery": "Black Sheep",
+      "Beer": "Riggwelter",
+      "ABV": 5.9,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Black Sheep",
-        "Beer": "Russian Imperial Stout",
-        "ABV": "8.5",
-        "Style": "Dark"
+      "Brewery": "Black Sheep",
+      "Beer": "Russian Imperial Stout",
+      "ABV": 8.5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Black Sheep",
-        "Beer": "Reaper",
-        "ABV": "4.5",
-        "Style": "Bitter"
+      "Brewery": "Black Sheep",
+      "Beer": "Reaper",
+      "ABV": 4.5,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Brains",
-        "Beer": "Brains Rev James Gold",
-        "ABV": "4.1",
-        "Style": "Golden"
+      "Brewery": "Brains",
+      "Beer": "Brains Rev James Gold",
+      "ABV": 4.1,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Brentwood",
-        "Beer": "Clockwork Orange",
-        "ABV": "6.5",
-        "Style": "Dark"
+      "Brewery": "Brentwood",
+      "Beer": "Clockwork Orange",
+      "ABV": 6.5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Burning Sky",
-        "Beer": "Plateau",
-        "ABV": "3.6",
-        "Style": "Golden"
+      "Brewery": "Burning Sky",
+      "Beer": "Plateau",
+      "ABV": 3.6,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Chelmsford",
-        "Beer": "Blueshack Pale",
-        "ABV": "3.8",
-        "Style": "Golden"
+      "Brewery": "Chelmsford",
+      "Beer": "Blueshack Pale",
+      "ABV": 3.8,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Chelmsford",
-        "Beer": "Port Jackson",
-        "ABV": "4.0",
-        "Style": "Dark"
+      "Brewery": "Chelmsford",
+      "Beer": "Port Jackson",
+      "ABV": 4,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Chelmsford",
-        "Beer": "Radio Wave",
-        "ABV": "4.2",
-        "Style": "Dark"
+      "Brewery": "Chelmsford",
+      "Beer": "Radio Wave",
+      "ABV": 4.2,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Chelmsford",
-        "Beer": "Luxury Porter",
-        "ABV": "4.6",
-        "Style": "Dark"
+      "Brewery": "Chelmsford",
+      "Beer": "Luxury Porter",
+      "ABV": 4.6,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Colchester",
-        "Beer": "Snake Charmer",
-        "ABV": "3.6",
-        "Style": "Dark"
+      "Brewery": "Colchester",
+      "Beer": "Snake Charmer",
+      "ABV": 3.6,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Colchester",
-        "Beer": "Jester",
-        "ABV": "4.5",
-        "Style": "Golden"
+      "Brewery": "Colchester",
+      "Beer": "Jester",
+      "ABV": 4.5,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Colchester",
-        "Beer": "Cats Whiskers",
-        "ABV": "4.8",
-        "Style": "Dark"
+      "Brewery": "Colchester",
+      "Beer": "Cats Whiskers",
+      "ABV": 4.8,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Crate",
-        "Beer": "Golden",
-        "ABV": "3.8",
-        "Style": "Golden"
+      "Brewery": "Crate",
+      "Beer": "Golden",
+      "ABV": 3.8,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Crouch Vale",
-        "Beer": "Blackwater Mild",
-        "ABV": "3.7",
-        "Style": "Dark"
+      "Brewery": "Crouch Vale",
+      "Beer": "Blackwater Mild",
+      "ABV": 3.7,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Crouch Vale",
-        "Beer": "G I Joe",
-        "ABV": "3.8",
-        "Style": "Golden"
+      "Brewery": "Crouch Vale",
+      "Beer": "G I Joe",
+      "ABV": 3.8,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Crouch Vale",
-        "Beer": "Brewers Gold",
-        "ABV": "4.0",
-        "Style": "Golden"
+      "Brewery": "Crouch Vale",
+      "Beer": "Brewers Gold",
+      "ABV": 4,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Crouch Vale",
-        "Beer": "Yakima Gold",
-        "ABV": "4.2",
-        "Style": "Golden"
+      "Brewery": "Crouch Vale",
+      "Beer": "Yakima Gold",
+      "ABV": 4.2,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Dark Star",
-        "Beer": "Hophead",
-        "ABV": "3.8",
-        "Style": "Golden"
+      "Brewery": "Dark Star",
+      "Beer": "Hophead",
+      "ABV": 3.8,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Dark Star",
-        "Beer": "Partidge",
-        "ABV": "4.0",
-        "Style": "Bitter"
+      "Brewery": "Dark Star",
+      "Beer": "Partidge",
+      "ABV": 4,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Dark Star",
-        "Beer": "Revelation",
-        "ABV": "5.7",
-        "Style": "Golden"
+      "Brewery": "Dark Star",
+      "Beer": "Revelation",
+      "ABV": 5.7,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Dartmoor",
-        "Beer": "Dragons Breath",
-        "ABV": "4.4",
-        "Style": "Dark"
+      "Brewery": "Dartmoor",
+      "Beer": "Dragons Breath",
+      "ABV": 4.4,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Dartmoor",
-        "Beer": "Legend",
-        "ABV": "4.4",
-        "Style": "Bitter"
+      "Brewery": "Dartmoor",
+      "Beer": "Legend",
+      "ABV": 4.4,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Dartmoor",
-        "Beer": "Jail",
-        "ABV": "4.8",
-        "Style": "Bitter"
+      "Brewery": "Dartmoor",
+      "Beer": "Jail",
+      "ABV": 4.8,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Downloads",
-        "Beer": "Best Bitter",
-        "ABV": "4.1",
-        "Style": "Bitter"
+      "Brewery": "Downlands",
+      "Beer": "Best Bitter",
+      "ABV": 4.1,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Downloads",
-        "Beer": "Brunch",
-        "ABV": "4.5",
-        "Style": "Dark"
+      "Brewery": "Downlands",
+      "Beer": "Brunch",
+      "ABV": 4.5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Downloads",
-        "Beer": "Muntjac",
-        "ABV": "5.8",
-        "Style": "Dark"
+      "Brewery": "Downlands",
+      "Beer": "Muntjac",
+      "ABV": 5.8,
+      "Style": "Dark"
     },
     {
-        "Brewery": "East London Brewery",
-        "Beer": "Orchid Vanilla Mid",
-        "ABV": "3.6",
-        "Style": "Dark"
+      "Brewery": "East London Brewery",
+      "Beer": "Orchid Vanilla Mild",
+      "ABV": 3.6,
+      "Style": "Dark"
     },
     {
-        "Brewery": "East London Brewery",
-        "Beer": "Elb Pale Ale",
-        "ABV": "4.0",
-        "Style": "Dark"
+      "Brewery": "East London Brewery",
+      "Beer": "Pale Ale",
+      "ABV": 4,
+      "Style": "Golden"
     },
     {
-        "Brewery": "East London Brewery",
-        "Beer": "Peacock",
-        "ABV": "4.2",
-        "Style": "Golden"
+      "Brewery": "East London Brewery",
+      "Beer": "Peacock",
+      "ABV": 4.2,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Elephant School",
-        "Beer": "Aussie Blond",
-        "ABV": "4.0",
-        "Style": "Golden"
+      "Brewery": "Elephant School",
+      "Beer": "Aussie Blond",
+      "ABV": 4,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Exmoor",
-        "Beer": "Wicked Wolf",
-        "ABV": "4.2",
-        "Style": "Dark"
+      "Brewery": "Exmoor",
+      "Beer": "Wicked Wolf",
+      "ABV": 4.2,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Exmoor",
-        "Beer": "Beast",
-        "ABV": "6.8",
-        "Style": "Dark"
+      "Brewery": "Exmoor",
+      "Beer": "Beast",
+      "ABV": 6.8,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Fullers",
-        "Beer": "HSB",
-        "ABV": "4.8",
-        "Style": "Bitter"
+      "Brewery": "Fullers",
+      "Beer": "HSB",
+      "ABV": 4.8,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Fullers",
-        "Beer": "ESB",
-        "ABV": "5.9",
-        "Style": "Bitter"
+      "Brewery": "Fullers",
+      "Beer": "ESB",
+      "ABV": 5.9,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Grain",
-        "Beer": "Redwood",
-        "ABV": "4.2",
-        "Style": "Bitter"
+      "Brewery": "Grain",
+      "Beer": "Redwood",
+      "ABV": 4.2,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Grain",
-        "Beer": "Best Bitter",
-        "ABV": "4.2",
-        "Style": "Bitter"
+      "Brewery": "Grain",
+      "Beer": "Best Bitter",
+      "ABV": 4.2,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Grain",
-        "Beer": "Slate",
-        "ABV": "6.0",
-        "Style": "Dark"
+      "Brewery": "Grain",
+      "Beer": "Slate",
+      "ABV": 6,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Green Jack",
-        "Beer": "Orange Wheat Beer",
-        "ABV": "4.2",
-        "Style": "Dark"
+      "Brewery": "Green Jack",
+      "Beer": "Orange Wheat Beer",
+      "ABV": 4.2,
+      "Style": "Speciality"
     },
     {
-        "Brewery": "Green Jack",
-        "Beer": "Lurcher Stout",
-        "ABV": "4.8",
-        "Style": "Dark"
+      "Brewery": "Green Jack",
+      "Beer": "Lurcher Stout",
+      "ABV": 4.8,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Harveys",
-        "Beer": "Dark Mild",
-        "ABV": "3.0",
-        "Style": "Dark"
+      "Brewery": "Harveys",
+      "Beer": "Dark Mild",
+      "ABV": 3,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Harveys",
-        "Beer": "Best Bitter",
-        "ABV": "4.0",
-        "Style": "Bitter"
+      "Brewery": "Harveys",
+      "Beer": "Best Bitter",
+      "ABV": 4,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Harveys",
-        "Beer": "Old",
-        "ABV": "4.3",
-        "Style": "Dark"
+      "Brewery": "Harveys",
+      "Beer": "Old",
+      "ABV": 4.3,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Harveys",
-        "Beer": "Prince Of Denmark",
-        "ABV": "7.5",
-        "Style": "Dark"
+      "Brewery": "Harveys",
+      "Beer": "Prince Of Denmark",
+      "ABV": 7.5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Harvistoun",
-        "Beer": "Bitter&Twisted",
-        "ABV": "3.8",
-        "Style": "Golden"
+      "Brewery": "Harvistoun",
+      "Beer": "Bitter&Twisted",
+      "ABV": 3.8,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Harvistoun",
-        "Beer": "Haggis Hunter",
-        "ABV": "4.3",
-        "Style": "Bitter"
+      "Brewery": "Harvistoun",
+      "Beer": "Haggis Hunter",
+      "ABV": 4.3,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Harvistoun",
-        "Beer": "Old Engine Old",
-        "ABV": "6.0",
-        "Style": "Dark"
+      "Brewery": "Harvistoun",
+      "Beer": "Old Engine Oil",
+      "ABV": 4.5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Hop Back Brewery",
-        "Beer": "Taiphoon",
-        "ABV": "4.2",
-        "Style": "Golden"
+      "Brewery": "Hop Back Brewery",
+      "Beer": "Taiphoon",
+      "ABV": 4.2,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Hop Back Brewery",
-        "Beer": "Entire Stout",
-        "ABV": "4.5",
-        "Style": "Dark"
+      "Brewery": "Hop Back Brewery",
+      "Beer": "Entire Stout",
+      "ABV": 4.5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Hop Back Brewery",
-        "Beer": "Winter Lightining",
-        "ABV": "5.5",
-        "Style": "Golden"
+      "Brewery": "Hop Back Brewery",
+      "Beer": "Winter Lightining",
+      "ABV": 5.5,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Howling Hops",
-        "Beer": "Tropical Deluxe Pale Ale",
-        "ABV": "3.8",
-        "Style": "Golden"
+      "Brewery": "Howling Hops",
+      "Beer": "Tropical Deluxe Pale Ale",
+      "ABV": 3.8,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Howling Hops",
-        "Beer": "New Old London",
-        "ABV": "4.8",
-        "Style": "Dark"
+      "Brewery": "Howling Hops",
+      "Beer": "New Old London",
+      "ABV": 4.8,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Howling Hops",
-        "Beer": "Pale Xx ",
-        "ABV": "5.1",
-        "Style": "Golden"
+      "Brewery": "Howling Hops",
+      "Beer": "Pale Xx ",
+      "ABV": 5.1,
+      "Style": "Golden"
     },
     {
-        "Brewery": "JW Lees",
-        "Beer": "Dark",
-        "ABV": "3.5",
-        "Style": "Dark"
+      "Brewery": "JW Lees",
+      "Beer": "Dark",
+      "ABV": 3.5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "JW Lees",
-        "Beer": "Vanilla Stout",
-        "ABV": "4.1",
-        "Style": "Dark"
+      "Brewery": "JW Lees",
+      "Beer": "Vanilla Stout",
+      "ABV": 4.1,
+      "Style": "Golden"
     },
     {
-        "Brewery": "JW Lees",
-        "Beer": "Stout",
-        "ABV": "4.2",
-        "Style": "Dark"
+      "Brewery": "JW Lees",
+      "Beer": "Stout",
+      "ABV": 4.2,
+      "Style": "Dark"
     },
     {
-        "Brewery": "JW Lees",
-        "Beer": "Moonraker Strong Ale",
-        "ABV": "6.5",
-        "Style": "Bitter"
+      "Brewery": "JW Lees",
+      "Beer": "Moonraker Strong Ale",
+      "ABV": 6.5,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Kent",
-        "Beer": "Breakfast Oatmeal Stout ",
-        "ABV": "4.2",
-        "Style": "Dark"
+      "Brewery": "Kent",
+      "Beer": "Breakfast Oatmeal Stout ",
+      "ABV": 4.2,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Kent",
-        "Beer": "The New Black",
-        "ABV": "4.8",
-        "Style": "Dark"
+      "Brewery": "Kent",
+      "Beer": "The New Black",
+      "ABV": 4.8,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Kent",
-        "Beer": "Bounty Hunter",
-        "ABV": "5.5",
-        "Style": "Dark"
+      "Brewery": "Kent",
+      "Beer": "Bounty Hunter",
+      "ABV": 5.5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Leigh On Sea",
-        "Beer": "Legra",
-        "ABV": "3.8",
-        "Style": "Golden"
+      "Brewery": "Leigh On Sea",
+      "Beer": "Legra",
+      "ABV": 3.8,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Leigh On Sea",
-        "Beer": "Kursal Gold",
-        "ABV": "3.9",
-        "Style": "Golden"
+      "Brewery": "Leigh On Sea",
+      "Beer": "Kursal Gold",
+      "ABV": 3.9,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Leigh On Sea",
-        "Beer": "Mcfaddens",
-        "ABV": "3.9",
-        "Style": "Dark"
+      "Brewery": "Leigh On Sea",
+      "Beer": "Mcfaddens",
+      "ABV": 3.9,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Maldon",
-        "Beer": "Hotel Porter",
-        "ABV": "4.1",
-        "Style": "Dark"
+      "Brewery": "Maldon",
+      "Beer": "Hotel Porter",
+      "ABV": 4.1,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Maldon",
-        "Beer": "Pucks Folly",
-        "ABV": "4.2",
-        "Style": "Golden"
+      "Brewery": "Maldon",
+      "Beer": "Pucks Folly",
+      "ABV": 4.2,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Maldon",
-        "Beer": "Blank Planet",
-        "ABV": "4.4",
-        "Style": "Golden"
+      "Brewery": "Maldon",
+      "Beer": "Blank Planet",
+      "ABV": 4.4,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Mauldons",
-        "Beer": "Micawbers Mild",
-        "ABV": "3.5",
-        "Style": "Dark"
+      "Brewery": "Mauldons",
+      "Beer": "Micawbers Mild",
+      "ABV": 3.5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Mauldons",
-        "Beer": "Blackberry Porter ",
-        "ABV": "4.8",
-        "Style": "Dark"
+      "Brewery": "Mauldons",
+      "Beer": "Blackberry Porter ",
+      "ABV": 4.8,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Mauldons",
-        "Beer": "Black Adder",
-        "ABV": "5.3",
-        "Style": "Dark"
+      "Brewery": "Mauldons",
+      "Beer": "Black Adder",
+      "ABV": 5.3,
+      "Style": "Dark"
     },
     {
-        "Brewery": "MCR Brewery",
-        "Beer": "Dewildebeest",
-        "ABV": "3.8",
-        "Style": "Dark"
+      "Brewery": "MCR Brewery",
+      "Beer": "Dewildebeest",
+      "ABV": 3.8,
+      "Style": "Golden"
     },
     {
-        "Brewery": "MCR Brewery",
-        "Beer": "Bills Mother",
-        "ABV": "5.0",
-        "Style": "Dark"
+      "Brewery": "MCR Brewery",
+      "Beer": "Bills Mother",
+      "ABV": 5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "MCR Brewery",
-        "Beer": "Smash",
-        "ABV": "5.0",
-        "Style": "Golden"
+      "Brewery": "MCR Brewery",
+      "Beer": "Smash",
+      "ABV": 5,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Mighty Oak",
-        "Beer": "Oscar Wild",
-        "ABV": "3.7",
-        "Style": "Dark"
+      "Brewery": "Mighty Oak",
+      "Beer": "Oscar Wild",
+      "ABV": 3.7,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Mighty Oak",
-        "Beer": "Jake The Snake",
-        "ABV": "4.0",
-        "Style": "Golden"
+      "Brewery": "Mighty Oak",
+      "Beer": "Jake The Snake",
+      "ABV": 4,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Mighty Oak",
-        "Beer": "Faye Wray",
-        "ABV": "4.1",
-        "Style": "Golden"
+      "Brewery": "Mighty Oak",
+      "Beer": "Faye Wray",
+      "ABV": 4.1,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Mighty Oak",
-        "Beer": "Old Man And The Sea",
-        "ABV": "4.1",
-        "Style": "Bitter"
+      "Brewery": "Mighty Oak",
+      "Beer": "Old Man And The Sea",
+      "ABV": 4.1,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Muirhoise",
-        "Beer": "Baltic Black",
-        "ABV": "4.3",
-        "Style": "Dark"
+      "Brewery": "Muirhoise",
+      "Beer": "Baltic Black",
+      "ABV": 4.3,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Neene Valley",
-        "Beer": "Egyptian Cream",
-        "ABV": "4.5",
-        "Style": "Dark"
+      "Brewery": "Neene Valley",
+      "Beer": "Egyptian Cream",
+      "ABV": 4.5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Neene Valley",
-        "Beer": "Bible Black",
-        "ABV": "6.5",
-        "Style": "Dark"
+      "Brewery": "Neene Valley",
+      "Beer": "Bible Black",
+      "ABV": 6.5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Nethergate",
-        "Beer": "Wild Fox",
-        "ABV": "4.3",
-        "Style": "Golden"
+      "Brewery": "Nethergate",
+      "Beer": "Wild Fox",
+      "ABV": 4.3,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Nethergate",
-        "Beer": "Umbel Magna",
-        "ABV": "5.0",
-        "Style": "Speciality"
+      "Brewery": "Nethergate",
+      "Beer": "Umbel Magna",
+      "ABV": 5,
+      "Style": "Speciality"
     },
     {
-        "Brewery": "Nethergate",
-        "Beer": "Old Growler",
-        "ABV": "5.0",
-        "Style": "Dark"
+      "Brewery": "Nethergate",
+      "Beer": "Old Growler",
+      "ABV": 5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "North Yorks",
-        "Beer": "Yorkshire Porter",
-        "ABV": "4.4",
-        "Style": "Dark"
+      "Brewery": "North Yorks",
+      "Beer": "Yorkshire Porter",
+      "ABV": 4.4,
+      "Style": "Dark"
     },
     {
-        "Brewery": "North Yorks",
-        "Beer": "Nypa",
-        "ABV": "4.6",
-        "Style": "Golden"
+      "Brewery": "North Yorks",
+      "Beer": "Nypa",
+      "ABV": 4.6,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Oakham",
-        "Beer": "Citra",
-        "ABV": "4.2",
-        "Style": "Golden"
+      "Brewery": "Oakham",
+      "Beer": "Citra",
+      "ABV": 4.2,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Oakham",
-        "Beer": "Black Hole Porter",
-        "ABV": "5.5",
-        "Style": "Dark"
+      "Brewery": "Oakham",
+      "Beer": "Black Hole Porter",
+      "ABV": 5.5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Oakham",
-        "Beer": "Hawse Buckler",
-        "ABV": "5.6",
-        "Style": "Dark"
+      "Brewery": "Oakham",
+      "Beer": "Hawse Buckler",
+      "ABV": 5.6,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Pin Up",
-        "Beer": "Session IPA",
-        "ABV": "4.1",
-        "Style": "Golden"
+      "Brewery": "Pin Up",
+      "Beer": "Session IPA",
+      "ABV": 4.1,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Pin Up",
-        "Beer": "Gold Rush",
-        "ABV": "4.2",
-        "Style": "Golden"
+      "Brewery": "Pin Up",
+      "Beer": "Gold Rush",
+      "ABV": 4.2,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Redemption",
-        "Beer": "Urban Dusk",
-        "ABV": "4.6",
-        "Style": "Dark"
+      "Brewery": "Redemption",
+      "Beer": "Urban Dusk",
+      "ABV": 4.6,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Redemption",
-        "Beer": "Fellowship Porter",
-        "ABV": "5.1",
-        "Style": "Dark"
+      "Brewery": "Redemption",
+      "Beer": "Fellowship Porter",
+      "ABV": 5.1,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Redemption",
-        "Beer": "Big Chief IPA",
-        "ABV": "5.5",
-        "Style": "Golden"
+      "Brewery": "Redemption",
+      "Beer": "Big Chief IPA",
+      "ABV": 5.5,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Roosters",
-        "Beer": "Capabaility Brown",
-        "ABV": "4.0",
-        "Style": "Bitter"
+      "Brewery": "Roosters",
+      "Beer": "Capabaility Brown",
+      "ABV": 4,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Roosters",
-        "Beer": "London Thunder",
-        "ABV": "4.2",
-        "Style": "Dark"
+      "Brewery": "Roosters",
+      "Beer": "London Thunder",
+      "ABV": 4.2,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Roosters",
-        "Beer": "Howl",
-        "ABV": "7.2",
-        "Style": "Dark"
+      "Brewery": "Roosters",
+      "Beer": "Howl",
+      "ABV": 7.2,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Skinners",
-        "Beer": "Betty Stoggs",
-        "ABV": "4.0",
-        "Style": "Bitter"
+      "Brewery": "Skinners",
+      "Beer": "Betty Stoggs",
+      "ABV": 4,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Skinners",
-        "Beer": "Hops N Honey",
-        "ABV": "4.0",
-        "Style": "Bitter"
+      "Brewery": "Skinners",
+      "Beer": "Hops N Honey",
+      "ABV": 4,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Skinners",
-        "Beer": "Lushingtons",
-        "ABV": "4.2",
-        "Style": "Golden"
+      "Brewery": "Skinners",
+      "Beer": "Lushingtons",
+      "ABV": 4.2,
+      "Style": "Golden"
     },
     {
-        "Brewery": "St.Austell",
-        "Beer": "Cornish Best",
-        "ABV": "3.5",
-        "Style": "Bitter"
+      "Brewery": "St.Austell",
+      "Beer": "Cornish Best",
+      "ABV": 3.5,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "St.Austell",
-        "Beer": "Bath Ales Lansdown",
-        "ABV": "5.0",
-        "Style": "Golden"
+      "Brewery": "St.Austell",
+      "Beer": "Bath Ales Lansdown",
+      "ABV": 5,
+      "Style": "Golden"
     },
     {
-        "Brewery": "St.Peters",
-        "Beer": "Raven Porter",
-        "ABV": "4.6",
-        "Style": "Dark"
+      "Brewery": "St.Peters",
+      "Beer": "Raven Porter",
+      "ABV": 4.6,
+      "Style": "Dark"
     },
     {
-        "Brewery": "St.Peters",
-        "Beer": "Plum Porter",
-        "ABV": "4.6",
-        "Style": "Dark"
+      "Brewery": "St.Peters",
+      "Beer": "Plum Porter",
+      "ABV": 4.6,
+      "Style": "Dark"
     },
     {
-        "Brewery": "St.Peters",
-        "Beer": "Cream Stout",
-        "ABV": "6.5",
-        "Style": "Dark"
+      "Brewery": "St.Peters",
+      "Beer": "Cream Stout",
+      "ABV": 6.5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Three Castles",
-        "Beer": "Court Jester",
-        "ABV": "4.5",
-        "Style": "Golden"
+      "Brewery": "Three Castles",
+      "Beer": "Court Jester",
+      "ABV": 4.5,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Tiny Rebel",
-        "Beer": "Pango Peach Mango Pale Ale",
-        "ABV": "4.0",
-        "Style": "Golden"
+      "Brewery": "Tiny Rebel",
+      "Beer": "Pango Peach Mango Pale Ale",
+      "ABV": 4,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Tiny Rebel",
-        "Beer": "Cask IPA",
-        "ABV": "4.3",
-        "Style": "Golden"
+      "Brewery": "Tiny Rebel",
+      "Beer": "Cask IPA",
+      "ABV": 4.3,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Tiny Rebel",
-        "Beer": "Feel The Rhythm",
-        "ABV": "4.6",
-        "Style": "Golden"
+      "Brewery": "Tiny Rebel",
+      "Beer": "Feel The Rhythm",
+      "ABV": 4.6,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Tiny Rebel",
-        "Beer": "Pump Up The Jam",
-        "ABV": "5.0",
-        "Style": "Bitter"
+      "Brewery": "Tiny Rebel",
+      "Beer": "Pump Up The Jam",
+      "ABV": 5,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Tiny Rebel",
-        "Beer": "Salted Caramel Stay Puft Marshmellow Porter",
-        "ABV": "5.2",
-        "Style": "Dark"
+      "Brewery": "Tiny Rebel",
+      "Beer": "Salted Caramel Stay Puft Marshmellow Porter",
+      "ABV": 5.2,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Titanic",
-        "Beer": "Plum Porter",
-        "ABV": "4.9",
-        "Style": "Dark"
+      "Brewery": "Titanic",
+      "Beer": "Plum Porter",
+      "ABV": 4.9,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Tring",
-        "Beer": "Mansion Mild",
-        "ABV": "3.7",
-        "Style": "Dark"
+      "Brewery": "Tring",
+      "Beer": "Mansion Mild",
+      "ABV": 3.7,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Tring",
-        "Beer": "Tea Kettle Stout",
-        "ABV": "4.7",
-        "Style": "Dark"
+      "Brewery": "Tring",
+      "Beer": "Tea Kettle Stout",
+      "ABV": 4.7,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Tring",
-        "Beer": "Death Or Glory",
-        "ABV": "7.2",
-        "Style": "Dark"
+      "Brewery": "Tring",
+      "Beer": "Death Or Glory",
+      "ABV": 7.2,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Twickenham",
-        "Beer": "Winter Star",
-        "ABV": "4.4",
-        "Style": "Dark"
+      "Brewery": "Twickenham",
+      "Beer": "Winter Star",
+      "ABV": 4.4,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Twickenham",
-        "Beer": "Gothick Dark",
-        "ABV": "4.6",
-        "Style": "Dark"
+      "Brewery": "Twickenham",
+      "Beer": "Gothick Dark",
+      "ABV": 4.6,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Twickenham",
-        "Beer": "Honey Dark",
-        "ABV": "4.8",
-        "Style": "Dark"
+      "Brewery": "Twickenham",
+      "Beer": "Honey Dark",
+      "ABV": 4.8,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Unbarred Brewery",
-        "Beer": "Dam Tasty Beer",
-        "ABV": "3.5",
-        "Style": "Bitter"
+      "Brewery": "Unbarred Brewery",
+      "Beer": "Dam Tasty Beer",
+      "ABV": 3.5,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Watsons",
-        "Beer": "Chico",
-        "ABV": "5.0",
-        "Style": "Golden"
+      "Brewery": "Watsons",
+      "Beer": "Chico",
+      "ABV": 5,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Watsons",
-        "Beer": "Khandsari",
-        "ABV": "5.0",
-        "Style": "Dark"
+      "Brewery": "Watsons",
+      "Beer": "Khandsari",
+      "ABV": 5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Whistable",
-        "Beer": "Safe Ancorage Mild",
-        "ABV": "3.8",
-        "Style": "Dark"
+      "Brewery": "Whistable",
+      "Beer": "Safe Ancorage Mild",
+      "ABV": 3.8,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Whistable",
-        "Beer": "Pearl Of Kent Golden Ale",
-        "ABV": "4.3",
-        "Style": "Golden"
+      "Brewery": "Whistable",
+      "Beer": "Pearl Of Kent Golden Ale",
+      "ABV": 4.3,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Whistable",
-        "Beer": "Oyster Stout",
-        "ABV": "4.5",
-        "Style": "Dark"
+      "Brewery": "Whistable",
+      "Beer": "Oyster Stout",
+      "ABV": 4.5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Wibblers",
-        "Beer": "Chelmsford City",
-        "ABV": "4.3",
-        "Style": "Golden"
+      "Brewery": "Wibblers",
+      "Beer": "Chelmsford City",
+      "ABV": 4.3,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Wibblers",
-        "Beer": "Dengieporter",
-        "ABV": "4.5",
-        "Style": "Dark"
+      "Brewery": "Wibblers",
+      "Beer": "Dengieporter",
+      "ABV": 4.5,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Wibblers",
-        "Beer": "Winter Wibbler",
-        "ABV": "4.4",
-        "Style": "Dark"
+      "Brewery": "Wibblers",
+      "Beer": "Winter Wibble",
+      "ABV": 6,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Wimbeldon",
-        "Beer": "SW19",
-        "ABV": "4.0",
-        "Style": "Golden"
+      "Brewery": "Wimbledon",
+      "Beer": "SW19",
+      "ABV": 4,
+      "Style": "Golden"
     },
     {
-        "Brewery": "Wimbeldon",
-        "Beer": "London Porter Limited Release",
-        "ABV": "4.8",
-        "Style": "Dark"
+      "Brewery": "Wimbledon",
+      "Beer": "London Porter Limited Release",
+      "ABV": 4.8,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Woodfordes",
-        "Beer": "Nelsons Revenge",
-        "ABV": "4.5",
-        "Style": "Bitter"
+      "Brewery": "Woodfordes",
+      "Beer": "Nelsons Revenge",
+      "ABV": 4.5,
+      "Style": "Bitter"
     },
     {
-        "Brewery": "Woodfordes",
-        "Beer": "Norfolk Nog",
-        "ABV": "4.6",
-        "Style": "Dark"
+      "Brewery": "Woodfordes",
+      "Beer": "Norfolk Nog",
+      "ABV": 4.6,
+      "Style": "Dark"
     },
     {
-        "Brewery": "Xt",
-        "Beer": "Hop Kitty",
-        "ABV": "3.9",
-        "Style": "Golden"
+      "Brewery": "Xt",
+      "Beer": "Hop Kitty",
+      "ABV": 3.9,
+      "Style": "Golden"
     },
     {
-        "Brewery": "York",
-        "Beer": "York Centurions Ghost",
-        "ABV": "5.4",
-        "Style": "Dark"
+      "Brewery": "York",
+      "Beer": "York Centurions Ghost",
+      "ABV": 5.4,
+      "Style": "Dark"
     }
-]
+   ]
